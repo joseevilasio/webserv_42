@@ -1,24 +1,21 @@
 NAME = webserv
 
-SRCS = srcs/*
-
-OBJS = $(SRCS:.cpp=.o)
+SRCDIR = srcs
+SOURCES = main.cpp
+SRCS = $(addprefix $(SRCDIR)/, $(SOURCES))
 
 CXX = c++
-CXXFLAGS = -Wall -Werror -Wextra -std=c++98
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98 -I./includes
 
 RM = rm -f
 
-$(NAME): $(OBJS)
-		$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
+$(NAME): $(SRCS)
+		$(CXX) $(CXXFLAGS) $(SRCS) -o $(NAME)
 
 all: $(NAME)
 
-%.o: %.cpp
-		$(CXX) $(CXXFLAGS) -c $< -o $@
-
 clean:
-		$(RM) $(OBJS)
+		@echo "Nothing to clean (no object files)"
 
 fclean: clean
 		$(RM) $(NAME)
