@@ -1,0 +1,5 @@
+<map id="HttpRequest::hasHeader" name="HttpRequest::hasHeader">
+<area shape="rect" id="Node000001" title="Checks whether a header with the given key exists." alt="" coords="5,5,187,31"/>
+<area shape="rect" id="Node000002" href="$string__utils_8hpp.html#a96432d89bc886bc9cdd1d73f86b2bbca" title="Converts a string to lowercase." alt="" coords="235,5,309,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,15,221,15,221,21,187,21"/>
+</map>

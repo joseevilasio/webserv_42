@@ -1,0 +1,9 @@
+<map id="ClientConnection::getCgiStart" name="ClientConnection::getCgiStart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="591,5,773,45"/>
+<area shape="rect" id="Node000002" href="$classWebServer.html#a32042bb7e426cf5c53c2c2860d622342" title="Scans active CGI processes and terminates those exceeding timeout." alt="" coords="319,13,543,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="577,28,543,28,543,23,577,23"/>
+<area shape="rect" id="Node000003" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,13,271,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,28,271,28,271,23,305,23"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,13,60,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>

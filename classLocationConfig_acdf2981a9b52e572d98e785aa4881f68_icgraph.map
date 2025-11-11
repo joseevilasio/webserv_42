@@ -1,0 +1,17 @@
+<map id="LocationConfig::getCgiExtension" name="LocationConfig::getCgiExtension">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1323,5,1555,31"/>
+<area shape="rect" id="Node000002" href="$classRouter.html#ab22a05b1459f0c92a77aab7d70fadfaa" title="Checks whether a file extension matches a configured CGI mapping." alt="" coords="1093,5,1275,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1309,21,1275,21,1275,15,1309,15"/>
+<area shape="rect" id="Node000003" href="$classRouter.html#a4c44c26c85603949ccaed27088e3d07c" title="Determines if the request targets a valid CGI script." alt="" coords="940,5,1045,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1080,21,1046,21,1046,15,1080,15"/>
+<area shape="rect" id="Node000004" href="$classRouter.html#aa58c0c6f2a1fc66a6e2a78adfae162e6" title="Main entry point for determining how an HTTP request should be handled." alt="" coords="771,5,892,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="926,21,892,21,892,15,926,15"/>
+<area shape="rect" id="Node000005" href="$classDispatcher.html#a13c8a2fd90033adf9788c8774c3f0f47" title="Central dispatch routine that delegates HTTP requests to the appropriate handler." alt="" coords="568,5,723,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="757,21,723,21,723,15,757,15"/>
+<area shape="rect" id="Node000006" href="$classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4" title="Handles incoming data from a connected client." alt="" coords="319,5,520,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="554,21,520,21,520,15,554,15"/>
+<area shape="rect" id="Node000007" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,5,271,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="305,21,271,21,271,15,305,15"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

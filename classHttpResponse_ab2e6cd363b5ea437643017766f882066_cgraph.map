@@ -1,0 +1,13 @@
+<map id="HttpResponse::HttpResponse" name="HttpResponse::HttpResponse">
+<area shape="rect" id="Node000001" title="Default constructor for HttpResponse." alt="" coords="5,55,217,80"/>
+<area shape="rect" id="Node000002" href="$classHttpResponse.html#ab929ceba6ce5236a670f33f9a6eeeb35" title="Sets whether the response will use chunked transfer encoding." alt="" coords="274,5,471,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,52,291,31,292,36,180,57"/>
+<area shape="rect" id="Node000003" href="$classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843" title="Sets the HTTP status code and updates the corresponding reason phrase." alt="" coords="265,55,480,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,65,252,65,252,70,218,70"/>
+<area shape="rect" id="Node000006" href="$classHttpResponse.html#a407dc1ea3f01365d8105fadc0418bc79" title="Defines the HTTP version string (e.g., &quot;1.1&quot;)." alt="" coords="278,104,467,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="180,77,292,99,291,104,179,83"/>
+<area shape="rect" id="Node000004" href="$classHttpResponse.html#a98bb39b2757912eae4f667db80e3e6a4" title="Sets the textual reason phrase for a given status code." alt="" coords="528,55,761,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="480,65,514,65,514,70,480,70"/>
+<area shape="rect" id="Node000005" href="$classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19" title="Converts an HTTP status code to its standard reason phrase string." alt="" coords="809,47,1004,87"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="762,65,796,65,796,70,762,70"/>
+</map>

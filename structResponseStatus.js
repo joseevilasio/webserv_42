@@ -1,0 +1,35 @@
+var structResponseStatus =
+[
+    [ "code", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076", [
+      [ "Continue", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a143c858db023b1782c1cae221b14c93b", null ],
+      [ "SwitchingProtocols", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3577c3be44f6c8d6a9633d1aff6160ce", null ],
+      [ "OK", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae", null ],
+      [ "Created", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3c94648707a3d7b7f35669b2e710c529", null ],
+      [ "Accepted", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a50f63a590dac211c06fcf390e57dc8c7", null ],
+      [ "NoContent", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac862945398f1d51801da2914de43175b", null ],
+      [ "PartialContent", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae21d840dedfa875f4bc35a5408e0480b", null ],
+      [ "MovedPermanently", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac7aa644249cc0031fe7303844e7cbee2", null ],
+      [ "Found", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac358db4cf9bd6c46e3ae1e2f6087d8d3", null ],
+      [ "SeeOther", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae7dbfde20767d39bdc71194ef49fa48d", null ],
+      [ "NotModified", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076acf31cdf5a1f0d15e258b4e84735d33e1", null ],
+      [ "TemporaryRedirect", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a80c4b5870f811de667b4cdf65981820a", null ],
+      [ "BadRequest", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a361f141fef7bd3cfab9107a363245647", null ],
+      [ "Unauthorized", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a03b5be26be2e542b86b25cc4cb3940f2", null ],
+      [ "Forbidden", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500", null ],
+      [ "NotFound", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558", null ],
+      [ "MethodNotAllowed", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a5b393d65c3ee3ada19d5fcd6a96f9915", null ],
+      [ "RequestTimeout", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076abfae2f874b016109a5d38712149e8981", null ],
+      [ "Conflict", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a29f9b1001e52c0f1b4a2ecfe0dbeda85", null ],
+      [ "Gone", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ade8c3c66a19c3147d159d71ce19e544e", null ],
+      [ "PayloadTooLarge", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a1c70b0c1f91d78e0f835e6f7f97e4417", null ],
+      [ "UriTooLong", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ab718b151271054b2c2372f71bc9251b0", null ],
+      [ "UnsupportedMediaType", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a22e33730f235eabbc6d2b7417e22a54c", null ],
+      [ "ExpectationFailed", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9dc2380b91e2785927ad001b2a5fe622", null ],
+      [ "InternalServerError", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1", null ],
+      [ "NotImplemented", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae66e4a8d56d0773ced982175010e18ba", null ],
+      [ "BadGateway", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a581d05f9036e1f8c1eb02534450bad7c", null ],
+      [ "ServiceUnavailable", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0c6d7fe2dd7d7816ab7d3b451ff3af29", null ],
+      [ "GatewayTimeout", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a209f6846ecbedcd0dde706bf05c88d11", null ],
+      [ "HttpVersionNotSupported", "structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3c20972af7bbd06cf61aab5e0f73c221", null ]
+    ] ]
+];

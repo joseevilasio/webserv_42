@@ -1,0 +1,23 @@
+<map id="RequestParse::method" name="RequestParse::method">
+<area shape="rect" id="Node000001" title="Determines the HTTP method and validates it against configuration." alt="" coords="5,191,173,216"/>
+<area shape="poly" id="edge9_Node000001_Node000001" title=" " alt="" coords="51,192,43,182,47,172,63,166,89,164,122,168,135,177,132,182,120,173,89,169,64,171,51,176,48,182,55,189"/>
+<area shape="rect" id="Node000002" href="$classRequestParse.html#a3a3d2f425b7652c12b681fed8a66b8d9" title="Validates if the HTTP method is allowed in the matched location block." alt="" coords="221,116,427,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,188,269,143,271,148,131,193"/>
+<area shape="rect" id="Node000009" href="$classHttpRequest.html#a4af8abc5368c893ba9bb24939cb95aa3" title=" " alt="" coords="481,203,678,228"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="173,203,467,210,467,215,173,208"/>
+<area shape="rect" id="Node000010" href="$classHttpRequest.html#a85d34306cf62cabb5a8174532029c023" title="Sets the HTTP request method." alt="" coords="234,241,414,267"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="150,214,252,236,251,241,149,219"/>
+<area shape="rect" id="Node000003" href="$classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171" title="Returns the current HTTP method." alt="" coords="489,5,670,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,114,399,77,474,40,496,32,498,37,476,44,402,82,345,118"/>
+<area shape="rect" id="Node000004" href="$classLocationConfig.html#a8f52451547425e809ccdea74557339fe" title=" " alt="" coords="478,55,681,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="375,113,474,89,508,81,510,86,475,94,376,119"/>
+<area shape="rect" id="Node000005" href="$classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8" title=" " alt="" coords="504,104,655,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="427,121,490,118,490,124,427,127"/>
+<area shape="rect" id="Node000006" href="$classServerConfig.html#a708ec8a352980380e36dc6090322ea41" title="Finds the LocationConfig that best matches a given URI." alt="" coords="475,153,684,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="412,139,479,149,478,154,411,144"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="354,139,410,163,476,187,507,197,506,202,474,193,408,168,352,144"/>
+<area shape="rect" id="Node000007" href="$classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82" title=" " alt="" coords="732,129,907,155"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="684,153,718,149,719,155,684,158"/>
+<area shape="rect" id="Node000008" href="$string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d" title="Checks whether a string starts with a given prefix." alt="" coords="775,179,864,204"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="684,174,761,183,760,188,684,180"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Router::checkErrorStatus" name="Router::checkErrorStatus">
+<area shape="rect" id="Node000001" title="Checks if the response already contains an error status." alt="" coords="5,104,188,129"/>
+<area shape="rect" id="Node000002" href="$classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08" title="Returns the current HTTP status code." alt="" coords="236,5,452,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,102,168,71,235,40,259,32,261,37,237,44,171,75,119,106"/>
+<area shape="rect" id="Node000003" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="279,55,409,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,101,266,80,267,85,162,107"/>
+<area shape="rect" id="Node000004" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="297,104,391,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,114,283,114,283,119,188,119"/>
+<area shape="rect" id="Node000006" href="$classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99" title=" " alt="" coords="245,153,443,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="162,127,267,148,266,153,160,132"/>
+<area shape="rect" id="Node000007" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="307,203,381,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="120,127,172,157,237,188,294,204,293,209,235,192,169,162,117,132"/>
+<area shape="rect" id="Node000005" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="500,104,659,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="392,114,486,114,486,119,392,119"/>
+</map>

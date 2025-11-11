@@ -1,0 +1,33 @@
+<map id="ConfigParser::parseLocationBlock" name="ConfigParser::parseLocationBlock">
+<area shape="rect" id="Node000001" title="Parses a location block and adds it to the current server." alt="" coords="5,374,208,414"/>
+<area shape="rect" id="Node000002" href="$classLocationConfig.html#a0dbc1def632966c3091c627917f0cd63" title="Adds an extension&#45;handler pair for CGI execution." alt="" coords="256,5,491,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,373,118,308,143,218,162,169,186,122,217,78,254,40,260,36,263,40,258,44,221,81,191,124,167,171,148,219,123,310,113,374"/>
+<area shape="rect" id="Node000003" href="$classServerConfig.html#a6eba0775d2b1b31242740a9ff53d4364" title="Adds a new LocationConfig to the server." alt="" coords="277,55,469,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,373,123,316,149,239,169,198,192,158,221,121,254,89,263,83,266,88,258,93,225,124,197,161,173,200,154,241,128,318,114,375"/>
+<area shape="rect" id="Node000004" href="$classConfigParser.html#a6188c94ab0c7f0e867d5ffa2a5efb17e" title="Utility: checks if next token matches the expected symbol." alt="" coords="296,104,451,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,373,128,325,157,261,199,195,225,165,255,140,281,126,284,130,257,144,228,169,203,199,161,264,133,327,116,375"/>
+<area shape="rect" id="Node000005" href="$classLocationConfig.html#a4eeda49130a29cbb64e48b845976821e" title=" " alt="" coords="272,154,475,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="116,372,137,336,168,290,207,244,254,204,265,198,268,202,258,208,211,247,172,293,141,339,121,375"/>
+<area shape="rect" id="Node000006" href="$classLocationConfig.html#a7e9d4ee69ce1e4da6e16b24053335540" title=" " alt="" coords="269,218,477,258"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="125,372,180,320,216,292,255,268,270,261,272,265,257,272,219,296,183,324,128,376"/>
+<area shape="rect" id="Node000007" href="$classLocationConfig.html#af10d1ad36f0f3a7a3119e054efd88b8b" title=" " alt="" coords="272,283,475,308"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="140,371,193,343,255,317,282,309,283,314,257,322,196,348,143,376"/>
+<area shape="rect" id="Node000008" href="$classConfigParser.html#a560c0318ac8a3a868f5222327f3e7b57" title="Converts a lowercase string token into a RequestMethod enumeration." alt="" coords="275,332,471,357"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="208,373,290,357,291,363,209,378"/>
+<area shape="rect" id="Node000009" href="$classLocationConfig.html#a52b3e401c3b59f5fb1166310c2bf8ae0" title="Enables or disables directory listing (autoindex)." alt="" coords="267,381,479,407"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="208,391,253,391,253,397,208,397"/>
+<area shape="rect" id="Node000010" href="$classLocationConfig.html#a4871be53fb5569ae7cf1e33bfada0323" title="Sets the path to the CGI executable." alt="" coords="276,431,471,456"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="209,410,291,425,290,431,208,415"/>
+<area shape="rect" id="Node000011" href="$classLocationConfig.html#a1173dea22f3b63e2b9ff5c43510b0dc9" title="Defines the default index file for this location." alt="" coords="282,480,465,505"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="144,412,196,439,257,465,288,474,287,479,255,470,194,444,142,417"/>
+<area shape="rect" id="Node000012" href="$classLocationConfig.html#a9a80290a8b4bc948f9041ddd2547ece4" title="Sets the list of allowed HTTP methods." alt="" coords="272,529,475,555"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="128,413,183,464,219,491,257,514,278,523,276,528,255,519,216,496,179,468,125,416"/>
+<area shape="rect" id="Node000013" href="$classLocationConfig.html#a46184880a603b58940a464ebb9c4b77c" title="Sets the HTTP redirection rule (status, URL)." alt="" coords="279,579,468,604"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="122,413,143,446,174,488,212,529,257,564,273,571,270,576,255,568,209,533,169,491,138,449,117,416"/>
+<area shape="rect" id="Node000014" href="$classLocationConfig.html#ad1cdc0a2ef75f2efa6b5255cce7286ea" title="Sets the root directory for this location." alt="" coords="285,628,461,653"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="118,413,136,456,166,511,206,567,231,592,257,613,274,622,272,627,255,618,227,596,202,570,161,513,132,458,113,415"/>
+<area shape="rect" id="Node000015" href="$classLocationConfig.html#a29d368d1cc6ae21a7cf880159ca0e712" title="Enables or disables file upload for this location." alt="" coords="277,678,469,718"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="116,413,132,464,160,531,202,602,228,634,258,663,266,669,263,673,254,667,224,638,197,605,155,534,127,466,111,415"/>
+<area shape="rect" id="Node000016" href="$classLocationConfig.html#a81921c69bff5933cb0087c4c5c2a9c1b" title="Defines the upload directory for incoming files." alt="" coords="263,743,483,768"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="113,414,125,476,150,561,169,607,193,652,222,693,258,728,266,734,263,738,254,732,218,696,188,654,164,609,145,563,120,477,108,415"/>
+</map>

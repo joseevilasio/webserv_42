@@ -1,0 +1,17 @@
+<map id="ClientConnection::getResponseBuffer" name="ClientConnection::getResponseBuffer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="819,47,1044,87"/>
+<area shape="rect" id="Node000002" href="$classDispatcher.html#a13c8a2fd90033adf9788c8774c3f0f47" title="Central dispatch routine that delegates HTTP requests to the appropriate handler." alt="" coords="592,5,747,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="811,47,737,33,738,28,812,42"/>
+<area shape="rect" id="Node000006" href="$classClientConnection.html#abbef9ce451a487c2961910457915824e" title="Sends response data to the client." alt="" coords="568,55,771,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="805,70,771,70,771,65,805,65"/>
+<area shape="rect" id="Node000007" href="$classWebServer.html#acbda203d0faed2cb204ee17908e1c2c3" title="Sends buffered response data to a connected client." alt="" coords="322,55,517,80"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="805,92,771,95,669,101,568,95,480,83,481,77,568,90,669,96,770,90,805,86"/>
+<area shape="rect" id="Node000003" href="$classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4" title="Handles incoming data from a connected client." alt="" coords="319,5,520,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="578,21,520,21,520,15,578,15"/>
+<area shape="rect" id="Node000004" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,31,271,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="305,33,271,37,271,32,305,28"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="554,70,517,70,517,65,554,65"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="308,58,270,54,271,49,308,53"/>
+</map>

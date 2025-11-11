@@ -1,0 +1,7 @@
+<map id="ServerConfig::matchLocation" name="ServerConfig::matchLocation">
+<area shape="rect" id="Node000001" title="Finds the LocationConfig that best matches a given URI." alt="" coords="5,31,215,56"/>
+<area shape="rect" id="Node000002" href="$classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82" title=" " alt="" coords="263,5,437,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,30,249,26,250,31,215,35"/>
+<area shape="rect" id="Node000003" href="$string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d" title="Checks whether a string starts with a given prefix." alt="" coords="305,55,395,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,51,292,59,291,64,214,56"/>
+</map>

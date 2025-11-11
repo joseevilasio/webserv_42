@@ -1,0 +1,34 @@
+<map id="Router::isUpload" name="Router::isUpload">
+<area shape="rect" id="Node000001" title="Determines if the current request is a valid upload operation." alt="" coords="5,271,136,296"/>
+<area shape="rect" id="Node000002" href="$classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171" title="Returns the current HTTP method." alt="" coords="204,5,385,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,270,82,227,102,168,135,104,157,74,182,48,204,34,207,38,186,52,161,77,140,106,107,170,87,229,77,271"/>
+<area shape="rect" id="Node000003" href="$classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82" title=" " alt="" coords="483,188,657,213"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="72,270,83,233,104,182,137,132,158,109,183,92,213,76,241,67,266,63,292,63,344,73,406,91,448,108,486,131,547,177,543,181,483,135,445,113,404,97,342,78,291,68,267,68,242,72,215,81,185,96,162,113,141,135,109,185,89,234,77,271"/>
+<area shape="rect" id="Node000004" href="$classServerConfig.html#a1d6c7f794b3c144162edd0f6a29df94a" title=" " alt="" coords="213,107,377,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="76,269,115,208,146,172,183,142,199,134,201,139,185,147,149,176,119,211,81,272"/>
+<area shape="rect" id="Node000005" href="$classLocationConfig.html#a8f1bbc69016138d6488c674b15d62531" title=" " alt="" coords="198,157,391,197"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="86,268,128,238,183,206,200,199,202,204,185,211,131,242,89,273"/>
+<area shape="rect" id="Node000006" href="$classLocationConfig.html#a58552fba744893cb3510234fbb71ae66" title=" " alt="" coords="184,221,405,247"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="127,268,183,255,221,247,222,252,185,261,128,273"/>
+<area shape="rect" id="Node000007" href="$classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8" title=" " alt="" coords="219,271,370,296"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="136,281,206,281,206,286,136,286"/>
+<area shape="rect" id="Node000008" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="230,320,359,345"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="130,293,224,314,222,320,128,299"/>
+<area shape="rect" id="Node000009" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="247,419,342,444"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="82,294,122,348,151,378,185,404,209,415,234,422,233,427,207,420,183,408,148,382,118,352,78,298"/>
+<area shape="rect" id="Node000011" href="$classServerConfig.html#a708ec8a352980380e36dc6090322ea41" title="Finds the LocationConfig that best matches a given URI." alt="" coords="190,369,399,395"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="89,294,131,324,185,354,209,363,207,368,183,359,128,329,86,298"/>
+<area shape="rect" id="Node000013" href="$classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99" title=" " alt="" coords="195,468,394,493"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="79,295,92,328,115,371,146,416,186,453,197,460,194,465,182,457,142,419,110,373,87,330,74,297"/>
+<area shape="rect" id="Node000014" href="$classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843" title="Sets the HTTP status code and updates the corresponding reason phrase." alt="" coords="187,517,402,543"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="77,296,87,337,108,394,140,454,161,481,186,504,192,509,189,513,182,508,157,484,135,457,103,396,82,338,72,297"/>
+<area shape="rect" id="Node000010" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="491,419,649,444"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="342,429,477,429,477,434,342,434"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="373,367,404,354,449,325,489,289,549,223,553,226,493,293,452,329,407,359,375,372"/>
+<area shape="rect" id="Node000012" href="$string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d" title="Checks whether a string starts with a given prefix." alt="" coords="525,369,615,395"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="399,379,511,379,511,385,399,385"/>
+<area shape="rect" id="Node000015" href="$classHttpResponse.html#a98bb39b2757912eae4f667db80e3e6a4" title="Sets the textual reason phrase for a given status code." alt="" coords="453,517,687,543"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="402,527,440,527,440,533,402,533"/>
+<area shape="rect" id="Node000016" href="$classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19" title="Converts an HTTP status code to its standard reason phrase string." alt="" coords="735,510,929,550"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="687,527,721,527,721,533,687,533"/>
+</map>

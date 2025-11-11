@@ -1,0 +1,18 @@
+<map id="UploadHandler::parseMultipart" name="UploadHandler::parseMultipart">
+<area shape="rect" id="Node000001" title="Parses the full multipart body into individual parts." alt="" coords="5,31,228,56"/>
+<area shape="rect" id="Node000002" href="$classUploadHandler.html#ad0eb7d7f64f75abf8078116aab15987f" title="Extracts the multipart boundary string from the Content&#45;Type header." alt="" coords="276,5,511,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,30,262,27,263,33,229,36"/>
+<area shape="rect" id="Node000004" href="$classUploadHandler.html#a034aba7372669350a9287f13fe020dbd" title="Parses an individual multipart section." alt="" coords="299,55,487,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,50,286,55,285,61,228,56"/>
+<area shape="rect" id="Node000003" href="$string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4" title="Returns a copy of a string with surrounding spaces and tabs removed." alt="" coords="606,5,693,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="511,15,592,15,592,21,511,21"/>
+<area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="459,52,592,26,593,31,460,57"/>
+<area shape="rect" id="Node000005" href="$classUploadHandler.html#a0424d4becb0ad12b775f83822f69595c" title="Saves a parsed file part to disk." alt="" coords="559,55,740,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="488,65,545,65,545,70,488,70"/>
+<area shape="rect" id="Node000006" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="788,29,917,55"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="740,53,774,49,775,54,741,59"/>
+<area shape="rect" id="Node000007" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="805,79,900,104"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="741,75,792,82,791,87,740,81"/>
+<area shape="rect" id="Node000008" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="965,79,1124,104"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="900,89,952,89,952,94,900,94"/>
+</map>

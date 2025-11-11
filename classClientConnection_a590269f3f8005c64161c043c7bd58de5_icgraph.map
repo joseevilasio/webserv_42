@@ -1,0 +1,12 @@
+<map id="ClientConnection::setSentBytes" name="ClientConnection::setSentBytes">
+<area shape="rect" id="Node000001" title=" " alt="" coords="568,23,759,63"/>
+<area shape="rect" id="Node000002" href="$classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4" title="Handles incoming data from a connected client." alt="" coords="319,5,520,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="554,35,520,31,520,26,555,29"/>
+<area shape="rect" id="Node000005" href="$classWebServer.html#acbda203d0faed2cb204ee17908e1c2c3" title="Sends buffered response data to a connected client." alt="" coords="322,55,517,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="555,57,517,60,517,55,554,51"/>
+<area shape="rect" id="Node000003" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,31,271,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,33,271,37,271,32,305,28"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="308,58,270,54,271,49,308,53"/>
+</map>

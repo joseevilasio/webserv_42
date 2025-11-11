@@ -1,0 +1,17 @@
+<map id="RequestParse::checkMethod" name="RequestParse::checkMethod">
+<area shape="rect" id="Node000001" title="Validates if the HTTP method is allowed in the matched location block." alt="" coords="5,104,211,129"/>
+<area shape="rect" id="Node000002" href="$classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171" title="Returns the current HTTP method." alt="" coords="273,5,454,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,102,186,71,258,40,283,32,284,37,260,44,189,76,132,106"/>
+<area shape="rect" id="Node000003" href="$classLocationConfig.html#a8f52451547425e809ccdea74557339fe" title=" " alt="" coords="262,55,465,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,101,283,80,284,85,175,107"/>
+<area shape="rect" id="Node000004" href="$classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8" title=" " alt="" coords="288,104,439,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,114,274,114,274,119,211,119"/>
+<area shape="rect" id="Node000005" href="$classServerConfig.html#a708ec8a352980380e36dc6090322ea41" title="Finds the LocationConfig that best matches a given URI." alt="" coords="259,153,468,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="175,127,284,148,283,153,174,132"/>
+<area shape="rect" id="Node000008" href="$classHttpRequest.html#a4af8abc5368c893ba9bb24939cb95aa3" title=" " alt="" coords="265,203,462,228"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="133,127,189,157,260,188,288,197,287,202,258,192,187,162,130,132"/>
+<area shape="rect" id="Node000006" href="$classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82" title=" " alt="" coords="516,129,691,155"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="468,153,502,149,503,155,468,158"/>
+<area shape="rect" id="Node000007" href="$string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d" title="Checks whether a string starts with a given prefix." alt="" coords="559,179,648,204"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="468,174,545,183,544,188,468,180"/>
+</map>

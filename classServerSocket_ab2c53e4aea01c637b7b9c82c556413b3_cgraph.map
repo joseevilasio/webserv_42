@@ -1,0 +1,11 @@
+<map id="ServerSocket::ServerSocket" name="ServerSocket::ServerSocket">
+<area shape="rect" id="Node000001" title="Copy constructor — duplicates only the file descriptor value." alt="" coords="5,55,205,80"/>
+<area shape="rect" id="Node000002" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="253,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,52,249,31,250,36,161,57"/>
+<area shape="rect" id="Node000003" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="271,55,365,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,65,257,65,257,70,206,70"/>
+<area shape="rect" id="Node000005" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="281,104,355,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="161,77,269,103,268,108,160,83"/>
+<area shape="rect" id="Node000004" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="431,55,589,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="366,65,417,65,417,70,366,70"/>
+</map>

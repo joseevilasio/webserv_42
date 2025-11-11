@@ -1,0 +1,9 @@
+<map id="HttpResponse::reset" name="HttpResponse::reset">
+<area shape="rect" id="Node000001" title="Resets the response to its default, empty state." alt="" coords="5,31,160,56"/>
+<area shape="rect" id="Node000002" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="208,5,337,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,30,194,26,195,31,161,36"/>
+<area shape="rect" id="Node000003" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="225,55,320,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,50,212,57,212,62,160,56"/>
+<area shape="rect" id="Node000004" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="385,55,544,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="320,65,372,65,372,70,320,70"/>
+</map>

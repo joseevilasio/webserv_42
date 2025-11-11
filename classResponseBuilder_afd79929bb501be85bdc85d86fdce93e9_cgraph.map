@@ -1,0 +1,59 @@
+<map id="ResponseBuilder::build" name="ResponseBuilder::build">
+<area shape="rect" id="Node000001" title="Assembles the complete HTTP response, including error handling." alt="" coords="5,539,176,564"/>
+<area shape="rect" id="Node000002" href="$classHttpResponse.html#abb032c16ad3961d50a6582c50c330581" title="Adds a header field to the HTTP response." alt="" coords="798,124,990,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,538,106,449,134,315,152,246,173,182,196,131,222,96,284,50,343,21,400,6,458,3,518,10,582,23,730,58,767,69,803,84,862,115,860,119,800,88,765,74,729,63,581,28,517,15,458,9,401,11,345,26,287,55,226,100,201,133,178,184,157,247,139,317,111,450,96,539"/>
+<area shape="rect" id="Node000003" href="$classResponseBuilder.html#a998edbfd6f08dd34332ca92507db5d77" title="Attempts to load and serve a custom error page from configuration." alt="" coords="234,373,435,413"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,537,150,485,185,456,223,429,249,416,252,420,225,434,188,460,154,489,105,540"/>
+<area shape="rect" id="Node000005" href="$classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08" title="Returns the current HTTP status code." alt="" coords="503,290,719,315"/>
+<area shape="poly" id="edge20_Node000001_Node000005" title=" " alt="" coords="94,538,110,501,137,452,174,401,197,378,223,359,287,328,355,308,425,298,489,294,490,299,425,303,357,313,288,333,225,363,200,382,178,404,141,455,115,503,99,540"/>
+<area shape="rect" id="Node000006" href="$classResponseBuilder.html#a0a1b2929111eec67e4ebe1acb7796915" title="Prepares an HTTP response for a static page." alt="" coords="501,225,721,265"/>
+<area shape="poly" id="edge21_Node000001_Node000006" title=" " alt="" coords="92,538,105,493,130,430,147,396,168,363,193,333,222,308,253,289,285,274,353,252,422,241,487,236,488,242,423,246,354,258,287,279,255,294,226,312,197,337,172,367,152,399,135,432,110,494,97,539"/>
+<area shape="rect" id="Node000009" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="857,179,931,204"/>
+<area shape="poly" id="edge32_Node000001_Node000009" title=" " alt="" coords="91,538,100,484,122,407,140,365,162,324,189,287,222,255,259,230,299,209,383,178,471,160,560,153,645,153,723,159,844,178,843,183,723,164,645,158,560,158,472,165,384,183,301,213,262,234,226,259,193,290,166,327,144,367,127,409,106,485,96,539"/>
+<area shape="rect" id="Node000010" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="547,438,676,463"/>
+<area shape="poly" id="edge22_Node000001_Node000010" title=" " alt="" coords="109,536,159,507,223,480,304,461,387,451,466,446,533,445,533,450,466,451,388,456,305,467,225,485,162,511,112,541"/>
+<area shape="rect" id="Node000011" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="564,539,659,564"/>
+<area shape="poly" id="edge23_Node000001_Node000011" title=" " alt="" coords="176,549,550,549,550,554,176,554"/>
+<area shape="rect" id="Node000014" href="$classHttpResponse.html#a98bb39b2757912eae4f667db80e3e6a4" title="Sets the textual reason phrase for a given status code." alt="" coords="777,414,1011,439"/>
+<area shape="poly" id="edge28_Node000001_Node000014" title=" " alt="" coords="176,537,224,530,366,516,478,508,588,497,729,473,788,458,843,441,845,446,790,463,730,478,589,502,478,513,367,521,224,536,176,542"/>
+<area shape="rect" id="Node000016" href="$classResponseBuilder.html#ac417ac0be55269cb7f95d0e3bc01dc51" title="Generates a simple HTML error page for a given HTTP status code." alt="" coords="234,589,435,629"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="146,562,237,583,235,588,145,567"/>
+<area shape="rect" id="Node000017" href="$classHttpRequest.html#afee0e84f22f6d1226023d40f4a75c17a" title="Returns a const reference to the RequestMeta structure." alt="" coords="252,654,417,679"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="108,562,158,600,191,621,225,638,249,647,247,652,223,643,188,625,155,604,105,566"/>
+<area shape="rect" id="Node000018" href="$classServerConfig.html#a1d6c7f794b3c144162edd0f6a29df94a" title=" " alt="" coords="253,703,417,728"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="102,563,149,624,185,660,225,689,241,697,238,701,223,694,181,664,145,628,98,566"/>
+<area shape="rect" id="Node000019" href="$classClientConnection.html#ad157100f057508c3f4766a0b9c011d56" title=" " alt="" coords="233,753,437,793"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="100,563,116,598,143,646,180,696,202,719,226,739,234,744,231,749,222,743,198,723,176,699,139,649,111,601,95,566"/>
+<area shape="rect" id="Node000020" href="$classRequestMeta.html#ad4f70f6ac25a37bd22eead55abc63a88" title="Defines whether the connection should be closed after the response." alt="" coords="230,817,439,857"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="97,564,110,609,135,674,173,743,197,775,226,803,232,808,229,812,222,807,193,779,168,746,130,676,105,611,92,565"/>
+<area shape="rect" id="Node000021" href="$classResponseBuilder.html#a8c8e1391a9e13ef9c48e73cdc5ffb96a" title="Adds mandatory HTTP headers to the response." alt="" coords="224,110,445,150"/>
+<area shape="poly" id="edge25_Node000001_Node000021" title=" " alt="" coords="90,538,96,473,116,374,133,319,155,265,185,213,222,167,237,155,240,159,226,171,189,216,160,267,138,321,121,376,102,474,95,539"/>
+<area shape="rect" id="Node000023" href="$classHttpResponse.html#a407dc1ea3f01365d8105fadc0418bc79" title="Defines the HTTP version string (e.g., &quot;1.1&quot;)." alt="" coords="240,882,429,907"/>
+<area shape="poly" id="edge29_Node000001_Node000023" title=" " alt="" coords="96,564,104,620,126,702,143,747,165,791,192,832,226,867,234,873,231,877,222,871,188,835,160,794,138,749,121,704,99,621,91,565"/>
+<area shape="rect" id="Node000024" href="$classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e" title="Returns true if the connection should be closed." alt="" coords="237,931,432,956"/>
+<area shape="poly" id="edge30_Node000001_Node000024" title=" " alt="" coords="95,564,101,628,119,724,136,777,158,828,188,876,226,918,231,922,228,926,222,921,184,880,154,831,131,778,114,725,95,629,90,565"/>
+<area shape="rect" id="Node000025" href="$classResponseBuilder.html#a118396ba3bce90b9bc2e7df02a84d2c4" title="Determines whether the connection should be closed based on status code." alt="" coords="225,981,444,1021"/>
+<area shape="poly" id="edge31_Node000001_Node000025" title=" " alt="" coords="95,564,98,634,105,685,115,743,132,803,155,862,186,918,226,967,230,971,227,975,222,971,181,921,150,865,127,804,110,744,99,686,93,635,89,564"/>
+<area shape="rect" id="Node000004" href="$classServerConfig.html#ae077f794f7c8027bfd81a0b218edbff7" title=" " alt="" coords="513,388,709,414"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="436,393,500,395,499,400,436,398"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="378,370,432,347,493,325,528,315,529,321,494,330,434,352,380,375"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="357,371,415,323,453,298,492,276,512,267,514,272,495,281,456,302,419,328,360,375"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="431,410,494,424,535,432,534,437,493,429,429,415"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="372,411,578,530,575,534,369,415"/>
+<area shape="rect" id="Node000013" href="$classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843" title="Sets the HTTP status code and updates the corresponding reason phrase." alt="" coords="504,339,719,364"/>
+<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="435,375,512,364,513,369,436,380"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="649,222,708,193,776,164,820,150,821,156,778,169,710,197,651,227"/>
+<area shape="rect" id="Node000007" href="$classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8" title="Appends text data to the response body." alt="" coords="793,231,995,256"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="722,242,779,241,779,247,722,247"/>
+<area shape="rect" id="Node000008" href="$classHttpResponse.html#ab929ceba6ce5236a670f33f9a6eeeb35" title="Sets whether the response will use chunked transfer encoding." alt="" coords="795,280,993,306"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="722,261,806,275,805,281,721,266"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="717,222,843,198,844,203,718,227"/>
+<area shape="rect" id="Node000012" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="815,539,973,564"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="659,549,801,549,801,554,659,554"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="676,362,730,374,841,407,840,412,729,379,675,367"/>
+<area shape="rect" id="Node000015" href="$classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19" title="Converts an HTTP status code to its standard reason phrase string." alt="" coords="1059,406,1253,446"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1011,424,1045,424,1045,429,1011,429"/>
+<area shape="poly" id="edge26_Node000021_Node000002" title=" " alt="" coords="446,129,784,133,784,138,446,134"/>
+<area shape="rect" id="Node000022" href="$classResponseBuilder.html#ae58c2cc5b2bc78a9a2feed205780871c" title="Generates a timestamp string in RFC 1123 format for HTTP headers." alt="" coords="493,74,729,99"/>
+<area shape="poly" id="edge27_Node000021_Node000022" title=" " alt="" coords="445,110,517,98,518,104,446,115"/>
+</map>

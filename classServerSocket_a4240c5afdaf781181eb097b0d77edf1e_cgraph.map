@@ -1,0 +1,11 @@
+<map id="ServerSocket::acceptConnections" name="ServerSocket::acceptConnections">
+<area shape="rect" id="Node000001" title="Accepts all pending incoming client connections (non&#45;blocking)." alt="" coords="5,55,244,80"/>
+<area shape="rect" id="Node000002" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="292,5,421,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,52,282,31,283,36,186,57"/>
+<area shape="rect" id="Node000003" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="309,55,404,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,65,295,65,295,70,244,70"/>
+<area shape="rect" id="Node000005" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="320,104,393,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="186,77,307,104,306,109,184,83"/>
+<area shape="rect" id="Node000004" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="469,55,628,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,65,456,65,456,70,404,70"/>
+</map>

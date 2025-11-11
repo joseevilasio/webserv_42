@@ -1,0 +1,19 @@
+<map id="RequestParse::extractQueryString" name="RequestParse::extractQueryString">
+<area shape="rect" id="Node000001" title="Extracts the query string portion from a URI." alt="" coords="1532,22,1735,62"/>
+<area shape="rect" id="Node000002" href="$classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a" title="Extracts and validates the request URI and query string." alt="" coords="1349,29,1484,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1518,54,1484,53,1484,48,1518,48"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="1498,31,1532,30,1532,36,1498,36"/>
+<area shape="poly" id="edge9_Node000002_Node000002" title=" " alt="" coords="1454,20,1444,11,1417,8,1394,10,1382,15,1380,20,1386,28,1382,31,1375,21,1379,11,1393,5,1417,3,1446,6,1458,15"/>
+<area shape="rect" id="Node000003" href="$classRequestParse.html#abba0923a3ae7422916f11a81b7c4d552" title="Parses the HTTP request line (method, URI, version)." alt="" coords="1107,29,1301,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="1335,45,1302,45,1302,39,1335,39"/>
+<area shape="rect" id="Node000004" href="$classRequestParse.html#a5f2f35f5815fbb977cde05b19af41687" title="Parses and processes raw HTTP request data incrementally." alt="" coords="816,29,1059,55"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="1093,45,1059,45,1059,39,1093,39"/>
+<area shape="rect" id="Node000005" href="$classClientConnection.html#a835586ce27b3c3598394bde3fff14211" title="Receives incoming data from the client socket." alt="" coords="568,29,768,55"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="802,45,768,45,768,39,802,39"/>
+<area shape="rect" id="Node000006" href="$classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4" title="Handles incoming data from a connected client." alt="" coords="319,29,520,55"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="554,45,520,45,520,39,554,39"/>
+<area shape="rect" id="Node000007" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,29,271,55"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="305,45,271,45,271,39,305,39"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,29,60,55"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="94,45,60,45,60,39,94,39"/>
+</map>

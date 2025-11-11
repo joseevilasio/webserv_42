@@ -1,0 +1,19 @@
+<map id="ClientConnection::setResponseBuffer" name="ClientConnection::setResponseBuffer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="865,99,1089,139"/>
+<area shape="rect" id="Node000002" href="$classDispatcher.html#a13c8a2fd90033adf9788c8774c3f0f47" title="Central dispatch routine that delegates HTTP requests to the appropriate handler." alt="" coords="628,5,783,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="921,96,816,53,755,33,757,28,818,47,923,91"/>
+<area shape="rect" id="Node000003" href="$classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4" title="Handles incoming data from a connected client." alt="" coords="331,56,533,81"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="851,107,817,103,533,79,533,73,818,98,852,102"/>
+<area shape="rect" id="Node000004" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,132,271,157"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="852,126,271,145,271,139,852,121"/>
+<area shape="rect" id="Node000006" href="$classWebServer.html#a7667bc8a87db8f9987a5e80da9c4cd37" title="Reads CGI process output and assembles it into the client buffer." alt="" coords="319,157,545,183"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="852,137,818,141,546,164,545,159,817,135,851,132"/>
+<area shape="rect" id="Node000007" href="$classWebServer.html#a32042bb7e426cf5c53c2c2860d622342" title="Scans active CGI processes and terminates those exceeding timeout." alt="" coords="593,208,817,233"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="923,148,818,191,757,210,755,205,816,186,921,143"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="623,36,502,59,501,53,622,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="372,88,319,103,227,134,226,129,318,98,370,83"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,132,60,157"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,147,60,147,60,142,94,142"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="305,159,270,156,271,150,305,154"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="580,224,453,217,385,209,318,197,263,180,216,160,218,155,265,175,319,191,385,203,453,212,580,219"/>
+</map>

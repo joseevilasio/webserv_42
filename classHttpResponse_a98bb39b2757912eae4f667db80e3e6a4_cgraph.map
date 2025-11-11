@@ -1,0 +1,5 @@
+<map id="HttpResponse::setReasonPhrase" name="HttpResponse::setReasonPhrase">
+<area shape="rect" id="Node000001" title="Sets the textual reason phrase for a given status code." alt="" coords="5,13,239,38"/>
+<area shape="rect" id="Node000002" href="$classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19" title="Converts an HTTP status code to its standard reason phrase string." alt="" coords="287,5,481,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,23,273,23,273,28,239,28"/>
+</map>

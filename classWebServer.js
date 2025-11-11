@@ -1,0 +1,27 @@
+var classWebServer =
+[
+    [ "WebServer", "classWebServer.html#ac09590b6f49a11ada4ca0923927bfb44", null ],
+    [ "WebServer", "classWebServer.html#a04c9a61a1f62118c92e5e85a52d44a04", null ],
+    [ "~WebServer", "classWebServer.html#ad60a82e12880d33cb684b18cf1fe12d1", null ],
+    [ "addCgiPollFd", "classWebServer.html#ae39c5049391489b342b24b09fc2191fe", null ],
+    [ "addToPollFD", "classWebServer.html#aa387a01e97d57072be5c5be3955136f8", null ],
+    [ "getPollTimeout", "classWebServer.html#aae795b87cd382736087ddf71303df127", null ],
+    [ "gracefulShutdown", "classWebServer.html#adf1cdbbf77e68a3eceff4d79a251b9fa", null ],
+    [ "handleCgiReadable", "classWebServer.html#a7667bc8a87db8f9987a5e80da9c4cd37", null ],
+    [ "operator=", "classWebServer.html#a79c16ada1911c1d088f932bff73321fa", null ],
+    [ "queueClientConnections", "classWebServer.html#aacdbe29d455db5ca3387cd06a67b890b", null ],
+    [ "receiveRequest", "classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4", null ],
+    [ "removeCgiPollFd", "classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597", null ],
+    [ "removeClientConnection", "classWebServer.html#a4229c99fb202be210f93cbde92a560b0", null ],
+    [ "runServer", "classWebServer.html#af39709e3744077e019aa76555f03a42e", null ],
+    [ "sendResponse", "classWebServer.html#acbda203d0faed2cb204ee17908e1c2c3", null ],
+    [ "startServer", "classWebServer.html#aaa47870e992fde48631172d73babbe92", null ],
+    [ "sweepCgiTimeouts", "classWebServer.html#a32042bb7e426cf5c53c2c2860d622342", null ],
+    [ "_cgiFdToClientFd", "classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44", null ],
+    [ "_cgiMap", "classWebServer.html#ab4259e9ed711cf8d29b79871571023ab", null ],
+    [ "_clients", "classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816", null ],
+    [ "_config", "classWebServer.html#ad3a9e2f21df6f5389578261f46b67add", null ],
+    [ "_pollFDs", "classWebServer.html#af62392f4470b3b063b956cdca77d25fc", null ],
+    [ "_serverSocket", "classWebServer.html#a860da8d4f2984bc20abb1931f051a33a", null ],
+    [ "_socketToServerIndex", "classWebServer.html#a49dd7b5d8ca2f50985abfeeef0391b9b", null ]
+];

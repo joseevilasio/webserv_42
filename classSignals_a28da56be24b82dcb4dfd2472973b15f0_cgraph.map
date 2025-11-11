@@ -1,0 +1,21 @@
+<map id="Signals::setupHandlers" name="Signals::setupHandlers">
+<area shape="rect" id="Node000001" title="Registers signal handlers for SIGINT, SIGTERM, and SIGCHLD." alt="" coords="5,56,176,81"/>
+<area shape="rect" id="Node000002" href="$classSignals.html#a794783efe829c5700ffeef1f04a524c8" title="Handles SIGCHLD signals to clean up terminated child processes." alt="" coords="224,81,419,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,75,211,79,210,84,176,81"/>
+<area shape="rect" id="Node000004" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="729,31,859,56"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="139,53,224,35,351,16,452,5,553,4,682,15,735,25,734,30,681,21,553,10,452,10,352,21,224,40,140,58"/>
+<area shape="rect" id="Node000005" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="747,131,841,156"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="120,79,168,99,225,115,366,136,508,145,635,147,733,144,733,149,635,152,508,151,366,141,223,120,166,104,118,84"/>
+<area shape="rect" id="Node000008" href="$classSignals.html#a48b43a3eca9031322309320a45d538d2" title="Handles SIGINT and SIGTERM for graceful shutdown." alt="" coords="493,31,655,56"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="176,61,479,45,479,51,176,67"/>
+<area shape="rect" id="Node000003" href="$classSignals.html#aa783f74c1937b7e3a797914950378870" title="Unregisters a finished CGI process." alt="" coords="467,81,681,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,91,453,91,453,97,419,97"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="630,78,724,56,726,62,631,84"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="632,104,734,127,733,132,631,109"/>
+<area shape="rect" id="Node000007" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="757,81,831,107"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="681,91,744,91,744,97,681,97"/>
+<area shape="rect" id="Node000006" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="907,131,1065,156"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="842,141,893,141,893,146,842,146"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="656,41,715,41,715,46,656,46"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="653,54,683,66,698,78,708,91,717,103,731,116,742,122,740,127,728,120,713,107,704,94,695,82,680,71,651,58"/>
+</map>

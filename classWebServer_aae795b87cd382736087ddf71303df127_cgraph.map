@@ -1,0 +1,5 @@
+<map id="WebServer::getPollTimeout" name="WebServer::getPollTimeout">
+<area shape="rect" id="Node000001" title="Returns poll() timeout value depending on CGI activity." alt="" coords="5,5,204,31"/>
+<area shape="rect" id="Node000002" href="$classSignals.html#ae8fd2fb49967528da23bb13fcbc3827d" title="Checks if there are currently active CGI processes." alt="" coords="252,5,415,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,15,238,15,238,21,204,21"/>
+</map>

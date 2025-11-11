@@ -1,0 +1,27 @@
+<map id="HttpRequest::HttpRequest" name="HttpRequest::HttpRequest">
+<area shape="rect" id="Node000001" title="Constructs a new HttpRequest with default initialized state." alt="" coords="5,297,197,323"/>
+<area shape="rect" id="Node000002" href="$classHttpRequest.html#afee0e84f22f6d1226023d40f4a75c17a" title="Returns a const reference to the RequestMeta structure." alt="" coords="286,5,451,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,296,116,247,143,177,161,139,184,103,212,69,244,40,271,25,274,30,247,44,216,72,189,106,166,142,147,179,121,249,108,297"/>
+<area shape="rect" id="Node000003" href="$classRequestMeta.html#a360c94feb081bd7436c055c9f7ed1715" title="Defines whether the request uses chunked transfer encoding." alt="" coords="273,55,465,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,296,121,256,150,199,190,140,216,113,244,90,258,82,261,87,247,95,219,117,195,144,154,202,126,258,110,298"/>
+<area shape="rect" id="Node000004" href="$classRequestMeta.html#ad4f70f6ac25a37bd22eead55abc63a88" title="Defines whether the connection should be closed after the response." alt="" coords="264,105,473,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,295,160,228,199,188,244,154,256,148,259,152,247,159,202,192,164,232,113,299"/>
+<area shape="rect" id="Node000005" href="$classRequestMeta.html#a7384f594ae41f8f0151e8875a663f795" title="Sets the Content&#45;Length value for the request." alt="" coords="253,169,484,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="114,295,168,250,205,225,244,204,264,196,266,201,246,208,207,229,171,254,118,299"/>
+<area shape="rect" id="Node000006" href="$classHttpRequest.html#aea8112da8cc0f4e056bcb57d18a54988" title="Updates the size of the current chunk being parsed." alt="" coords="245,219,492,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="131,295,183,274,245,253,278,244,279,249,246,258,185,279,133,300"/>
+<area shape="rect" id="Node000007" href="$classRequestMeta.html#a023589236b86199328fac468381d4686" title="Sets the Expect: 100&#45;continue flag for the request." alt="" coords="249,268,488,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="197,297,239,292,240,298,198,302"/>
+<area shape="rect" id="Node000008" href="$classHttpRequest.html#ad875e49b03abccaf092ecb49d5bdad31" title=" " alt="" coords="271,318,466,358"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="198,317,258,324,257,329,197,323"/>
+<area shape="rect" id="Node000009" href="$classHttpRequest.html#a85d34306cf62cabb5a8174532029c023" title="Sets the HTTP request method." alt="" coords="279,383,459,408"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="130,320,183,344,246,367,282,377,281,382,245,373,181,349,128,325"/>
+<area shape="rect" id="Node000010" href="$classHttpRequest.html#a4af8abc5368c893ba9bb24939cb95aa3" title=" " alt="" coords="270,432,467,457"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="117,321,170,368,207,395,246,417,269,425,267,430,244,422,204,399,167,372,113,325"/>
+<area shape="rect" id="Node000011" href="$classHttpRequest.html#a966aa80a9d050cecf9f51d21a2959da7" title=" " alt="" coords="245,481,492,507"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="112,321,132,352,162,391,201,432,247,466,263,474,261,479,244,471,198,436,158,395,128,355,108,324"/>
+<area shape="rect" id="Node000012" href="$classRequestMeta.html#a340d195d3f4552366d501915c4a03714" title="Sets whether this request is associated with a redirect." alt="" coords="273,531,464,556"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="110,322,127,361,155,414,196,469,220,495,247,516,262,524,259,529,244,520,216,498,191,473,151,417,122,363,105,324"/>
+<area shape="rect" id="Node000013" href="$classHttpRequest.html#a15c0dff5d8350a2c71306638d30d5fe3" title=" " alt="" coords="259,580,478,605"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="108,322,122,369,149,435,167,471,190,506,216,538,247,565,257,572,255,576,244,569,212,542,186,509,163,474,144,438,117,370,103,323"/>
+</map>

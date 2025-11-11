@@ -1,0 +1,13 @@
+<map id="ServerConfig::getClientMaxBodySize" name="ServerConfig::getClientMaxBodySize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1107,5,1307,45"/>
+<area shape="rect" id="Node000002" href="$classRequestParse.html#a5f2f35f5815fbb977cde05b19af41687" title="Parses and processes raw HTTP request data incrementally." alt="" coords="816,13,1059,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1093,28,1059,28,1059,23,1093,23"/>
+<area shape="rect" id="Node000003" href="$classClientConnection.html#a835586ce27b3c3598394bde3fff14211" title="Receives incoming data from the client socket." alt="" coords="568,13,768,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="802,28,768,28,768,23,802,23"/>
+<area shape="rect" id="Node000004" href="$classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4" title="Handles incoming data from a connected client." alt="" coords="319,13,520,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="554,28,520,28,520,23,554,23"/>
+<area shape="rect" id="Node000005" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,13,271,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="305,28,271,28,271,23,305,23"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,13,60,38"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>

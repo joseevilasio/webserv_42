@@ -1,0 +1,18 @@
+<map id="HttpRequest::appendBody" name="HttpRequest::appendBody">
+<area shape="rect" id="Node000001" title="Appends data to the body of the request." alt="" coords="1560,5,1752,31"/>
+<area shape="rect" id="Node000002" href="$classRequestParse.html#ab81826a3c30d9a2a4f9d0f8ee6fa855c" title="Processes the message body for both fixed&#45;length and chunked modes." alt="" coords="1107,5,1257,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1547,21,1257,21,1257,15,1547,15"/>
+<area shape="rect" id="Node000008" href="$classRequestParse.html#aaacc39eadbaa26e80ed2b6bfc495fbb4" title="Handles Transfer&#45;Encoding: chunked body parsing." alt="" coords="1305,31,1512,56"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1547,32,1512,35,1512,30,1546,27"/>
+<area shape="rect" id="Node000003" href="$classRequestParse.html#a5f2f35f5815fbb977cde05b19af41687" title="Parses and processes raw HTTP request data incrementally." alt="" coords="816,5,1059,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1092,21,1059,21,1059,15,1092,15"/>
+<area shape="rect" id="Node000004" href="$classClientConnection.html#a835586ce27b3c3598394bde3fff14211" title="Receives incoming data from the client socket." alt="" coords="568,5,768,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="802,21,768,21,768,15,802,15"/>
+<area shape="rect" id="Node000005" href="$classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4" title="Handles incoming data from a connected client." alt="" coords="319,5,520,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="554,21,520,21,520,15,554,15"/>
+<area shape="rect" id="Node000006" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,5,271,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="305,21,271,21,271,15,305,15"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="1291,33,1258,29,1258,24,1292,28"/>
+</map>

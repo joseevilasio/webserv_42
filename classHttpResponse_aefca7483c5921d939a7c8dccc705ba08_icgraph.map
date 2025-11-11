@@ -1,0 +1,34 @@
+<map id="HttpResponse::getStatusCode" name="HttpResponse::getStatusCode">
+<area shape="rect" id="Node000001" title="Returns the current HTTP status code." alt="" coords="1339,63,1555,89"/>
+<area shape="rect" id="Node000002" href="$classResponseBuilder.html#afd79929bb501be85bdc85d86fdce93e9" title="Assembles the complete HTTP response, including error handling." alt="" coords="857,31,1027,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1408,60,1354,36,1290,17,1210,9,1129,12,1055,22,994,34,993,28,1054,17,1128,7,1210,4,1291,12,1355,31,1410,55"/>
+<area shape="rect" id="Node000009" href="$classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3" title="Checks if the response already contains an error status." alt="" coords="1099,143,1281,169"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="1393,95,1233,146,1231,141,1391,90"/>
+<area shape="rect" id="Node000011" href="$classResponseBuilder.html#a998edbfd6f08dd34332ca92507db5d77" title="Attempts to load and serve a custom error page from configuration." alt="" coords="1089,27,1291,67"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="1325,65,1291,61,1291,55,1325,59"/>
+<area shape="rect" id="Node000012" href="$classResponseBuilder.html#ab1eeac4dc441885dfd3330fe69bc1b58" title="Constructs the complete HTTP response string." alt="" coords="843,81,1041,121"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="1325,85,1042,99,1042,94,1324,79"/>
+<area shape="rect" id="Node000003" href="$classDispatcher.html#a13c8a2fd90033adf9788c8774c3f0f47" title="Central dispatch routine that delegates HTTP requests to the appropriate handler." alt="" coords="604,130,759,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="860,64,844,71,830,83,821,96,812,109,796,121,760,135,758,130,793,116,808,105,817,93,826,80,841,67,858,59"/>
+<area shape="rect" id="Node000005" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,81,271,106"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="868,31,794,21,660,11,555,9,451,21,319,48,266,64,219,83,218,78,264,59,318,43,450,15,555,4,660,6,795,16,868,26"/>
+<area shape="rect" id="Node000007" href="$classWebServer.html#a7667bc8a87db8f9987a5e80da9c4cd37" title="Reads CGI process output and assembles it into the client buffer." alt="" coords="568,31,795,57"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="843,47,795,47,795,41,843,41"/>
+<area shape="rect" id="Node000008" href="$classWebServer.html#a32042bb7e426cf5c53c2c2860d622342" title="Scans active CGI processes and terminates those exceeding timeout." alt="" coords="569,81,793,106"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="861,62,750,83,749,78,860,57"/>
+<area shape="rect" id="Node000004" href="$classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4" title="Handles incoming data from a connected client." alt="" coords="319,131,520,157"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="590,146,520,146,520,141,590,140"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="347,131,247,109,248,103,348,126"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,81,60,106"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="94,96,60,96,60,91,94,91"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="555,55,319,77,271,83,270,78,318,72,554,50"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="555,96,271,96,271,91,555,91"/>
+<area shape="rect" id="Node000010" href="$classRouter.html#aa58c0c6f2a1fc66a6e2a78adfae162e6" title="Main entry point for determining how an HTTP request should be handled." alt="" coords="881,146,1003,171"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="1085,160,1003,161,1003,155,1085,154"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="867,157,759,150,759,145,867,151"/>
+<area shape="poly" id="edge15_Node000011_Node000002" title=" " alt="" coords="1076,48,1028,47,1028,42,1076,43"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="829,122,759,133,759,128,828,117"/>
+<area shape="poly" id="edge19_Node000012_Node000005" title=" " alt="" coords="862,129,844,137,821,155,811,163,796,170,664,205,609,214,557,216,505,213,450,204,318,172,284,159,253,142,204,108,207,104,255,138,286,154,319,167,451,199,506,208,558,211,609,208,663,200,794,165,808,159,818,151,841,132,859,124"/>
+<area shape="poly" id="edge18_Node000012_Node000007" title=" " alt="" coords="837,81,739,59,740,54,838,76"/>
+<area shape="poly" id="edge20_Node000012_Node000008" title=" " alt="" coords="829,100,794,99,794,94,829,95"/>
+</map>

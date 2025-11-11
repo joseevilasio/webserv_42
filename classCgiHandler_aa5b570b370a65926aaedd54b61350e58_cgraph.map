@@ -1,0 +1,44 @@
+<map id="CgiHandler::startAsync" name="CgiHandler::startAsync">
+<area shape="rect" id="Node000001" title="Starts an asynchronous CGI execution process." alt="" coords="5,463,176,488"/>
+<area shape="rect" id="Node000002" href="$classCgiHandler.html#a61c5a0066d14988001792da45dba2207" title="Builds the CGI environment variables array (envp)." alt="" coords="240,263,407,288"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,461,149,400,184,363,222,328,280,292,283,297,226,332,187,366,153,403,103,464"/>
+<area shape="rect" id="Node000009" href="$classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad" title="Returns the resolved filesystem path corresponding to the URI." alt="" coords="473,351,693,376"/>
+<area shape="poly" id="edge17_Node000001_Node000009" title=" " alt="" coords="107,460,157,427,189,409,223,395,282,380,343,369,459,360,459,365,344,375,283,385,225,401,191,414,160,431,110,465"/>
+<area shape="rect" id="Node000011" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="518,400,647,425"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="116,460,165,439,223,422,297,411,372,405,504,405,504,411,373,411,298,416,225,427,167,444,119,465"/>
+<area shape="rect" id="Node000012" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="535,499,630,524"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="176,479,522,504,521,510,176,484"/>
+<area shape="rect" id="Node000015" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="546,449,619,475"/>
+<area shape="poly" id="edge24_Node000001_Node000015" title=" " alt="" coords="176,474,423,471,532,464,532,469,423,477,176,479"/>
+<area shape="rect" id="Node000016" href="$classCgiHandler.html#a1362c3cab42ae2109c7a3f0d48dcd2ee" title="Frees memory allocated for the environment variable array." alt="" coords="243,589,403,615"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="108,486,158,525,225,568,261,582,259,587,223,572,155,530,105,490"/>
+<area shape="rect" id="Node000017" href="$classHttpRequest.html#ab30e8ad147999e3dc043302f81e7fef9" title="Returns the body of the request." alt="" coords="241,639,406,664"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="102,487,148,554,183,592,225,625,237,631,235,636,223,630,180,596,144,557,97,490"/>
+<area shape="rect" id="Node000018" href="$classSignals.html#a85edf359758a0063dffb46716ba19255" title="Registers a new active CGI process." alt="" coords="224,437,423,463"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="176,463,210,460,211,465,177,469"/>
+<area shape="rect" id="Node000003" href="$classCgiHandler.html#aa896fbfdd2eae9f5b734aa4a3b5a1c6b" title="Extracts PATH_INFO from the original URI following the script name." alt="" coords="482,252,683,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,269,468,267,468,272,407,275"/>
+<area shape="rect" id="Node000004" href="$classCgiHandler.html#a7302f3e29ecec992b270f931a809fffd" title="Extracts the script name from a resolved filesystem path." alt="" coords="471,301,695,327"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="407,285,484,297,483,302,407,290"/>
+<area shape="rect" id="Node000005" href="$classHttpRequest.html#acf2987d88eeca215f0d1f467166afcd2" title="Returns a const reference to the full headers map." alt="" coords="481,5,684,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="326,261,342,218,371,158,413,94,439,65,469,40,478,34,481,39,472,44,443,68,418,97,376,160,347,220,331,263"/>
+<area shape="rect" id="Node000006" href="$classHttpRequest.html#a610ff6d9fe8d0ad21ea2c48c9ee52fca" title="Retrieves a header value by name (case&#45;insensitive)." alt="" coords="493,55,672,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="328,261,347,226,378,179,419,130,443,108,469,89,481,83,483,88,472,94,446,112,423,134,382,183,352,229,333,264"/>
+<area shape="rect" id="Node000008" href="$classHttpRequest.html#a4f8b5740106c8f1ffb935549cbcb3ec0" title=" " alt="" coords="478,104,687,129"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="332,261,386,201,425,167,469,138,485,132,487,136,472,143,428,171,390,205,336,264"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="352,286,406,310,472,335,504,345,502,350,470,341,404,315,349,291"/>
+<area shape="rect" id="Node000010" href="$classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8" title=" " alt="" coords="507,153,658,179"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="341,260,396,224,470,188,493,180,495,185,472,192,399,229,344,265"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="339,286,394,335,431,362,472,385,506,397,504,402,470,390,428,366,391,339,336,290"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="335,287,411,400,472,484,496,496,523,503,521,509,494,501,469,488,407,403,331,290"/>
+<area shape="rect" id="Node000014" href="$classHttpRequest.html#afc9f6c2f9359ab0cec281221d9e7e25f" title="Converts the HTTP method enum to its string representation." alt="" coords="476,203,689,228"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="374,260,470,237,507,228,508,234,471,242,375,265"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="335,287,355,317,386,358,426,399,472,434,502,447,533,455,532,460,500,452,469,439,422,403,382,361,351,321,330,290"/>
+<area shape="rect" id="Node000007" href="$string__utils_8hpp.html#a96432d89bc886bc9cdd1d73f86b2bbca" title="Converts a string to lowercase." alt="" coords="785,55,859,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="672,65,771,65,771,70,672,70"/>
+<area shape="rect" id="Node000013" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="743,499,901,524"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="630,509,729,509,729,514,630,514"/>
+<area shape="poly" id="edge21_Node000018_Node000011" title=" " alt="" coords="412,435,504,421,505,427,412,440"/>
+<area shape="poly" id="edge22_Node000018_Node000012" title=" " alt="" coords="376,460,471,483,522,495,521,500,470,489,375,465"/>
+<area shape="poly" id="edge23_Node000018_Node000015" title=" " alt="" coords="423,452,532,457,532,462,423,457"/>
+</map>

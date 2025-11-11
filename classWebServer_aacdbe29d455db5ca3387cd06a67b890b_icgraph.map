@@ -1,0 +1,7 @@
+<map id="WebServer::queueClientConnections" name="WebServer::queueClientConnections">
+<area shape="rect" id="Node000001" title="Accepts new client connections on a given listening socket." alt="" coords="319,5,577,31"/>
+<area shape="rect" id="Node000002" href="$classWebServer.html#af39709e3744077e019aa76555f03a42e" title="Main event loop — monitors sockets, dispatches requests, and handles responses." alt="" coords="108,5,271,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,21,271,21,271,15,305,15"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

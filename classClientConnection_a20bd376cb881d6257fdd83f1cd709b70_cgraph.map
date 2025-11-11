@@ -1,0 +1,9 @@
+<map id="ClientConnection::clearBuffer" name="ClientConnection::clearBuffer">
+<area shape="rect" id="Node000001" title="Clears the pending request buffer." alt="" coords="5,31,217,56"/>
+<area shape="rect" id="Node000002" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="265,5,395,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,28,252,24,252,30,218,34"/>
+<area shape="rect" id="Node000003" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="283,55,377,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,52,269,58,269,63,217,58"/>
+<area shape="rect" id="Node000004" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="443,55,601,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="378,65,429,65,429,70,378,70"/>
+</map>
