@@ -1,7 +1,7 @@
-<map id="includes/dispatcher/StaticPageHandler.hpp" name="includes/dispatcher/StaticPageHandler.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="144,5,316,45"/>
-<area shape="rect" id="Node000002" href="$Dispatcher_8cpp.html" title=" " alt="" coords="5,101,225,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,56,133,102,130,98,192,52"/>
-<area shape="rect" id="Node000003" href="$StaticPageHandler_8cpp.html" title=" " alt="" coords="250,93,442,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,52,322,91,319,95,265,56"/>
+<map id="dispatcher/StaticPageHandler.hpp" name="dispatcher/StaticPageHandler.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="99,5,339,31"/>
+<area shape="rect" id="Node000002" href="$Dispatcher_8cpp.html" title=" " alt="" coords="5,79,196,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,40,121,81,119,76,187,35"/>
+<area shape="rect" id="Node000003" href="$StaticPageHandler_8cpp.html" title=" " alt="" coords="220,79,459,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,35,321,76,318,81,249,40"/>
 </map>

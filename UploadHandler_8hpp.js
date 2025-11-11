@@ -1,4 +1,4 @@
 var UploadHandler_8hpp =
 [
-    [ "UploadHandler", "classUploadHandler.html", null ]
+    [ "UploadHandler", "classUploadHandler.html", "classUploadHandler" ]
 ];

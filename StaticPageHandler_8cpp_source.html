@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho: srcs/dispatcher/StaticPageHandler.cpp Source File</title>
+<title>Webservinho: dispatcher/StaticPageHandler.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -107,7 +108,8 @@ $(document).ready(function(){initNavTree('StaticPageHandler_8cpp_source.html',''
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="string__utils_8hpp.html">utils/string_utils.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="Logger_8hpp.html">utils/Logger.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">const</span> std::string   StaticPageHandler::detectMimeType(<span class="keyword">const</span> std::string&amp; resolvedPath)</div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classStaticPageHandler.html#a22995910cb4920dbb05d537a3991535e">   18</a></span><span class="keyword">const</span> std::string   <a class="code hl_function" href="classStaticPageHandler.html#a22995910cb4920dbb05d537a3991535e">StaticPageHandler::detectMimeType</a>(<span class="keyword">const</span> std::string&amp; resolvedPath)</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::string::size_type dotPos = resolvedPath.rfind(<span class="charliteral">&#39;.&#39;</span>);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -143,6 +145,7 @@ $(document).ready(function(){initNavTree('StaticPageHandler_8cpp_source.html',''
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Default MIME type for unknown extensions</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> (<span class="stringliteral">&quot;application/octet-stream&quot;</span>);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classStaticPageHandler.html#a701db169c979ef5cfebc72f6c160fb32">   68</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classStaticPageHandler.html#a701db169c979ef5cfebc72f6c160fb32">StaticPageHandler::handle</a>(<a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <a class="code hl_class" href="classHttpResponse.html">HttpResponse</a>&amp; res)</div>
@@ -176,7 +179,7 @@ $(document).ready(function(){initNavTree('StaticPageHandler_8cpp_source.html',''
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    file.close();</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// Step 4: Determine MIME type</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">const</span> std::string&amp; mime = detectMimeType(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">const</span> std::string&amp; mime = <a class="code hl_function" href="classStaticPageHandler.html#a22995910cb4920dbb05d537a3991535e">detectMimeType</a>(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;StaticPageHandler: MIME type detected -&gt; &quot;</span> + mime);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// Step 5: Build final HTTP response</span></div>
@@ -198,6 +201,7 @@ $(document).ready(function(){initNavTree('StaticPageHandler_8cpp_source.html',''
 <div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Writes a log entry with timestamp, level, and message.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
 <div class="ttc" id="aclassLogger_html_a4aa4d7c3b98f6e12e7ea8253da5ea0cd"><div class="ttname"><a href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a></div><div class="ttdeci">static Logger &amp; instance()</div><div class="ttdoc">Returns the singleton instance of the Logger.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00037">Logger.cpp:37</a></div></div>
 <div class="ttc" id="aclassResponseBuilder_html_a0a1b2929111eec67e4ebe1acb7796915"><div class="ttname"><a href="classResponseBuilder.html#a0a1b2929111eec67e4ebe1acb7796915">ResponseBuilder::handleStaticPageOutput</a></div><div class="ttdeci">static void handleStaticPageOutput(HttpResponse &amp;response, const std::string output, const std::string &amp;mimeType)</div><div class="ttdoc">Prepares an HTTP response for a static page.</div><div class="ttdef"><b>Definition</b> <a href="ResponseBuilder_8cpp_source.html#l00093">ResponseBuilder.cpp:93</a></div></div>
+<div class="ttc" id="aclassStaticPageHandler_html_a22995910cb4920dbb05d537a3991535e"><div class="ttname"><a href="classStaticPageHandler.html#a22995910cb4920dbb05d537a3991535e">StaticPageHandler::detectMimeType</a></div><div class="ttdeci">static const std::string detectMimeType(const std::string &amp;resolvedPath)</div><div class="ttdoc">Determines the MIME type based on the file extension.</div><div class="ttdef"><b>Definition</b> <a href="StaticPageHandler_8cpp_source.html#l00018">StaticPageHandler.cpp:18</a></div></div>
 <div class="ttc" id="aclassStaticPageHandler_html_a701db169c979ef5cfebc72f6c160fb32"><div class="ttname"><a href="classStaticPageHandler.html#a701db169c979ef5cfebc72f6c160fb32">StaticPageHandler::handle</a></div><div class="ttdeci">static void handle(HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Handles serving static files from disk.</div><div class="ttdef"><b>Definition</b> <a href="StaticPageHandler_8cpp_source.html#l00068">StaticPageHandler.cpp:68</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html"><div class="ttname"><a href="string__utils_8hpp.html">string_utils.hpp</a></div><div class="ttdoc">Collection of inline string utility functions used across Webservinho.</div></div>
 <div class="ttc" id="astring__utils_8hpp_html_a96432d89bc886bc9cdd1d73f86b2bbca"><div class="ttname"><a href="string__utils_8hpp.html#a96432d89bc886bc9cdd1d73f86b2bbca">toLower</a></div><div class="ttdeci">std::string toLower(const std::string &amp;str)</div><div class="ttdoc">Converts a string to lowercase.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00052">string_utils.hpp:52</a></div></div>
@@ -208,7 +212,7 @@ $(document).ready(function(){initNavTree('StaticPageHandler_8cpp_source.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="dir_b51e9ffa637a334d6710d1827ea04a79.html">dispatcher</a></li><li class="navelem"><a class="el" href="StaticPageHandler_8cpp.html">StaticPageHandler.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_b51e9ffa637a334d6710d1827ea04a79.html">dispatcher</a></li><li class="navelem"><a class="el" href="StaticPageHandler_8cpp.html">StaticPageHandler.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho: includes/utils/Logger.hpp File Reference</title>
+<title>Webservinho: utils/Logger.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -114,7 +115,7 @@ $(document).ready(function(){initNavTree('Logger_8hpp.html',''); initResizable()
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Logger_8hpp__dep__incl.svg" width="3954" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Logger_8hpp__dep__incl.svg" width="3558" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="Logger_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -180,7 +181,19 @@ Enumerations</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="Logger_8hpp_source.html#l00013">13</a> of file <a class="el" href="Logger_8hpp_source.html">Logger.hpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>,</div>
+<div class="line"><span class="lineno">   16</span>    <a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>,</div>
+<div class="line"><span class="lineno">   17</span>    <a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>,</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>,</div>
+<div class="line"><span class="lineno">   19</span>    <a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9acda21a4a072f2261f6d4ab596599f8b0">CRITICAL</a></div>
+<div class="line"><span class="lineno">   20</span>};</div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00018">Logger.hpp:18</a></div></div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00016">Logger.hpp:16</a></div></div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
+<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9acda21a4a072f2261f6d4ab596599f8b0"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9acda21a4a072f2261f6d4ab596599f8b0">CRITICAL</a></div><div class="ttdeci">@ CRITICAL</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00020">Logger.hpp:19</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -188,7 +201,7 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a class="el" href="dir_3f8feeb2fa3bd0d1b751b257ed9f12a2.html">utils</a></li><li class="navelem"><a class="el" href="Logger_8hpp.html">Logger.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_3f8feeb2fa3bd0d1b751b257ed9f12a2.html">utils</a></li><li class="navelem"><a class="el" href="Logger_8hpp.html">Logger.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

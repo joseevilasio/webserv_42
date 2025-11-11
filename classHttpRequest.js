@@ -1,5 +1,6 @@
 var classHttpRequest =
 [
+    [ "HttpRequest", "classHttpRequest.html#ad5e0825724197777dcee9672c6f6991d", null ],
     [ "HttpRequest", "classHttpRequest.html#a42b01e8d23e15e65ad9c712922a6a812", null ],
     [ "~HttpRequest", "classHttpRequest.html#adfc7ae561e6ba03d21890ee1855df72b", null ],
     [ "addHeader", "classHttpRequest.html#a3451bf0bde2a98a5599e710639f1cd98", null ],
@@ -29,6 +30,7 @@ var classHttpRequest =
     [ "isExpectingChunkSeparator", "classHttpRequest.html#a287e0bbbae284ea81708e9da43a7790c", null ],
     [ "isParsingChunkSize", "classHttpRequest.html#a41334d19e3ae765498ad828af9223178", null ],
     [ "methodToString", "classHttpRequest.html#afc9f6c2f9359ab0cec281221d9e7e25f", null ],
+    [ "operator=", "classHttpRequest.html#a87a6f7c3276329058254d44b8c1a0b83", null ],
     [ "removeHeader", "classHttpRequest.html#a3e9835bda97a6ba770ad61f4bd936dff", null ],
     [ "reset", "classHttpRequest.html#a1110240a948a9eb76695a2db32b6dda9", null ],
     [ "setCurrentChunkSize", "classHttpRequest.html#aea8112da8cc0f4e056bcb57d18a54988", null ],
@@ -42,5 +44,23 @@ var classHttpRequest =
     [ "setRequestState", "classHttpRequest.html#a15c0dff5d8350a2c71306638d30d5fe3", null ],
     [ "setResolvedPath", "classHttpRequest.html#a084808f1cf57195c1a76ce68a2cbb4e8", null ],
     [ "setRouteType", "classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99", null ],
-    [ "setUri", "classHttpRequest.html#aee6d6d4468cb5f45ab6fe750d9a816ca", null ]
+    [ "setUri", "classHttpRequest.html#aee6d6d4468cb5f45ab6fe750d9a816ca", null ],
+    [ "_body", "classHttpRequest.html#af54277ba7fb0c4ef8847a64c7e2b9957", null ],
+    [ "_buffer", "classHttpRequest.html#a71cdffc8b47d3bb214cbca8146917444", null ],
+    [ "_chunkBuffer", "classHttpRequest.html#a89c591c7859ae3868b76ada54b6fdef7", null ],
+    [ "_currentChunkSize", "classHttpRequest.html#a68d8b897c02f613766ee8fcf02459f22", null ],
+    [ "_expectingChunkSeparator", "classHttpRequest.html#a6ba594bae371236c18fa9fba40c9d4ec", null ],
+    [ "_headers", "classHttpRequest.html#ab33c28226e049e62a4e5dde5550d5ebe", null ],
+    [ "_major", "classHttpRequest.html#aa15a7e24872e7cf8ceb438e2e65a7248", null ],
+    [ "_meta", "classHttpRequest.html#abbeb417a6326eee92ce4bb160cc82c2c", null ],
+    [ "_method", "classHttpRequest.html#afe6a2f812f219776187782a532e94689", null ],
+    [ "_minor", "classHttpRequest.html#adbe33d409b9994d854cb3fb8149b14c4", null ],
+    [ "_parseError", "classHttpRequest.html#af48441426cf5f0211fed4ff1d6903e60", null ],
+    [ "_parsingChunkSize", "classHttpRequest.html#a59b1d29b04081a310de548ae5d2c1bab", null ],
+    [ "_queryString", "classHttpRequest.html#a97a0c08fc7c65af4601385ae20fa8261", null ],
+    [ "_rawRequest", "classHttpRequest.html#a8baf8523342753e40d9d5cfcacbcbc73", null ],
+    [ "_resolvedPath", "classHttpRequest.html#a7cb4a87279c14ed1bbe7632d43daad42", null ],
+    [ "_route", "classHttpRequest.html#ab2e5c1bb2bfb11ce5e8e2cf0fe543879", null ],
+    [ "_state", "classHttpRequest.html#a7408bfc4b62ccb1720d90a15f6b69d60", null ],
+    [ "_uri", "classHttpRequest.html#a5dbca2f89b4a71c64b1b16eb68ece11c", null ]
 ];

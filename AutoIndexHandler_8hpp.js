@@ -1,4 +1,4 @@
 var AutoIndexHandler_8hpp =
 [
-    [ "AutoIndexHandler", "classAutoIndexHandler.html", null ]
+    [ "AutoIndexHandler", "classAutoIndexHandler.html", "classAutoIndexHandler" ]
 ];

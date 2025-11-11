@@ -1,3 +1,11 @@
 <map id="ClientConnection" name="ClientConnection">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,167,271"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,1121,397,1587"/>
+<area shape="rect" id="Node000002" href="$classServerConfig.html" title=" " alt="" coords="5,603,191,1009"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,1008,215,1096,232,1139,227,1141,210,1098,175,1010"/>
+<area shape="rect" id="Node000003" href="$classHttpRequest.html" title=" " alt="" coords="215,553,419,1059"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="319,1059,319,1105,314,1105,314,1059"/>
+<area shape="rect" id="Node000004" href="$classRequestMeta.html" title=" " alt="" coords="233,5,401,491"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="319,491,319,537,314,537,314,491"/>
+<area shape="rect" id="Node000005" href="$classHttpResponse.html" title=" " alt="" coords="443,593,607,1019"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="450,1020,420,1098,406,1137,401,1135,416,1096,445,1018"/>
 </map>

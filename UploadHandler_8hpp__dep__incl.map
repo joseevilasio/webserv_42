@@ -1,7 +1,7 @@
-<map id="includes/dispatcher/UploadHandler.hpp" name="includes/dispatcher/UploadHandler.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="168,5,319,45"/>
-<area shape="rect" id="Node000002" href="$Dispatcher_8cpp.html" title=" " alt="" coords="5,93,225,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,55,136,95,133,91,200,50"/>
-<area shape="rect" id="Node000003" href="$UploadHandler_8cpp.html" title=" " alt="" coords="249,93,496,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="288,50,355,91,352,95,285,55"/>
+<map id="dispatcher/UploadHandler.hpp" name="dispatcher/UploadHandler.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="105,5,323,31"/>
+<area shape="rect" id="Node000002" href="$Dispatcher_8cpp.html" title=" " alt="" coords="5,79,196,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,40,121,81,118,76,182,36"/>
+<area shape="rect" id="Node000003" href="$UploadHandler_8cpp.html" title=" " alt="" coords="220,79,437,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,35,311,76,309,81,242,40"/>
 </map>

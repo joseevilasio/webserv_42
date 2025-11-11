@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -97,7 +98,19 @@ $(document).ready(function(){initNavTree('classRouter.html',''); initResizable()
 
 <p>This is the complete list of members for <a class="el" href="classRouter.html">Router</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classRouter.html#aa58c0c6f2a1fc66a6e2a78adfae162e6">resolve</a>(HttpRequest &amp;req, HttpResponse &amp;res, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3">checkErrorStatus</a>(HttpRequest &amp;req, HttpResponse &amp;res)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRouter.html#a8155613701b9739e2ae1e34c39894247">computeResolvedPath</a>(HttpRequest &amp;req, const LocationConfig &amp;loc, const ServerConfig &amp;config)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRouter.html#ab22a05b1459f0c92a77aab7d70fadfaa">hasCgiExtension</a>(const LocationConfig &amp;loc, const std::string &amp;path)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRouter.html#abc4267c8a267ca9baf524891e1443037">isAutoIndex</a>(const std::string &amp;index, HttpRequest &amp;req, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRouter.html#a4c44c26c85603949ccaed27088e3d07c">isCgi</a>(const LocationConfig &amp;loc, HttpRequest &amp;req, HttpResponse &amp;res)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRouter.html#a9cccffeb5ef1889ffc62987c437f6c59">isRedirect</a>(HttpRequest &amp;req, HttpResponse &amp;res, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRouter.html#a8cd6b5ac09c54dff06c42498379d96b8">isStaticFile</a>(const std::string &amp;index, HttpRequest &amp;req, HttpResponse &amp;res)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRouter.html#ab76bed10e7facdd1b6e4be3f2bbbff0f">isUpload</a>(HttpRequest &amp;req, HttpResponse &amp;res, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRouter.html#a1e5c48e8039888f102c3d1d01a1ccf0c">operator=</a>(const Router &amp;rhs)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRouter.html#aa58c0c6f2a1fc66a6e2a78adfae162e6">resolve</a>(HttpRequest &amp;req, HttpResponse &amp;res, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRouter.html#a555428efbf07e22776889b8d9b88027f">Router</a>()</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRouter.html#a81a932426be1b01c7c21199f9d334a27">Router</a>(const Router &amp;rhs)</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRouter.html#a26d13a6259937e330488653e8e16f921">~Router</a>()</td><td class="entry"><a class="el" href="classRouter.html">Router</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

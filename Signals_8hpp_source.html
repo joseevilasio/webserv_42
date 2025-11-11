@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho: includes/utils/Signals.hpp Source File</title>
+<title>Webservinho: utils/Signals.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -111,7 +112,7 @@ $(document).ready(function(){initNavTree('Signals_8hpp_source.html',''); initRes
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classSignals.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="classSignals.html">Signals</a></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">static</span> <span class="keyword">volatile</span> std::sig_atomic_t   g_shouldStop;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classSignals.html#a8f0748dc5ce9cd8312034acca840c999">   12</a></span>        <span class="keyword">static</span> <span class="keyword">volatile</span> std::sig_atomic_t   <a class="code hl_variable" href="classSignals.html#a8f0748dc5ce9cd8312034acca840c999">g_shouldStop</a>;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_function" href="classSignals.html#a09aa076bc48fb0b1f8aec5f9936f661a">Signals</a>(<span class="keywordtype">void</span>);</div>
@@ -140,6 +141,7 @@ $(document).ready(function(){initNavTree('Signals_8hpp_source.html',''); initRes
 <div class="ttc" id="aclassSignals_html_a5b77644c6b3046b88362238e89be6301"><div class="ttname"><a href="classSignals.html#a5b77644c6b3046b88362238e89be6301">Signals::CGI_TIMEOUT_SEC</a></div><div class="ttdeci">static const int CGI_TIMEOUT_SEC</div><div class="ttdef"><b>Definition</b> <a href="Signals_8hpp_source.html#l00017">Signals.hpp:17</a></div></div>
 <div class="ttc" id="aclassSignals_html_a794783efe829c5700ffeef1f04a524c8"><div class="ttname"><a href="classSignals.html#a794783efe829c5700ffeef1f04a524c8">Signals::childSignalHandle</a></div><div class="ttdeci">static void childSignalHandle(int signal)</div><div class="ttdoc">Handles SIGCHLD signals to clean up terminated child processes.</div><div class="ttdef"><b>Definition</b> <a href="Signals_8cpp_source.html#l00043">Signals.cpp:43</a></div></div>
 <div class="ttc" id="aclassSignals_html_a85edf359758a0063dffb46716ba19255"><div class="ttname"><a href="classSignals.html#a85edf359758a0063dffb46716ba19255">Signals::registerCgiProcess</a></div><div class="ttdeci">static void registerCgiProcess(pid_t pid)</div><div class="ttdoc">Registers a new active CGI process.</div><div class="ttdef"><b>Definition</b> <a href="Signals_8cpp_source.html#l00059">Signals.cpp:59</a></div></div>
+<div class="ttc" id="aclassSignals_html_a8f0748dc5ce9cd8312034acca840c999"><div class="ttname"><a href="classSignals.html#a8f0748dc5ce9cd8312034acca840c999">Signals::g_shouldStop</a></div><div class="ttdeci">static volatile std::sig_atomic_t g_shouldStop</div><div class="ttdef"><b>Definition</b> <a href="Signals_8hpp_source.html#l00012">Signals.hpp:12</a></div></div>
 <div class="ttc" id="aclassSignals_html_a94fa9657c373fb7dc3d037bf8f677821"><div class="ttname"><a href="classSignals.html#a94fa9657c373fb7dc3d037bf8f677821">Signals::shouldStop</a></div><div class="ttdeci">static bool shouldStop(void)</div><div class="ttdoc">Checks whether a stop signal was received.</div><div class="ttdef"><b>Definition</b> <a href="Signals_8cpp_source.html#l00124">Signals.cpp:124</a></div></div>
 <div class="ttc" id="aclassSignals_html_aa783f74c1937b7e3a797914950378870"><div class="ttname"><a href="classSignals.html#aa783f74c1937b7e3a797914950378870">Signals::unregisterCgiProcess</a></div><div class="ttdeci">static void unregisterCgiProcess(pid_t pid)</div><div class="ttdoc">Unregisters a finished CGI process.</div><div class="ttdef"><b>Definition</b> <a href="Signals_8cpp_source.html#l00070">Signals.cpp:70</a></div></div>
 <div class="ttc" id="aclassSignals_html_aade813ce0c8ddfcc5766257fc55fb124"><div class="ttname"><a href="classSignals.html#aade813ce0c8ddfcc5766257fc55fb124">Signals::checkCgiTimeouts</a></div><div class="ttdeci">static void checkCgiTimeouts(void)</div><div class="ttdoc">Periodically checks for CGI timeouts and terminates those exceeding the limit.</div><div class="ttdef"><b>Definition</b> <a href="Signals_8cpp_source.html#l00096">Signals.cpp:96</a></div></div>
@@ -149,7 +151,7 @@ $(document).ready(function(){initNavTree('Signals_8hpp_source.html',''); initRes
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a class="el" href="dir_3f8feeb2fa3bd0d1b751b257ed9f12a2.html">utils</a></li><li class="navelem"><a class="el" href="Signals_8hpp.html">Signals.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_3f8feeb2fa3bd0d1b751b257ed9f12a2.html">utils</a></li><li class="navelem"><a class="el" href="Signals_8hpp.html">Signals.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

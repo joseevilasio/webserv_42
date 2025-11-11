@@ -1,4 +1,4 @@
 var DeleteHandler_8hpp =
 [
-    [ "DeleteHandler", "classDeleteHandler.html", null ]
+    [ "DeleteHandler", "classDeleteHandler.html", "classDeleteHandler" ]
 ];

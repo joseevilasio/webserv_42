@@ -1,7 +1,7 @@
-<map id="includes/init/ServerSocket.hpp" name="includes/init/ServerSocket.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="344,5,563,31"/>
+<map id="init/ServerSocket.hpp" name="init/ServerSocket.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="373,5,533,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,299,64,324"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="344,33,273,47,197,71,124,105,90,128,59,154,48,168,40,183,31,219,30,254,33,285,27,285,24,254,26,218,35,181,44,165,55,150,87,124,121,101,196,66,272,42,343,27"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,28,299,41,215,64,173,81,132,101,94,125,59,154,48,168,40,183,31,219,30,254,33,285,27,285,24,254,26,218,35,181,44,165,55,150,90,121,129,96,171,76,214,59,298,36,373,23"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="1313,225,1375,251"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="502,28,832,107,1300,222,1299,227,831,112,501,33"/>
 <area shape="rect" id="Node000004" href="$ClientConnection_8hpp.html" title=" " alt="" coords="360,79,547,104"/>

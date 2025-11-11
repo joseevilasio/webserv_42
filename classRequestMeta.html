@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -93,6 +94,8 @@ $(document).ready(function(){initNavTree('classRequestMeta.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classRequestMeta-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RequestMeta Class Reference</div></div>
 </div><!--header-->
@@ -104,63 +107,111 @@ $(document).ready(function(){initNavTree('classRequestMeta.html',''); initResiza
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRequestMeta__coll__graph.svg" width="179" height="356"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRequestMeta__coll__graph.svg" width="179" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac8dbee6450bf74ffd3ea1c9bb6213b7a" id="r_ac8dbee6450bf74ffd3ea1c9bb6213b7a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a">getContentLength</a> (void) const</td></tr>
+<tr class="memdesc:ac8dbee6450bf74ffd3ea1c9bb6213b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Content-Length value.  <br /></td></tr>
+<tr class="separator:ac8dbee6450bf74ffd3ea1c9bb6213b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e74c9abe0c9d30acbadefa46f91d5d" id="r_a18e74c9abe0c9d30acbadefa46f91d5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a18e74c9abe0c9d30acbadefa46f91d5d">getExpectContinue</a> (void) const</td></tr>
+<tr class="memdesc:a18e74c9abe0c9d30acbadefa46f91d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the client expects a 100-Continue response.  <br /></td></tr>
+<tr class="separator:a18e74c9abe0c9d30acbadefa46f91d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328ad675ea6c0e9b91aad16382330549" id="r_a328ad675ea6c0e9b91aad16382330549"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a328ad675ea6c0e9b91aad16382330549">getHost</a> (void) const</td></tr>
+<tr class="memdesc:a328ad675ea6c0e9b91aad16382330549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored Host header value.  <br /></td></tr>
+<tr class="separator:a328ad675ea6c0e9b91aad16382330549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acded047391c25677409e4725a644b3da" id="r_acded047391c25677409e4725a644b3da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#acded047391c25677409e4725a644b3da">isChunked</a> (void) const</td></tr>
+<tr class="memdesc:acded047391c25677409e4725a644b3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if transfer encoding is chunked.  <br /></td></tr>
+<tr class="separator:acded047391c25677409e4725a644b3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2719541d1737df353fe82d9b16ee1fb0" id="r_a2719541d1737df353fe82d9b16ee1fb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a2719541d1737df353fe82d9b16ee1fb0">isRedirect</a> (void) const</td></tr>
+<tr class="memdesc:a2719541d1737df353fe82d9b16ee1fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this request corresponds to an HTTP redirect.  <br /></td></tr>
+<tr class="separator:a2719541d1737df353fe82d9b16ee1fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ff263a984148d6ca9b81c80978d8952" id="r_a6ff263a984148d6ca9b81c80978d8952"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a6ff263a984148d6ca9b81c80978d8952">RequestMeta</a> ()</td></tr>
 <tr class="memdesc:a6ff263a984148d6ca9b81c80978d8952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classRequestMeta.html">RequestMeta</a>.  <br /></td></tr>
 <tr class="separator:a6ff263a984148d6ca9b81c80978d8952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11bf6f7047306ce095c8ca2167894ef1" id="r_a11bf6f7047306ce095c8ca2167894ef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a11bf6f7047306ce095c8ca2167894ef1">~RequestMeta</a> ()</td></tr>
-<tr class="memdesc:a11bf6f7047306ce095c8ca2167894ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classRequestMeta.html">RequestMeta</a>.  <br /></td></tr>
-<tr class="separator:a11bf6f7047306ce095c8ca2167894ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7384f594ae41f8f0151e8875a663f795" id="r_a7384f594ae41f8f0151e8875a663f795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a7384f594ae41f8f0151e8875a663f795">setContentLength</a> (std::size_t content_length)</td></tr>
-<tr class="memdesc:a7384f594ae41f8f0151e8875a663f795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Content-Length value for the request.  <br /></td></tr>
-<tr class="separator:a7384f594ae41f8f0151e8875a663f795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47e11c87c366da6f1325842708f091f" id="r_ab47e11c87c366da6f1325842708f091f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#ab47e11c87c366da6f1325842708f091f">resetMeta</a> (void)</td></tr>
+<tr class="memdesc:ab47e11c87c366da6f1325842708f091f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all metadata fields to default values.  <br /></td></tr>
+<tr class="separator:ab47e11c87c366da6f1325842708f091f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360c94feb081bd7436c055c9f7ed1715" id="r_a360c94feb081bd7436c055c9f7ed1715"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a360c94feb081bd7436c055c9f7ed1715">setChunked</a> (bool chunked)</td></tr>
 <tr class="memdesc:a360c94feb081bd7436c055c9f7ed1715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines whether the request uses chunked transfer encoding.  <br /></td></tr>
 <tr class="separator:a360c94feb081bd7436c055c9f7ed1715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f70f6ac25a37bd22eead55abc63a88" id="r_ad4f70f6ac25a37bd22eead55abc63a88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#ad4f70f6ac25a37bd22eead55abc63a88">setConnectionClose</a> (bool connection_close)</td></tr>
 <tr class="memdesc:ad4f70f6ac25a37bd22eead55abc63a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines whether the connection should be closed after the response.  <br /></td></tr>
 <tr class="separator:ad4f70f6ac25a37bd22eead55abc63a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7384f594ae41f8f0151e8875a663f795" id="r_a7384f594ae41f8f0151e8875a663f795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a7384f594ae41f8f0151e8875a663f795">setContentLength</a> (std::size_t content_length)</td></tr>
+<tr class="memdesc:a7384f594ae41f8f0151e8875a663f795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Content-Length value for the request.  <br /></td></tr>
+<tr class="separator:a7384f594ae41f8f0151e8875a663f795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023589236b86199328fac468381d4686" id="r_a023589236b86199328fac468381d4686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a023589236b86199328fac468381d4686">setExpectContinue</a> (bool expect_continue)</td></tr>
 <tr class="memdesc:a023589236b86199328fac468381d4686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Expect: 100-continue flag for the request.  <br /></td></tr>
 <tr class="separator:a023589236b86199328fac468381d4686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340d195d3f4552366d501915c4a03714" id="r_a340d195d3f4552366d501915c4a03714"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a340d195d3f4552366d501915c4a03714">setRedirect</a> (bool redirect)</td></tr>
-<tr class="memdesc:a340d195d3f4552366d501915c4a03714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether this request is associated with a redirect.  <br /></td></tr>
-<tr class="separator:a340d195d3f4552366d501915c4a03714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d73559654d623e960e0c68a6cb476f6" id="r_a3d73559654d623e960e0c68a6cb476f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a3d73559654d623e960e0c68a6cb476f6">setHost</a> (const std::string &amp;host)</td></tr>
 <tr class="memdesc:a3d73559654d623e960e0c68a6cb476f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the value of the Host header for this request.  <br /></td></tr>
 <tr class="separator:a3d73559654d623e960e0c68a6cb476f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab47e11c87c366da6f1325842708f091f" id="r_ab47e11c87c366da6f1325842708f091f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#ab47e11c87c366da6f1325842708f091f">resetMeta</a> (void)</td></tr>
-<tr class="memdesc:ab47e11c87c366da6f1325842708f091f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all metadata fields to default values.  <br /></td></tr>
-<tr class="separator:ab47e11c87c366da6f1325842708f091f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8dbee6450bf74ffd3ea1c9bb6213b7a" id="r_ac8dbee6450bf74ffd3ea1c9bb6213b7a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a">getContentLength</a> (void) const</td></tr>
-<tr class="memdesc:ac8dbee6450bf74ffd3ea1c9bb6213b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Content-Length value.  <br /></td></tr>
-<tr class="separator:ac8dbee6450bf74ffd3ea1c9bb6213b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acded047391c25677409e4725a644b3da" id="r_acded047391c25677409e4725a644b3da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#acded047391c25677409e4725a644b3da">isChunked</a> (void) const</td></tr>
-<tr class="memdesc:acded047391c25677409e4725a644b3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if transfer encoding is chunked.  <br /></td></tr>
-<tr class="separator:acded047391c25677409e4725a644b3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340d195d3f4552366d501915c4a03714" id="r_a340d195d3f4552366d501915c4a03714"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a340d195d3f4552366d501915c4a03714">setRedirect</a> (bool redirect)</td></tr>
+<tr class="memdesc:a340d195d3f4552366d501915c4a03714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether this request is associated with a redirect.  <br /></td></tr>
+<tr class="separator:a340d195d3f4552366d501915c4a03714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4273e56ac2833d678fcb296983b957e" id="r_ac4273e56ac2833d678fcb296983b957e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e">shouldClose</a> (void) const</td></tr>
 <tr class="memdesc:ac4273e56ac2833d678fcb296983b957e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the connection should be closed.  <br /></td></tr>
 <tr class="separator:ac4273e56ac2833d678fcb296983b957e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e74c9abe0c9d30acbadefa46f91d5d" id="r_a18e74c9abe0c9d30acbadefa46f91d5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a18e74c9abe0c9d30acbadefa46f91d5d">getExpectContinue</a> (void) const</td></tr>
-<tr class="memdesc:a18e74c9abe0c9d30acbadefa46f91d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the client expects a 100-Continue response.  <br /></td></tr>
-<tr class="separator:a18e74c9abe0c9d30acbadefa46f91d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2719541d1737df353fe82d9b16ee1fb0" id="r_a2719541d1737df353fe82d9b16ee1fb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a2719541d1737df353fe82d9b16ee1fb0">isRedirect</a> (void) const</td></tr>
-<tr class="memdesc:a2719541d1737df353fe82d9b16ee1fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this request corresponds to an HTTP redirect.  <br /></td></tr>
-<tr class="separator:a2719541d1737df353fe82d9b16ee1fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328ad675ea6c0e9b91aad16382330549" id="r_a328ad675ea6c0e9b91aad16382330549"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a328ad675ea6c0e9b91aad16382330549">getHost</a> (void) const</td></tr>
-<tr class="memdesc:a328ad675ea6c0e9b91aad16382330549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored Host header value.  <br /></td></tr>
-<tr class="separator:a328ad675ea6c0e9b91aad16382330549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11bf6f7047306ce095c8ca2167894ef1" id="r_a11bf6f7047306ce095c8ca2167894ef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a11bf6f7047306ce095c8ca2167894ef1">~RequestMeta</a> ()</td></tr>
+<tr class="memdesc:a11bf6f7047306ce095c8ca2167894ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classRequestMeta.html">RequestMeta</a>.  <br /></td></tr>
+<tr class="separator:a11bf6f7047306ce095c8ca2167894ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af89517c64d07dbc15b2fb27f1f5971d5" id="r_af89517c64d07dbc15b2fb27f1f5971d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRequestMeta.html">RequestMeta</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#af89517c64d07dbc15b2fb27f1f5971d5">operator=</a> (const <a class="el" href="classRequestMeta.html">RequestMeta</a> &amp;rhs)</td></tr>
+<tr class="separator:af89517c64d07dbc15b2fb27f1f5971d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419e9ba228f821418d4ffbd13ed854a8" id="r_a419e9ba228f821418d4ffbd13ed854a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a419e9ba228f821418d4ffbd13ed854a8">RequestMeta</a> (const <a class="el" href="classRequestMeta.html">RequestMeta</a> &amp;rhs)</td></tr>
+<tr class="separator:a419e9ba228f821418d4ffbd13ed854a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7e9f988a5d4baa7e1d3e2ad05b8ab364" id="r_a7e9f988a5d4baa7e1d3e2ad05b8ab364"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">_chunked</a></td></tr>
+<tr class="separator:a7e9f988a5d4baa7e1d3e2ad05b8ab364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810af4411c598ac9d392f0d2e3f0240d" id="r_a810af4411c598ac9d392f0d2e3f0240d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">_connectionClose</a></td></tr>
+<tr class="separator:a810af4411c598ac9d392f0d2e3f0240d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7277c2e35ff1d7e08c8500ede481f655" id="r_a7277c2e35ff1d7e08c8500ede481f655"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">_contentLength</a></td></tr>
+<tr class="separator:a7277c2e35ff1d7e08c8500ede481f655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe894b80d28542b22c6cf1c3c162afb8" id="r_abe894b80d28542b22c6cf1c3c162afb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">_expectContinue</a></td></tr>
+<tr class="separator:abe894b80d28542b22c6cf1c3c162afb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59762a10cd3ab11b80125570bf6a7ccf" id="r_a59762a10cd3ab11b80125570bf6a7ccf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">_host</a></td></tr>
+<tr class="separator:a59762a10cd3ab11b80125570bf6a7ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a67b8b57449c4c917c6b8284ef2d10" id="r_ae5a67b8b57449c4c917c6b8284ef2d10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">_isRedirect</a></td></tr>
+<tr class="separator:ae5a67b8b57449c4c917c6b8284ef2d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8hpp_source.html#l00006">6</a> of file <a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a419e9ba228f821418d4ffbd13ed854a8" name="a419e9ba228f821418d4ffbd13ed854a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419e9ba228f821418d4ffbd13ed854a8">&#9670;&#160;</a></span>RequestMeta() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RequestMeta::RequestMeta </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classRequestMeta.html">RequestMeta</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6ff263a984148d6ca9b81c80978d8952" name="a6ff263a984148d6ca9b81c80978d8952"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff263a984148d6ca9b81c80978d8952">&#9670;&#160;</a></span>RequestMeta()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff263a984148d6ca9b81c80978d8952">&#9670;&#160;</a></span>RequestMeta() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +229,8 @@ Public Member Functions</h2></td></tr>
 <p>Initializes an empty metadata container for an HTTP request. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00008">8</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">    8</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a11bf6f7047306ce095c8ca2167894ef1" name="a11bf6f7047306ce095c8ca2167894ef1"></a>
@@ -199,7 +251,8 @@ Public Member Functions</h2></td></tr>
 <p>Destructor for <a class="el" href="classRequestMeta.html">RequestMeta</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00013">13</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   13</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -222,8 +275,12 @@ Public Member Functions</h2></td></tr>
 <p>Returns the Content-Length value. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00081">81</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">_contentLength</a>); }</div>
+<div class="ttc" id="aclassRequestMeta_html_a7277c2e35ff1d7e08c8500ede481f655"><div class="ttname"><a href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">RequestMeta::_contentLength</a></div><div class="ttdeci">std::size_t _contentLength</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00009">RequestMeta.hpp:9</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00009">_contentLength</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00285">RequestParse::body()</a>, and <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>.</p>
 
 </div>
 </div>
@@ -246,6 +303,10 @@ Public Member Functions</h2></td></tr>
 <p>Returns true if the client expects a 100-Continue response. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00096">96</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">_expectContinue</a>); }</div>
+<div class="ttc" id="aclassRequestMeta_html_abe894b80d28542b22c6cf1c3c162afb8"><div class="ttname"><a href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">RequestMeta::_expectContinue</a></div><div class="ttdeci">bool _expectContinue</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00012">RequestMeta.hpp:12</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00012">_expectContinue</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00125">WebServer::receiveRequest()</a>.</p>
 
@@ -270,6 +331,10 @@ Public Member Functions</h2></td></tr>
 <p>Returns the stored Host header value. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00106">106</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">_host</a>); }</div>
+<div class="ttc" id="aclassRequestMeta_html_a59762a10cd3ab11b80125570bf6a7ccf"><div class="ttname"><a href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">RequestMeta::_host</a></div><div class="ttdeci">std::string _host</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00014">RequestMeta.hpp:14</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00014">_host</a>.</p>
 
 </div>
 </div>
@@ -292,8 +357,12 @@ Public Member Functions</h2></td></tr>
 <p>Returns true if transfer encoding is chunked. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00086">86</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">_chunked</a>); }</div>
+<div class="ttc" id="aclassRequestMeta_html_a7e9f988a5d4baa7e1d3e2ad05b8ab364"><div class="ttname"><a href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">RequestMeta::_chunked</a></div><div class="ttdeci">bool _chunked</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00010">RequestMeta.hpp:10</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00010">_chunked</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00285">RequestParse::body()</a>, and <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>.</p>
 
 </div>
 </div>
@@ -316,6 +385,36 @@ Public Member Functions</h2></td></tr>
 <p>Returns true if this request corresponds to an HTTP redirect. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00101">101</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">_isRedirect</a>); }</div>
+<div class="ttc" id="aclassRequestMeta_html_ae5a67b8b57449c4c917c6b8284ef2d10"><div class="ttname"><a href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">RequestMeta::_isRedirect</a></div><div class="ttdeci">bool _isRedirect</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00013">RequestMeta.hpp:13</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00013">_isRedirect</a>.</p>
+
+</div>
+</div>
+<a id="af89517c64d07dbc15b2fb27f1f5971d5" name="af89517c64d07dbc15b2fb27f1f5971d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89517c64d07dbc15b2fb27f1f5971d5">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRequestMeta.html">RequestMeta</a> &amp; RequestMeta::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classRequestMeta.html">RequestMeta</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -339,6 +438,17 @@ Public Member Functions</h2></td></tr>
 <p>Clears flags and stored headers for reuse of the same object. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00068">68</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
+<div class="line"><span class="lineno">   70</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">_contentLength</a> = 0;</div>
+<div class="line"><span class="lineno">   71</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">_chunked</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   72</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">_connectionClose</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   73</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">_expectContinue</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   74</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">_isRedirect</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   75</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">_host</a>.clear();</div>
+<div class="line"><span class="lineno">   76</span>}</div>
+<div class="ttc" id="aclassRequestMeta_html_a810af4411c598ac9d392f0d2e3f0240d"><div class="ttname"><a href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">RequestMeta::_connectionClose</a></div><div class="ttdeci">bool _connectionClose</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00011">RequestMeta.hpp:11</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00010">_chunked</a>, <a class="el" href="RequestMeta_8hpp_source.html#l00011">_connectionClose</a>, <a class="el" href="RequestMeta_8hpp_source.html#l00009">_contentLength</a>, <a class="el" href="RequestMeta_8hpp_source.html#l00012">_expectContinue</a>, <a class="el" href="RequestMeta_8hpp_source.html#l00014">_host</a>, and <a class="el" href="RequestMeta_8hpp_source.html#l00013">_isRedirect</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="HttpRequest_8cpp_source.html#l00158">HttpRequest::reset()</a>.</p>
 
@@ -363,8 +473,13 @@ Public Member Functions</h2></td></tr>
 <p>Defines whether the request uses chunked transfer encoding. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00026">26</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
+<div class="line"><span class="lineno">   28</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">_chunked</a> = chunked;</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00010">_chunked</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>, and <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>, <a class="el" href="RequestParse_8cpp_source.html#l00208">RequestParse::headers()</a>, and <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>.</p>
 
 </div>
 </div>
@@ -387,8 +502,13 @@ Public Member Functions</h2></td></tr>
 <p>Defines whether the connection should be closed after the response. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00034">34</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
+<div class="line"><span class="lineno">   36</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">_connectionClose</a> = connection_close;</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00011">_connectionClose</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ResponseBuilder_8cpp_source.html#l00157">ResponseBuilder::build()</a>, and <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ResponseBuilder_8cpp_source.html#l00157">ResponseBuilder::build()</a>, <a class="el" href="RequestParse_8cpp_source.html#l00208">RequestParse::headers()</a>, and <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>.</p>
 
 </div>
 </div>
@@ -411,8 +531,13 @@ Public Member Functions</h2></td></tr>
 <p>Sets the Content-Length value for the request. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00018">18</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
+<div class="line"><span class="lineno">   20</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">_contentLength</a> = content_length;</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00009">_contentLength</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>, and <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>, <a class="el" href="RequestParse_8cpp_source.html#l00208">RequestParse::headers()</a>, and <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>.</p>
 
 </div>
 </div>
@@ -435,8 +560,13 @@ Public Member Functions</h2></td></tr>
 <p>Sets the Expect: 100-continue flag for the request. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00042">42</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">_expectContinue</a> = expect_continue;</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00012">_expectContinue</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00125">WebServer::receiveRequest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00208">RequestParse::headers()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00125">WebServer::receiveRequest()</a>.</p>
 
 </div>
 </div>
@@ -459,6 +589,13 @@ Public Member Functions</h2></td></tr>
 <p>Stores the value of the Host header for this request. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00058">58</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{</div>
+<div class="line"><span class="lineno">   60</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">_host</a> = host;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00014">_host</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RequestParse_8cpp_source.html#l00208">RequestParse::headers()</a>.</p>
 
 </div>
 </div>
@@ -481,8 +618,13 @@ Public Member Functions</h2></td></tr>
 <p>Sets whether this request is associated with a redirect. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00050">50</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
+<div class="line"><span class="lineno">   52</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">_isRedirect</a> = redirect;</div>
+<div class="line"><span class="lineno">   53</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00013">_isRedirect</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="HttpRequest_8cpp_source.html#l00010">HttpRequest::HttpRequest()</a>, and <a class="el" href="Router_8cpp_source.html#l00198">Router::isRedirect()</a>.</p>
 
 </div>
 </div>
@@ -505,14 +647,174 @@ Public Member Functions</h2></td></tr>
 <p>Returns true if the connection should be closed. </p>
 
 <p class="definition">Definition at line <a class="el" href="RequestMeta_8cpp_source.html#l00091">91</a> of file <a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">_connectionClose</a>); }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="RequestMeta_8hpp_source.html#l00011">_connectionClose</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ResponseBuilder_8cpp_source.html#l00157">ResponseBuilder::build()</a>, and <a class="el" href="Dispatcher_8cpp_source.html#l00029">Dispatcher::dispatch()</a>.</p>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7e9f988a5d4baa7e1d3e2ad05b8ab364" name="a7e9f988a5d4baa7e1d3e2ad05b8ab364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9f988a5d4baa7e1d3e2ad05b8ab364">&#9670;&#160;</a></span>_chunked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RequestMeta::_chunked</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RequestMeta_8hpp_source.html#l00010">10</a> of file <a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RequestMeta_8cpp_source.html#l00086">isChunked()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00068">resetMeta()</a>, and <a class="el" href="RequestMeta_8cpp_source.html#l00026">setChunked()</a>.</p>
+
+</div>
+</div>
+<a id="a810af4411c598ac9d392f0d2e3f0240d" name="a810af4411c598ac9d392f0d2e3f0240d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810af4411c598ac9d392f0d2e3f0240d">&#9670;&#160;</a></span>_connectionClose</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RequestMeta::_connectionClose</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RequestMeta_8hpp_source.html#l00011">11</a> of file <a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RequestMeta_8cpp_source.html#l00068">resetMeta()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00034">setConnectionClose()</a>, and <a class="el" href="RequestMeta_8cpp_source.html#l00091">shouldClose()</a>.</p>
+
+</div>
+</div>
+<a id="a7277c2e35ff1d7e08c8500ede481f655" name="a7277c2e35ff1d7e08c8500ede481f655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7277c2e35ff1d7e08c8500ede481f655">&#9670;&#160;</a></span>_contentLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t RequestMeta::_contentLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RequestMeta_8hpp_source.html#l00009">9</a> of file <a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RequestMeta_8cpp_source.html#l00081">getContentLength()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00068">resetMeta()</a>, and <a class="el" href="RequestMeta_8cpp_source.html#l00018">setContentLength()</a>.</p>
+
+</div>
+</div>
+<a id="abe894b80d28542b22c6cf1c3c162afb8" name="abe894b80d28542b22c6cf1c3c162afb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe894b80d28542b22c6cf1c3c162afb8">&#9670;&#160;</a></span>_expectContinue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RequestMeta::_expectContinue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RequestMeta_8hpp_source.html#l00012">12</a> of file <a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RequestMeta_8cpp_source.html#l00096">getExpectContinue()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00068">resetMeta()</a>, and <a class="el" href="RequestMeta_8cpp_source.html#l00042">setExpectContinue()</a>.</p>
+
+</div>
+</div>
+<a id="a59762a10cd3ab11b80125570bf6a7ccf" name="a59762a10cd3ab11b80125570bf6a7ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59762a10cd3ab11b80125570bf6a7ccf">&#9670;&#160;</a></span>_host</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string RequestMeta::_host</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RequestMeta_8hpp_source.html#l00014">14</a> of file <a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RequestMeta_8cpp_source.html#l00106">getHost()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00068">resetMeta()</a>, and <a class="el" href="RequestMeta_8cpp_source.html#l00058">setHost()</a>.</p>
+
+</div>
+</div>
+<a id="ae5a67b8b57449c4c917c6b8284ef2d10" name="ae5a67b8b57449c4c917c6b8284ef2d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5a67b8b57449c4c917c6b8284ef2d10">&#9670;&#160;</a></span>_isRedirect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RequestMeta::_isRedirect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RequestMeta_8hpp_source.html#l00013">13</a> of file <a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RequestMeta_8cpp_source.html#l00101">isRedirect()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00068">resetMeta()</a>, and <a class="el" href="RequestMeta_8cpp_source.html#l00050">setRedirect()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>includes/request/<a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a></li>
-<li>srcs/request/<a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a></li>
+<li>request/<a class="el" href="RequestMeta_8hpp_source.html">RequestMeta.hpp</a></li>
+<li>request/<a class="el" href="RequestMeta_8cpp_source.html">RequestMeta.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

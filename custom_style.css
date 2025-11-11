@@ -1,0 +1,44 @@
+/* ===== Custom Style for Webservinho Docs ===== */
+
+/* --- Logo sizing --- */
+#projectlogo img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* --- Sidebar adjustments --- */
+div#nav-tree {
+  width: 260px !important;
+  background-color: #f5f7fa;
+}
+
+.ui-resizable-handle {
+  background-color: #d1d5db;
+}
+
+/* --- Page layout --- */
+#doc-content {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+/* --- Top bar / header tweaks --- */
+#projectname {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #0366d6;
+}
+
+/* --- Tables / code formatting --- */
+div.fragment {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+body {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}

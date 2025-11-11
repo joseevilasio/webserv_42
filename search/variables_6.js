@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['max_5fheader_5fline_0',['MAX_HEADER_LINE',['../RequestParse_8hpp.html#abddf539b17be1ab679943c757f0e5d67',1,'RequestParse.hpp']]],
-  ['max_5ftotal_5fheader_5fsize_1',['MAX_TOTAL_HEADER_SIZE',['../RequestParse_8hpp.html#a3fa331ee2869c19da3b2c662ddaa87f6',1,'RequestParse.hpp']]],
-  ['max_5furi_2',['MAX_URI',['../RequestParse_8hpp.html#ac89fef9677faa448507994a398ffe0ce',1,'RequestParse.hpp']]]
+  ['hdrbuf_0',['hdrBuf',['../structCgiProcess.html#ab9b69ddbe02d09ab363c01a10025236b',1,'CgiProcess']]],
+  ['headersparsed_1',['headersParsed',['../structCgiProcess.html#ae95dbfc568c9ba4e9c9d707b91f0146b',1,'CgiProcess']]]
 ];

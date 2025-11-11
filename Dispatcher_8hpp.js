@@ -1,4 +1,4 @@
 var Dispatcher_8hpp =
 [
-    [ "Dispatcher", "classDispatcher.html", null ]
+    [ "Dispatcher", "classDispatcher.html", "classDispatcher" ]
 ];

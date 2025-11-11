@@ -1,5 +1,5 @@
-<map id="includes/config/ConfigParser.hpp" name="includes/config/ConfigParser.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="281,5,511,31"/>
+<map id="config/ConfigParser.hpp" name="config/ConfigParser.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="309,5,483,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,299,64,324"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="368,33,307,60,229,102,146,158,107,191,73,227,55,256,43,286,38,285,50,254,69,224,103,187,142,154,226,97,305,55,366,28"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="539,79,619,104"/>

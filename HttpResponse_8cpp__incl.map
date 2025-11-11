@@ -1,5 +1,5 @@
-<map id="srcs/response/HttpResponse.cpp" name="srcs/response/HttpResponse.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="203,5,437,31"/>
+<map id="response/HttpResponse.cpp" name="response/HttpResponse.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="219,5,421,31"/>
 <area shape="rect" id="Node000002" href="$HttpResponse_8hpp.html" title=" " alt="" coords="91,79,295,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,33,227,74,225,69,298,28"/>
 <area shape="rect" id="Node000006" href="$Logger_8hpp.html" title=" " alt="" coords="463,79,588,104"/>

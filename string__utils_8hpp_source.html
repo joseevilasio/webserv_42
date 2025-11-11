@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho: includes/utils/string_utils.hpp Source File</title>
+<title>Webservinho: utils/string_utils.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -217,7 +218,8 @@ $(document).ready(function(){initNavTree('string__utils_8hpp_source.html',''); i
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
 </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="keyword">inline</span> <span class="keyword">static</span> std::string joinPaths(<span class="keyword">const</span> std::string&amp; base, <span class="keyword">const</span> std::string&amp; sub)</div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">  131</a></span><span class="keyword">inline</span> <span class="keyword">static</span> std::string <a class="code hl_function" href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">joinPaths</a>(<span class="keyword">const</span> std::string&amp; base, <span class="keyword">const</span> std::string&amp; sub)</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>{</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">if</span> (base.empty())</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">return</span> (sub);</div>
@@ -231,8 +233,10 @@ $(document).ready(function(){initNavTree('string__utils_8hpp_source.html',''); i
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">return</span> (base + sub);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
+</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> hasParentTraversal(<span class="keyword">const</span> std::string&amp; s)</div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="string__utils_8hpp.html#a3435acf8aa5d1b7819803b35e546522a">  147</a></span><span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="string__utils_8hpp.html#a3435acf8aa5d1b7819803b35e546522a">hasParentTraversal</a>(<span class="keyword">const</span> std::string&amp; s)</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>{</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordflow">if</span> (s.find(<span class="stringliteral">&quot;/../&quot;</span>) != std::string::npos)</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
@@ -245,8 +249,10 @@ $(document).ready(function(){initNavTree('string__utils_8hpp_source.html',''); i
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>}</div>
+</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="keyword">inline</span> <span class="keyword">static</span> std::string trim_copy(<span class="keyword">const</span> std::string&amp; s)</div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4">  162</a></span><span class="keyword">inline</span> <span class="keyword">static</span> std::string <a class="code hl_function" href="string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4">trim_copy</a>(<span class="keyword">const</span> std::string&amp; s)</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>{</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">size_t</span> a = 0;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordtype">size_t</span> b = s.size();</div>
@@ -258,8 +264,10 @@ $(document).ready(function(){initNavTree('string__utils_8hpp_source.html',''); i
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordflow">return</span> (s.substr(a, b - a));</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
+</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="keyword">inline</span> <span class="keyword">static</span> std::string getFileExtension(<span class="keyword">const</span> std::string&amp; path)</div>
+<div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="string__utils_8hpp.html#afbeab407a81774ee771701ff3a07f113">  178</a></span><span class="keyword">inline</span> <span class="keyword">static</span> std::string <a class="code hl_function" href="string__utils_8hpp.html#afbeab407a81774ee771701ff3a07f113">getFileExtension</a>(<span class="keyword">const</span> std::string&amp; path)</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>{</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    std::string::size_type dotPos = path.find_last_of(<span class="charliteral">&#39;.&#39;</span>);</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">if</span> (dotPos == std::string::npos)</div>
@@ -271,8 +279,10 @@ $(document).ready(function(){initNavTree('string__utils_8hpp_source.html',''); i
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">return</span> (path.substr(dotPos));</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
+</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keyword">inline</span> <span class="keyword">static</span> std::string uriEncode(<span class="keyword">const</span> std::string&amp; s)</div>
+<div class="foldopen" id="foldopen00195" data-start="{" data-end="}">
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775">  195</a></span><span class="keyword">inline</span> <span class="keyword">static</span> std::string <a class="code hl_function" href="string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775">uriEncode</a>(<span class="keyword">const</span> std::string&amp; s)</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>{</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    std::ostringstream oss;</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; s.size(); ++i)</div>
@@ -286,23 +296,29 @@ $(document).ready(function(){initNavTree('string__utils_8hpp_source.html',''); i
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    }</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">return</span> oss.str();</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>}</div>
+</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">#endif </span><span class="comment">// STRING_UTILS_HPP</span></div>
 <div class="ttc" id="astring__utils_8hpp_html_a06e0a64f03d46165259e5b198ffc9f6a"><div class="ttname"><a href="string__utils_8hpp.html#a06e0a64f03d46165259e5b198ffc9f6a">split</a></div><div class="ttdeci">std::vector&lt; std::string &gt; split(const std::string &amp;str, const std::string &amp;sep)</div><div class="ttdoc">Splits a string by a given separator substring.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00080">string_utils.hpp:80</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_a0d2414ad61e591a6b14cd96c306b59e4"><div class="ttname"><a href="string__utils_8hpp.html#a0d2414ad61e591a6b14cd96c306b59e4">toUpper</a></div><div class="ttdeci">std::string toUpper(const std::string &amp;str)</div><div class="ttdoc">Converts a string to uppercase.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00061">string_utils.hpp:61</a></div></div>
+<div class="ttc" id="astring__utils_8hpp_html_a3435acf8aa5d1b7819803b35e546522a"><div class="ttname"><a href="string__utils_8hpp.html#a3435acf8aa5d1b7819803b35e546522a">hasParentTraversal</a></div><div class="ttdeci">static bool hasParentTraversal(const std::string &amp;s)</div><div class="ttdoc">Checks if a path string contains parent directory traversal (..) sequences.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00147">string_utils.hpp:147</a></div></div>
+<div class="ttc" id="astring__utils_8hpp_html_a4408f0c67e5adf4b8c58c34229e68775"><div class="ttname"><a href="string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775">uriEncode</a></div><div class="ttdeci">static std::string uriEncode(const std::string &amp;s)</div><div class="ttdoc">Encodes a string for safe inclusion in a URI (percent-encoding).</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00195">string_utils.hpp:195</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_a54a8d2d3492cbc9eecedf25fda818a4d"><div class="ttname"><a href="string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d">startsWith</a></div><div class="ttdeci">bool startsWith(const std::string &amp;s, const std::string &amp;prefix)</div><div class="ttdoc">Checks whether a string starts with a given prefix.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00120">string_utils.hpp:120</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_a5a01f705cc7b4a7317a57f6bf41aef25"><div class="ttname"><a href="string__utils_8hpp.html#a5a01f705cc7b4a7317a57f6bf41aef25">trim</a></div><div class="ttdeci">std::string trim(const std::string &amp;str)</div><div class="ttdoc">Removes leading and trailing whitespace characters from a string.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00070">string_utils.hpp:70</a></div></div>
+<div class="ttc" id="astring__utils_8hpp_html_a8577ae0e014b88657679bf92631ee8c4"><div class="ttname"><a href="string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4">trim_copy</a></div><div class="ttdeci">static std::string trim_copy(const std::string &amp;s)</div><div class="ttdoc">Returns a copy of a string with surrounding spaces and tabs removed.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00162">string_utils.hpp:162</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_a8a4293a53b143f48d36876fcaff304b4"><div class="ttname"><a href="string__utils_8hpp.html#a8a4293a53b143f48d36876fcaff304b4">stringToHex</a></div><div class="ttdeci">int stringToHex(const std::string &amp;str)</div><div class="ttdoc">Converts a hexadecimal string into an integer.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00099">string_utils.hpp:99</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_a96432d89bc886bc9cdd1d73f86b2bbca"><div class="ttname"><a href="string__utils_8hpp.html#a96432d89bc886bc9cdd1d73f86b2bbca">toLower</a></div><div class="ttdeci">std::string toLower(const std::string &amp;str)</div><div class="ttdoc">Converts a string to lowercase.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00052">string_utils.hpp:52</a></div></div>
+<div class="ttc" id="astring__utils_8hpp_html_a9f1586d17c9a5c7d77ee394f29867ca5"><div class="ttname"><a href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">joinPaths</a></div><div class="ttdeci">static std::string joinPaths(const std::string &amp;base, const std::string &amp;sub)</div><div class="ttdoc">Joins two path segments, ensuring correct slash placement.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00131">string_utils.hpp:131</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_aaead76ef6abc119bc66f6ecdedfcb295"><div class="ttname"><a href="string__utils_8hpp.html#aaead76ef6abc119bc66f6ecdedfcb295">lTrim</a></div><div class="ttdeci">std::string lTrim(const std::string &amp;str)</div><div class="ttdoc">Removes leading whitespace characters from a string.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00023">string_utils.hpp:23</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_ad735976365693b45c427000fe042e173"><div class="ttname"><a href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a></div><div class="ttdeci">std::string toString(T value)</div><div class="ttdoc">Converts any printable type to a string representation.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00112">string_utils.hpp:112</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_adde35d1801d4d11cacb9a39124e8e96b"><div class="ttname"><a href="string__utils_8hpp.html#adde35d1801d4d11cacb9a39124e8e96b">rTrim</a></div><div class="ttdeci">std::string rTrim(const std::string &amp;str)</div><div class="ttdoc">Removes trailing whitespace characters from a string.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00035">string_utils.hpp:35</a></div></div>
+<div class="ttc" id="astring__utils_8hpp_html_afbeab407a81774ee771701ff3a07f113"><div class="ttname"><a href="string__utils_8hpp.html#afbeab407a81774ee771701ff3a07f113">getFileExtension</a></div><div class="ttdeci">static std::string getFileExtension(const std::string &amp;path)</div><div class="ttdoc">Extracts the file extension from a path, including the dot.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00178">string_utils.hpp:178</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a class="el" href="dir_3f8feeb2fa3bd0d1b751b257ed9f12a2.html">utils</a></li><li class="navelem"><a class="el" href="string__utils_8hpp.html">string_utils.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_3f8feeb2fa3bd0d1b751b257ed9f12a2.html">utils</a></li><li class="navelem"><a class="el" href="string__utils_8hpp.html">string_utils.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

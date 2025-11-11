@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho: srcs/dispatcher/AutoIndexHandler.cpp Source File</title>
+<title>Webservinho: dispatcher/AutoIndexHandler.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -156,7 +157,7 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">struct </span>tm* timeInfo = localtime(&amp;modTime);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        strftime(dateBuf, <span class="keyword">sizeof</span>(dateBuf), <span class="stringliteral">&quot;%d-%b-%Y %H:%M&quot;</span>, timeInfo);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::string sizeStr = isDir ? <span class="stringliteral">&quot;-&quot;</span> : formatSize(fileStat.st_size);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::string sizeStr = isDir ? <span class="stringliteral">&quot;-&quot;</span> : <a class="code hl_function" href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">formatSize</a>(fileStat.st_size);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">// Builds each table row dynamically</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        content += <span class="stringliteral">&quot;&lt;tr&gt;&quot;</span>;</div>
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="comment">// Adds Delete button only for regular files</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">if</span> (!isDir) {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            std::string encoded = uriEncode(name);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            std::string encoded = <a class="code hl_function" href="string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775">uriEncode</a>(name);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            content += <span class="stringliteral">&quot;&lt;td&gt;&lt;button onclick=\&quot;deleteFile(&#39;&quot;</span> + uri + encoded + <span class="stringliteral">&quot;&#39;)\&quot;&gt;Delete&lt;/button&gt;&lt;/td&gt;&quot;</span>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            content += <span class="stringliteral">&quot;&lt;td&gt;-&lt;/td&gt;&quot;</span>;</div>
@@ -177,7 +178,7 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    closedir(dir);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    std::string html = loadTemplate(getTemplatePath());</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    std::string html = <a class="code hl_function" href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">loadTemplate</a>(<a class="code hl_function" href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">getTemplatePath</a>());</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">if</span> (html.empty())</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    {</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;AutoIndexHandler: Template not found or empty&quot;</span>);</div>
@@ -186,10 +187,10 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">// Replace placeholders in template</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    replacePlaceholder(html, <span class="stringliteral">&quot;{PATH}&quot;</span>, uri);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    replacePlaceholder(html, <span class="stringliteral">&quot;{PATH}&quot;</span>, uri);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    replacePlaceholder(html, <span class="stringliteral">&quot;{CONTENT}&quot;</span>, content);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    replacePlaceholder(html, <span class="stringliteral">&quot;{SERVER_INFO}&quot;</span>, <span class="stringliteral">&quot;WebServinho/1.0&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{PATH}&quot;</span>, uri);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{PATH}&quot;</span>, uri);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{CONTENT}&quot;</span>, content);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{SERVER_INFO}&quot;</span>, <span class="stringliteral">&quot;WebServinho/1.0&quot;</span>);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    res.<a class="code hl_function" href="classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8">appendBody</a>(html);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    res.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Content-Type&quot;</span>, <span class="stringliteral">&quot;text/html&quot;</span>);</div>
@@ -200,7 +201,8 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
 </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>std::string AutoIndexHandler::formatSize(<span class="keywordtype">size_t</span> size)</div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">  111</a></span>std::string <a class="code hl_function" href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">AutoIndexHandler::formatSize</a>(<span class="keywordtype">size_t</span> size)</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    std::stringstream ss;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
@@ -213,15 +215,19 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> (ss.str());</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
+</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="keywordtype">void</span>    AutoIndexHandler::replacePlaceholder(std::string&amp; html, <span class="keyword">const</span> std::string&amp; tag, <span class="keyword">const</span> std::string&amp; value)</div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">  130</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">AutoIndexHandler::replacePlaceholder</a>(std::string&amp; html, <span class="keyword">const</span> std::string&amp; tag, <span class="keyword">const</span> std::string&amp; value)</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>{</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">size_t</span> pos = html.find(tag);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">if</span> (pos != std::string::npos)</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        html.replace(pos, tag.size(), value);</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>std::string AutoIndexHandler::loadTemplate(<span class="keyword">const</span> std::string&amp; path)</div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">  142</a></span>std::string <a class="code hl_function" href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">AutoIndexHandler::loadTemplate</a>(<span class="keyword">const</span> std::string&amp; path)</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Loading template file -&gt; &quot;</span> + path);</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
@@ -239,8 +245,10 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Template successfully loaded (&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(buffer.str().size()) + <span class="stringliteral">&quot; bytes)&quot;</span>);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">return</span> (buffer.str());</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>}</div>
+</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>std::string AutoIndexHandler::getTemplatePath()</div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">  166</a></span>std::string <a class="code hl_function" href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">AutoIndexHandler::getTemplatePath</a>()</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>{</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordtype">char</span> exePath[PATH_MAX];</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    ssize_t len = readlink(<span class="stringliteral">&quot;/proc/self/exe&quot;</span>, exePath, <span class="keyword">sizeof</span>(exePath) - 1);</div>
@@ -263,13 +271,18 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Resolved template path -&gt; &quot;</span> + path);</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">return</span> (path);</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
+</div>
 <div class="ttc" id="aAutoIndexHandler_8hpp_html"><div class="ttname"><a href="AutoIndexHandler_8hpp.html">AutoIndexHandler.hpp</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html"><div class="ttname"><a href="Logger_8hpp.html">Logger.hpp</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00018">Logger.hpp:18</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
 <div class="ttc" id="aResponseBuilder_8hpp_html"><div class="ttname"><a href="ResponseBuilder_8hpp.html">ResponseBuilder.hpp</a></div></div>
+<div class="ttc" id="aclassAutoIndexHandler_html_a06fa3762ffa8ebcc361e39f69e72b696"><div class="ttname"><a href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">AutoIndexHandler::loadTemplate</a></div><div class="ttdeci">static std::string loadTemplate(const std::string &amp;path)</div><div class="ttdoc">Loads the HTML template for autoindex listing from disk.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00142">AutoIndexHandler.cpp:142</a></div></div>
+<div class="ttc" id="aclassAutoIndexHandler_html_a0dcbd0504c1e39bbe584d45821e7856d"><div class="ttname"><a href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">AutoIndexHandler::replacePlaceholder</a></div><div class="ttdeci">static void replacePlaceholder(std::string &amp;html, const std::string &amp;tag, const std::string &amp;value)</div><div class="ttdoc">Replaces a single placeholder tag in the HTML template.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00130">AutoIndexHandler.cpp:130</a></div></div>
 <div class="ttc" id="aclassAutoIndexHandler_html_a19f63277112e5a0d50bb8d570527ce0a"><div class="ttname"><a href="classAutoIndexHandler.html#a19f63277112e5a0d50bb8d570527ce0a">AutoIndexHandler::handle</a></div><div class="ttdeci">static void handle(HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Generates and serves an HTML directory listing when autoindex is enabled.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00022">AutoIndexHandler.cpp:22</a></div></div>
+<div class="ttc" id="aclassAutoIndexHandler_html_ac79e264370e9c6576275fb315d67c5c3"><div class="ttname"><a href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">AutoIndexHandler::formatSize</a></div><div class="ttdeci">static std::string formatSize(size_t size)</div><div class="ttdoc">Converts a byte size into a human-readable format (B, KB, MB).</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00111">AutoIndexHandler.cpp:111</a></div></div>
+<div class="ttc" id="aclassAutoIndexHandler_html_af0c1d1a4f469e4f4a7739cbb12af2b1d"><div class="ttname"><a href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">AutoIndexHandler::getTemplatePath</a></div><div class="ttdeci">static std::string getTemplatePath()</div><div class="ttdoc">Resolves the template path dynamically based on the executable's location.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00166">AutoIndexHandler.cpp:166</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html"><div class="ttname"><a href="classHttpRequest.html">HttpRequest</a></div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8hpp_source.html#l00016">HttpRequest.hpp:17</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html_a658d90f4dd4080c30c99c463c082abc8"><div class="ttname"><a href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">HttpRequest::getUri</a></div><div class="ttdeci">const std::string &amp; getUri(void) const</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00218">HttpRequest.cpp:218</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html_a9cd740d746bcd7fa6e4fcb8c537879ad"><div class="ttname"><a href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">HttpRequest::getResolvedPath</a></div><div class="ttdeci">const std::string getResolvedPath(void) const</div><div class="ttdoc">Returns the resolved filesystem path corresponding to the URI.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00328">HttpRequest.cpp:328</a></div></div>
@@ -280,6 +293,7 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Writes a log entry with timestamp, level, and message.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
 <div class="ttc" id="aclassLogger_html_a4aa4d7c3b98f6e12e7ea8253da5ea0cd"><div class="ttname"><a href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a></div><div class="ttdeci">static Logger &amp; instance()</div><div class="ttdoc">Returns the singleton instance of the Logger.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00037">Logger.cpp:37</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html"><div class="ttname"><a href="string__utils_8hpp.html">string_utils.hpp</a></div><div class="ttdoc">Collection of inline string utility functions used across Webservinho.</div></div>
+<div class="ttc" id="astring__utils_8hpp_html_a4408f0c67e5adf4b8c58c34229e68775"><div class="ttname"><a href="string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775">uriEncode</a></div><div class="ttdeci">static std::string uriEncode(const std::string &amp;s)</div><div class="ttdoc">Encodes a string for safe inclusion in a URI (percent-encoding).</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00195">string_utils.hpp:195</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_ad735976365693b45c427000fe042e173"><div class="ttname"><a href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a></div><div class="ttdeci">std::string toString(T value)</div><div class="ttdoc">Converts any printable type to a string representation.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00112">string_utils.hpp:112</a></div></div>
 <div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">ResponseStatus::OK</a></div><div class="ttdeci">@ OK</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00027">ResponseStatus.hpp:27</a></div></div>
 <div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a></div><div class="ttdeci">@ InternalServerError</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus.hpp:55</a></div></div>
@@ -288,7 +302,7 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8cpp_source.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="dir_b51e9ffa637a334d6710d1827ea04a79.html">dispatcher</a></li><li class="navelem"><a class="el" href="AutoIndexHandler_8cpp.html">AutoIndexHandler.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_b51e9ffa637a334d6710d1827ea04a79.html">dispatcher</a></li><li class="navelem"><a class="el" href="AutoIndexHandler_8cpp.html">AutoIndexHandler.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho: srcs/request/RequestParse.cpp Source File</title>
+<title>Webservinho: request/RequestParse.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a1ae6c9a93ad8803db93de2eb605f74e3">getState</a>() == <a class="code hl_enumvalue" href="structRequestState.html#aadbd0c6a8cffff0a2baaa238900fc397a6c1067faefeeebc857a9eafdb34f1512">RequestState::RequestLine</a>)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    <span class="keywordflow">if</span> (!buffer.empty())</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                        requestLine(buffer, req, config);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                        <a class="code hl_function" href="classRequestParse.html#abba0923a3ae7422916f11a81b7c4d552">requestLine</a>(buffer, req, config);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#aab13f0c3b04e2290f26ca20aee08439f">getParseError</a>() != <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">ResponseStatus::OK</a>)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    {</div>
@@ -168,7 +169,7 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                        headers(buffer, req, config.<a class="code hl_function" href="classServerConfig.html#abe0b48d3cb52666eb049828dc5b96ee0">getClientMaxBodySize</a>());</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                        <a class="code hl_function" href="classRequestParse.html#ac3dc2d89d0e245ac752b5327f64bb70d">headers</a>(buffer, req, config.<a class="code hl_function" href="classServerConfig.html#abe0b48d3cb52666eb049828dc5b96ee0">getClientMaxBodySize</a>());</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    }</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                req.<a class="code hl_function" href="classHttpRequest.html#a094748c8ada94274a3025671ec86efd9">clearBuffer</a>();</div>
@@ -183,7 +184,7 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="comment">// Handle body (Content-Length or chunked)</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a1ae6c9a93ad8803db93de2eb605f74e3">getState</a>() == <a class="code hl_enumvalue" href="structRequestState.html#aadbd0c6a8cffff0a2baaa238900fc397a634c126548e66c04a406188f83c9824a">RequestState::Body</a>)</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            body(rawRequest[i], req, config.<a class="code hl_function" href="classServerConfig.html#abe0b48d3cb52666eb049828dc5b96ee0">getClientMaxBodySize</a>());</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_function" href="classRequestParse.html#ab81826a3c30d9a2a4f9d0f8ee6fa855c">body</a>(rawRequest[i], req, config.<a class="code hl_function" href="classServerConfig.html#abe0b48d3cb52666eb049828dc5b96ee0">getClientMaxBodySize</a>());</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            ++i;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
@@ -209,7 +210,8 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
 </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keywordtype">void</span>    RequestParse::requestLine(<span class="keyword">const</span> std::string&amp; buffer, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <span class="keyword">const</span> <a class="code hl_class" href="classServerConfig.html">ServerConfig</a>&amp; config)</div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classRequestParse.html#abba0923a3ae7422916f11a81b7c4d552">  118</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestParse.html#abba0923a3ae7422916f11a81b7c4d552">RequestParse::requestLine</a>(<span class="keyword">const</span> std::string&amp; buffer, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <span class="keyword">const</span> <a class="code hl_class" href="classServerConfig.html">ServerConfig</a>&amp; config)</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Started] RequestParse::reqLine&quot;</span>);</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
@@ -221,8 +223,8 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        return ;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    uri(tokens[1], req);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    method(tokens[0], req, config);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a>(tokens[1], req);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_function" href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">method</a>(tokens[0], req, config);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">const</span> std::string version = tokens[2];</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
@@ -250,16 +252,18 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Finished] RequestParse::reqLine&quot;</span>);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
+</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keywordtype">void</span>    RequestParse::method(<span class="keyword">const</span> std::string&amp; method, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <span class="keyword">const</span> <a class="code hl_class" href="classServerConfig.html">ServerConfig</a>&amp; config)</div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">  163</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">RequestParse::method</a>(<span class="keyword">const</span> std::string&amp; method, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <span class="keyword">const</span> <a class="code hl_class" href="classServerConfig.html">ServerConfig</a>&amp; config)</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>{</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">if</span> (method == <span class="stringliteral">&quot;GET&quot;</span>)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">method</a> == <span class="stringliteral">&quot;GET&quot;</span>)</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        req.<a class="code hl_function" href="classHttpRequest.html#a85d34306cf62cabb5a8174532029c023">setMethod</a>(<a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaae25257890235f999204793748f1752c9">RequestMethod::GET</a>);</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (method == <span class="stringliteral">&quot;POST&quot;</span>)</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">method</a> == <span class="stringliteral">&quot;POST&quot;</span>)</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        req.<a class="code hl_function" href="classHttpRequest.html#a85d34306cf62cabb5a8174532029c023">setMethod</a>(<a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaabfd72fc37af3fbd28ef006bfc57f2dfc">RequestMethod::POST</a>);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (method == <span class="stringliteral">&quot;DELETE&quot;</span>)</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">method</a> == <span class="stringliteral">&quot;DELETE&quot;</span>)</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        req.<a class="code hl_function" href="classHttpRequest.html#a85d34306cf62cabb5a8174532029c023">setMethod</a>(<a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa7870e39b1f6fdcacc60d9ae5f581e0d3">RequestMethod::DELETE</a>);</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (method == <span class="stringliteral">&quot;PUT&quot;</span>)</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">method</a> == <span class="stringliteral">&quot;PUT&quot;</span>)</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        req.<a class="code hl_function" href="classHttpRequest.html#a85d34306cf62cabb5a8174532029c023">setMethod</a>(<a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa0d5ce683717d6dbb9a35c5f4cf272a5b">RequestMethod::PUT</a>);</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    {</div>
@@ -267,18 +271,20 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4af8abc5368c893ba9bb24939cb95aa3">setParseError</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a5b393d65c3ee3ada19d5fcd6a96f9915">ResponseStatus::MethodNotAllowed</a>);</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    checkMethod(req, config);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_function" href="classRequestParse.html#a3a3d2f425b7652c12b681fed8a66b8d9">checkMethod</a>(req, config);</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
+</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="keywordtype">void</span>    RequestParse::uri(<span class="keyword">const</span> std::string str, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req)</div>
+<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">  185</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">RequestParse::uri</a>(<span class="keyword">const</span> std::string str, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req)</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    std::string uri = str;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    std::string::size_type queryPos = uri.find(<span class="charliteral">&#39;?&#39;</span>);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    std::string <a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a> = str;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    std::string::size_type queryPos = <a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a>.find(<span class="charliteral">&#39;?&#39;</span>);</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">if</span> (queryPos != std::string::npos)</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        uri = str.substr(0, queryPos);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a> = str.substr(0, queryPos);</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">if</span> (uri.length() &gt; <a class="code hl_variable" href="RequestParse_8hpp.html#ac89fef9677faa448507994a398ffe0ce">MAX_URI</a>)</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a>.length() &gt; <a class="code hl_variable" href="RequestParse_8hpp.html#ac89fef9677faa448507994a398ffe0ce">MAX_URI</a>)</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;RequestParse::uri URI too long&quot;</span>);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4af8abc5368c893ba9bb24939cb95aa3">setParseError</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ab718b151271054b2c2372f71bc9251b0">ResponseStatus::UriTooLong</a>);</div>
@@ -286,11 +292,13 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        return ;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    }</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    req.<a class="code hl_function" href="classHttpRequest.html#aee6d6d4468cb5f45ab6fe750d9a816ca">setUri</a>(uri);</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    req.<a class="code hl_function" href="classHttpRequest.html#aebc5ebbc9a36a9ab66135c2884866fb6">setQueryString</a>(extractQueryString(str));</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    req.<a class="code hl_function" href="classHttpRequest.html#aee6d6d4468cb5f45ab6fe750d9a816ca">setUri</a>(<a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a>);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    req.<a class="code hl_function" href="classHttpRequest.html#aebc5ebbc9a36a9ab66135c2884866fb6">setQueryString</a>(<a class="code hl_function" href="classRequestParse.html#af2da061f29a38d73ea2d3fabdf80e0ec">extractQueryString</a>(str));</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>}</div>
+</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keywordtype">void</span>    RequestParse::headers(<span class="keyword">const</span> std::string&amp; buffer, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, std::size_t maxBodySize)</div>
+<div class="foldopen" id="foldopen00208" data-start="{" data-end="}">
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classRequestParse.html#ac3dc2d89d0e245ac752b5327f64bb70d">  208</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestParse.html#ac3dc2d89d0e245ac752b5327f64bb70d">RequestParse::headers</a>(<span class="keyword">const</span> std::string&amp; buffer, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, std::size_t maxBodySize)</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>{</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Started] RequestParse::headers&quot;</span>);</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
@@ -320,7 +328,7 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    {</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordtype">long</span> size = std::atol(value.c_str());</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="keywordflow">if</span> (isGreaterThanMaxBodySize(size, maxBodySize))</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classRequestParse.html#a41fb8fd94bdb7ca3d28f6578d803377d">isGreaterThanMaxBodySize</a>(size, maxBodySize))</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        {</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            req.<a class="code hl_function" href="classHttpRequest.html#a4af8abc5368c893ba9bb24939cb95aa3">setParseError</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a1c70b0c1f91d78e0f835e6f7f97e4417">ResponseStatus::PayloadTooLarge</a>);</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            req.<a class="code hl_function" href="classHttpRequest.html#a15c0dff5d8350a2c71306638d30d5fe3">setRequestState</a>(<a class="code hl_enumvalue" href="structRequestState.html#aadbd0c6a8cffff0a2baaa238900fc397a4fc818490abbe8d60fd356ee43980ccf">RequestState::Complete</a>);</div>
@@ -363,8 +371,10 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    req.<a class="code hl_function" href="classHttpRequest.html#a3451bf0bde2a98a5599e710639f1cd98">addHeader</a>(key, value);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Finished] RequestParse::headers&quot;</span>);</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>}</div>
+</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keywordtype">void</span>    RequestParse::body(<span class="keywordtype">char</span> c, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, std::size_t maxBodySize)</div>
+<div class="foldopen" id="foldopen00285" data-start="{" data-end="}">
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="classRequestParse.html#ab81826a3c30d9a2a4f9d0f8ee6fa855c">  285</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestParse.html#ab81826a3c30d9a2a4f9d0f8ee6fa855c">RequestParse::body</a>(<span class="keywordtype">char</span> c, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, std::size_t maxBodySize)</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>{</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordflow">if</span> (!req.<a class="code hl_function" href="classHttpRequest.html#afee0e84f22f6d1226023d40f4a75c17a">getMeta</a>().<a class="code hl_function" href="classRequestMeta.html#acded047391c25677409e4725a644b3da">isChunked</a>())</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    {</div>
@@ -382,16 +392,18 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    }</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        bodyChunked(c, req, maxBodySize);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <a class="code hl_function" href="classRequestParse.html#aaacc39eadbaa26e80ed2b6bfc495fbb4">bodyChunked</a>(c, req, maxBodySize);</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    }</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>}</div>
+</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="keywordtype">void</span>    RequestParse::bodyChunked(<span class="keywordtype">char</span> c, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, std::size_t maxBodySize)</div>
+<div class="foldopen" id="foldopen00310" data-start="{" data-end="}">
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="classRequestParse.html#aaacc39eadbaa26e80ed2b6bfc495fbb4">  310</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestParse.html#aaacc39eadbaa26e80ed2b6bfc495fbb4">RequestParse::bodyChunked</a>(<span class="keywordtype">char</span> c, <a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, std::size_t maxBodySize)</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>{</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    std::string&amp; buffer = req.<a class="code hl_function" href="classHttpRequest.html#af26b6c084c398687ce068b84d99c6a51">getBuffer</a>();</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    std::string&amp; chunkBuffer = req.<a class="code hl_function" href="classHttpRequest.html#adfeba15e2752ba4ad7a39a1a18a709e5">getChunkBuffer</a>();</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">if</span> (isGreaterThanMaxBodySize(req.<a class="code hl_function" href="classHttpRequest.html#a0a1607918c6622e543117746635f5bf2">getCurrentChunkSize</a>(), maxBodySize))</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRequestParse.html#a41fb8fd94bdb7ca3d28f6578d803377d">isGreaterThanMaxBodySize</a>(req.<a class="code hl_function" href="classHttpRequest.html#a0a1607918c6622e543117746635f5bf2">getCurrentChunkSize</a>(), maxBodySize))</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    {</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4af8abc5368c893ba9bb24939cb95aa3">setParseError</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a1c70b0c1f91d78e0f835e6f7f97e4417">ResponseStatus::PayloadTooLarge</a>);</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        req.<a class="code hl_function" href="classHttpRequest.html#a15c0dff5d8350a2c71306638d30d5fe3">setRequestState</a>(<a class="code hl_enumvalue" href="structRequestState.html#aadbd0c6a8cffff0a2baaa238900fc397a4fc818490abbe8d60fd356ee43980ccf">RequestState::Complete</a>);</div>
@@ -458,21 +470,27 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        req.<a class="code hl_function" href="classHttpRequest.html#ad875e49b03abccaf092ecb49d5bdad31">setExpectingChunkSeparator</a>(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    }</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>}</div>
+</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>std::string RequestParse::extractQueryString(<span class="keyword">const</span> std::string uri)</div>
+<div class="foldopen" id="foldopen00386" data-start="{" data-end="}">
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno"><a class="line" href="classRequestParse.html#af2da061f29a38d73ea2d3fabdf80e0ec">  386</a></span>std::string <a class="code hl_function" href="classRequestParse.html#af2da061f29a38d73ea2d3fabdf80e0ec">RequestParse::extractQueryString</a>(<span class="keyword">const</span> std::string uri)</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>{</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    std::string::size_type queryPos = uri.find(<span class="charliteral">&#39;?&#39;</span>);</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    std::string::size_type queryPos = <a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a>.find(<span class="charliteral">&#39;?&#39;</span>);</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keywordflow">if</span> (queryPos != std::string::npos)</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        <span class="keywordflow">return</span> (uri.substr(queryPos + 1));</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        <span class="keywordflow">return</span> (<a class="code hl_function" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a>.substr(queryPos + 1));</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keywordflow">return</span> (<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>}</div>
+</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="keywordtype">bool</span>    RequestParse::isGreaterThanMaxBodySize(std::size_t size, std::size_t maxBodySize)</div>
+<div class="foldopen" id="foldopen00397" data-start="{" data-end="}">
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="classRequestParse.html#a41fb8fd94bdb7ca3d28f6578d803377d">  397</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestParse.html#a41fb8fd94bdb7ca3d28f6578d803377d">RequestParse::isGreaterThanMaxBodySize</a>(std::size_t size, std::size_t maxBodySize)</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>{</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keywordflow">return</span> (size &gt; maxBodySize);</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>}</div>
+</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="keywordtype">void</span>    RequestParse::checkMethod(<a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <span class="keyword">const</span> <a class="code hl_class" href="classServerConfig.html">ServerConfig</a>&amp; config)</div>
+<div class="foldopen" id="foldopen00405" data-start="{" data-end="}">
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="classRequestParse.html#a3a3d2f425b7652c12b681fed8a66b8d9">  405</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestParse.html#a3a3d2f425b7652c12b681fed8a66b8d9">RequestParse::checkMethod</a>(<a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <span class="keyword">const</span> <a class="code hl_class" href="classServerConfig.html">ServerConfig</a>&amp; config)</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>{</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() == <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa8fa5f60f723440a7beecbb260fbaad06">RequestMethod::INVALID</a>)</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        return ;</div>
@@ -489,6 +507,7 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    req.<a class="code hl_function" href="classHttpRequest.html#a4af8abc5368c893ba9bb24939cb95aa3">setParseError</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a5b393d65c3ee3ada19d5fcd6a96f9915">ResponseStatus::MethodNotAllowed</a>);</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>}</div>
+</div>
 <div class="ttc" id="aLocationConfig_8hpp_html"><div class="ttname"><a href="LocationConfig_8hpp.html">LocationConfig.hpp</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html"><div class="ttname"><a href="Logger_8hpp.html">Logger.hpp</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
@@ -540,7 +559,16 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <div class="ttc" id="aclassRequestMeta_html_ac8dbee6450bf74ffd3ea1c9bb6213b7a"><div class="ttname"><a href="classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a">RequestMeta::getContentLength</a></div><div class="ttdeci">std::size_t getContentLength(void) const</div><div class="ttdoc">Returns the Content-Length value.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00081">RequestMeta.cpp:81</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_acded047391c25677409e4725a644b3da"><div class="ttname"><a href="classRequestMeta.html#acded047391c25677409e4725a644b3da">RequestMeta::isChunked</a></div><div class="ttdeci">bool isChunked(void) const</div><div class="ttdoc">Returns true if transfer encoding is chunked.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00086">RequestMeta.cpp:86</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_ad4f70f6ac25a37bd22eead55abc63a88"><div class="ttname"><a href="classRequestMeta.html#ad4f70f6ac25a37bd22eead55abc63a88">RequestMeta::setConnectionClose</a></div><div class="ttdeci">void setConnectionClose(bool connection_close)</div><div class="ttdoc">Defines whether the connection should be closed after the response.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00034">RequestMeta.cpp:34</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_a3a3d2f425b7652c12b681fed8a66b8d9"><div class="ttname"><a href="classRequestParse.html#a3a3d2f425b7652c12b681fed8a66b8d9">RequestParse::checkMethod</a></div><div class="ttdeci">static void checkMethod(HttpRequest &amp;request, ServerConfig const &amp;config)</div><div class="ttdoc">Validates if the HTTP method is allowed in the matched location block.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00405">RequestParse.cpp:405</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_a41fb8fd94bdb7ca3d28f6578d803377d"><div class="ttname"><a href="classRequestParse.html#a41fb8fd94bdb7ca3d28f6578d803377d">RequestParse::isGreaterThanMaxBodySize</a></div><div class="ttdeci">static bool isGreaterThanMaxBodySize(std::size_t size, std::size_t maxBodySize)</div><div class="ttdoc">Compares body size against maximum allowed by server configuration.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00397">RequestParse.cpp:397</a></div></div>
 <div class="ttc" id="aclassRequestParse_html_a5f2f35f5815fbb977cde05b19af41687"><div class="ttname"><a href="classRequestParse.html#a5f2f35f5815fbb977cde05b19af41687">RequestParse::handleRawRequest</a></div><div class="ttdeci">static void handleRawRequest(const std::string &amp;rawRequest, HttpRequest &amp;request, ServerConfig const &amp;config)</div><div class="ttdoc">Parses and processes raw HTTP request data incrementally.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00019">RequestParse.cpp:19</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_aaacc39eadbaa26e80ed2b6bfc495fbb4"><div class="ttname"><a href="classRequestParse.html#aaacc39eadbaa26e80ed2b6bfc495fbb4">RequestParse::bodyChunked</a></div><div class="ttdeci">static void bodyChunked(char c, HttpRequest &amp;request, std::size_t maxBodySize)</div><div class="ttdoc">Handles Transfer-Encoding: chunked body parsing.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00310">RequestParse.cpp:310</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_ab81826a3c30d9a2a4f9d0f8ee6fa855c"><div class="ttname"><a href="classRequestParse.html#ab81826a3c30d9a2a4f9d0f8ee6fa855c">RequestParse::body</a></div><div class="ttdeci">static void body(char c, HttpRequest &amp;request, std::size_t maxBodySize)</div><div class="ttdoc">Processes the message body for both fixed-length and chunked modes.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00285">RequestParse.cpp:285</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_aba25f85cb2196680c3f6efb539ddb81b"><div class="ttname"><a href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">RequestParse::method</a></div><div class="ttdeci">static void method(const std::string &amp;method, HttpRequest &amp;request, ServerConfig const &amp;config)</div><div class="ttdoc">Determines the HTTP method and validates it against configuration.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00163">RequestParse.cpp:163</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_abba0923a3ae7422916f11a81b7c4d552"><div class="ttname"><a href="classRequestParse.html#abba0923a3ae7422916f11a81b7c4d552">RequestParse::requestLine</a></div><div class="ttdeci">static void requestLine(const std::string &amp;str, HttpRequest &amp;request, ServerConfig const &amp;config)</div><div class="ttdoc">Parses the HTTP request line (method, URI, version).</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00118">RequestParse.cpp:118</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_ac3dc2d89d0e245ac752b5327f64bb70d"><div class="ttname"><a href="classRequestParse.html#ac3dc2d89d0e245ac752b5327f64bb70d">RequestParse::headers</a></div><div class="ttdeci">static void headers(const std::string &amp;header, HttpRequest &amp;request, std::size_t maxBodySize)</div><div class="ttdoc">Parses individual HTTP header lines and updates metadata.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00208">RequestParse.cpp:208</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_af2da061f29a38d73ea2d3fabdf80e0ec"><div class="ttname"><a href="classRequestParse.html#af2da061f29a38d73ea2d3fabdf80e0ec">RequestParse::extractQueryString</a></div><div class="ttdeci">static std::string extractQueryString(const std::string uri)</div><div class="ttdoc">Extracts the query string portion from a URI.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00386">RequestParse.cpp:386</a></div></div>
+<div class="ttc" id="aclassRequestParse_html_af7f93170c8210ad122820dafaeee7f3a"><div class="ttname"><a href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">RequestParse::uri</a></div><div class="ttdeci">static void uri(const std::string str, HttpRequest &amp;request)</div><div class="ttdoc">Extracts and validates the request URI and query string.</div><div class="ttdef"><b>Definition</b> <a href="RequestParse_8cpp_source.html#l00185">RequestParse.cpp:185</a></div></div>
 <div class="ttc" id="aclassServerConfig_html"><div class="ttname"><a href="classServerConfig.html">ServerConfig</a></div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8hpp_source.html#l00012">ServerConfig.hpp:13</a></div></div>
 <div class="ttc" id="aclassServerConfig_html_a708ec8a352980380e36dc6090322ea41"><div class="ttname"><a href="classServerConfig.html#a708ec8a352980380e36dc6090322ea41">ServerConfig::matchLocation</a></div><div class="ttdeci">const LocationConfig &amp; matchLocation(const std::string &amp;uri) const</div><div class="ttdoc">Finds the LocationConfig that best matches a given URI.</div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cpp_source.html#l00157">ServerConfig.cpp:157</a></div></div>
 <div class="ttc" id="aclassServerConfig_html_abe0b48d3cb52666eb049828dc5b96ee0"><div class="ttname"><a href="classServerConfig.html#abe0b48d3cb52666eb049828dc5b96ee0">ServerConfig::getClientMaxBodySize</a></div><div class="ttdeci">std::size_t const &amp; getClientMaxBodySize(void) const</div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cpp_source.html#l00059">ServerConfig.cpp:59</a></div></div>
@@ -571,7 +599,7 @@ $(document).ready(function(){initNavTree('RequestParse_8cpp_source.html',''); in
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="dir_ca5187079aba66aea53c15e27e2ae4be.html">request</a></li><li class="navelem"><a class="el" href="RequestParse_8cpp.html">RequestParse.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_ca5187079aba66aea53c15e27e2ae4be.html">request</a></li><li class="navelem"><a class="el" href="RequestParse_8cpp.html">RequestParse.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

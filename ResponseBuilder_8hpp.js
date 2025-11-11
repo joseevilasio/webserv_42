@@ -1,4 +1,4 @@
 var ResponseBuilder_8hpp =
 [
-    [ "ResponseBuilder", "classResponseBuilder.html", null ]
+    [ "ResponseBuilder", "classResponseBuilder.html", "classResponseBuilder" ]
 ];

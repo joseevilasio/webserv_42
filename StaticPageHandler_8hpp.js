@@ -1,4 +1,4 @@
 var StaticPageHandler_8hpp =
 [
-    [ "StaticPageHandler", "classStaticPageHandler.html", null ]
+    [ "StaticPageHandler", "classStaticPageHandler.html", "classStaticPageHandler" ]
 ];

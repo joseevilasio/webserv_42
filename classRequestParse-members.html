@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -97,7 +98,20 @@ $(document).ready(function(){initNavTree('classRequestParse.html',''); initResiz
 
 <p>This is the complete list of members for <a class="el" href="classRequestParse.html">RequestParse</a>, including all inherited members.</p>
 <table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="classRequestParse.html#ab81826a3c30d9a2a4f9d0f8ee6fa855c">body</a>(char c, HttpRequest &amp;request, std::size_t maxBodySize)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRequestParse.html#aaacc39eadbaa26e80ed2b6bfc495fbb4">bodyChunked</a>(char c, HttpRequest &amp;request, std::size_t maxBodySize)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRequestParse.html#a3a3d2f425b7652c12b681fed8a66b8d9">checkMethod</a>(HttpRequest &amp;request, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRequestParse.html#af2da061f29a38d73ea2d3fabdf80e0ec">extractQueryString</a>(const std::string uri)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classRequestParse.html#a5f2f35f5815fbb977cde05b19af41687">handleRawRequest</a>(const std::string &amp;rawRequest, HttpRequest &amp;request, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRequestParse.html#ac3dc2d89d0e245ac752b5327f64bb70d">headers</a>(const std::string &amp;header, HttpRequest &amp;request, std::size_t maxBodySize)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRequestParse.html#a41fb8fd94bdb7ca3d28f6578d803377d">isGreaterThanMaxBodySize</a>(std::size_t size, std::size_t maxBodySize)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRequestParse.html#aba25f85cb2196680c3f6efb539ddb81b">method</a>(const std::string &amp;method, HttpRequest &amp;request, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRequestParse.html#a2f42d36dd570941f1f5a322f00d07558">operator=</a>(const RequestParse &amp;rhs)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRequestParse.html#abba0923a3ae7422916f11a81b7c4d552">requestLine</a>(const std::string &amp;str, HttpRequest &amp;request, ServerConfig const &amp;config)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRequestParse.html#a20d7803c97b4b0c715f7908af3052ccf">RequestParse</a>()</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRequestParse.html#a8e4f154c382d44b5a9d432467af552a5">RequestParse</a>(const RequestParse &amp;rhs)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRequestParse.html#af7f93170c8210ad122820dafaeee7f3a">uri</a>(const std::string str, HttpRequest &amp;request)</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classRequestParse.html#acf413a7e0066acc3aa21117f9b43d2b5">~RequestParse</a>()</td><td class="entry"><a class="el" href="classRequestParse.html">RequestParse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
