@@ -1,4 +1,4 @@
-<map id="init" name="init">
+<map id="includes/init" name="includes/init">
 <area shape="rect" id="node1" href="dir_3f8feeb2fa3bd0d1b751b257ed9f12a2.html" title="utils" alt="" coords="27,125,77,151"/>
 <area shape="rect" id="node2" href="dir_58f405cbeb8be40860eddc1ca79da41d.html" title="response" alt="" coords="102,125,183,151"/>
 <area shape="rect" id="node3" href="dir_73874bc7c4514872b370a71d1c538bc0.html" title="config" alt="" coords="208,125,269,151"/>

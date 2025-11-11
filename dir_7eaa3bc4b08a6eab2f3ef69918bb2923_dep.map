@@ -1,4 +1,4 @@
-<map id="request" name="request">
+<map id="includes/request" name="includes/request">
 <area shape="rect" id="node1" href="dir_58f405cbeb8be40860eddc1ca79da41d.html" title="response" alt="" coords="27,125,109,151"/>
 <area shape="rect" id="node2" href="dir_73874bc7c4514872b370a71d1c538bc0.html" title="config" alt="" coords="133,125,195,151"/>
 <area shape="rect" id="node3" href="dir_7b2244b00b13341312ee0ba9d873a6ab.html" title="dispatcher" alt="" coords="219,125,309,151"/>

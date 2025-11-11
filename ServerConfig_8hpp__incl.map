@@ -1,5 +1,5 @@
-<map id="ServerConfig.hpp" name="ServerConfig.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="139,5,272,31"/>
+<map id="includes/config/ServerConfig.hpp" name="includes/config/ServerConfig.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="88,5,323,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,152,64,177"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,33,132,52,91,81,66,110,48,141,43,138,62,107,88,77,129,48,171,28"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="97,152,159,177"/>

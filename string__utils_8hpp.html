@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: string_utils.hpp File Reference</title>
+<title>Webservinho: includes/utils/string_utils.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -106,64 +106,53 @@ $(document).ready(function(){initNavTree('string__utils_8hpp.html',''); initResi
 <code>#include &lt;cctype&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for string_utils.hpp:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp__incl.svg" width="644" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for string_utils.hpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp__dep__incl.svg" width="2200" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp__incl.svg" width="644" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp__dep__incl.svg" width="3219" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="string__utils_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afbeab407a81774ee771701ff3a07f113" id="r_afbeab407a81774ee771701ff3a07f113"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#afbeab407a81774ee771701ff3a07f113">getFileExtension</a> (const std::string &amp;path)</td></tr>
-<tr class="memdesc:afbeab407a81774ee771701ff3a07f113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the file extension from a path, including the dot.  <br /></td></tr>
-<tr class="separator:afbeab407a81774ee771701ff3a07f113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3435acf8aa5d1b7819803b35e546522a" id="r_a3435acf8aa5d1b7819803b35e546522a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a3435acf8aa5d1b7819803b35e546522a">hasParentTraversal</a> (const std::string &amp;s)</td></tr>
-<tr class="memdesc:a3435acf8aa5d1b7819803b35e546522a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a path string contains parent directory traversal (<code>..</code>) sequences.  <br /></td></tr>
-<tr class="separator:a3435acf8aa5d1b7819803b35e546522a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1586d17c9a5c7d77ee394f29867ca5" id="r_a9f1586d17c9a5c7d77ee394f29867ca5"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">joinPaths</a> (const std::string &amp;base, const std::string &amp;sub)</td></tr>
-<tr class="memdesc:a9f1586d17c9a5c7d77ee394f29867ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joins two path segments, ensuring correct slash placement.  <br /></td></tr>
-<tr class="separator:a9f1586d17c9a5c7d77ee394f29867ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaead76ef6abc119bc66f6ecdedfcb295" id="r_aaead76ef6abc119bc66f6ecdedfcb295"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#aaead76ef6abc119bc66f6ecdedfcb295">lTrim</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:aaead76ef6abc119bc66f6ecdedfcb295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes leading whitespace characters from a string.  <br /></td></tr>
 <tr class="separator:aaead76ef6abc119bc66f6ecdedfcb295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde35d1801d4d11cacb9a39124e8e96b" id="r_adde35d1801d4d11cacb9a39124e8e96b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#adde35d1801d4d11cacb9a39124e8e96b">rTrim</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:adde35d1801d4d11cacb9a39124e8e96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes trailing whitespace characters from a string.  <br /></td></tr>
 <tr class="separator:adde35d1801d4d11cacb9a39124e8e96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e0a64f03d46165259e5b198ffc9f6a" id="r_a06e0a64f03d46165259e5b198ffc9f6a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a06e0a64f03d46165259e5b198ffc9f6a">split</a> (const std::string &amp;str, const std::string &amp;sep)</td></tr>
-<tr class="memdesc:a06e0a64f03d46165259e5b198ffc9f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string by a given separator substring.  <br /></td></tr>
-<tr class="separator:a06e0a64f03d46165259e5b198ffc9f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a8d2d3492cbc9eecedf25fda818a4d" id="r_a54a8d2d3492cbc9eecedf25fda818a4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d">startsWith</a> (const std::string &amp;s, const std::string &amp;prefix)</td></tr>
-<tr class="memdesc:a54a8d2d3492cbc9eecedf25fda818a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a string starts with a given prefix.  <br /></td></tr>
-<tr class="separator:a54a8d2d3492cbc9eecedf25fda818a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a4293a53b143f48d36876fcaff304b4" id="r_a8a4293a53b143f48d36876fcaff304b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a8a4293a53b143f48d36876fcaff304b4">stringToHex</a> (const std::string &amp;str)</td></tr>
-<tr class="memdesc:a8a4293a53b143f48d36876fcaff304b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a hexadecimal string into an integer.  <br /></td></tr>
-<tr class="separator:a8a4293a53b143f48d36876fcaff304b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96432d89bc886bc9cdd1d73f86b2bbca" id="r_a96432d89bc886bc9cdd1d73f86b2bbca"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a96432d89bc886bc9cdd1d73f86b2bbca">toLower</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a96432d89bc886bc9cdd1d73f86b2bbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string to lowercase.  <br /></td></tr>
 <tr class="separator:a96432d89bc886bc9cdd1d73f86b2bbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad735976365693b45c427000fe042e173" id="r_ad735976365693b45c427000fe042e173"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad735976365693b45c427000fe042e173"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a> (T value)</td></tr>
-<tr class="memdesc:ad735976365693b45c427000fe042e173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts any printable type to a string representation.  <br /></td></tr>
-<tr class="separator:ad735976365693b45c427000fe042e173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d2414ad61e591a6b14cd96c306b59e4" id="r_a0d2414ad61e591a6b14cd96c306b59e4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a0d2414ad61e591a6b14cd96c306b59e4">toUpper</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a0d2414ad61e591a6b14cd96c306b59e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string to uppercase.  <br /></td></tr>
 <tr class="separator:a0d2414ad61e591a6b14cd96c306b59e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a01f705cc7b4a7317a57f6bf41aef25" id="r_a5a01f705cc7b4a7317a57f6bf41aef25"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a5a01f705cc7b4a7317a57f6bf41aef25">trim</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a5a01f705cc7b4a7317a57f6bf41aef25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes leading and trailing whitespace characters from a string.  <br /></td></tr>
 <tr class="separator:a5a01f705cc7b4a7317a57f6bf41aef25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8577ae0e014b88657679bf92631ee8c4" id="r_a8577ae0e014b88657679bf92631ee8c4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4">trim_copy</a> (const std::string &amp;s)</td></tr>
-<tr class="memdesc:a8577ae0e014b88657679bf92631ee8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of a string with surrounding spaces and tabs removed.  <br /></td></tr>
-<tr class="separator:a8577ae0e014b88657679bf92631ee8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4408f0c67e5adf4b8c58c34229e68775" id="r_a4408f0c67e5adf4b8c58c34229e68775"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775">uriEncode</a> (const std::string &amp;s)</td></tr>
-<tr class="memdesc:a4408f0c67e5adf4b8c58c34229e68775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a string for safe inclusion in a URI (percent-encoding).  <br /></td></tr>
-<tr class="separator:a4408f0c67e5adf4b8c58c34229e68775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e0a64f03d46165259e5b198ffc9f6a" id="r_a06e0a64f03d46165259e5b198ffc9f6a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a06e0a64f03d46165259e5b198ffc9f6a">split</a> (const std::string &amp;str, const std::string &amp;sep)</td></tr>
+<tr class="memdesc:a06e0a64f03d46165259e5b198ffc9f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string by a given separator substring.  <br /></td></tr>
+<tr class="separator:a06e0a64f03d46165259e5b198ffc9f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4293a53b143f48d36876fcaff304b4" id="r_a8a4293a53b143f48d36876fcaff304b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a8a4293a53b143f48d36876fcaff304b4">stringToHex</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a8a4293a53b143f48d36876fcaff304b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a hexadecimal string into an integer.  <br /></td></tr>
+<tr class="separator:a8a4293a53b143f48d36876fcaff304b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad735976365693b45c427000fe042e173" id="r_ad735976365693b45c427000fe042e173"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad735976365693b45c427000fe042e173"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a> (T value)</td></tr>
+<tr class="memdesc:ad735976365693b45c427000fe042e173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts any printable type to a string representation.  <br /></td></tr>
+<tr class="separator:ad735976365693b45c427000fe042e173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a8d2d3492cbc9eecedf25fda818a4d" id="r_a54a8d2d3492cbc9eecedf25fda818a4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d">startsWith</a> (const std::string &amp;s, const std::string &amp;prefix)</td></tr>
+<tr class="memdesc:a54a8d2d3492cbc9eecedf25fda818a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a string starts with a given prefix.  <br /></td></tr>
+<tr class="separator:a54a8d2d3492cbc9eecedf25fda818a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Collection of inline string utility functions used across Webservinho. </p>
@@ -172,166 +161,6 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="afbeab407a81774ee771701ff3a07f113" name="afbeab407a81774ee771701ff3a07f113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbeab407a81774ee771701ff3a07f113">&#9670;&#160;</a></span>getFileExtension()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string getFileExtension </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Extracts the file extension from a path, including the dot. </p>
-<dl class="section return"><dt>Returns</dt><dd>The extension (e.g., ".html") or an empty string if none. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00178">178</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  179</span>{</div>
-<div class="line"><span class="lineno">  180</span>    std::string::size_type dotPos = path.find_last_of(<span class="charliteral">&#39;.&#39;</span>);</div>
-<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">if</span> (dotPos == std::string::npos)</div>
-<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">return</span> (<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  183</span> </div>
-<div class="line"><span class="lineno">  184</span>    std::string::size_type slashPos = path.find_last_of(<span class="charliteral">&#39;/&#39;</span>);</div>
-<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">if</span> (slashPos != std::string::npos &amp;&amp; dotPos &lt; slashPos)</div>
-<div class="line"><span class="lineno">  186</span>        <span class="keywordflow">return</span> (<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  187</span> </div>
-<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">return</span> (path.substr(dotPos));</div>
-<div class="line"><span class="lineno">  189</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_afbeab407a81774ee771701ff3a07f113_icgraph.svg" width="1459" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a3435acf8aa5d1b7819803b35e546522a" name="a3435acf8aa5d1b7819803b35e546522a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3435acf8aa5d1b7819803b35e546522a">&#9670;&#160;</a></span>hasParentTraversal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool hasParentTraversal </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if a path string contains parent directory traversal (<code>..</code>) sequences. </p>
-
-<p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00147">147</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  148</span>{</div>
-<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">if</span> (s.find(<span class="stringliteral">&quot;/../&quot;</span>) != std::string::npos)</div>
-<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">if</span> (s.size() &gt;= 3 &amp;&amp; s.substr(0, 3) == <span class="stringliteral">&quot;../&quot;</span>)</div>
-<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  154</span> </div>
-<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">if</span> (s.size() &gt;= 3 &amp;&amp; s.substr(s.size() - 3) == <span class="stringliteral">&quot;/..&quot;</span>)</div>
-<div class="line"><span class="lineno">  156</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  159</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a3435acf8aa5d1b7819803b35e546522a_icgraph.svg" width="1091" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a9f1586d17c9a5c7d77ee394f29867ca5" name="a9f1586d17c9a5c7d77ee394f29867ca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f1586d17c9a5c7d77ee394f29867ca5">&#9670;&#160;</a></span>joinPaths()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string joinPaths </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>base</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>sub</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Joins two path segments, ensuring correct slash placement. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">base</td><td>Base path. </td></tr>
-    <tr><td class="paramname">sub</td><td>Subdirectory or file name. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Combined path with normalized slashes. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00131">131</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
-<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">if</span> (base.empty())</div>
-<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> (sub);</div>
-<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">if</span> (sub.empty())</div>
-<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">return</span> (base);</div>
-<div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">if</span> (base[base.size() - 1] == <span class="charliteral">&#39;/&#39;</span> &amp;&amp; sub[0] == <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">return</span> (base + sub.substr(1));</div>
-<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (base[base.size() - 1] != <span class="charliteral">&#39;/&#39;</span> &amp;&amp; sub[0] != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">return</span> (base + <span class="charliteral">&#39;/&#39;</span> + sub);</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">return</span> (base + sub);</div>
-<div class="line"><span class="lineno">  144</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a9f1586d17c9a5c7d77ee394f29867ca5_icgraph.svg" width="1294" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
 <a id="aaead76ef6abc119bc66f6ecdedfcb295" name="aaead76ef6abc119bc66f6ecdedfcb295"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaead76ef6abc119bc66f6ecdedfcb295">&#9670;&#160;</a></span>lTrim()</h2>
 
@@ -359,20 +188,8 @@ Here is the caller graph for this function:</div>
 <p>Removes leading whitespace characters from a string. </p>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00023">23</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
-<div class="line"><span class="lineno">   25</span>    std::string::size_type start = 0;</div>
-<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">while</span> (start &lt; str.size()</div>
-<div class="line"><span class="lineno">   27</span>        &amp;&amp; std::isspace(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(str[start])))</div>
-<div class="line"><span class="lineno">   28</span>    {</div>
-<div class="line"><span class="lineno">   29</span>        ++start;</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> (str.substr(start));</div>
-<div class="line"><span class="lineno">   32</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_aaead76ef6abc119bc66f6ecdedfcb295_icgraph.svg" width="1543" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="string__utils_8hpp_source.html#l00070">trim()</a>.</p>
 
 </div>
 </div>
@@ -403,25 +220,8 @@ Here is the caller graph for this function:</div>
 <p>Removes trailing whitespace characters from a string. </p>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00035">35</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (str.empty())</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span> (str);</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    std::string::size_type end = str.size() - 1;</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">while</span> (end != std::string::npos</div>
-<div class="line"><span class="lineno">   42</span>        &amp;&amp; std::isspace(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(str[end])))</div>
-<div class="line"><span class="lineno">   43</span>    {</div>
-<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (end == 0)</div>
-<div class="line"><span class="lineno">   45</span>            <span class="keywordflow">return</span> (<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   46</span>        --end;</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span> (str.substr(0, end + 1));</div>
-<div class="line"><span class="lineno">   49</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_adde35d1801d4d11cacb9a39124e8e96b_icgraph.svg" width="1543" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="string__utils_8hpp_source.html#l00070">trim()</a>.</p>
 
 </div>
 </div>
@@ -470,25 +270,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>A vector containing all tokens. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00080">80</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{</div>
-<div class="line"><span class="lineno">   82</span>    std::vector&lt;std::string&gt; tokens;</div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordtype">size_t</span> start = 0;</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordtype">size_t</span> end = str.find(sep);</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">while</span> (end != std::string::npos)</div>
-<div class="line"><span class="lineno">   87</span>    {</div>
-<div class="line"><span class="lineno">   88</span>        tokens.push_back(str.substr(start, end - start));</div>
-<div class="line"><span class="lineno">   89</span>        start = end + sep.length();</div>
-<div class="line"><span class="lineno">   90</span>        end = str.find(sep, start);</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="line"><span class="lineno">   92</span>    tokens.push_back(str.substr(start));</div>
-<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> (tokens);</div>
-<div class="line"><span class="lineno">   94</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a06e0a64f03d46165259e5b198ffc9f6a_icgraph.svg" width="1406" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -529,15 +310,8 @@ Here is the caller graph for this function:</div>
 <p>Checks whether a string starts with a given prefix. </p>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00120">120</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>{</div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> s.size() &gt;= prefix.size() &amp;&amp;</div>
-<div class="line"><span class="lineno">  123</span>            std::equal(prefix.begin(), prefix.end(), s.begin());</div>
-<div class="line"><span class="lineno">  124</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a54a8d2d3492cbc9eecedf25fda818a4d_icgraph.svg" width="2171" height="312"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="ServerConfig_8cpp_source.html#l00157">ServerConfig::matchLocation()</a>.</p>
 
 </div>
 </div>
@@ -569,20 +343,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>The converted value, or -1 if conversion fails. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00099">99</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>{</div>
-<div class="line"><span class="lineno">  101</span>    std::istringstream iss(str);</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordtype">int</span> value;</div>
-<div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>    iss &gt;&gt; std::hex &gt;&gt; value;</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (iss.fail() || !iss.eof())</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span> (-1);</div>
-<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">return</span> (value);</div>
-<div class="line"><span class="lineno">  108</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a8a4293a53b143f48d36876fcaff304b4_icgraph.svg" width="1664" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -613,17 +373,8 @@ Here is the caller graph for this function:</div>
 <p>Converts a string to lowercase. </p>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00052">52</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>{</div>
-<div class="line"><span class="lineno">   54</span>    std::string result = str;</div>
-<div class="line"><span class="lineno">   55</span>    std::transform(result.begin(), result.end(), result.begin(),</div>
-<div class="line"><span class="lineno">   56</span>                    (<span class="keywordtype">int</span>(*)(<span class="keywordtype">int</span>)) std::tolower);</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> (result);</div>
-<div class="line"><span class="lineno">   58</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a96432d89bc886bc9cdd1d73f86b2bbca_icgraph.svg" width="1688" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="HttpRequest_8cpp_source.html#l00234">HttpRequest::getHeader()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00108">ResponseBuilder::handleCgiOutput()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00336">HttpRequest::hasHeader()</a>, and <a class="el" href="HttpRequest_8cpp_source.html#l00345">HttpRequest::removeHeader()</a>.</p>
 
 </div>
 </div>
@@ -656,16 +407,8 @@ template&lt;typename T &gt; </div>
 <p>Converts any printable type to a string representation. </p>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00112">112</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
-<div class="line"><span class="lineno">  114</span>    std::ostringstream oss;</div>
-<div class="line"><span class="lineno">  115</span>    oss &lt;&lt; value;</div>
-<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> oss.str();</div>
-<div class="line"><span class="lineno">  117</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_ad735976365693b45c427000fe042e173_icgraph.svg" width="1800" height="1555"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="ServerSocket_8cpp_source.html#l00139">ServerSocket::acceptConnections()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00051">ClientConnection::adoptFD()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00157">ResponseBuilder::build()</a>, <a class="el" href="CgiHandler_8cpp_source.html#l00054">CgiHandler::buildEnvp()</a>, <a class="el" href="Signals_8cpp_source.html#l00096">Signals::checkCgiTimeouts()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00135">ClientConnection::completedRequest()</a>, <a class="el" href="Dispatcher_8cpp_source.html#l00029">Dispatcher::dispatch()</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00022">AutoIndexHandler::handle()</a>, <a class="el" href="UploadHandler_8cpp_source.html#l00017">UploadHandler::handle()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00108">ResponseBuilder::handleCgiOutput()</a>, <a class="el" href="RequestParse_8cpp_source.html#l00019">RequestParse::handleRawRequest()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00093">ResponseBuilder::handleStaticPageOutput()</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00122">ServerSocket::listenConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00092">WebServer::queueClientConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00125">WebServer::receiveRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00070">ClientConnection::recvData()</a>, <a class="el" href="Signals_8cpp_source.html#l00059">Signals::registerCgiProcess()</a>, <a class="el" href="WebServer_8cpp_source.html#l00241">WebServer::removeClientConnection()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00110">ClientConnection::sendData()</a>, <a class="el" href="WebServer_8cpp_source.html#l00183">WebServer::sendResponse()</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00027">ServerSocket::ServerSocket()</a>, <a class="el" href="CgiHandler_8cpp_source.html#l00145">CgiHandler::startAsync()</a>, <a class="el" href="WebServer_8cpp_source.html#l00064">WebServer::startServer()</a>, <a class="el" href="Signals_8cpp_source.html#l00070">Signals::unregisterCgiProcess()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00017">ClientConnection::~ClientConnection()</a>, and <a class="el" href="ServerSocket_8cpp_source.html#l00035">ServerSocket::~ServerSocket()</a>.</p>
 
 </div>
 </div>
@@ -696,13 +439,7 @@ Here is the caller graph for this function:</div>
 <p>Converts a string to uppercase. </p>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00061">61</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>{</div>
-<div class="line"><span class="lineno">   63</span>    std::string result = str;</div>
-<div class="line"><span class="lineno">   64</span>    std::transform(result.begin(), result.end(), result.begin(),</div>
-<div class="line"><span class="lineno">   65</span>                    (<span class="keywordtype">int</span>(*)(<span class="keywordtype">int</span>)) std::toupper);</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> (result);</div>
-<div class="line"><span class="lineno">   67</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5a01f705cc7b4a7317a57f6bf41aef25" name="a5a01f705cc7b4a7317a57f6bf41aef25"></a>
@@ -732,122 +469,10 @@ Here is the caller graph for this function:</div>
 <p>Removes leading and trailing whitespace characters from a string. </p>
 
 <p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00070">70</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="string__utils_8hpp.html#adde35d1801d4d11cacb9a39124e8e96b">rTrim</a>(<a class="code hl_function" href="string__utils_8hpp.html#aaead76ef6abc119bc66f6ecdedfcb295">lTrim</a>(str)));</div>
-<div class="line"><span class="lineno">   73</span>}</div>
-<div class="ttc" id="astring__utils_8hpp_html_aaead76ef6abc119bc66f6ecdedfcb295"><div class="ttname"><a href="string__utils_8hpp.html#aaead76ef6abc119bc66f6ecdedfcb295">lTrim</a></div><div class="ttdeci">std::string lTrim(const std::string &amp;str)</div><div class="ttdoc">Removes leading whitespace characters from a string.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00023">string_utils.hpp:23</a></div></div>
-<div class="ttc" id="astring__utils_8hpp_html_adde35d1801d4d11cacb9a39124e8e96b"><div class="ttname"><a href="string__utils_8hpp.html#adde35d1801d4d11cacb9a39124e8e96b">rTrim</a></div><div class="ttdeci">std::string rTrim(const std::string &amp;str)</div><div class="ttdoc">Removes trailing whitespace characters from a string.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00035">string_utils.hpp:35</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a5a01f705cc7b4a7317a57f6bf41aef25_cgraph.svg" width="163" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a5a01f705cc7b4a7317a57f6bf41aef25_icgraph.svg" width="1440" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
-</div>
-</div>
-<a id="a8577ae0e014b88657679bf92631ee8c4" name="a8577ae0e014b88657679bf92631ee8c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8577ae0e014b88657679bf92631ee8c4">&#9670;&#160;</a></span>trim_copy()</h2>
+<p class="reference">References <a class="el" href="string__utils_8hpp_source.html#l00023">lTrim()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00035">rTrim()</a>.</p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string trim_copy </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a copy of a string with surrounding spaces and tabs removed. </p>
-
-<p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00162">162</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  163</span>{</div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordtype">size_t</span> a = 0;</div>
-<div class="line"><span class="lineno">  165</span>    <span class="keywordtype">size_t</span> b = s.size();</div>
-<div class="line"><span class="lineno">  166</span> </div>
-<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">while</span> (a &lt; b &amp;&amp; (s[a] == <span class="charliteral">&#39; &#39;</span> || s[a] == <span class="charliteral">&#39;\t&#39;</span>))</div>
-<div class="line"><span class="lineno">  168</span>        a++;</div>
-<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">while</span> (b &gt; a &amp;&amp; (s[b - 1] == <span class="charliteral">&#39; &#39;</span> || s[b - 1] == <span class="charliteral">&#39;\t&#39;</span>))</div>
-<div class="line"><span class="lineno">  170</span>        b--;</div>
-<div class="line"><span class="lineno">  171</span> </div>
-<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">return</span> (s.substr(a, b - a));</div>
-<div class="line"><span class="lineno">  173</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a8577ae0e014b88657679bf92631ee8c4_icgraph.svg" width="1635" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a4408f0c67e5adf4b8c58c34229e68775" name="a4408f0c67e5adf4b8c58c34229e68775"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4408f0c67e5adf4b8c58c34229e68775">&#9670;&#160;</a></span>uriEncode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string uriEncode </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Encodes a string for safe inclusion in a URI (percent-encoding). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>The input string. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The URI-encoded version of the string. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="string__utils_8hpp_source.html#l00195">195</a> of file <a class="el" href="string__utils_8hpp_source.html">string_utils.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  196</span>{</div>
-<div class="line"><span class="lineno">  197</span>    std::ostringstream oss;</div>
-<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; s.size(); ++i)</div>
-<div class="line"><span class="lineno">  199</span>    {</div>
-<div class="line"><span class="lineno">  200</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c = s[i];</div>
-<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">if</span> (isalnum(c) || c == <span class="charliteral">&#39;-&#39;</span> || c == <span class="charliteral">&#39;_&#39;</span> || c == <span class="charliteral">&#39;.&#39;</span> || c == <span class="charliteral">&#39;~&#39;</span>)</div>
-<div class="line"><span class="lineno">  202</span>            oss &lt;&lt; c;</div>
-<div class="line"><span class="lineno">  203</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  204</span>            oss &lt;&lt; <span class="charliteral">&#39;%&#39;</span> &lt;&lt; std::uppercase &lt;&lt; std::hex &lt;&lt; std::setw(2)</div>
-<div class="line"><span class="lineno">  205</span>                &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; int(c);</div>
-<div class="line"><span class="lineno">  206</span>    }</div>
-<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">return</span> oss.str();</div>
-<div class="line"><span class="lineno">  208</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__utils_8hpp_a4408f0c67e5adf4b8c58c34229e68775_icgraph.svg" width="1102" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="reference">Referenced by <a class="el" href="ResponseBuilder_8cpp_source.html#l00108">ResponseBuilder::handleCgiOutput()</a>.</p>
 
 </div>
 </div>

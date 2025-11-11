@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: LocationConfig Class Reference</title>
+<title>Webservinho: LocationConfig Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -93,113 +93,84 @@ $(document).ready(function(){initNavTree('classLocationConfig.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classLocationConfig-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">LocationConfig Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="LocationConfig_8hpp_source.html">config/LocationConfig.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for LocationConfig:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig__coll__graph.svg" width="156" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0dbc1def632966c3091c627917f0cd63" id="r_a0dbc1def632966c3091c627917f0cd63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a0dbc1def632966c3091c627917f0cd63">addCgiExtension</a> (std::string const &amp;, std::string const &amp;)</td></tr>
-<tr class="memdesc:a0dbc1def632966c3091c627917f0cd63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an extension-handler pair for CGI execution.  <br /></td></tr>
-<tr class="separator:a0dbc1def632966c3091c627917f0cd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e266d92da9c483a9498d9cb270dd03" id="r_a73e266d92da9c483a9498d9cb270dd03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a73e266d92da9c483a9498d9cb270dd03">getAutoindex</a> (void) const</td></tr>
-<tr class="separator:a73e266d92da9c483a9498d9cb270dd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf2981a9b52e572d98e785aa4881f68" id="r_acdf2981a9b52e572d98e785aa4881f68"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#acdf2981a9b52e572d98e785aa4881f68">getCgiExtension</a> (void) const</td></tr>
-<tr class="separator:acdf2981a9b52e572d98e785aa4881f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd29007a675ad2835d85354d8a9778c4" id="r_abd29007a675ad2835d85354d8a9778c4"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">getCgiPath</a> (void) const</td></tr>
-<tr class="separator:abd29007a675ad2835d85354d8a9778c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eeda49130a29cbb64e48b845976821e" id="r_a4eeda49130a29cbb64e48b845976821e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a4eeda49130a29cbb64e48b845976821e">getHasAutoIndex</a> (void) const</td></tr>
-<tr class="separator:a4eeda49130a29cbb64e48b845976821e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e9d4ee69ce1e4da6e16b24053335540" id="r_a7e9d4ee69ce1e4da6e16b24053335540"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a7e9d4ee69ce1e4da6e16b24053335540">getHasIndexFiles</a> (void) const</td></tr>
-<tr class="separator:a7e9d4ee69ce1e4da6e16b24053335540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af10d1ad36f0f3a7a3119e054efd88b8b" id="r_af10d1ad36f0f3a7a3119e054efd88b8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#af10d1ad36f0f3a7a3119e054efd88b8b">getHasRoot</a> (void) const</td></tr>
-<tr class="separator:af10d1ad36f0f3a7a3119e054efd88b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6575d885f89f38865f7628e146f767d0" id="r_a6575d885f89f38865f7628e146f767d0"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a6575d885f89f38865f7628e146f767d0">getIndex</a> (void) const</td></tr>
-<tr class="separator:a6575d885f89f38865f7628e146f767d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f52451547425e809ccdea74557339fe" id="r_a8f52451547425e809ccdea74557339fe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0ea">RequestMethod::Method</a> &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a8f52451547425e809ccdea74557339fe">getMethods</a> (void) const</td></tr>
-<tr class="separator:a8f52451547425e809ccdea74557339fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c65ab0130599edbd485a2db4e50b82" id="r_a06c65ab0130599edbd485a2db4e50b82"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82">getPath</a> (void) const</td></tr>
-<tr class="separator:a06c65ab0130599edbd485a2db4e50b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc1ebbf3b6dc5466e87bd54525dd32e" id="r_a0cc1ebbf3b6dc5466e87bd54525dd32e"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a0cc1ebbf3b6dc5466e87bd54525dd32e">getReturn</a> (void) const</td></tr>
-<tr class="separator:a0cc1ebbf3b6dc5466e87bd54525dd32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b42578abcf4dc90a68989afdcd8dc1e" id="r_a6b42578abcf4dc90a68989afdcd8dc1e"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a6b42578abcf4dc90a68989afdcd8dc1e">getRoot</a> (void) const</td></tr>
-<tr class="separator:a6b42578abcf4dc90a68989afdcd8dc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f1bbc69016138d6488c674b15d62531" id="r_a8f1bbc69016138d6488c674b15d62531"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a8f1bbc69016138d6488c674b15d62531">getUploadEnabled</a> (void) const</td></tr>
-<tr class="separator:a8f1bbc69016138d6488c674b15d62531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58552fba744893cb3510234fbb71ae66" id="r_a58552fba744893cb3510234fbb71ae66"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a58552fba744893cb3510234fbb71ae66">getUploadPath</a> (void) const</td></tr>
-<tr class="separator:a58552fba744893cb3510234fbb71ae66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa48a3590d5cb69afe30d8f5f382d87f0" id="r_aa48a3590d5cb69afe30d8f5f382d87f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#aa48a3590d5cb69afe30d8f5f382d87f0">LocationConfig</a> (<a class="el" href="classLocationConfig.html">LocationConfig</a> const &amp;src)</td></tr>
-<tr class="memdesc:aa48a3590d5cb69afe30d8f5f382d87f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor — clones all configuration attributes.  <br /></td></tr>
-<tr class="separator:aa48a3590d5cb69afe30d8f5f382d87f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d6b52b35166ccbf7a926da09bf4fd17" id="r_a3d6b52b35166ccbf7a926da09bf4fd17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a3d6b52b35166ccbf7a926da09bf4fd17">LocationConfig</a> (std::string newPath)</td></tr>
 <tr class="memdesc:a3d6b52b35166ccbf7a926da09bf4fd17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classLocationConfig.html">LocationConfig</a> for a given path.  <br /></td></tr>
 <tr class="separator:a3d6b52b35166ccbf7a926da09bf4fd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b3e401c3b59f5fb1166310c2bf8ae0" id="r_a52b3e401c3b59f5fb1166310c2bf8ae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a52b3e401c3b59f5fb1166310c2bf8ae0">setAutoindex</a> (bool)</td></tr>
-<tr class="memdesc:a52b3e401c3b59f5fb1166310c2bf8ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables directory listing (autoindex).  <br /></td></tr>
-<tr class="separator:a52b3e401c3b59f5fb1166310c2bf8ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4871be53fb5569ae7cf1e33bfada0323" id="r_a4871be53fb5569ae7cf1e33bfada0323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a4871be53fb5569ae7cf1e33bfada0323">setCgiPath</a> (std::string)</td></tr>
-<tr class="memdesc:a4871be53fb5569ae7cf1e33bfada0323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the path to the CGI executable.  <br /></td></tr>
-<tr class="separator:a4871be53fb5569ae7cf1e33bfada0323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48a3590d5cb69afe30d8f5f382d87f0" id="r_aa48a3590d5cb69afe30d8f5f382d87f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#aa48a3590d5cb69afe30d8f5f382d87f0">LocationConfig</a> (<a class="el" href="classLocationConfig.html">LocationConfig</a> const &amp;src)</td></tr>
+<tr class="memdesc:aa48a3590d5cb69afe30d8f5f382d87f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor — clones all configuration attributes.  <br /></td></tr>
+<tr class="separator:aa48a3590d5cb69afe30d8f5f382d87f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecba2fa22c98fe7b7d49d048144e0f5" id="r_a7ecba2fa22c98fe7b7d49d048144e0f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a7ecba2fa22c98fe7b7d49d048144e0f5">~LocationConfig</a> (void)</td></tr>
+<tr class="memdesc:a7ecba2fa22c98fe7b7d49d048144e0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor — no dynamic resources to release.  <br /></td></tr>
+<tr class="separator:a7ecba2fa22c98fe7b7d49d048144e0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c65ab0130599edbd485a2db4e50b82" id="r_a06c65ab0130599edbd485a2db4e50b82"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82">getPath</a> (void) const</td></tr>
+<tr class="separator:a06c65ab0130599edbd485a2db4e50b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b42578abcf4dc90a68989afdcd8dc1e" id="r_a6b42578abcf4dc90a68989afdcd8dc1e"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a6b42578abcf4dc90a68989afdcd8dc1e">getRoot</a> (void) const</td></tr>
+<tr class="separator:a6b42578abcf4dc90a68989afdcd8dc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6575d885f89f38865f7628e146f767d0" id="r_a6575d885f89f38865f7628e146f767d0"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a6575d885f89f38865f7628e146f767d0">getIndex</a> (void) const</td></tr>
+<tr class="separator:a6575d885f89f38865f7628e146f767d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e266d92da9c483a9498d9cb270dd03" id="r_a73e266d92da9c483a9498d9cb270dd03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a73e266d92da9c483a9498d9cb270dd03">getAutoindex</a> (void) const</td></tr>
+<tr class="separator:a73e266d92da9c483a9498d9cb270dd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f52451547425e809ccdea74557339fe" id="r_a8f52451547425e809ccdea74557339fe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0ea">RequestMethod::Method</a> &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a8f52451547425e809ccdea74557339fe">getMethods</a> (void) const</td></tr>
+<tr class="separator:a8f52451547425e809ccdea74557339fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc1ebbf3b6dc5466e87bd54525dd32e" id="r_a0cc1ebbf3b6dc5466e87bd54525dd32e"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a0cc1ebbf3b6dc5466e87bd54525dd32e">getReturn</a> (void) const</td></tr>
+<tr class="separator:a0cc1ebbf3b6dc5466e87bd54525dd32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58552fba744893cb3510234fbb71ae66" id="r_a58552fba744893cb3510234fbb71ae66"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a58552fba744893cb3510234fbb71ae66">getUploadPath</a> (void) const</td></tr>
+<tr class="separator:a58552fba744893cb3510234fbb71ae66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1bbc69016138d6488c674b15d62531" id="r_a8f1bbc69016138d6488c674b15d62531"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a8f1bbc69016138d6488c674b15d62531">getUploadEnabled</a> (void) const</td></tr>
+<tr class="separator:a8f1bbc69016138d6488c674b15d62531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd29007a675ad2835d85354d8a9778c4" id="r_abd29007a675ad2835d85354d8a9778c4"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">getCgiPath</a> (void) const</td></tr>
+<tr class="separator:abd29007a675ad2835d85354d8a9778c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf2981a9b52e572d98e785aa4881f68" id="r_acdf2981a9b52e572d98e785aa4881f68"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#acdf2981a9b52e572d98e785aa4881f68">getCgiExtension</a> (void) const</td></tr>
+<tr class="separator:acdf2981a9b52e572d98e785aa4881f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10d1ad36f0f3a7a3119e054efd88b8b" id="r_af10d1ad36f0f3a7a3119e054efd88b8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#af10d1ad36f0f3a7a3119e054efd88b8b">getHasRoot</a> (void) const</td></tr>
+<tr class="separator:af10d1ad36f0f3a7a3119e054efd88b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9d4ee69ce1e4da6e16b24053335540" id="r_a7e9d4ee69ce1e4da6e16b24053335540"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a7e9d4ee69ce1e4da6e16b24053335540">getHasIndexFiles</a> (void) const</td></tr>
+<tr class="separator:a7e9d4ee69ce1e4da6e16b24053335540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eeda49130a29cbb64e48b845976821e" id="r_a4eeda49130a29cbb64e48b845976821e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a4eeda49130a29cbb64e48b845976821e">getHasAutoIndex</a> (void) const</td></tr>
+<tr class="separator:a4eeda49130a29cbb64e48b845976821e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1cdc0a2ef75f2efa6b5255cce7286ea" id="r_ad1cdc0a2ef75f2efa6b5255cce7286ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#ad1cdc0a2ef75f2efa6b5255cce7286ea">setRoot</a> (std::string)</td></tr>
+<tr class="memdesc:ad1cdc0a2ef75f2efa6b5255cce7286ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the root directory for this location.  <br /></td></tr>
+<tr class="separator:ad1cdc0a2ef75f2efa6b5255cce7286ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1173dea22f3b63e2b9ff5c43510b0dc9" id="r_a1173dea22f3b63e2b9ff5c43510b0dc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a1173dea22f3b63e2b9ff5c43510b0dc9">setIndex</a> (std::string)</td></tr>
 <tr class="memdesc:a1173dea22f3b63e2b9ff5c43510b0dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the default index file for this location.  <br /></td></tr>
 <tr class="separator:a1173dea22f3b63e2b9ff5c43510b0dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b3e401c3b59f5fb1166310c2bf8ae0" id="r_a52b3e401c3b59f5fb1166310c2bf8ae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a52b3e401c3b59f5fb1166310c2bf8ae0">setAutoindex</a> (bool)</td></tr>
+<tr class="memdesc:a52b3e401c3b59f5fb1166310c2bf8ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables directory listing (autoindex).  <br /></td></tr>
+<tr class="separator:a52b3e401c3b59f5fb1166310c2bf8ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a80290a8b4bc948f9041ddd2547ece4" id="r_a9a80290a8b4bc948f9041ddd2547ece4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a9a80290a8b4bc948f9041ddd2547ece4">setMethods</a> (std::vector&lt; <a class="el" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0ea">RequestMethod::Method</a> &gt;)</td></tr>
 <tr class="memdesc:a9a80290a8b4bc948f9041ddd2547ece4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the list of allowed HTTP methods.  <br /></td></tr>
 <tr class="separator:a9a80290a8b4bc948f9041ddd2547ece4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46184880a603b58940a464ebb9c4b77c" id="r_a46184880a603b58940a464ebb9c4b77c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a46184880a603b58940a464ebb9c4b77c">setReturn</a> (std::pair&lt; int, std::string &gt;)</td></tr>
 <tr class="memdesc:a46184880a603b58940a464ebb9c4b77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the HTTP redirection rule (status, URL).  <br /></td></tr>
 <tr class="separator:a46184880a603b58940a464ebb9c4b77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1cdc0a2ef75f2efa6b5255cce7286ea" id="r_ad1cdc0a2ef75f2efa6b5255cce7286ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#ad1cdc0a2ef75f2efa6b5255cce7286ea">setRoot</a> (std::string)</td></tr>
-<tr class="memdesc:ad1cdc0a2ef75f2efa6b5255cce7286ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the root directory for this location.  <br /></td></tr>
-<tr class="separator:ad1cdc0a2ef75f2efa6b5255cce7286ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29d368d1cc6ae21a7cf880159ca0e712" id="r_a29d368d1cc6ae21a7cf880159ca0e712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a29d368d1cc6ae21a7cf880159ca0e712">setUploadEnabled</a> (bool)</td></tr>
-<tr class="memdesc:a29d368d1cc6ae21a7cf880159ca0e712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables file upload for this location.  <br /></td></tr>
-<tr class="separator:a29d368d1cc6ae21a7cf880159ca0e712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81921c69bff5933cb0087c4c5c2a9c1b" id="r_a81921c69bff5933cb0087c4c5c2a9c1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a81921c69bff5933cb0087c4c5c2a9c1b">setUploadPath</a> (std::string)</td></tr>
 <tr class="memdesc:a81921c69bff5933cb0087c4c5c2a9c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the upload directory for incoming files.  <br /></td></tr>
 <tr class="separator:a81921c69bff5933cb0087c4c5c2a9c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ecba2fa22c98fe7b7d49d048144e0f5" id="r_a7ecba2fa22c98fe7b7d49d048144e0f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a7ecba2fa22c98fe7b7d49d048144e0f5">~LocationConfig</a> (void)</td></tr>
-<tr class="memdesc:a7ecba2fa22c98fe7b7d49d048144e0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor — no dynamic resources to release.  <br /></td></tr>
-<tr class="separator:a7ecba2fa22c98fe7b7d49d048144e0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aeb0fd140c6b4334333bd2795308d42e5" id="r_aeb0fd140c6b4334333bd2795308d42e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLocationConfig.html">LocationConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#aeb0fd140c6b4334333bd2795308d42e5">operator=</a> (<a class="el" href="classLocationConfig.html">LocationConfig</a> const &amp;rhs)</td></tr>
-<tr class="separator:aeb0fd140c6b4334333bd2795308d42e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a71aec698b3e568a9a8c50b69d0d88fdb" id="r_a71aec698b3e568a9a8c50b69d0d88fdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a71aec698b3e568a9a8c50b69d0d88fdb">_autoindex</a></td></tr>
-<tr class="separator:a71aec698b3e568a9a8c50b69d0d88fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11fe41e7c99e57f5a94716d1675b0ccc" id="r_a11fe41e7c99e57f5a94716d1675b0ccc"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a11fe41e7c99e57f5a94716d1675b0ccc">_cgiExtension</a></td></tr>
-<tr class="separator:a11fe41e7c99e57f5a94716d1675b0ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ea043f43ea6ecea8c8f0a25b908ace6" id="r_a7ea043f43ea6ecea8c8f0a25b908ace6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a7ea043f43ea6ecea8c8f0a25b908ace6">_cgiPath</a></td></tr>
-<tr class="separator:a7ea043f43ea6ecea8c8f0a25b908ace6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af64f7fdbe53589080ddaa44fe2a0765f" id="r_af64f7fdbe53589080ddaa44fe2a0765f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#af64f7fdbe53589080ddaa44fe2a0765f">_hasAutoIndex</a></td></tr>
-<tr class="separator:af64f7fdbe53589080ddaa44fe2a0765f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fd4a170dab771b40ee768e4438b2062" id="r_a4fd4a170dab771b40ee768e4438b2062"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a4fd4a170dab771b40ee768e4438b2062">_hasIndexFiles</a></td></tr>
-<tr class="separator:a4fd4a170dab771b40ee768e4438b2062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad563e58ea19857b7b637dadb142cf886" id="r_ad563e58ea19857b7b637dadb142cf886"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#ad563e58ea19857b7b637dadb142cf886">_hasRoot</a></td></tr>
-<tr class="separator:ad563e58ea19857b7b637dadb142cf886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3907485ec972c08ab6e6bf6233fd901b" id="r_a3907485ec972c08ab6e6bf6233fd901b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a3907485ec972c08ab6e6bf6233fd901b">_indexFiles</a></td></tr>
-<tr class="separator:a3907485ec972c08ab6e6bf6233fd901b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec6e27b4612cc6eb77a5eccc00b2712" id="r_a4ec6e27b4612cc6eb77a5eccc00b2712"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0ea">RequestMethod::Method</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a4ec6e27b4612cc6eb77a5eccc00b2712">_methods</a></td></tr>
-<tr class="separator:a4ec6e27b4612cc6eb77a5eccc00b2712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f6cb57512cd0b41d80196da19af06b6" id="r_a4f6cb57512cd0b41d80196da19af06b6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a4f6cb57512cd0b41d80196da19af06b6">_path</a></td></tr>
-<tr class="separator:a4f6cb57512cd0b41d80196da19af06b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09b9293634615428cf360a0cef1be9b3" id="r_a09b9293634615428cf360a0cef1be9b3"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a09b9293634615428cf360a0cef1be9b3">_return</a></td></tr>
-<tr class="separator:a09b9293634615428cf360a0cef1be9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d4b50a2181f97b823f7d34035549518" id="r_a7d4b50a2181f97b823f7d34035549518"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a7d4b50a2181f97b823f7d34035549518">_root</a></td></tr>
-<tr class="separator:a7d4b50a2181f97b823f7d34035549518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2a668a6ff00e81a5afadfc83f690776" id="r_af2a668a6ff00e81a5afadfc83f690776"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#af2a668a6ff00e81a5afadfc83f690776">_uploadEnabled</a></td></tr>
-<tr class="separator:af2a668a6ff00e81a5afadfc83f690776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af188f8f276febf78ef06109d239d0c12" id="r_af188f8f276febf78ef06109d239d0c12"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#af188f8f276febf78ef06109d239d0c12">_uploadPath</a></td></tr>
-<tr class="separator:af188f8f276febf78ef06109d239d0c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d368d1cc6ae21a7cf880159ca0e712" id="r_a29d368d1cc6ae21a7cf880159ca0e712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a29d368d1cc6ae21a7cf880159ca0e712">setUploadEnabled</a> (bool)</td></tr>
+<tr class="memdesc:a29d368d1cc6ae21a7cf880159ca0e712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables file upload for this location.  <br /></td></tr>
+<tr class="separator:a29d368d1cc6ae21a7cf880159ca0e712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4871be53fb5569ae7cf1e33bfada0323" id="r_a4871be53fb5569ae7cf1e33bfada0323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a4871be53fb5569ae7cf1e33bfada0323">setCgiPath</a> (std::string)</td></tr>
+<tr class="memdesc:a4871be53fb5569ae7cf1e33bfada0323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the path to the CGI executable.  <br /></td></tr>
+<tr class="separator:a4871be53fb5569ae7cf1e33bfada0323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbc1def632966c3091c627917f0cd63" id="r_a0dbc1def632966c3091c627917f0cd63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocationConfig.html#a0dbc1def632966c3091c627917f0cd63">addCgiExtension</a> (std::string const &amp;, std::string const &amp;)</td></tr>
+<tr class="memdesc:a0dbc1def632966c3091c627917f0cd63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an extension-handler pair for CGI execution.  <br /></td></tr>
+<tr class="separator:a0dbc1def632966c3091c627917f0cd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -229,24 +200,9 @@ Private Attributes</h2></td></tr>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00012">12</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>    : <a class="code hl_variable" href="classLocationConfig.html#a4f6cb57512cd0b41d80196da19af06b6">_path</a>(newPath),</div>
-<div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="classLocationConfig.html#a71aec698b3e568a9a8c50b69d0d88fdb">_autoindex</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="classLocationConfig.html#af2a668a6ff00e81a5afadfc83f690776">_uploadEnabled</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   16</span>    <a class="code hl_variable" href="classLocationConfig.html#ad563e58ea19857b7b637dadb142cf886">_hasRoot</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   17</span>    <a class="code hl_variable" href="classLocationConfig.html#a4fd4a170dab771b40ee768e4438b2062">_hasIndexFiles</a>(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   18</span>    <a class="code hl_variable" href="classLocationConfig.html#af64f7fdbe53589080ddaa44fe2a0765f">_hasAutoIndex</a>(<span class="keyword">false</span>)</div>
-<div class="line"><span class="lineno">   19</span>{</div>
-<div class="line"><span class="lineno">   20</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a4ec6e27b4612cc6eb77a5eccc00b2712">_methods</a>.push_back(<a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaae25257890235f999204793748f1752c9">RequestMethod::GET</a>);</div>
-<div class="line"><span class="lineno">   21</span>}</div>
-<div class="ttc" id="aclassLocationConfig_html_a4ec6e27b4612cc6eb77a5eccc00b2712"><div class="ttname"><a href="classLocationConfig.html#a4ec6e27b4612cc6eb77a5eccc00b2712">LocationConfig::_methods</a></div><div class="ttdeci">std::vector&lt; RequestMethod::Method &gt; _methods</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00019">LocationConfig.hpp:19</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_a4f6cb57512cd0b41d80196da19af06b6"><div class="ttname"><a href="classLocationConfig.html#a4f6cb57512cd0b41d80196da19af06b6">LocationConfig::_path</a></div><div class="ttdeci">std::string _path</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00015">LocationConfig.hpp:15</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_a4fd4a170dab771b40ee768e4438b2062"><div class="ttname"><a href="classLocationConfig.html#a4fd4a170dab771b40ee768e4438b2062">LocationConfig::_hasIndexFiles</a></div><div class="ttdeci">bool _hasIndexFiles</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00030">LocationConfig.hpp:30</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_a71aec698b3e568a9a8c50b69d0d88fdb"><div class="ttname"><a href="classLocationConfig.html#a71aec698b3e568a9a8c50b69d0d88fdb">LocationConfig::_autoindex</a></div><div class="ttdeci">bool _autoindex</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00018">LocationConfig.hpp:18</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_ad563e58ea19857b7b637dadb142cf886"><div class="ttname"><a href="classLocationConfig.html#ad563e58ea19857b7b637dadb142cf886">LocationConfig::_hasRoot</a></div><div class="ttdeci">bool _hasRoot</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00029">LocationConfig.hpp:29</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_af2a668a6ff00e81a5afadfc83f690776"><div class="ttname"><a href="classLocationConfig.html#af2a668a6ff00e81a5afadfc83f690776">LocationConfig::_uploadEnabled</a></div><div class="ttdeci">bool _uploadEnabled</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00024">LocationConfig.hpp:24</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_af64f7fdbe53589080ddaa44fe2a0765f"><div class="ttname"><a href="classLocationConfig.html#af64f7fdbe53589080ddaa44fe2a0765f">LocationConfig::_hasAutoIndex</a></div><div class="ttdeci">bool _hasAutoIndex</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00031">LocationConfig.hpp:31</a></div></div>
-<div class="ttc" id="astructRequestMethod_html_a63081603a32a15207a690e0ddd2bc0eaae25257890235f999204793748f1752c9"><div class="ttname"><a href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaae25257890235f999204793748f1752c9">RequestMethod::GET</a></div><div class="ttdeci">@ GET</div><div class="ttdef"><b>Definition</b> <a href="RequestMethod_8hpp_source.html#l00028">RequestMethod.hpp:28</a></div></div>
-</div><!-- fragment -->
+
+<p class="reference">References <a class="el" href="RequestMethod_8hpp_source.html#l00028">RequestMethod::GET</a>.</p>
+
 </div>
 </div>
 <a id="aa48a3590d5cb69afe30d8f5f382d87f0" name="aa48a3590d5cb69afe30d8f5f382d87f0"></a>
@@ -268,27 +224,7 @@ Private Attributes</h2></td></tr>
 <p>Copy constructor — clones all configuration attributes. </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00026">26</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>    : <a class="code hl_variable" href="classLocationConfig.html#a4f6cb57512cd0b41d80196da19af06b6">_path</a>(src._path),</div>
-<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="classLocationConfig.html#a7d4b50a2181f97b823f7d34035549518">_root</a>(src._root),</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_variable" href="classLocationConfig.html#a3907485ec972c08ab6e6bf6233fd901b">_indexFiles</a>(src._indexFiles),</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="classLocationConfig.html#a71aec698b3e568a9a8c50b69d0d88fdb">_autoindex</a>(src._autoindex),</div>
-<div class="line"><span class="lineno">   31</span>    <a class="code hl_variable" href="classLocationConfig.html#a4ec6e27b4612cc6eb77a5eccc00b2712">_methods</a>(src._methods),</div>
-<div class="line"><span class="lineno">   32</span>    <a class="code hl_variable" href="classLocationConfig.html#a09b9293634615428cf360a0cef1be9b3">_return</a>(src._return),</div>
-<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="classLocationConfig.html#af188f8f276febf78ef06109d239d0c12">_uploadPath</a>(src._uploadPath),</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="classLocationConfig.html#af2a668a6ff00e81a5afadfc83f690776">_uploadEnabled</a>(src._uploadEnabled),</div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_variable" href="classLocationConfig.html#a7ea043f43ea6ecea8c8f0a25b908ace6">_cgiPath</a>(src._cgiPath),</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_variable" href="classLocationConfig.html#a11fe41e7c99e57f5a94716d1675b0ccc">_cgiExtension</a>(src._cgiExtension),</div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_variable" href="classLocationConfig.html#ad563e58ea19857b7b637dadb142cf886">_hasRoot</a>(src._hasRoot),</div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_variable" href="classLocationConfig.html#a4fd4a170dab771b40ee768e4438b2062">_hasIndexFiles</a>(src._hasIndexFiles),</div>
-<div class="line"><span class="lineno">   39</span>    <a class="code hl_variable" href="classLocationConfig.html#af64f7fdbe53589080ddaa44fe2a0765f">_hasAutoIndex</a>(src._hasAutoIndex)</div>
-<div class="line"><span class="lineno">   40</span>{}</div>
-<div class="ttc" id="aclassLocationConfig_html_a09b9293634615428cf360a0cef1be9b3"><div class="ttname"><a href="classLocationConfig.html#a09b9293634615428cf360a0cef1be9b3">LocationConfig::_return</a></div><div class="ttdeci">std::pair&lt; int, std::string &gt; _return</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00022">LocationConfig.hpp:22</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_a11fe41e7c99e57f5a94716d1675b0ccc"><div class="ttname"><a href="classLocationConfig.html#a11fe41e7c99e57f5a94716d1675b0ccc">LocationConfig::_cgiExtension</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; _cgiExtension</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00026">LocationConfig.hpp:26</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_a3907485ec972c08ab6e6bf6233fd901b"><div class="ttname"><a href="classLocationConfig.html#a3907485ec972c08ab6e6bf6233fd901b">LocationConfig::_indexFiles</a></div><div class="ttdeci">std::string _indexFiles</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00017">LocationConfig.hpp:17</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_a7d4b50a2181f97b823f7d34035549518"><div class="ttname"><a href="classLocationConfig.html#a7d4b50a2181f97b823f7d34035549518">LocationConfig::_root</a></div><div class="ttdeci">std::string _root</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00016">LocationConfig.hpp:16</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_a7ea043f43ea6ecea8c8f0a25b908ace6"><div class="ttname"><a href="classLocationConfig.html#a7ea043f43ea6ecea8c8f0a25b908ace6">LocationConfig::_cgiPath</a></div><div class="ttdeci">std::string _cgiPath</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00025">LocationConfig.hpp:25</a></div></div>
-<div class="ttc" id="aclassLocationConfig_html_af188f8f276febf78ef06109d239d0c12"><div class="ttname"><a href="classLocationConfig.html#af188f8f276febf78ef06109d239d0c12">LocationConfig::_uploadPath</a></div><div class="ttdeci">std::string _uploadPath</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00023">LocationConfig.hpp:23</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7ecba2fa22c98fe7b7d49d048144e0f5" name="a7ecba2fa22c98fe7b7d49d048144e0f5"></a>
@@ -310,8 +246,7 @@ Private Attributes</h2></td></tr>
 <p>Destructor — no dynamic resources to release. </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00045">45</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>{}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -345,14 +280,6 @@ Private Attributes</h2></td></tr>
 <p>Example: <code>addCgiExtension(".py", "/usr/bin/python3");</code> </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00184">184</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  185</span>{</div>
-<div class="line"><span class="lineno">  186</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a11fe41e7c99e57f5a94716d1675b0ccc">_cgiExtension</a>[ext] = handler;</div>
-<div class="line"><span class="lineno">  187</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a0dbc1def632966c3091c627917f0cd63_icgraph.svg" width="1055" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -374,12 +301,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>True if directory autoindexing is enabled. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00065">65</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a71aec698b3e568a9a8c50b69d0d88fdb">_autoindex</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a73e266d92da9c483a9498d9cb270dd03_icgraph.svg" width="1358" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -401,12 +322,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Map of CGI file extensions and their associated interpreters. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00095">95</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a11fe41e7c99e57f5a94716d1675b0ccc">_cgiExtension</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_acdf2981a9b52e572d98e785aa4881f68_icgraph.svg" width="1560" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -428,12 +343,8 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Path to the CGI executable handler. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00090">90</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a7ea043f43ea6ecea8c8f0a25b908ace6">_cgiPath</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_abd29007a675ad2835d85354d8a9778c4_icgraph.svg" width="1408" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00027">Router::resolve()</a>.</p>
 
 </div>
 </div>
@@ -455,12 +366,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>True if autoindex directive was explicitly set. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00110">110</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#af64f7fdbe53589080ddaa44fe2a0765f">_hasAutoIndex</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a4eeda49130a29cbb64e48b845976821e_icgraph.svg" width="1467" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -482,12 +387,8 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>True if an index file is explicitly set. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00105">105</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  105</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a4fd4a170dab771b40ee768e4438b2062">_hasIndexFiles</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a7e9d4ee69ce1e4da6e16b24053335540_icgraph.svg" width="1488" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00027">Router::resolve()</a>.</p>
 
 </div>
 </div>
@@ -509,12 +410,8 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>True if a root directive is explicitly set. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00100">100</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#ad563e58ea19857b7b637dadb142cf886">_hasRoot</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_af10d1ad36f0f3a7a3119e054efd88b8b_icgraph.svg" width="1483" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00027">Router::resolve()</a>.</p>
 
 </div>
 </div>
@@ -536,12 +433,8 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>The index file (e.g., "index.html"). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00060">60</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a3907485ec972c08ab6e6bf6233fd901b">_indexFiles</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a6575d885f89f38865f7628e146f767d0_icgraph.svg" width="1395" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00027">Router::resolve()</a>.</p>
 
 </div>
 </div>
@@ -563,12 +456,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>The list of allowed HTTP methods (GET, POST, DELETE). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00070">70</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a4ec6e27b4612cc6eb77a5eccc00b2712">_methods</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a8f52451547425e809ccdea74557339fe_icgraph.svg" width="2027" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -590,12 +477,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>The route path pattern of the location block. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00050">50</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a4f6cb57512cd0b41d80196da19af06b6">_path</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a06c65ab0130599edbd485a2db4e50b82_icgraph.svg" width="2266" height="363"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -617,12 +498,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>HTTP redirect rule as (status_code, target_url). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00075">75</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a09b9293634615428cf360a0cef1be9b3">_return</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a0cc1ebbf3b6dc5466e87bd54525dd32e_icgraph.svg" width="1323" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -644,12 +519,8 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>The root directory assigned to this location. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00055">55</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a7d4b50a2181f97b823f7d34035549518">_root</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a6b42578abcf4dc90a68989afdcd8dc1e_icgraph.svg" width="1390" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00027">Router::resolve()</a>.</p>
 
 </div>
 </div>
@@ -671,12 +542,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>True if uploads are enabled for this location. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00085">85</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#af2a668a6ff00e81a5afadfc83f690776">_uploadEnabled</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a8f1bbc69016138d6488c674b15d62531_icgraph.svg" width="1318" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -698,38 +563,8 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Directory path where uploaded files will be stored. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00080">80</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classLocationConfig.html#af188f8f276febf78ef06109d239d0c12">_uploadPath</a>; }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a58552fba744893cb3510234fbb71ae66_icgraph.svg" width="1346" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
-</div>
-</div>
-<a id="aeb0fd140c6b4334333bd2795308d42e5" name="aeb0fd140c6b4334333bd2795308d42e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0fd140c6b4334333bd2795308d42e5">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classLocationConfig.html">LocationConfig</a> &amp; LocationConfig::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classLocationConfig.html">LocationConfig</a> const &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00029">Dispatcher::dispatch()</a>.</p>
 
 </div>
 </div>
@@ -752,15 +587,6 @@ Here is the caller graph for this function:</div>
 <p>Enables or disables directory listing (autoindex). </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00133">133</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  134</span>{</div>
-<div class="line"><span class="lineno">  135</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a71aec698b3e568a9a8c50b69d0d88fdb">_autoindex</a> = newAutoindex;</div>
-<div class="line"><span class="lineno">  136</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#af64f7fdbe53589080ddaa44fe2a0765f">_hasAutoIndex</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  137</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a52b3e401c3b59f5fb1166310c2bf8ae0_icgraph.svg" width="1032" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -783,14 +609,6 @@ Here is the caller graph for this function:</div>
 <p>Sets the path to the CGI executable. </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00174">174</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  175</span>{</div>
-<div class="line"><span class="lineno">  176</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a7ea043f43ea6ecea8c8f0a25b908ace6">_cgiPath</a> = newPath;</div>
-<div class="line"><span class="lineno">  177</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a4871be53fb5569ae7cf1e33bfada0323_icgraph.svg" width="1015" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -813,15 +631,6 @@ Here is the caller graph for this function:</div>
 <p>Defines the default index file for this location. </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00124">124</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  125</span>{</div>
-<div class="line"><span class="lineno">  126</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a3907485ec972c08ab6e6bf6233fd901b">_indexFiles</a> = newIndex;</div>
-<div class="line"><span class="lineno">  127</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a4fd4a170dab771b40ee768e4438b2062">_hasIndexFiles</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  128</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a1173dea22f3b63e2b9ff5c43510b0dc9_icgraph.svg" width="1003" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -844,14 +653,6 @@ Here is the caller graph for this function:</div>
 <p>Sets the list of allowed HTTP methods. </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00142">142</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  143</span>{</div>
-<div class="line"><span class="lineno">  144</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a4ec6e27b4612cc6eb77a5eccc00b2712">_methods</a> = newMethods;</div>
-<div class="line"><span class="lineno">  145</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a9a80290a8b4bc948f9041ddd2547ece4_icgraph.svg" width="1023" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -874,14 +675,6 @@ Here is the caller graph for this function:</div>
 <p>Sets the HTTP redirection rule (status, URL). </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00150">150</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
-<div class="line"><span class="lineno">  152</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a09b9293634615428cf360a0cef1be9b3">_return</a> = newReturn;</div>
-<div class="line"><span class="lineno">  153</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a46184880a603b58940a464ebb9c4b77c_icgraph.svg" width="1010" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -904,15 +697,6 @@ Here is the caller graph for this function:</div>
 <p>Sets the root directory for this location. </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00115">115</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  116</span>{</div>
-<div class="line"><span class="lineno">  117</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#a7d4b50a2181f97b823f7d34035549518">_root</a> = newRoot;</div>
-<div class="line"><span class="lineno">  118</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#ad563e58ea19857b7b637dadb142cf886">_hasRoot</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  119</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_ad1cdc0a2ef75f2efa6b5255cce7286ea_icgraph.svg" width="996" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -935,14 +719,6 @@ Here is the caller graph for this function:</div>
 <p>Enables or disables file upload for this location. </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00166">166</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  167</span>{</div>
-<div class="line"><span class="lineno">  168</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#af2a668a6ff00e81a5afadfc83f690776">_uploadEnabled</a> = enabled;</div>
-<div class="line"><span class="lineno">  169</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a29d368d1cc6ae21a7cf880159ca0e712_icgraph.svg" width="1012" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -965,333 +741,12 @@ Here is the caller graph for this function:</div>
 <p>Defines the upload directory for incoming files. </p>
 
 <p class="definition">Definition at line <a class="el" href="LocationConfig_8cpp_source.html#l00158">158</a> of file <a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  159</span>{</div>
-<div class="line"><span class="lineno">  160</span>    this-&gt;<a class="code hl_variable" href="classLocationConfig.html#af188f8f276febf78ef06109d239d0c12">_uploadPath</a> = newPath;</div>
-<div class="line"><span class="lineno">  161</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLocationConfig_a81921c69bff5933cb0087c4c5c2a9c1b_icgraph.svg" width="1040" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a71aec698b3e568a9a8c50b69d0d88fdb" name="a71aec698b3e568a9a8c50b69d0d88fdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71aec698b3e568a9a8c50b69d0d88fdb">&#9670;&#160;</a></span>_autoindex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LocationConfig::_autoindex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00018">18</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a11fe41e7c99e57f5a94716d1675b0ccc" name="a11fe41e7c99e57f5a94716d1675b0ccc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11fe41e7c99e57f5a94716d1675b0ccc">&#9670;&#160;</a></span>_cgiExtension</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;std::string, std::string&gt; LocationConfig::_cgiExtension</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00026">26</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a7ea043f43ea6ecea8c8f0a25b908ace6" name="a7ea043f43ea6ecea8c8f0a25b908ace6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ea043f43ea6ecea8c8f0a25b908ace6">&#9670;&#160;</a></span>_cgiPath</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string LocationConfig::_cgiPath</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00025">25</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="af64f7fdbe53589080ddaa44fe2a0765f" name="af64f7fdbe53589080ddaa44fe2a0765f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af64f7fdbe53589080ddaa44fe2a0765f">&#9670;&#160;</a></span>_hasAutoIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LocationConfig::_hasAutoIndex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00031">31</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a4fd4a170dab771b40ee768e4438b2062" name="a4fd4a170dab771b40ee768e4438b2062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fd4a170dab771b40ee768e4438b2062">&#9670;&#160;</a></span>_hasIndexFiles</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LocationConfig::_hasIndexFiles</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00030">30</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="ad563e58ea19857b7b637dadb142cf886" name="ad563e58ea19857b7b637dadb142cf886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad563e58ea19857b7b637dadb142cf886">&#9670;&#160;</a></span>_hasRoot</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LocationConfig::_hasRoot</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00029">29</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a3907485ec972c08ab6e6bf6233fd901b" name="a3907485ec972c08ab6e6bf6233fd901b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3907485ec972c08ab6e6bf6233fd901b">&#9670;&#160;</a></span>_indexFiles</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string LocationConfig::_indexFiles</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00017">17</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a4ec6e27b4612cc6eb77a5eccc00b2712" name="a4ec6e27b4612cc6eb77a5eccc00b2712"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ec6e27b4612cc6eb77a5eccc00b2712">&#9670;&#160;</a></span>_methods</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0ea">RequestMethod::Method</a>&gt; LocationConfig::_methods</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00019">19</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a4f6cb57512cd0b41d80196da19af06b6" name="a4f6cb57512cd0b41d80196da19af06b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f6cb57512cd0b41d80196da19af06b6">&#9670;&#160;</a></span>_path</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string LocationConfig::_path</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00015">15</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a09b9293634615428cf360a0cef1be9b3" name="a09b9293634615428cf360a0cef1be9b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09b9293634615428cf360a0cef1be9b3">&#9670;&#160;</a></span>_return</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::pair&lt;int, std::string&gt; LocationConfig::_return</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00022">22</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a7d4b50a2181f97b823f7d34035549518" name="a7d4b50a2181f97b823f7d34035549518"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d4b50a2181f97b823f7d34035549518">&#9670;&#160;</a></span>_root</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string LocationConfig::_root</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00016">16</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="af2a668a6ff00e81a5afadfc83f690776" name="af2a668a6ff00e81a5afadfc83f690776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2a668a6ff00e81a5afadfc83f690776">&#9670;&#160;</a></span>_uploadEnabled</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LocationConfig::_uploadEnabled</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00024">24</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
-
-</div>
-</div>
-<a id="af188f8f276febf78ef06109d239d0c12" name="af188f8f276febf78ef06109d239d0c12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af188f8f276febf78ef06109d239d0c12">&#9670;&#160;</a></span>_uploadPath</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string LocationConfig::_uploadPath</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="LocationConfig_8hpp_source.html#l00023">23</a> of file <a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a></li>
-<li><a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a></li>
+<li>includes/config/<a class="el" href="LocationConfig_8hpp_source.html">LocationConfig.hpp</a></li>
+<li>srcs/config/<a class="el" href="LocationConfig_8cpp_source.html">LocationConfig.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

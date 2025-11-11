@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: Config Class Reference</title>
+<title>Webservinho: Config Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -93,42 +93,37 @@ $(document).ready(function(){initNavTree('classConfig.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classConfig-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Config Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="Config_8hpp_source.html">Config.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Config_8hpp_source.html">config/Config.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Config:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classConfig__coll__graph.svg" width="154" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a02ceba7e01adf73a2dc7a5e9edc316ed" id="r_a02ceba7e01adf73a2dc7a5e9edc316ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a02ceba7e01adf73a2dc7a5e9edc316ed">addServer</a> (<a class="el" href="classServerConfig.html">ServerConfig</a> &amp;server)</td></tr>
-<tr class="memdesc:a02ceba7e01adf73a2dc7a5e9edc316ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new server configuration to the configuration set.  <br /></td></tr>
-<tr class="separator:a02ceba7e01adf73a2dc7a5e9edc316ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a311e926a6be88c45e570c0fcd77145aa" id="r_a311e926a6be88c45e570c0fcd77145aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a311e926a6be88c45e570c0fcd77145aa">Config</a> (<a class="el" href="classConfig.html">Config</a> const &amp;src)</td></tr>
-<tr class="memdesc:a311e926a6be88c45e570c0fcd77145aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor — performs a deep copy of server configurations.  <br /></td></tr>
-<tr class="separator:a311e926a6be88c45e570c0fcd77145aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76d8b0fde53bbe4f8fda30892ae86c62" id="r_a76d8b0fde53bbe4f8fda30892ae86c62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a76d8b0fde53bbe4f8fda30892ae86c62">Config</a> (void)</td></tr>
 <tr class="memdesc:a76d8b0fde53bbe4f8fda30892ae86c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor — initializes an empty configuration container.  <br /></td></tr>
 <tr class="separator:a76d8b0fde53bbe4f8fda30892ae86c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ebc439c8d121c496563c6571b03747" id="r_a24ebc439c8d121c496563c6571b03747"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classServerConfig.html">ServerConfig</a> &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a24ebc439c8d121c496563c6571b03747">getServerConfig</a> (void) const</td></tr>
-<tr class="memdesc:a24ebc439c8d121c496563c6571b03747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of all parsed server configurations.  <br /></td></tr>
-<tr class="separator:a24ebc439c8d121c496563c6571b03747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311e926a6be88c45e570c0fcd77145aa" id="r_a311e926a6be88c45e570c0fcd77145aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a311e926a6be88c45e570c0fcd77145aa">Config</a> (<a class="el" href="classConfig.html">Config</a> const &amp;src)</td></tr>
+<tr class="memdesc:a311e926a6be88c45e570c0fcd77145aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor — performs a deep copy of server configurations.  <br /></td></tr>
+<tr class="separator:a311e926a6be88c45e570c0fcd77145aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98c286401eeebae794aaee1877056d68" id="r_a98c286401eeebae794aaee1877056d68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a98c286401eeebae794aaee1877056d68">~Config</a> (void)</td></tr>
 <tr class="memdesc:a98c286401eeebae794aaee1877056d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor — performs cleanup (no dynamic resources used).  <br /></td></tr>
 <tr class="separator:a98c286401eeebae794aaee1877056d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1a4786a6b8bb1352b3bba5ef57481bce" id="r_a1a4786a6b8bb1352b3bba5ef57481bce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classConfig.html">Config</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a1a4786a6b8bb1352b3bba5ef57481bce">operator=</a> (<a class="el" href="classConfig.html">Config</a> const &amp;rhs)</td></tr>
-<tr class="separator:a1a4786a6b8bb1352b3bba5ef57481bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a3bd2519ea3548d6d7fa333b5c534db0b" id="r_a3bd2519ea3548d6d7fa333b5c534db0b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classServerConfig.html">ServerConfig</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a3bd2519ea3548d6d7fa333b5c534db0b">_servers</a></td></tr>
-<tr class="separator:a3bd2519ea3548d6d7fa333b5c534db0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ebc439c8d121c496563c6571b03747" id="r_a24ebc439c8d121c496563c6571b03747"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classServerConfig.html">ServerConfig</a> &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a24ebc439c8d121c496563c6571b03747">getServerConfig</a> (void) const</td></tr>
+<tr class="memdesc:a24ebc439c8d121c496563c6571b03747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of all parsed server configurations.  <br /></td></tr>
+<tr class="separator:a24ebc439c8d121c496563c6571b03747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ceba7e01adf73a2dc7a5e9edc316ed" id="r_a02ceba7e01adf73a2dc7a5e9edc316ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a02ceba7e01adf73a2dc7a5e9edc316ed">addServer</a> (<a class="el" href="classServerConfig.html">ServerConfig</a> &amp;server)</td></tr>
+<tr class="memdesc:a02ceba7e01adf73a2dc7a5e9edc316ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new server configuration to the configuration set.  <br /></td></tr>
+<tr class="separator:a02ceba7e01adf73a2dc7a5e9edc316ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -153,8 +148,7 @@ Private Attributes</h2></td></tr>
 <p>Default constructor — initializes an empty configuration container. </p>
 
 <p class="definition">Definition at line <a class="el" href="Config_8cpp_source.html#l00006">6</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    6</span>{}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a311e926a6be88c45e570c0fcd77145aa" name="a311e926a6be88c45e570c0fcd77145aa"></a>
@@ -182,9 +176,7 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="Config_8cpp_source.html#l00013">13</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>: <a class="code hl_variable" href="classConfig.html#a3bd2519ea3548d6d7fa333b5c534db0b">_servers</a>(src._servers) {}</div>
-<div class="ttc" id="aclassConfig_html_a3bd2519ea3548d6d7fa333b5c534db0b"><div class="ttname"><a href="classConfig.html#a3bd2519ea3548d6d7fa333b5c534db0b">Config::_servers</a></div><div class="ttdeci">std::vector&lt; ServerConfig &gt; _servers</div><div class="ttdef"><b>Definition</b> <a href="Config_8hpp_source.html#l00012">Config.hpp:12</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a98c286401eeebae794aaee1877056d68" name="a98c286401eeebae794aaee1877056d68"></a>
@@ -206,8 +198,7 @@ Private Attributes</h2></td></tr>
 <p>Destructor — performs cleanup (no dynamic resources used). </p>
 
 <p class="definition">Definition at line <a class="el" href="Config_8cpp_source.html#l00018">18</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>{}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -236,14 +227,6 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="Config_8cpp_source.html#l00037">37</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>{</div>
-<div class="line"><span class="lineno">   39</span>    this-&gt;<a class="code hl_variable" href="classConfig.html#a3bd2519ea3548d6d7fa333b5c534db0b">_servers</a>.push_back(server);</div>
-<div class="line"><span class="lineno">   40</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classConfig_a02ceba7e01adf73a2dc7a5e9edc316ed_icgraph.svg" width="707" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -268,71 +251,14 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Constant reference to the internal vector of <a class="el" href="classServerConfig.html">ServerConfig</a> objects. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Config_8cpp_source.html#l00027">27</a> of file <a class="el" href="Config_8cpp_source.html">Config.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classConfig.html#a3bd2519ea3548d6d7fa333b5c534db0b">_servers</a>);</div>
-<div class="line"><span class="lineno">   30</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classConfig_a24ebc439c8d121c496563c6571b03747_icgraph.svg" width="815" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
-</div>
-</div>
-<a id="a1a4786a6b8bb1352b3bba5ef57481bce" name="a1a4786a6b8bb1352b3bba5ef57481bce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a4786a6b8bb1352b3bba5ef57481bce">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classConfig.html">Config</a> &amp; Config::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classConfig.html">Config</a> const &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3bd2519ea3548d6d7fa333b5c534db0b" name="a3bd2519ea3548d6d7fa333b5c534db0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bd2519ea3548d6d7fa333b5c534db0b">&#9670;&#160;</a></span>_servers</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classServerConfig.html">ServerConfig</a>&gt; Config::_servers</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00012">12</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00092">WebServer::queueClientConnections()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00064">WebServer::startServer()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="Config_8hpp_source.html">Config.hpp</a></li>
-<li><a class="el" href="Config_8cpp_source.html">Config.cpp</a></li>
+<li>includes/config/<a class="el" href="Config_8hpp_source.html">Config.hpp</a></li>
+<li>srcs/config/<a class="el" href="Config_8cpp_source.html">Config.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

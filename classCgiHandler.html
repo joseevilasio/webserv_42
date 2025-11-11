@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: CgiHandler Class Reference</title>
+<title>Webservinho: CgiHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -94,13 +94,19 @@ $(document).ready(function(){initNavTree('classCgiHandler.html',''); initResizab
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classCgiHandler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CgiHandler Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="CgiHandler_8hpp_source.html">CgiHandler.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="CgiHandler_8hpp_source.html">dispatcher/CgiHandler.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for CgiHandler:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCgiHandler__coll__graph.svg" width="172" height="236"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -111,65 +117,32 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a61c5a0066d14988001792da45dba2207" id="r_a61c5a0066d14988001792da45dba2207"><td class="memItemLeft" align="right" valign="top">static char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a61c5a0066d14988001792da45dba2207">buildEnvp</a> (<a class="el" href="classHttpRequest.html">HttpRequest</a> &amp;request)</td></tr>
-<tr class="memdesc:a61c5a0066d14988001792da45dba2207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the CGI environment variables array (envp).  <br /></td></tr>
-<tr class="separator:a61c5a0066d14988001792da45dba2207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa896fbfdd2eae9f5b734aa4a3b5a1c6b" id="r_aa896fbfdd2eae9f5b734aa4a3b5a1c6b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#aa896fbfdd2eae9f5b734aa4a3b5a1c6b">extractPathInfo</a> (const std::string &amp;uri, const std::string &amp;scriptName)</td></tr>
-<tr class="memdesc:aa896fbfdd2eae9f5b734aa4a3b5a1c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts PATH_INFO from the original URI following the script name.  <br /></td></tr>
-<tr class="separator:aa896fbfdd2eae9f5b734aa4a3b5a1c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7302f3e29ecec992b270f931a809fffd" id="r_a7302f3e29ecec992b270f931a809fffd"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a7302f3e29ecec992b270f931a809fffd">extractScriptName</a> (const std::string &amp;resolvedPath)</td></tr>
-<tr class="memdesc:a7302f3e29ecec992b270f931a809fffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the script name from a resolved filesystem path.  <br /></td></tr>
-<tr class="separator:a7302f3e29ecec992b270f931a809fffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1362c3cab42ae2109c7a3f0d48dcd2ee" id="r_a1362c3cab42ae2109c7a3f0d48dcd2ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a1362c3cab42ae2109c7a3f0d48dcd2ee">freeEnvp</a> (char **envp)</td></tr>
-<tr class="memdesc:a1362c3cab42ae2109c7a3f0d48dcd2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for the environment variable array.  <br /></td></tr>
-<tr class="separator:a1362c3cab42ae2109c7a3f0d48dcd2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affee7480eccf8aaba9ef34dd0f623afd" id="r_affee7480eccf8aaba9ef34dd0f623afd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#affee7480eccf8aaba9ef34dd0f623afd">handle</a> (<a class="el" href="classHttpRequest.html">HttpRequest</a> &amp;request, <a class="el" href="classHttpResponse.html">HttpResponse</a> &amp;response)</td></tr>
 <tr class="separator:affee7480eccf8aaba9ef34dd0f623afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d313a44bd5151f2ad5a93877fe1266e" id="r_a8d313a44bd5151f2ad5a93877fe1266e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a8d313a44bd5151f2ad5a93877fe1266e">setupRedirection</a> (int *stdinPipe, int *stdoutPipe)</td></tr>
-<tr class="separator:a8d313a44bd5151f2ad5a93877fe1266e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b570b370a65926aaedd54b61350e58" id="r_aa5b570b370a65926aaedd54b61350e58"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structCgiProcess.html">CgiProcess</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#aa5b570b370a65926aaedd54b61350e58">startAsync</a> (<a class="el" href="classHttpRequest.html">HttpRequest</a> &amp;request, int clientFd)</td></tr>
 <tr class="memdesc:aa5b570b370a65926aaedd54b61350e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts an asynchronous CGI execution process.  <br /></td></tr>
 <tr class="separator:aa5b570b370a65926aaedd54b61350e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a916ec06022b3a934f175fcadf99cd694" id="r_a916ec06022b3a934f175fcadf99cd694"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a916ec06022b3a934f175fcadf99cd694">CgiHandler</a> (const <a class="el" href="classCgiHandler.html">CgiHandler</a> &amp;)</td></tr>
-<tr class="separator:a916ec06022b3a934f175fcadf99cd694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b748e9ebf41961e30c32bb79a21520b" id="r_a6b748e9ebf41961e30c32bb79a21520b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCgiHandler.html">CgiHandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a6b748e9ebf41961e30c32bb79a21520b">operator=</a> (const <a class="el" href="classCgiHandler.html">CgiHandler</a> &amp;)</td></tr>
-<tr class="separator:a6b748e9ebf41961e30c32bb79a21520b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7302f3e29ecec992b270f931a809fffd" id="r_a7302f3e29ecec992b270f931a809fffd"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a7302f3e29ecec992b270f931a809fffd">extractScriptName</a> (const std::string &amp;resolvedPath)</td></tr>
+<tr class="memdesc:a7302f3e29ecec992b270f931a809fffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the script name from a resolved filesystem path.  <br /></td></tr>
+<tr class="separator:a7302f3e29ecec992b270f931a809fffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa896fbfdd2eae9f5b734aa4a3b5a1c6b" id="r_aa896fbfdd2eae9f5b734aa4a3b5a1c6b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#aa896fbfdd2eae9f5b734aa4a3b5a1c6b">extractPathInfo</a> (const std::string &amp;uri, const std::string &amp;scriptName)</td></tr>
+<tr class="memdesc:aa896fbfdd2eae9f5b734aa4a3b5a1c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts PATH_INFO from the original URI following the script name.  <br /></td></tr>
+<tr class="separator:aa896fbfdd2eae9f5b734aa4a3b5a1c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c5a0066d14988001792da45dba2207" id="r_a61c5a0066d14988001792da45dba2207"><td class="memItemLeft" align="right" valign="top">static char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a61c5a0066d14988001792da45dba2207">buildEnvp</a> (<a class="el" href="classHttpRequest.html">HttpRequest</a> &amp;request)</td></tr>
+<tr class="memdesc:a61c5a0066d14988001792da45dba2207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the CGI environment variables array (envp).  <br /></td></tr>
+<tr class="separator:a61c5a0066d14988001792da45dba2207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1362c3cab42ae2109c7a3f0d48dcd2ee" id="r_a1362c3cab42ae2109c7a3f0d48dcd2ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a1362c3cab42ae2109c7a3f0d48dcd2ee">freeEnvp</a> (char **envp)</td></tr>
+<tr class="memdesc:a1362c3cab42ae2109c7a3f0d48dcd2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for the environment variable array.  <br /></td></tr>
+<tr class="separator:a1362c3cab42ae2109c7a3f0d48dcd2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d313a44bd5151f2ad5a93877fe1266e" id="r_a8d313a44bd5151f2ad5a93877fe1266e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCgiHandler.html#a8d313a44bd5151f2ad5a93877fe1266e">setupRedirection</a> (int *stdinPipe, int *stdoutPipe)</td></tr>
+<tr class="separator:a8d313a44bd5151f2ad5a93877fe1266e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="CgiHandler_8hpp_source.html#l00031">31</a> of file <a class="el" href="CgiHandler_8hpp_source.html">CgiHandler.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a916ec06022b3a934f175fcadf99cd694" name="a916ec06022b3a934f175fcadf99cd694"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a916ec06022b3a934f175fcadf99cd694">&#9670;&#160;</a></span>CgiHandler() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">CgiHandler::CgiHandler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCgiHandler.html">CgiHandler</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5f73c2e9581d53bf7f429352a79b29bf" name="a5f73c2e9581d53bf7f429352a79b29bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f73c2e9581d53bf7f429352a79b29bf">&#9670;&#160;</a></span>CgiHandler() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f73c2e9581d53bf7f429352a79b29bf">&#9670;&#160;</a></span>CgiHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,8 +166,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="CgiHandler_8hpp_source.html#l00038">38</a> of file <a class="el" href="CgiHandler_8hpp_source.html">CgiHandler.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>{}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a04894013802e9443196d4538b5e3dea5" name="a04894013802e9443196d4538b5e3dea5"></a>
@@ -222,8 +194,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="CgiHandler_8hpp_source.html#l00039">39</a> of file <a class="el" href="CgiHandler_8hpp_source.html">CgiHandler.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>{}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -256,97 +227,10 @@ Private Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A NULL-terminated array of C-strings suitable for execve(). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="CgiHandler_8cpp_source.html#l00054">54</a> of file <a class="el" href="CgiHandler_8cpp_source.html">CgiHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
-<div class="line"><span class="lineno">   56</span>    std::vector&lt;std::string&gt; env;</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>    env.push_back(<span class="stringliteral">&quot;REQUEST_METHOD=&quot;</span> + request.<a class="code hl_function" href="classHttpRequest.html#afc9f6c2f9359ab0cec281221d9e7e25f">methodToString</a>());</div>
-<div class="line"><span class="lineno">   59</span>    env.push_back(<span class="stringliteral">&quot;QUERY_STRING=&quot;</span> + request.<a class="code hl_function" href="classHttpRequest.html#a4f8b5740106c8f1ffb935549cbcb3ec0">getQueryString</a>());</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>    std::string contentType = request.<a class="code hl_function" href="classHttpRequest.html#a610ff6d9fe8d0ad21ea2c48c9ee52fca">getHeader</a>(<span class="stringliteral">&quot;Content-Type&quot;</span>);</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">if</span> (contentType != <span class="stringliteral">&quot;Content-Type&quot;</span>)</div>
-<div class="line"><span class="lineno">   63</span>        env.push_back(<span class="stringliteral">&quot;CONTENT_TYPE=&quot;</span> + contentType);</div>
-<div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>    std::string contentLength = request.<a class="code hl_function" href="classHttpRequest.html#a610ff6d9fe8d0ad21ea2c48c9ee52fca">getHeader</a>(<span class="stringliteral">&quot;Content-Length&quot;</span>);</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (contentLength != <span class="stringliteral">&quot;Content-Length&quot;</span>)</div>
-<div class="line"><span class="lineno">   67</span>        env.push_back(<span class="stringliteral">&quot;CONTENT_LENGTH=&quot;</span> + contentLength);</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    std::string resolved = request.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
-<div class="line"><span class="lineno">   70</span>    env.push_back(<span class="stringliteral">&quot;SCRIPT_FILENAME=&quot;</span> + resolved);</div>
-<div class="line"><span class="lineno">   71</span>    env.push_back(<span class="stringliteral">&quot;SCRIPT_NAME=&quot;</span> + <a class="code hl_function" href="classCgiHandler.html#a7302f3e29ecec992b270f931a809fffd">extractScriptName</a>(resolved));</div>
-<div class="line"><span class="lineno">   72</span>    env.push_back(<span class="stringliteral">&quot;PATH_INFO=&quot;</span> + <a class="code hl_function" href="classCgiHandler.html#aa896fbfdd2eae9f5b734aa4a3b5a1c6b">extractPathInfo</a>(request.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>(), <a class="code hl_function" href="classCgiHandler.html#a7302f3e29ecec992b270f931a809fffd">extractScriptName</a>(resolved)));</div>
-<div class="line"><span class="lineno">   73</span>    env.push_back(<span class="stringliteral">&quot;PATH_TRANSLATED=&quot;</span> + resolved);</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    env.push_back(<span class="stringliteral">&quot;SERVER_PROTOCOL=HTTP/1.1&quot;</span>);</div>
-<div class="line"><span class="lineno">   76</span>    env.push_back(<span class="stringliteral">&quot;GATEWAY_INTERFACE=CGI/1.1&quot;</span>);</div>
-<div class="line"><span class="lineno">   77</span>    env.push_back(<span class="stringliteral">&quot;SERVER_SOFTWARE=Webservinho/1.0&quot;</span>);</div>
-<div class="line"><span class="lineno">   78</span>    env.push_back(<span class="stringliteral">&quot;REDIRECT_STATUS=200&quot;</span>);</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>    std::string host = request.<a class="code hl_function" href="classHttpRequest.html#a610ff6d9fe8d0ad21ea2c48c9ee52fca">getHeader</a>(<span class="stringliteral">&quot;Host&quot;</span>);</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">if</span> (host != <span class="stringliteral">&quot;Host&quot;</span>)</div>
-<div class="line"><span class="lineno">   82</span>    {</div>
-<div class="line"><span class="lineno">   83</span>        <span class="keywordtype">size_t</span> colon = host.find(<span class="charliteral">&#39;:&#39;</span>);</div>
-<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">if</span> (colon != std::string::npos)</div>
-<div class="line"><span class="lineno">   85</span>        {</div>
-<div class="line"><span class="lineno">   86</span>            env.push_back(<span class="stringliteral">&quot;SERVER_NAME=&quot;</span> + host.substr(0, colon));</div>
-<div class="line"><span class="lineno">   87</span>            env.push_back(<span class="stringliteral">&quot;SERVER_PORT=&quot;</span> + host.substr(colon + 1));</div>
-<div class="line"><span class="lineno">   88</span>        }</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   90</span>        {</div>
-<div class="line"><span class="lineno">   91</span>            env.push_back(<span class="stringliteral">&quot;SERVER_NAME=&quot;</span> + host);</div>
-<div class="line"><span class="lineno">   92</span>            env.push_back(<span class="stringliteral">&quot;SERVER_PORT=80&quot;</span>);</div>
-<div class="line"><span class="lineno">   93</span>        }</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   96</span>    {</div>
-<div class="line"><span class="lineno">   97</span>        env.push_back(<span class="stringliteral">&quot;SERVER_NAME=localhost&quot;</span>);</div>
-<div class="line"><span class="lineno">   98</span>        env.push_back(<span class="stringliteral">&quot;SERVER_PORT=80&quot;</span>);</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <span class="comment">// Convert HTTP headers to CGI-style environment variables (HTTP_HEADER_NAME)</span></div>
-<div class="line"><span class="lineno">  102</span>    <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; headers = request.<a class="code hl_function" href="classHttpRequest.html#acf2987d88eeca215f0d1f467166afcd2">getAllHeaders</a>();</div>
-<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">for</span> (std::map&lt;std::string, std::string&gt;::const_iterator it = headers.begin(); it != headers.end(); ++it)</div>
-<div class="line"><span class="lineno">  104</span>    {</div>
-<div class="line"><span class="lineno">  105</span>        std::string key = it-&gt;first;</div>
-<div class="line"><span class="lineno">  106</span>        std::string val = it-&gt;second;</div>
-<div class="line"><span class="lineno">  107</span>        std::string envKey = <span class="stringliteral">&quot;HTTP_&quot;</span> + key;</div>
-<div class="line"><span class="lineno">  108</span>        std::replace(envKey.begin(), envKey.end(), <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;_&#39;</span>);</div>
-<div class="line"><span class="lineno">  109</span>        std::transform(envKey.begin(), envKey.end(), envKey.begin(), ::toupper);</div>
-<div class="line"><span class="lineno">  110</span>        env.push_back(envKey + <span class="stringliteral">&quot;=&quot;</span> + val);</div>
-<div class="line"><span class="lineno">  111</span>    }</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordtype">char</span>** envp = <span class="keyword">new</span> <span class="keywordtype">char</span>*[env.size() + 1];</div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; env.size(); ++i)</div>
-<div class="line"><span class="lineno">  115</span>    {</div>
-<div class="line"><span class="lineno">  116</span>        envp[i] = <span class="keyword">new</span> <span class="keywordtype">char</span>[env[i].size() + 1];</div>
-<div class="line"><span class="lineno">  117</span>        std::strcpy(envp[i], env[i].c_str());</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span>    envp[env.size()] = NULL;</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;CgiHandler: Environment built with &quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(env.size()) + <span class="stringliteral">&quot; variables&quot;</span>);</div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> (envp);</div>
-<div class="line"><span class="lineno">  123</span>}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
-<div class="ttc" id="aclassCgiHandler_html_a7302f3e29ecec992b270f931a809fffd"><div class="ttname"><a href="classCgiHandler.html#a7302f3e29ecec992b270f931a809fffd">CgiHandler::extractScriptName</a></div><div class="ttdeci">static std::string extractScriptName(const std::string &amp;resolvedPath)</div><div class="ttdoc">Extracts the script name from a resolved filesystem path.</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8cpp_source.html#l00020">CgiHandler.cpp:20</a></div></div>
-<div class="ttc" id="aclassCgiHandler_html_aa896fbfdd2eae9f5b734aa4a3b5a1c6b"><div class="ttname"><a href="classCgiHandler.html#aa896fbfdd2eae9f5b734aa4a3b5a1c6b">CgiHandler::extractPathInfo</a></div><div class="ttdeci">static std::string extractPathInfo(const std::string &amp;uri, const std::string &amp;scriptName)</div><div class="ttdoc">Extracts PATH_INFO from the original URI following the script name.</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8cpp_source.html#l00034">CgiHandler.cpp:34</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_a4f8b5740106c8f1ffb935549cbcb3ec0"><div class="ttname"><a href="classHttpRequest.html#a4f8b5740106c8f1ffb935549cbcb3ec0">HttpRequest::getQueryString</a></div><div class="ttdeci">const std::string &amp; getQueryString(void) const</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00220">HttpRequest.cpp:220</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_a610ff6d9fe8d0ad21ea2c48c9ee52fca"><div class="ttname"><a href="classHttpRequest.html#a610ff6d9fe8d0ad21ea2c48c9ee52fca">HttpRequest::getHeader</a></div><div class="ttdeci">const std::string &amp; getHeader(const std::string &amp;name) const</div><div class="ttdoc">Retrieves a header value by name (case-insensitive).</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00234">HttpRequest.cpp:234</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_a658d90f4dd4080c30c99c463c082abc8"><div class="ttname"><a href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">HttpRequest::getUri</a></div><div class="ttdeci">const std::string &amp; getUri(void) const</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00218">HttpRequest.cpp:218</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_a9cd740d746bcd7fa6e4fcb8c537879ad"><div class="ttname"><a href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">HttpRequest::getResolvedPath</a></div><div class="ttdeci">const std::string getResolvedPath(void) const</div><div class="ttdoc">Returns the resolved filesystem path corresponding to the URI.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00328">HttpRequest.cpp:328</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_acf2987d88eeca215f0d1f467166afcd2"><div class="ttname"><a href="classHttpRequest.html#acf2987d88eeca215f0d1f467166afcd2">HttpRequest::getAllHeaders</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; &amp; getAllHeaders(void) const</div><div class="ttdoc">Returns a const reference to the full headers map.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00248">HttpRequest.cpp:248</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_afc9f6c2f9359ab0cec281221d9e7e25f"><div class="ttname"><a href="classHttpRequest.html#afc9f6c2f9359ab0cec281221d9e7e25f">HttpRequest::methodToString</a></div><div class="ttdeci">const std::string methodToString(void) const</div><div class="ttdoc">Converts the HTTP method enum to its string representation.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00191">HttpRequest.cpp:191</a></div></div>
-<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Writes a log entry with timestamp, level, and message.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
-<div class="ttc" id="aclassLogger_html_a4aa4d7c3b98f6e12e7ea8253da5ea0cd"><div class="ttname"><a href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a></div><div class="ttdeci">static Logger &amp; instance()</div><div class="ttdoc">Returns the singleton instance of the Logger.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00037">Logger.cpp:37</a></div></div>
-<div class="ttc" id="astring__utils_8hpp_html_ad735976365693b45c427000fe042e173"><div class="ttname"><a href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a></div><div class="ttdeci">std::string toString(T value)</div><div class="ttdoc">Converts any printable type to a string representation.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00112">string_utils.hpp:112</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCgiHandler_a61c5a0066d14988001792da45dba2207_cgraph.svg" width="656" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCgiHandler_a61c5a0066d14988001792da45dba2207_icgraph.svg" width="1162" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="CgiHandler_8cpp_source.html#l00034">extractPathInfo()</a>, <a class="el" href="CgiHandler_8cpp_source.html#l00020">extractScriptName()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00248">HttpRequest::getAllHeaders()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00234">HttpRequest::getHeader()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00220">HttpRequest::getQueryString()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00218">HttpRequest::getUri()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00191">HttpRequest::methodToString()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="CgiHandler_8cpp_source.html#l00145">startAsync()</a>.</p>
 
 </div>
 </div>
@@ -388,21 +272,8 @@ Here is the caller graph for this function:</div>
 <p>Example: URI "/cgi-bin/echo.py/foo/bar" → PATH_INFO="/foo/bar" </p>
 
 <p class="definition">Definition at line <a class="el" href="CgiHandler_8cpp_source.html#l00034">34</a> of file <a class="el" href="CgiHandler_8cpp_source.html">CgiHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
-<div class="line"><span class="lineno">   36</span>    std::string::size_type scriptPos = uri.find(scriptName);</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (scriptPos != std::string::npos)</div>
-<div class="line"><span class="lineno">   38</span>    {</div>
-<div class="line"><span class="lineno">   39</span>        std::string::size_type start = scriptPos + scriptName.length();</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (start &lt; uri.length())</div>
-<div class="line"><span class="lineno">   41</span>            <span class="keywordflow">return</span> (uri.substr(start));</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> (<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   44</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCgiHandler_aa896fbfdd2eae9f5b734aa4a3b5a1c6b_icgraph.svg" width="1411" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="CgiHandler_8cpp_source.html#l00054">buildEnvp()</a>.</p>
 
 </div>
 </div>
@@ -434,17 +305,8 @@ Here is the caller graph for this function:</div>
 <p>Example: "/var/www/cgi-bin/echo.py" → "echo.py" </p>
 
 <p class="definition">Definition at line <a class="el" href="CgiHandler_8cpp_source.html#l00020">20</a> of file <a class="el" href="CgiHandler_8cpp_source.html">CgiHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>{</div>
-<div class="line"><span class="lineno">   22</span>    std::string::size_type lastSlash = resolvedPath.find_last_of(<span class="charliteral">&#39;/&#39;</span>);</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">if</span> (lastSlash != std::string::npos)</div>
-<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">return</span> (resolvedPath.substr(lastSlash + 1));</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span> (resolvedPath);</div>
-<div class="line"><span class="lineno">   26</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCgiHandler_a7302f3e29ecec992b270f931a809fffd_icgraph.svg" width="1434" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="CgiHandler_8cpp_source.html#l00054">buildEnvp()</a>.</p>
 
 </div>
 </div>
@@ -475,16 +337,8 @@ Here is the caller graph for this function:</div>
 <p>Frees memory allocated for the environment variable array. </p>
 
 <p class="definition">Definition at line <a class="el" href="CgiHandler_8cpp_source.html#l00128">128</a> of file <a class="el" href="CgiHandler_8cpp_source.html">CgiHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  129</span>{</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; envp[i] != NULL; ++i)</div>
-<div class="line"><span class="lineno">  131</span>        <span class="keyword">delete</span>[] envp[i];</div>
-<div class="line"><span class="lineno">  132</span>    <span class="keyword">delete</span>[] envp;</div>
-<div class="line"><span class="lineno">  133</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCgiHandler_a1362c3cab42ae2109c7a3f0d48dcd2ee_icgraph.svg" width="1155" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="CgiHandler_8cpp_source.html#l00145">startAsync()</a>.</p>
 
 </div>
 </div>
@@ -518,32 +372,6 @@ Here is the caller graph for this function:</div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b748e9ebf41961e30c32bb79a21520b" name="a6b748e9ebf41961e30c32bb79a21520b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b748e9ebf41961e30c32bb79a21520b">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCgiHandler.html">CgiHandler</a> &amp; CgiHandler::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCgiHandler.html">CgiHandler</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -632,99 +460,16 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>A populated <a class="el" href="structCgiProcess.html">CgiProcess</a> structure with process metadata. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="CgiHandler_8cpp_source.html#l00145">145</a> of file <a class="el" href="CgiHandler_8cpp_source.html">CgiHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  146</span>{</div>
-<div class="line"><span class="lineno">  147</span>    <span class="keywordtype">int</span> pipeIn[2];</div>
-<div class="line"><span class="lineno">  148</span>    <span class="keywordtype">int</span> pipeOut[2];</div>
-<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">if</span> (pipe(pipeIn) &lt; 0 || pipe(pipeOut) &lt; 0)</div>
-<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;CgiHandler: pipe() failed&quot;</span>);</div>
-<div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>    fcntl(pipeIn[1],  F_SETFL, O_NONBLOCK);</div>
-<div class="line"><span class="lineno">  153</span>    fcntl(pipeOut[0], F_SETFL, O_NONBLOCK);</div>
-<div class="line"><span class="lineno">  154</span> </div>
-<div class="line"><span class="lineno">  155</span>    pid_t pid = fork();</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">if</span> (pid &lt; 0)</div>
-<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;CgiHandler: fork() failed&quot;</span>);</div>
-<div class="line"><span class="lineno">  158</span> </div>
-<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">if</span> (pid == 0)</div>
-<div class="line"><span class="lineno">  160</span>    {</div>
-<div class="line"><span class="lineno">  161</span>        dup2(pipeIn[0], STDIN_FILENO);</div>
-<div class="line"><span class="lineno">  162</span>        dup2(pipeOut[1], STDOUT_FILENO);</div>
-<div class="line"><span class="lineno">  163</span>        close(pipeIn[1]);</div>
-<div class="line"><span class="lineno">  164</span>        close(pipeOut[0]);</div>
-<div class="line"><span class="lineno">  165</span> </div>
-<div class="line"><span class="lineno">  166</span>        std::string resolvedPath = request.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
-<div class="line"><span class="lineno">  167</span>        std::string rootDir = resolvedPath.substr(0, resolvedPath.find_last_of(<span class="charliteral">&#39;/&#39;</span>));</div>
-<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">if</span> (chdir(rootDir.c_str()) == -1)</div>
-<div class="line"><span class="lineno">  169</span>            _exit(EXIT_FAILURE);</div>
-<div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>        <span class="keywordtype">char</span>** envp = <a class="code hl_function" href="classCgiHandler.html#a61c5a0066d14988001792da45dba2207">buildEnvp</a>(request);</div>
-<div class="line"><span class="lineno">  172</span>        <span class="keywordtype">char</span>* argv[] = { &amp;resolvedPath[0], NULL };</div>
-<div class="line"><span class="lineno">  173</span>        execve(resolvedPath.c_str(), argv, envp);</div>
-<div class="line"><span class="lineno">  174</span> </div>
-<div class="line"><span class="lineno">  175</span>        <a class="code hl_function" href="classCgiHandler.html#a1362c3cab42ae2109c7a3f0d48dcd2ee">freeEnvp</a>(envp);</div>
-<div class="line"><span class="lineno">  176</span>        _exit(EXIT_FAILURE);</div>
-<div class="line"><span class="lineno">  177</span>    }</div>
-<div class="line"><span class="lineno">  178</span> </div>
-<div class="line"><span class="lineno">  179</span>    <a class="code hl_function" href="classSignals.html#a85edf359758a0063dffb46716ba19255">Signals::registerCgiProcess</a>(pid);</div>
-<div class="line"><span class="lineno">  180</span>    close(pipeIn[0]);</div>
-<div class="line"><span class="lineno">  181</span>    close(pipeOut[1]);</div>
-<div class="line"><span class="lineno">  182</span> </div>
-<div class="line"><span class="lineno">  183</span>    <span class="keyword">const</span> std::string&amp; body = request.<a class="code hl_function" href="classHttpRequest.html#ab30e8ad147999e3dc043302f81e7fef9">getBody</a>();</div>
-<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (!body.empty())</div>
-<div class="line"><span class="lineno">  185</span>        write(pipeIn[1], body.c_str(), body.size());</div>
-<div class="line"><span class="lineno">  186</span>    close(pipeIn[1]);</div>
-<div class="line"><span class="lineno">  187</span> </div>
-<div class="line"><span class="lineno">  188</span>    <a class="code hl_struct" href="structCgiProcess.html">CgiProcess</a> proc;</div>
-<div class="line"><span class="lineno">  189</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#a1bfa589b228bd5ba183eaa8dee4fabf2">pid</a> = pid;</div>
-<div class="line"><span class="lineno">  190</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#aba451b1aee2cbc7f5fee2a2e1bafeeb1">in_fd</a> = -1;</div>
-<div class="line"><span class="lineno">  191</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#a26dd12dfcc7747fdac3e6c8f77b3437f">out_fd</a> = pipeOut[0];</div>
-<div class="line"><span class="lineno">  192</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#a87db871afd59b9e4074c512c2a7b7ede">err_fd</a> = -1;</div>
-<div class="line"><span class="lineno">  193</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#ae95dbfc568c9ba4e9c9d707b91f0146b">headersParsed</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  194</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#a5b03fff9d9b898788d1122761866b7f2">finished</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  195</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#a1237232743a369c329406abfcebbcc0b">chunked</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  196</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#a946b9974f7326b8fce820a93aadf48dc">startAt</a> = time(NULL);</div>
-<div class="line"><span class="lineno">  197</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#abe3be87568640ae9db6c6b8643ed5544">deadline</a> = proc.<a class="code hl_variable" href="structCgiProcess.html#a946b9974f7326b8fce820a93aadf48dc">startAt</a> + <a class="code hl_variable" href="classSignals.html#a5b77644c6b3046b88362238e89be6301">Signals::CGI_TIMEOUT_SEC</a>;</div>
-<div class="line"><span class="lineno">  198</span>    proc.<a class="code hl_variable" href="structCgiProcess.html#a27922a1fedcd99fd2c1a78a878efe935">client_fd</a> = clientFd;</div>
-<div class="line"><span class="lineno">  199</span> </div>
-<div class="line"><span class="lineno">  200</span>    fcntl(proc.<a class="code hl_variable" href="structCgiProcess.html#a26dd12dfcc7747fdac3e6c8f77b3437f">out_fd</a>, F_SETFL, O_NONBLOCK);</div>
-<div class="line"><span class="lineno">  201</span> </div>
-<div class="line"><span class="lineno">  202</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;CGI: started async pid=&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(pid) +</div>
-<div class="line"><span class="lineno">  203</span>        <span class="stringliteral">&quot; fd=&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(proc.<a class="code hl_variable" href="structCgiProcess.html#a26dd12dfcc7747fdac3e6c8f77b3437f">out_fd</a>));</div>
-<div class="line"><span class="lineno">  204</span> </div>
-<div class="line"><span class="lineno">  205</span>    <span class="keywordflow">return</span> proc;</div>
-<div class="line"><span class="lineno">  206</span>}</div>
-<div class="ttc" id="aclassCgiHandler_html_a1362c3cab42ae2109c7a3f0d48dcd2ee"><div class="ttname"><a href="classCgiHandler.html#a1362c3cab42ae2109c7a3f0d48dcd2ee">CgiHandler::freeEnvp</a></div><div class="ttdeci">static void freeEnvp(char **envp)</div><div class="ttdoc">Frees memory allocated for the environment variable array.</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8cpp_source.html#l00128">CgiHandler.cpp:128</a></div></div>
-<div class="ttc" id="aclassCgiHandler_html_a61c5a0066d14988001792da45dba2207"><div class="ttname"><a href="classCgiHandler.html#a61c5a0066d14988001792da45dba2207">CgiHandler::buildEnvp</a></div><div class="ttdeci">static char ** buildEnvp(HttpRequest &amp;request)</div><div class="ttdoc">Builds the CGI environment variables array (envp).</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8cpp_source.html#l00054">CgiHandler.cpp:54</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_ab30e8ad147999e3dc043302f81e7fef9"><div class="ttname"><a href="classHttpRequest.html#ab30e8ad147999e3dc043302f81e7fef9">HttpRequest::getBody</a></div><div class="ttdeci">const std::string &amp; getBody(void) const</div><div class="ttdoc">Returns the body of the request.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00269">HttpRequest.cpp:269</a></div></div>
-<div class="ttc" id="aclassSignals_html_a5b77644c6b3046b88362238e89be6301"><div class="ttname"><a href="classSignals.html#a5b77644c6b3046b88362238e89be6301">Signals::CGI_TIMEOUT_SEC</a></div><div class="ttdeci">static const int CGI_TIMEOUT_SEC</div><div class="ttdef"><b>Definition</b> <a href="Signals_8hpp_source.html#l00017">Signals.hpp:17</a></div></div>
-<div class="ttc" id="aclassSignals_html_a85edf359758a0063dffb46716ba19255"><div class="ttname"><a href="classSignals.html#a85edf359758a0063dffb46716ba19255">Signals::registerCgiProcess</a></div><div class="ttdeci">static void registerCgiProcess(pid_t pid)</div><div class="ttdoc">Registers a new active CGI process.</div><div class="ttdef"><b>Definition</b> <a href="Signals_8cpp_source.html#l00059">Signals.cpp:59</a></div></div>
-<div class="ttc" id="astructCgiProcess_html"><div class="ttname"><a href="structCgiProcess.html">CgiProcess</a></div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00015">CgiHandler.hpp:16</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_a1237232743a369c329406abfcebbcc0b"><div class="ttname"><a href="structCgiProcess.html#a1237232743a369c329406abfcebbcc0b">CgiProcess::chunked</a></div><div class="ttdeci">bool chunked</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00025">CgiHandler.hpp:25</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_a1bfa589b228bd5ba183eaa8dee4fabf2"><div class="ttname"><a href="structCgiProcess.html#a1bfa589b228bd5ba183eaa8dee4fabf2">CgiProcess::pid</a></div><div class="ttdeci">pid_t pid</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00017">CgiHandler.hpp:17</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_a26dd12dfcc7747fdac3e6c8f77b3437f"><div class="ttname"><a href="structCgiProcess.html#a26dd12dfcc7747fdac3e6c8f77b3437f">CgiProcess::out_fd</a></div><div class="ttdeci">int out_fd</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00019">CgiHandler.hpp:19</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_a27922a1fedcd99fd2c1a78a878efe935"><div class="ttname"><a href="structCgiProcess.html#a27922a1fedcd99fd2c1a78a878efe935">CgiProcess::client_fd</a></div><div class="ttdeci">int client_fd</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00028">CgiHandler.hpp:28</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_a5b03fff9d9b898788d1122761866b7f2"><div class="ttname"><a href="structCgiProcess.html#a5b03fff9d9b898788d1122761866b7f2">CgiProcess::finished</a></div><div class="ttdeci">bool finished</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00024">CgiHandler.hpp:24</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_a87db871afd59b9e4074c512c2a7b7ede"><div class="ttname"><a href="structCgiProcess.html#a87db871afd59b9e4074c512c2a7b7ede">CgiProcess::err_fd</a></div><div class="ttdeci">int err_fd</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00020">CgiHandler.hpp:20</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_a946b9974f7326b8fce820a93aadf48dc"><div class="ttname"><a href="structCgiProcess.html#a946b9974f7326b8fce820a93aadf48dc">CgiProcess::startAt</a></div><div class="ttdeci">time_t startAt</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00026">CgiHandler.hpp:26</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_aba451b1aee2cbc7f5fee2a2e1bafeeb1"><div class="ttname"><a href="structCgiProcess.html#aba451b1aee2cbc7f5fee2a2e1bafeeb1">CgiProcess::in_fd</a></div><div class="ttdeci">int in_fd</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00018">CgiHandler.hpp:18</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_abe3be87568640ae9db6c6b8643ed5544"><div class="ttname"><a href="structCgiProcess.html#abe3be87568640ae9db6c6b8643ed5544">CgiProcess::deadline</a></div><div class="ttdeci">time_t deadline</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00027">CgiHandler.hpp:27</a></div></div>
-<div class="ttc" id="astructCgiProcess_html_ae95dbfc568c9ba4e9c9d707b91f0146b"><div class="ttname"><a href="structCgiProcess.html#ae95dbfc568c9ba4e9c9d707b91f0146b">CgiProcess::headersParsed</a></div><div class="ttdeci">bool headersParsed</div><div class="ttdef"><b>Definition</b> <a href="CgiHandler_8hpp_source.html#l00023">CgiHandler.hpp:23</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCgiHandler_aa5b570b370a65926aaedd54b61350e58_cgraph.svg" width="907" height="670"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCgiHandler_aa5b570b370a65926aaedd54b61350e58_icgraph.svg" width="947" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">References <a class="el" href="CgiHandler_8cpp_source.html#l00054">buildEnvp()</a>, <a class="el" href="Signals_8hpp_source.html#l00017">Signals::CGI_TIMEOUT_SEC</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00025">CgiProcess::chunked</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00028">CgiProcess::client_fd</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00027">CgiProcess::deadline</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00020">CgiProcess::err_fd</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00024">CgiProcess::finished</a>, <a class="el" href="CgiHandler_8cpp_source.html#l00128">freeEnvp()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00269">HttpRequest::getBody()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00023">CgiProcess::headersParsed</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00018">CgiProcess::in_fd</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00019">CgiProcess::out_fd</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00017">CgiProcess::pid</a>, <a class="el" href="Signals_8cpp_source.html#l00059">Signals::registerCgiProcess()</a>, <a class="el" href="CgiHandler_8hpp_source.html#l00026">CgiProcess::startAt</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00029">Dispatcher::dispatch()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="CgiHandler_8hpp_source.html">CgiHandler.hpp</a></li>
-<li><a class="el" href="CgiHandler_8cpp_source.html">CgiHandler.cpp</a></li>
+<li>includes/dispatcher/<a class="el" href="CgiHandler_8hpp_source.html">CgiHandler.hpp</a></li>
+<li>srcs/dispatcher/<a class="el" href="CgiHandler_8cpp_source.html">CgiHandler.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

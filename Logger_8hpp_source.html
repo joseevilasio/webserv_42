@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: Logger.hpp Source File</title>
+<title>Webservinho: includes/utils/Logger.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -126,9 +126,9 @@ $(document).ready(function(){initNavTree('Logger_8hpp_source.html',''); initResi
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classLogger.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classLogger.html">Logger</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classLogger.html#af77e566946656d707bb2873eb8543793">   25</a></span>        std::ofstream       <a class="code hl_variable" href="classLogger.html#af77e566946656d707bb2873eb8543793">_logFile</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">const</span> std::string   <a class="code hl_function" href="classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2">levelToString</a>(<a class="code hl_enumeration" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9">LogLevel</a> level) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_function" href="classLogger.html#abc41bfb031d896170c7675fa96a6b30c">Logger</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        std::ofstream       _logFile;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">const</span> std::string   levelToString(<a class="code hl_enumeration" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9">LogLevel</a> level) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="classLogger.html">Logger</a>();</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_function" href="classLogger.html#acb668a9e186a25fbaad2e4af6d1ed00a">~Logger</a>();</div>
@@ -145,12 +145,9 @@ $(document).ready(function(){initNavTree('Logger_8hpp_source.html',''); initResi
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9acda21a4a072f2261f6d4ab596599f8b0"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9acda21a4a072f2261f6d4ab596599f8b0">CRITICAL</a></div><div class="ttdeci">@ CRITICAL</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00020">Logger.hpp:19</a></div></div>
 <div class="ttc" id="aclassLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00022">Logger.hpp:23</a></div></div>
-<div class="ttc" id="aclassLogger_html_a19f9ef22095a67c9fe420c9d6e761fc2"><div class="ttname"><a href="classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2">Logger::levelToString</a></div><div class="ttdeci">const std::string levelToString(LogLevel level) const</div><div class="ttdoc">Converts a LogLevel enum value to its string label.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00084">Logger.cpp:84</a></div></div>
 <div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Writes a log entry with timestamp, level, and message.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
 <div class="ttc" id="aclassLogger_html_a4aa4d7c3b98f6e12e7ea8253da5ea0cd"><div class="ttname"><a href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a></div><div class="ttdeci">static Logger &amp; instance()</div><div class="ttdoc">Returns the singleton instance of the Logger.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00037">Logger.cpp:37</a></div></div>
-<div class="ttc" id="aclassLogger_html_abc41bfb031d896170c7675fa96a6b30c"><div class="ttname"><a href="classLogger.html#abc41bfb031d896170c7675fa96a6b30c">Logger::Logger</a></div><div class="ttdeci">Logger()</div><div class="ttdoc">Initializes the Logger and opens a daily log file.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00009">Logger.cpp:9</a></div></div>
 <div class="ttc" id="aclassLogger_html_acb668a9e186a25fbaad2e4af6d1ed00a"><div class="ttname"><a href="classLogger.html#acb668a9e186a25fbaad2e4af6d1ed00a">Logger::~Logger</a></div><div class="ttdeci">~Logger()</div><div class="ttdoc">Closes the active log file on destruction.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00030">Logger.cpp:30</a></div></div>
-<div class="ttc" id="aclassLogger_html_af77e566946656d707bb2873eb8543793"><div class="ttname"><a href="classLogger.html#af77e566946656d707bb2873eb8543793">Logger::_logFile</a></div><div class="ttdeci">std::ofstream _logFile</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00025">Logger.hpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

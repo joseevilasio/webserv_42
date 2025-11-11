@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: ServerSocket Class Reference</title>
+<title>Webservinho: ServerSocket Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -93,48 +93,43 @@ $(document).ready(function(){initNavTree('classServerSocket.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classServerSocket-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ServerSocket Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="ServerSocket_8hpp_source.html">ServerSocket.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ServerSocket_8hpp_source.html">init/ServerSocket.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for ServerSocket:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket__coll__graph.svg" width="172" height="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae496d291c2ed4ec622506e01321d9087" id="r_ae496d291c2ed4ec622506e01321d9087"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#ae496d291c2ed4ec622506e01321d9087">ServerSocket</a> (void)</td></tr>
+<tr class="memdesc:ae496d291c2ed4ec622506e01321d9087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor — initializes the socket descriptor to -1.  <br /></td></tr>
+<tr class="separator:ae496d291c2ed4ec622506e01321d9087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c53e4aea01c637b7b9c82c556413b3" id="r_ab2c53e4aea01c637b7b9c82c556413b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#ab2c53e4aea01c637b7b9c82c556413b3">ServerSocket</a> (<a class="el" href="classServerSocket.html">ServerSocket</a> const &amp;src)</td></tr>
+<tr class="memdesc:ab2c53e4aea01c637b7b9c82c556413b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor — duplicates only the file descriptor value.  <br /></td></tr>
+<tr class="separator:ab2c53e4aea01c637b7b9c82c556413b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4f3daceaf71f033fd659cb23ec868c" id="r_a3b4f3daceaf71f033fd659cb23ec868c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#a3b4f3daceaf71f033fd659cb23ec868c">~ServerSocket</a> (void)</td></tr>
+<tr class="memdesc:a3b4f3daceaf71f033fd659cb23ec868c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor — closes the socket if it is still open.  <br /></td></tr>
+<tr class="separator:a3b4f3daceaf71f033fd659cb23ec868c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecddb79578f1dc829bf97572291a1b2b" id="r_aecddb79578f1dc829bf97572291a1b2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#aecddb79578f1dc829bf97572291a1b2b">startSocket</a> (std::string const &amp;port)</td></tr>
+<tr class="memdesc:aecddb79578f1dc829bf97572291a1b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates, binds, and configures a non-blocking server socket.  <br /></td></tr>
+<tr class="separator:aecddb79578f1dc829bf97572291a1b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26897d739a95f0968b7b6085f99cca01" id="r_a26897d739a95f0968b7b6085f99cca01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#a26897d739a95f0968b7b6085f99cca01">listenConnections</a> (int backlog)</td></tr>
+<tr class="memdesc:a26897d739a95f0968b7b6085f99cca01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts listening for incoming client connections.  <br /></td></tr>
+<tr class="separator:a26897d739a95f0968b7b6085f99cca01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4240c5afdaf781181eb097b0d77edf1e" id="r_a4240c5afdaf781181eb097b0d77edf1e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#a4240c5afdaf781181eb097b0d77edf1e">acceptConnections</a> (void)</td></tr>
 <tr class="memdesc:a4240c5afdaf781181eb097b0d77edf1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts all pending incoming client connections (non-blocking).  <br /></td></tr>
 <tr class="separator:a4240c5afdaf781181eb097b0d77edf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43152f52de5e7f2ec6d64148f65cd8df" id="r_a43152f52de5e7f2ec6d64148f65cd8df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#a43152f52de5e7f2ec6d64148f65cd8df">getFD</a> (void)</td></tr>
 <tr class="memdesc:a43152f52de5e7f2ec6d64148f65cd8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the socket file descriptor.  <br /></td></tr>
 <tr class="separator:a43152f52de5e7f2ec6d64148f65cd8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26897d739a95f0968b7b6085f99cca01" id="r_a26897d739a95f0968b7b6085f99cca01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#a26897d739a95f0968b7b6085f99cca01">listenConnections</a> (int backlog)</td></tr>
-<tr class="memdesc:a26897d739a95f0968b7b6085f99cca01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts listening for incoming client connections.  <br /></td></tr>
-<tr class="separator:a26897d739a95f0968b7b6085f99cca01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2c53e4aea01c637b7b9c82c556413b3" id="r_ab2c53e4aea01c637b7b9c82c556413b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#ab2c53e4aea01c637b7b9c82c556413b3">ServerSocket</a> (<a class="el" href="classServerSocket.html">ServerSocket</a> const &amp;src)</td></tr>
-<tr class="memdesc:ab2c53e4aea01c637b7b9c82c556413b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor — duplicates only the file descriptor value.  <br /></td></tr>
-<tr class="separator:ab2c53e4aea01c637b7b9c82c556413b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae496d291c2ed4ec622506e01321d9087" id="r_ae496d291c2ed4ec622506e01321d9087"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#ae496d291c2ed4ec622506e01321d9087">ServerSocket</a> (void)</td></tr>
-<tr class="memdesc:ae496d291c2ed4ec622506e01321d9087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor — initializes the socket descriptor to -1.  <br /></td></tr>
-<tr class="separator:ae496d291c2ed4ec622506e01321d9087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecddb79578f1dc829bf97572291a1b2b" id="r_aecddb79578f1dc829bf97572291a1b2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#aecddb79578f1dc829bf97572291a1b2b">startSocket</a> (std::string const &amp;port)</td></tr>
-<tr class="memdesc:aecddb79578f1dc829bf97572291a1b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates, binds, and configures a non-blocking server socket.  <br /></td></tr>
-<tr class="separator:aecddb79578f1dc829bf97572291a1b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b4f3daceaf71f033fd659cb23ec868c" id="r_a3b4f3daceaf71f033fd659cb23ec868c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#a3b4f3daceaf71f033fd659cb23ec868c">~ServerSocket</a> (void)</td></tr>
-<tr class="memdesc:a3b4f3daceaf71f033fd659cb23ec868c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor — closes the socket if it is still open.  <br /></td></tr>
-<tr class="separator:a3b4f3daceaf71f033fd659cb23ec868c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:abc1e3b477ad64ece9f78bcad5fd87929" id="r_abc1e3b477ad64ece9f78bcad5fd87929"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classServerSocket.html">ServerSocket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#abc1e3b477ad64ece9f78bcad5fd87929">operator=</a> (<a class="el" href="classServerSocket.html">ServerSocket</a> const &amp;rhs)</td></tr>
-<tr class="separator:abc1e3b477ad64ece9f78bcad5fd87929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ad3aed896d55cc816ded33a55d2967730" id="r_ad3aed896d55cc816ded33a55d2967730"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a></td></tr>
-<tr class="separator:ad3aed896d55cc816ded33a55d2967730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -159,19 +154,8 @@ Private Attributes</h2></td></tr>
 <p>Default constructor — initializes the socket descriptor to -1. </p>
 
 <p class="definition">Definition at line <a class="el" href="ServerSocket_8cpp_source.html#l00019">19</a> of file <a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>                               : <a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a>(-1)</div>
-<div class="line"><span class="lineno">   20</span>{</div>
-<div class="line"><span class="lineno">   21</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;ServerSocket: constructed (fd=-1)&quot;</span>);</div>
-<div class="line"><span class="lineno">   22</span>}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
-<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Writes a log entry with timestamp, level, and message.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
-<div class="ttc" id="aclassLogger_html_a4aa4d7c3b98f6e12e7ea8253da5ea0cd"><div class="ttname"><a href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a></div><div class="ttdeci">static Logger &amp; instance()</div><div class="ttdoc">Returns the singleton instance of the Logger.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00037">Logger.cpp:37</a></div></div>
-<div class="ttc" id="aclassServerSocket_html_ad3aed896d55cc816ded33a55d2967730"><div class="ttname"><a href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">ServerSocket::_fd</a></div><div class="ttdeci">int _fd</div><div class="ttdef"><b>Definition</b> <a href="ServerSocket_8hpp_source.html#l00013">ServerSocket.hpp:13</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_ae496d291c2ed4ec622506e01321d9087_cgraph.svg" width="595" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, and <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>.</p>
 
 </div>
 </div>
@@ -194,16 +178,8 @@ Here is the call graph for this function:</div>
 <p>Copy constructor — duplicates only the file descriptor value. </p>
 
 <p class="definition">Definition at line <a class="el" href="ServerSocket_8cpp_source.html#l00027">27</a> of file <a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>                                                  : <a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a>(src._fd)</div>
-<div class="line"><span class="lineno">   28</span>{</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;ServerSocket: copy-constructed (fd=&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(<a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a>) + <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">   30</span>}</div>
-<div class="ttc" id="astring__utils_8hpp_html_ad735976365693b45c427000fe042e173"><div class="ttname"><a href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a></div><div class="ttdeci">std::string toString(T value)</div><div class="ttdoc">Converts any printable type to a string representation.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00112">string_utils.hpp:112</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_ab2c53e4aea01c637b7b9c82c556413b3_cgraph.svg" width="595" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
 </div>
 </div>
@@ -226,18 +202,8 @@ Here is the call graph for this function:</div>
 <p>Destructor — closes the socket if it is still open. </p>
 
 <p class="definition">Definition at line <a class="el" href="ServerSocket_8cpp_source.html#l00035">35</a> of file <a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (this-&gt;<a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a> != -1)</div>
-<div class="line"><span class="lineno">   38</span>    {</div>
-<div class="line"><span class="lineno">   39</span>        ::close(this-&gt;<a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a>);</div>
-<div class="line"><span class="lineno">   40</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;ServerSocket: closed socket fd=&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(<a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a>));</div>
-<div class="line"><span class="lineno">   41</span>    }</div>
-<div class="line"><span class="lineno">   42</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_a3b4f3daceaf71f033fd659cb23ec868c_cgraph.svg" width="606" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
 </div>
 </div>
@@ -263,59 +229,10 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>A vector containing the file descriptors of all accepted clients. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ServerSocket_8cpp_source.html#l00139">139</a> of file <a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  140</span>{</div>
-<div class="line"><span class="lineno">  141</span>    std::vector&lt;int&gt;    newFDs;</div>
-<div class="line"><span class="lineno">  142</span> </div>
-<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
-<div class="line"><span class="lineno">  144</span>    {</div>
-<div class="line"><span class="lineno">  145</span>        <span class="keyword">struct </span>sockaddr_storage clientAddr;</div>
-<div class="line"><span class="lineno">  146</span>        socklen_t               addrSize = <span class="keyword">sizeof</span>(clientAddr);</div>
-<div class="line"><span class="lineno">  147</span>        <span class="keywordtype">int</span>                     clientFD = ::accept(this-&gt;<a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a>, (<span class="keyword">struct</span> sockaddr*)&amp;clientAddr, &amp;addrSize);</div>
-<div class="line"><span class="lineno">  148</span> </div>
-<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">if</span> (clientFD == -1)</div>
-<div class="line"><span class="lineno">  150</span>        {</div>
-<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">if</span> (errno == EAGAIN || errno == EWOULDBLOCK)</div>
-<div class="line"><span class="lineno">  152</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  153</span> </div>
-<div class="line"><span class="lineno">  154</span>            std::string errorMsg(strerror(errno));</div>
-<div class="line"><span class="lineno">  155</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;ServerSocket::acceptConnections: accept failed: &quot;</span> + errorMsg);</div>
-<div class="line"><span class="lineno">  156</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  157</span>        }</div>
-<div class="line"><span class="lineno">  158</span> </div>
-<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">if</span> (::fcntl(clientFD, F_SETFL, O_NONBLOCK) == -1)</div>
-<div class="line"><span class="lineno">  160</span>        {</div>
-<div class="line"><span class="lineno">  161</span>            std::string errorMsg(strerror(errno));</div>
-<div class="line"><span class="lineno">  162</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;ServerSocket::acceptConnections: failed to set non-blocking: &quot;</span> + errorMsg);</div>
-<div class="line"><span class="lineno">  163</span>            ::close(clientFD);</div>
-<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  165</span>        }</div>
-<div class="line"><span class="lineno">  166</span> </div>
-<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  168</span>        {</div>
-<div class="line"><span class="lineno">  169</span>            newFDs.push_back(clientFD);</div>
-<div class="line"><span class="lineno">  170</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;ServerSocket: accepted client FD=&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(clientFD));</div>
-<div class="line"><span class="lineno">  171</span>        }</div>
-<div class="line"><span class="lineno">  172</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">  173</span>        {</div>
-<div class="line"><span class="lineno">  174</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, std::string(<span class="stringliteral">&quot;ServerSocket::acceptConnections: exception -&gt; &quot;</span>) + e.what());</div>
-<div class="line"><span class="lineno">  175</span>            ::close(clientFD);</div>
-<div class="line"><span class="lineno">  176</span>        }</div>
-<div class="line"><span class="lineno">  177</span>    }</div>
-<div class="line"><span class="lineno">  178</span> </div>
-<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">return</span> (newFDs);</div>
-<div class="line"><span class="lineno">  180</span>}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00018">Logger.hpp:18</a></div></div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_a4240c5afdaf781181eb097b0d77edf1e_cgraph.svg" width="634" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_a4240c5afdaf781181eb097b0d77edf1e_icgraph.svg" width="870" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00092">WebServer::queueClientConnections()</a>.</p>
 
 </div>
 </div>
@@ -338,14 +255,8 @@ Here is the caller graph for this function:</div>
 <p>Returns the socket file descriptor. </p>
 
 <p class="definition">Definition at line <a class="el" href="ServerSocket_8cpp_source.html#l00185">185</a> of file <a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  186</span>{</div>
-<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a>);</div>
-<div class="line"><span class="lineno">  188</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_a43152f52de5e7f2ec6d64148f65cd8df_icgraph.svg" width="795" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00092">WebServer::queueClientConnections()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00064">WebServer::startServer()</a>.</p>
 
 </div>
 </div>
@@ -380,51 +291,10 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ServerSocket_8cpp_source.html#l00122">122</a> of file <a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>{</div>
-<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">if</span> (::listen(this-&gt;<a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a>, backlog) == -1)</div>
-<div class="line"><span class="lineno">  125</span>    {</div>
-<div class="line"><span class="lineno">  126</span>        std::string errorMsg(strerror(errno));</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ServerSocket::listenConnections: listen failed: &quot;</span> + errorMsg);</div>
-<div class="line"><span class="lineno">  128</span>    }</div>
-<div class="line"><span class="lineno">  129</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;ServerSocket: listening with backlog=&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(backlog));</div>
-<div class="line"><span class="lineno">  130</span>}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00016">Logger.hpp:16</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_a26897d739a95f0968b7b6085f99cca01_cgraph.svg" width="626" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_a26897d739a95f0968b7b6085f99cca01_icgraph.svg" width="564" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
-</div>
-</div>
-<a id="abc1e3b477ad64ece9f78bcad5fd87929" name="abc1e3b477ad64ece9f78bcad5fd87929"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc1e3b477ad64ece9f78bcad5fd87929">&#9670;&#160;</a></span>operator=()</h2>
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classServerSocket.html">ServerSocket</a> &amp; ServerSocket::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classServerSocket.html">ServerSocket</a> const &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00064">WebServer::startServer()</a>.</p>
 
 </div>
 </div>
@@ -460,108 +330,16 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ServerSocket_8cpp_source.html#l00053">53</a> of file <a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>{</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordtype">int</span>             status;</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordtype">int</span>             socketFD;</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keyword">struct </span>addrinfo hints;</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keyword">struct </span>addrinfo *servInfo;</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keyword">struct </span>addrinfo *tmp;</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;ServerSocket: initializing socket on port &quot;</span> + port);</div>
-<div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>    std::memset(&amp;hints, 0, <span class="keyword">sizeof</span>(hints));</div>
-<div class="line"><span class="lineno">   64</span>    hints.ai_family = AF_UNSPEC;      <span class="comment">// Allow IPv4 or IPv6</span></div>
-<div class="line"><span class="lineno">   65</span>    hints.ai_socktype = SOCK_STREAM;  <span class="comment">// TCP</span></div>
-<div class="line"><span class="lineno">   66</span>    hints.ai_flags = AI_PASSIVE;      <span class="comment">// Use local IP automatically</span></div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    status = ::getaddrinfo(NULL, port.c_str(), &amp;hints, &amp;servInfo);</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> (status != 0)</div>
-<div class="line"><span class="lineno">   70</span>    {</div>
-<div class="line"><span class="lineno">   71</span>        std::string errorMsg(gai_strerror(status));</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ServerSocket::startSocket: getaddrinfo failed: &quot;</span> + errorMsg);</div>
-<div class="line"><span class="lineno">   73</span>    }</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">for</span> (tmp = servInfo; tmp != NULL; tmp = tmp-&gt;ai_next)</div>
-<div class="line"><span class="lineno">   76</span>    {</div>
-<div class="line"><span class="lineno">   77</span>        socketFD = ::socket(tmp-&gt;ai_family, tmp-&gt;ai_socktype, tmp-&gt;ai_protocol);</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> (socketFD == -1)</div>
-<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>        <span class="keywordtype">int</span> yes = 1;</div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">if</span> (::setsockopt(socketFD, SOL_SOCKET, SO_REUSEADDR, &amp;yes, <span class="keyword">sizeof</span>(yes)) != 0)</div>
-<div class="line"><span class="lineno">   83</span>        {</div>
-<div class="line"><span class="lineno">   84</span>            ::close(socketFD);</div>
-<div class="line"><span class="lineno">   85</span>            ::freeaddrinfo(servInfo);</div>
-<div class="line"><span class="lineno">   86</span>            std::string errorMsg(strerror(errno));</div>
-<div class="line"><span class="lineno">   87</span>            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ServerSocket::startSocket: setsockopt failed: &quot;</span> + errorMsg);</div>
-<div class="line"><span class="lineno">   88</span>        }</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (::bind(socketFD, tmp-&gt;ai_addr, tmp-&gt;ai_addrlen) == 0)</div>
-<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">break</span>; <span class="comment">// Successfully bound</span></div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>        ::close(socketFD);</div>
-<div class="line"><span class="lineno">   94</span>        socketFD = -1;</div>
-<div class="line"><span class="lineno">   95</span>    }</div>
-<div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>    ::freeaddrinfo(servInfo);</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">if</span> (socketFD == -1)</div>
-<div class="line"><span class="lineno">  100</span>    {</div>
-<div class="line"><span class="lineno">  101</span>        std::string errorMsg(strerror(errno));</div>
-<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ServerSocket::startSocket: bind failed: &quot;</span> + errorMsg);</div>
-<div class="line"><span class="lineno">  103</span>    }</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (::fcntl(socketFD, F_SETFL, O_NONBLOCK) == -1)</div>
-<div class="line"><span class="lineno">  106</span>    {</div>
-<div class="line"><span class="lineno">  107</span>        ::close(socketFD);</div>
-<div class="line"><span class="lineno">  108</span>        std::string errorMsg(strerror(errno));</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ServerSocket::startSocket: fcntl failed: &quot;</span> + errorMsg);</div>
-<div class="line"><span class="lineno">  110</span>    }</div>
-<div class="line"><span class="lineno">  111</span> </div>
-<div class="line"><span class="lineno">  112</span>    this-&gt;<a class="code hl_variable" href="classServerSocket.html#ad3aed896d55cc816ded33a55d2967730">_fd</a> = socketFD;</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;ServerSocket: successfully started on port &quot;</span> + port);</div>
-<div class="line"><span class="lineno">  114</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_aecddb79578f1dc829bf97572291a1b2b_cgraph.svg" width="583" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classServerSocket_aecddb79578f1dc829bf97572291a1b2b_icgraph.svg" width="522" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad3aed896d55cc816ded33a55d2967730" name="ad3aed896d55cc816ded33a55d2967730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3aed896d55cc816ded33a55d2967730">&#9670;&#160;</a></span>_fd</h2>
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, and <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>.</p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ServerSocket::_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ServerSocket_8hpp_source.html#l00013">13</a> of file <a class="el" href="ServerSocket_8hpp_source.html">ServerSocket.hpp</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00064">WebServer::startServer()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="ServerSocket_8hpp_source.html">ServerSocket.hpp</a></li>
-<li><a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a></li>
+<li>includes/init/<a class="el" href="ServerSocket_8hpp_source.html">ServerSocket.hpp</a></li>
+<li>srcs/init/<a class="el" href="ServerSocket_8cpp_source.html">ServerSocket.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: UploadHandler Class Reference</title>
+<title>Webservinho: UploadHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -93,106 +93,30 @@ $(document).ready(function(){initNavTree('classUploadHandler.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="classUploadHandler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">UploadHandler Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="UploadHandler_8hpp_source.html">UploadHandler.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="UploadHandler_8hpp_source.html">dispatcher/UploadHandler.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for UploadHandler:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler__coll__graph.svg" width="122" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9d6fd83c1ba35b23829b8f4f619127d" id="r_ae9d6fd83c1ba35b23829b8f4f619127d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUploadHandler.html#ae9d6fd83c1ba35b23829b8f4f619127d">handle</a> (<a class="el" href="classHttpRequest.html">HttpRequest</a> &amp;request, <a class="el" href="classHttpResponse.html">HttpResponse</a> &amp;response, std::string uploadPath, const std::string &amp;rootPath)</td></tr>
 <tr class="memdesc:ae9d6fd83c1ba35b23829b8f4f619127d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry point for handling file uploads.  <br /></td></tr>
 <tr class="separator:ae9d6fd83c1ba35b23829b8f4f619127d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ad0eb7d7f64f75abf8078116aab15987f" id="r_ad0eb7d7f64f75abf8078116aab15987f"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUploadHandler.html#ad0eb7d7f64f75abf8078116aab15987f">extractBoundary</a> (const std::string &amp;contentType)</td></tr>
-<tr class="memdesc:ad0eb7d7f64f75abf8078116aab15987f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the multipart boundary string from the Content-Type header.  <br /></td></tr>
-<tr class="separator:ad0eb7d7f64f75abf8078116aab15987f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace5eebbfb696ffaf96a77319810cd21" id="r_aace5eebbfb696ffaf96a77319810cd21"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUploadHandler.html#aace5eebbfb696ffaf96a77319810cd21">parseMultipart</a> (const std::string &amp;body, const std::string &amp;contentType, const std::string &amp;uploadPath, const std::string &amp;rootPath)</td></tr>
-<tr class="memdesc:aace5eebbfb696ffaf96a77319810cd21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the full multipart body into individual parts.  <br /></td></tr>
-<tr class="separator:aace5eebbfb696ffaf96a77319810cd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a034aba7372669350a9287f13fe020dbd" id="r_a034aba7372669350a9287f13fe020dbd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUploadHandler.html#a034aba7372669350a9287f13fe020dbd">parsePart</a> (const std::string &amp;part, const std::string &amp;uploadPath, const std::string &amp;rootPath)</td></tr>
-<tr class="memdesc:a034aba7372669350a9287f13fe020dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an individual multipart section.  <br /></td></tr>
-<tr class="separator:a034aba7372669350a9287f13fe020dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0424d4becb0ad12b775f83822f69595c" id="r_a0424d4becb0ad12b775f83822f69595c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUploadHandler.html#a0424d4becb0ad12b775f83822f69595c">saveFile</a> (const std::string &amp;filename, const std::string &amp;uploadPath, const std::string &amp;data, const std::string &amp;rootPath)</td></tr>
-<tr class="memdesc:a0424d4becb0ad12b775f83822f69595c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a parsed file part to disk.  <br /></td></tr>
-<tr class="separator:a0424d4becb0ad12b775f83822f69595c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="UploadHandler_8hpp_source.html#l00010">10</a> of file <a class="el" href="UploadHandler_8hpp_source.html">UploadHandler.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad0eb7d7f64f75abf8078116aab15987f" name="ad0eb7d7f64f75abf8078116aab15987f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0eb7d7f64f75abf8078116aab15987f">&#9670;&#160;</a></span>extractBoundary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string UploadHandler::extractBoundary </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>contentType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Extracts the multipart boundary string from the Content-Type header. </p>
-<p>Example header: Content-Type: multipart/form-data; boundary=-&mdash;WebKitFormBoundaryxyz</p>
-<dl class="section return"><dt>Returns</dt><dd>Boundary string without surrounding quotes, or empty if not found. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="UploadHandler_8cpp_source.html#l00069">69</a> of file <a class="el" href="UploadHandler_8cpp_source.html">UploadHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
-<div class="line"><span class="lineno">   71</span>    std::string ctLower = contentType;</div>
-<div class="line"><span class="lineno">   72</span>    std::transform(ctLower.begin(), ctLower.end(), ctLower.begin(), ::tolower);</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    <span class="keyword">const</span> std::string key = <span class="stringliteral">&quot;boundary=&quot;</span>;</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordtype">size_t</span> pos = ctLower.find(key);</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (pos == std::string::npos)</div>
-<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">return</span> (<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   78</span> </div>
-<div class="line"><span class="lineno">   79</span>    std::string value = <a class="code hl_function" href="string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4">trim_copy</a>(contentType.substr(pos + key.length()));</div>
-<div class="line"><span class="lineno">   80</span>    <span class="keywordtype">size_t</span> semicolon = value.find(<span class="charliteral">&#39;;&#39;</span>);</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">if</span> (semicolon != std::string::npos)</div>
-<div class="line"><span class="lineno">   82</span>        value = <a class="code hl_function" href="string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4">trim_copy</a>(value.substr(0, semicolon));</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    <span class="comment">// Remove surrounding quotes if present</span></div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (value.size() &gt;= 2)</div>
-<div class="line"><span class="lineno">   86</span>    {</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">if</span> ((value[0] == <span class="charliteral">&#39;&quot;&#39;</span> &amp;&amp; value[value.size() - 1] == <span class="charliteral">&#39;&quot;&#39;</span>)</div>
-<div class="line"><span class="lineno">   88</span>            || (value[0] == <span class="charliteral">&#39;\&#39;&#39;</span> &amp;&amp; value[value.size() - 1] == <span class="charliteral">&#39;\&#39;&#39;</span>))</div>
-<div class="line"><span class="lineno">   89</span>            value = value.substr(1, value.size() - 2);</div>
-<div class="line"><span class="lineno">   90</span>    }</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">return</span> (value);</div>
-<div class="line"><span class="lineno">   93</span>}</div>
-<div class="ttc" id="astring__utils_8hpp_html_a8577ae0e014b88657679bf92631ee8c4"><div class="ttname"><a href="string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4">trim_copy</a></div><div class="ttdeci">static std::string trim_copy(const std::string &amp;s)</div><div class="ttdoc">Returns a copy of a string with surrounding spaces and tabs removed.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00162">string_utils.hpp:162</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_ad0eb7d7f64f75abf8078116aab15987f_cgraph.svg" width="380" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_ad0eb7d7f64f75abf8078116aab15987f_icgraph.svg" width="1500" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
 <a id="ae9d6fd83c1ba35b23829b8f4f619127d" name="ae9d6fd83c1ba35b23829b8f4f619127d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9d6fd83c1ba35b23829b8f4f619127d">&#9670;&#160;</a></span>handle()</h2>
 
@@ -243,392 +167,16 @@ Here is the caller graph for this function:</div>
 <p>Validates Content-Type, checks configuration, and processes multipart/form-data requests to extract uploaded files. Each file part is saved to disk. </p>
 
 <p class="definition">Definition at line <a class="el" href="UploadHandler_8cpp_source.html#l00017">17</a> of file <a class="el" href="UploadHandler_8cpp_source.html">UploadHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>{</div>
-<div class="line"><span class="lineno">   19</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Started] UploadHandler::handle&quot;</span>);</div>
-<div class="line"><span class="lineno">   20</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;UploadHandler: Content-Type raw=[&quot;</span> + request.<a class="code hl_function" href="classHttpRequest.html#a610ff6d9fe8d0ad21ea2c48c9ee52fca">getHeader</a>(<span class="stringliteral">&quot;Content-Type&quot;</span>) + <span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line"><span class="lineno">   21</span> </div>
-<div class="line"><span class="lineno">   22</span>    <span class="keyword">const</span> std::string contentType = request.<a class="code hl_function" href="classHttpRequest.html#a610ff6d9fe8d0ad21ea2c48c9ee52fca">getHeader</a>(<span class="stringliteral">&quot;Content-Type&quot;</span>);</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>    <span class="comment">// Ensure that upload path is defined in configuration.</span></div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (uploadPath.empty())</div>
-<div class="line"><span class="lineno">   26</span>    {</div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;UploadHandler: upload path not configured&quot;</span>);</div>
-<div class="line"><span class="lineno">   28</span>        response.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
-<div class="line"><span class="lineno">   29</span>        return ;</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    <span class="comment">// Normalize Content-Type to lowercase for comparison.</span></div>
-<div class="line"><span class="lineno">   33</span>    std::string ctLower = contentType;</div>
-<div class="line"><span class="lineno">   34</span>    std::transform(ctLower.begin(), ctLower.end(), ctLower.begin(), ::tolower);</div>
-<div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    <span class="comment">// Validate multipart form</span></div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (ctLower.find(<span class="stringliteral">&quot;multipart/form-data&quot;</span>) == std::string::npos)</div>
-<div class="line"><span class="lineno">   38</span>    {</div>
-<div class="line"><span class="lineno">   39</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;UploadHandler: invalid Content-Type&quot;</span>);</div>
-<div class="line"><span class="lineno">   40</span>        response.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a361f141fef7bd3cfab9107a363245647">ResponseStatus::BadRequest</a>);</div>
-<div class="line"><span class="lineno">   41</span>        return ;</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    <span class="comment">// Parse the multipart body (saves files internally)</span></div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classUploadHandler.html#aace5eebbfb696ffaf96a77319810cd21">parseMultipart</a>(request.<a class="code hl_function" href="classHttpRequest.html#ab30e8ad147999e3dc043302f81e7fef9">getBody</a>(), contentType, uploadPath, rootPath))</div>
-<div class="line"><span class="lineno">   46</span>    {</div>
-<div class="line"><span class="lineno">   47</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;UploadHandler: failed to parse multipart body&quot;</span>);</div>
-<div class="line"><span class="lineno">   48</span>        response.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a361f141fef7bd3cfab9107a363245647">ResponseStatus::BadRequest</a>);</div>
-<div class="line"><span class="lineno">   49</span>        return ;</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>    <span class="comment">// On success, send a simple HTML confirmation</span></div>
-<div class="line"><span class="lineno">   53</span>    response.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3c94648707a3d7b7f35669b2e710c529">ResponseStatus::Created</a>);</div>
-<div class="line"><span class="lineno">   54</span>    response.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Content-Type&quot;</span>, <span class="stringliteral">&quot;text/html; charset=utf-8&quot;</span>);</div>
-<div class="line"><span class="lineno">   55</span>    response.<a class="code hl_function" href="classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8">appendBody</a>(<span class="stringliteral">&quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Upload successful!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;</span>);</div>
-<div class="line"><span class="lineno">   56</span>    response.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Content-Length&quot;</span>, <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(response.<a class="code hl_function" href="classHttpResponse.html#a68de6b4795dd83a58885a8bddeacc2cf">getBody</a>().size()));</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Finished] UploadHandler::handle&quot;</span>);</div>
-<div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00018">Logger.hpp:18</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_a610ff6d9fe8d0ad21ea2c48c9ee52fca"><div class="ttname"><a href="classHttpRequest.html#a610ff6d9fe8d0ad21ea2c48c9ee52fca">HttpRequest::getHeader</a></div><div class="ttdeci">const std::string &amp; getHeader(const std::string &amp;name) const</div><div class="ttdoc">Retrieves a header value by name (case-insensitive).</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00234">HttpRequest.cpp:234</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_ab30e8ad147999e3dc043302f81e7fef9"><div class="ttname"><a href="classHttpRequest.html#ab30e8ad147999e3dc043302f81e7fef9">HttpRequest::getBody</a></div><div class="ttdeci">const std::string &amp; getBody(void) const</div><div class="ttdoc">Returns the body of the request.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00269">HttpRequest.cpp:269</a></div></div>
-<div class="ttc" id="aclassHttpResponse_html_a22352917aff72615ead5686b7e7b09b8"><div class="ttname"><a href="classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8">HttpResponse::appendBody</a></div><div class="ttdeci">void appendBody(const std::string &amp;body)</div><div class="ttdoc">Appends text data to the response body.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00049">HttpResponse.cpp:49</a></div></div>
-<div class="ttc" id="aclassHttpResponse_html_a68de6b4795dd83a58885a8bddeacc2cf"><div class="ttname"><a href="classHttpResponse.html#a68de6b4795dd83a58885a8bddeacc2cf">HttpResponse::getBody</a></div><div class="ttdeci">const std::string &amp; getBody(void) const</div><div class="ttdoc">Returns the current response body.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00154">HttpResponse.cpp:154</a></div></div>
-<div class="ttc" id="aclassHttpResponse_html_abb032c16ad3961d50a6582c50c330581"><div class="ttname"><a href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">HttpResponse::addHeader</a></div><div class="ttdeci">void addHeader(const std::string &amp;name, const std::string &amp;value)</div><div class="ttdoc">Adds a header field to the HTTP response.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00067">HttpResponse.cpp:67</a></div></div>
-<div class="ttc" id="aclassHttpResponse_html_af02b3b82a638bfbf23226b9f3bf06843"><div class="ttname"><a href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">HttpResponse::setStatusCode</a></div><div class="ttdeci">void setStatusCode(const ResponseStatus::code &amp;code)</div><div class="ttdoc">Sets the HTTP status code and updates the corresponding reason phrase.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00024">HttpResponse.cpp:24</a></div></div>
-<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Writes a log entry with timestamp, level, and message.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
-<div class="ttc" id="aclassLogger_html_a4aa4d7c3b98f6e12e7ea8253da5ea0cd"><div class="ttname"><a href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a></div><div class="ttdeci">static Logger &amp; instance()</div><div class="ttdoc">Returns the singleton instance of the Logger.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00037">Logger.cpp:37</a></div></div>
-<div class="ttc" id="aclassUploadHandler_html_aace5eebbfb696ffaf96a77319810cd21"><div class="ttname"><a href="classUploadHandler.html#aace5eebbfb696ffaf96a77319810cd21">UploadHandler::parseMultipart</a></div><div class="ttdeci">static bool parseMultipart(const std::string &amp;body, const std::string &amp;contentType, const std::string &amp;uploadPath, const std::string &amp;rootPath)</div><div class="ttdoc">Parses the full multipart body into individual parts.</div><div class="ttdef"><b>Definition</b> <a href="UploadHandler_8cpp_source.html#l00103">UploadHandler.cpp:103</a></div></div>
-<div class="ttc" id="astring__utils_8hpp_html_ad735976365693b45c427000fe042e173"><div class="ttname"><a href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a></div><div class="ttdeci">std::string toString(T value)</div><div class="ttdoc">Converts any printable type to a string representation.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00112">string_utils.hpp:112</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a></div><div class="ttdeci">@ InternalServerError</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus.hpp:55</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a361f141fef7bd3cfab9107a363245647"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a361f141fef7bd3cfab9107a363245647">ResponseStatus::BadRequest</a></div><div class="ttdeci">@ BadRequest</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00041">ResponseStatus.hpp:41</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a3c94648707a3d7b7f35669b2e710c529"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3c94648707a3d7b7f35669b2e710c529">ResponseStatus::Created</a></div><div class="ttdeci">@ Created</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00028">ResponseStatus.hpp:28</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_ae9d6fd83c1ba35b23829b8f4f619127d_cgraph.svg" width="1362" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_ae9d6fd83c1ba35b23829b8f4f619127d_icgraph.svg" width="947" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
-</div>
-</div>
-<a id="aace5eebbfb696ffaf96a77319810cd21" name="aace5eebbfb696ffaf96a77319810cd21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace5eebbfb696ffaf96a77319810cd21">&#9670;&#160;</a></span>parseMultipart()</h2>
+<p class="reference">References <a class="el" href="HttpResponse_8cpp_source.html#l00067">HttpResponse::addHeader()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00049">HttpResponse::appendBody()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00041">ResponseStatus::BadRequest</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00028">ResponseStatus::Created</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00269">HttpRequest::getBody()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00154">HttpResponse::getBody()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00234">HttpRequest::getHeader()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus::InternalServerError</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool UploadHandler::parseMultipart </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>body</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>contentType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>uploadPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>rootPath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Parses the full multipart body into individual parts. </p>
-<p>Each part is separated by a boundary line. For each section, the function extracts headers and payload, and delegates to <a class="el" href="classUploadHandler.html#a034aba7372669350a9287f13fe020dbd" title="Parses an individual multipart section.">parsePart()</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if parsing succeeded, false otherwise. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="UploadHandler_8cpp_source.html#l00103">103</a> of file <a class="el" href="UploadHandler_8cpp_source.html">UploadHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  105</span>{</div>
-<div class="line"><span class="lineno">  106</span>    std::string boundaryValue = <a class="code hl_function" href="classUploadHandler.html#ad0eb7d7f64f75abf8078116aab15987f">extractBoundary</a>(contentType);</div>
-<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">if</span> (boundaryValue.empty())</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    std::string delimiter = <span class="stringliteral">&quot;--&quot;</span> + boundaryValue;</div>
-<div class="line"><span class="lineno">  111</span>    std::string closingDelim = delimiter + <span class="stringliteral">&quot;--&quot;</span>;</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <span class="comment">// Ensure body starts with the expected delimiter</span></div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">if</span> (body.compare(0, delimiter.size(), delimiter) != 0)</div>
-<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  116</span> </div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordtype">size_t</span> pos = delimiter.size();</div>
-<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">if</span> (pos + 2 &lt;= body.size() &amp;&amp; body[pos] == <span class="charliteral">&#39;\r&#39;</span> &amp;&amp; body[pos + 1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><span class="lineno">  119</span>        pos += 2;</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">while</span> (pos &lt; body.size())</div>
-<div class="line"><span class="lineno">  122</span>    {</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordtype">size_t</span> next = body.find(<span class="stringliteral">&quot;\r\n&quot;</span> + delimiter, pos);</div>
-<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">if</span> (next == std::string::npos)</div>
-<div class="line"><span class="lineno">  125</span>            break ;</div>
-<div class="line"><span class="lineno">  126</span> </div>
-<div class="line"><span class="lineno">  127</span>        <span class="comment">// Extract a single part section</span></div>
-<div class="line"><span class="lineno">  128</span>        std::string part = body.substr(pos, next - pos);</div>
-<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="classUploadHandler.html#a034aba7372669350a9287f13fe020dbd">parsePart</a>(part, uploadPath, rootPath))</div>
-<div class="line"><span class="lineno">  130</span>            <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  131</span> </div>
-<div class="line"><span class="lineno">  132</span>        pos = next + 2 + delimiter.size();</div>
-<div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>        <span class="comment">// Detect end of multipart stream</span></div>
-<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">if</span> (body.compare(pos, 2, <span class="stringliteral">&quot;--&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>        <span class="comment">// Skip CRLF before next boundary</span></div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">if</span> (pos + 2 &lt;= body.size() &amp;&amp; body[pos] == <span class="charliteral">&#39;\r&#39;</span> &amp;&amp; body[pos + 1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><span class="lineno">  140</span>            pos += 2;</div>
-<div class="line"><span class="lineno">  141</span>    }</div>
-<div class="line"><span class="lineno">  142</span> </div>
-<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  144</span>}</div>
-<div class="ttc" id="aclassUploadHandler_html_a034aba7372669350a9287f13fe020dbd"><div class="ttname"><a href="classUploadHandler.html#a034aba7372669350a9287f13fe020dbd">UploadHandler::parsePart</a></div><div class="ttdeci">static bool parsePart(const std::string &amp;part, const std::string &amp;uploadPath, const std::string &amp;rootPath)</div><div class="ttdoc">Parses an individual multipart section.</div><div class="ttdef"><b>Definition</b> <a href="UploadHandler_8cpp_source.html#l00153">UploadHandler.cpp:153</a></div></div>
-<div class="ttc" id="aclassUploadHandler_html_ad0eb7d7f64f75abf8078116aab15987f"><div class="ttname"><a href="classUploadHandler.html#ad0eb7d7f64f75abf8078116aab15987f">UploadHandler::extractBoundary</a></div><div class="ttdeci">static std::string extractBoundary(const std::string &amp;contentType)</div><div class="ttdoc">Extracts the multipart boundary string from the Content-Type header.</div><div class="ttdef"><b>Definition</b> <a href="UploadHandler_8cpp_source.html#l00069">UploadHandler.cpp:69</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_aace5eebbfb696ffaf96a77319810cd21_cgraph.svg" width="1130" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_aace5eebbfb696ffaf96a77319810cd21_icgraph.svg" width="1218" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a034aba7372669350a9287f13fe020dbd" name="a034aba7372669350a9287f13fe020dbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a034aba7372669350a9287f13fe020dbd">&#9670;&#160;</a></span>parsePart()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool UploadHandler::parsePart </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>part</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>uploadPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>rootPath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Parses an individual multipart section. </p>
-<p>Extracts headers, locates filename (if any), and passes data to <a class="el" href="classUploadHandler.html#a0424d4becb0ad12b775f83822f69595c" title="Saves a parsed file part to disk.">saveFile()</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the part was parsed successfully, false on error. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="UploadHandler_8cpp_source.html#l00153">153</a> of file <a class="el" href="UploadHandler_8cpp_source.html">UploadHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  154</span>{</div>
-<div class="line"><span class="lineno">  155</span>    <span class="keyword">const</span> std::string sep = <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordtype">size_t</span> hEnd = part.find(sep);</div>
-<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">if</span> (hEnd == std::string::npos)</div>
-<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  159</span> </div>
-<div class="line"><span class="lineno">  160</span>    std::string headers = part.substr(0, hEnd);</div>
-<div class="line"><span class="lineno">  161</span>    std::string data = part.substr(hEnd + sep.size());</div>
-<div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>    <span class="comment">// Remove trailing CRLF from data section</span></div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">if</span> (data.size() &gt;= 2 &amp;&amp; data[data.size() - 2] == <span class="charliteral">&#39;\r&#39;</span> &amp;&amp; data[data.size() - 1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><span class="lineno">  165</span>        data.resize(data.size() - 2);</div>
-<div class="line"><span class="lineno">  166</span> </div>
-<div class="line"><span class="lineno">  167</span>    std::istringstream hs(headers);</div>
-<div class="line"><span class="lineno">  168</span>    std::string line;</div>
-<div class="line"><span class="lineno">  169</span>    std::string filename;</div>
-<div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>    <span class="comment">// Parse multipart headers to find &quot;filename=&quot;</span></div>
-<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">while</span> (std::getline(hs, line))</div>
-<div class="line"><span class="lineno">  173</span>    {</div>
-<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">if</span> (!line.empty() &amp;&amp; line[line.size() - 1] == <span class="charliteral">&#39;\r&#39;</span>)</div>
-<div class="line"><span class="lineno">  175</span>            line.erase(line.size() - 1);</div>
-<div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>        std::string lowerLine = line;</div>
-<div class="line"><span class="lineno">  178</span>        std::transform(lowerLine.begin(), lowerLine.end(), lowerLine.begin(), ::tolower);</div>
-<div class="line"><span class="lineno">  179</span> </div>
-<div class="line"><span class="lineno">  180</span>        <span class="keywordflow">if</span> (lowerLine.find(<span class="stringliteral">&quot;content-disposition:&quot;</span>) == 0)</div>
-<div class="line"><span class="lineno">  181</span>        {</div>
-<div class="line"><span class="lineno">  182</span>            <span class="keywordtype">size_t</span> fn = lowerLine.find(<span class="stringliteral">&quot;filename=&quot;</span>);</div>
-<div class="line"><span class="lineno">  183</span>            <span class="keywordflow">if</span> (fn != std::string::npos)</div>
-<div class="line"><span class="lineno">  184</span>            {</div>
-<div class="line"><span class="lineno">  185</span>                std::string val = line.substr(fn + 9);</div>
-<div class="line"><span class="lineno">  186</span>                val = <a class="code hl_function" href="string__utils_8hpp.html#a8577ae0e014b88657679bf92631ee8c4">trim_copy</a>(val);</div>
-<div class="line"><span class="lineno">  187</span> </div>
-<div class="line"><span class="lineno">  188</span>                <span class="comment">// Strip quotes</span></div>
-<div class="line"><span class="lineno">  189</span>                <span class="keywordflow">if</span> (!val.empty() &amp;&amp; (val[0] == <span class="charliteral">&#39;&quot;&#39;</span> || val[0] == <span class="charliteral">&#39;\&#39;&#39;</span>))</div>
-<div class="line"><span class="lineno">  190</span>                {</div>
-<div class="line"><span class="lineno">  191</span>                    <span class="keywordtype">char</span> q = val[0];</div>
-<div class="line"><span class="lineno">  192</span>                    <span class="keywordtype">size_t</span> endq = val.find(q, 1);</div>
-<div class="line"><span class="lineno">  193</span>                    <span class="keywordflow">if</span> (endq != std::string::npos)</div>
-<div class="line"><span class="lineno">  194</span>                        val = val.substr(1, endq - 1);</div>
-<div class="line"><span class="lineno">  195</span>                    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  196</span>                        val = val.substr(1);</div>
-<div class="line"><span class="lineno">  197</span>                }</div>
-<div class="line"><span class="lineno">  198</span> </div>
-<div class="line"><span class="lineno">  199</span>                <span class="comment">// Extract only the filename (ignore full path)</span></div>
-<div class="line"><span class="lineno">  200</span>                <span class="keywordtype">size_t</span> slash = val.find_last_of(<span class="stringliteral">&quot;/\\&quot;</span>);</div>
-<div class="line"><span class="lineno">  201</span>                <span class="keywordflow">if</span> (slash != std::string::npos)</div>
-<div class="line"><span class="lineno">  202</span>                    val = val.substr(slash + 1);</div>
-<div class="line"><span class="lineno">  203</span> </div>
-<div class="line"><span class="lineno">  204</span>                filename = val;</div>
-<div class="line"><span class="lineno">  205</span>            }</div>
-<div class="line"><span class="lineno">  206</span>        }</div>
-<div class="line"><span class="lineno">  207</span>    }</div>
-<div class="line"><span class="lineno">  208</span> </div>
-<div class="line"><span class="lineno">  209</span>    <span class="comment">// Skip parts without filename (e.g., form fields)</span></div>
-<div class="line"><span class="lineno">  210</span>    <span class="keywordflow">if</span> (filename.empty())</div>
-<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  212</span> </div>
-<div class="line"><span class="lineno">  213</span>    <a class="code hl_function" href="classUploadHandler.html#a0424d4becb0ad12b775f83822f69595c">saveFile</a>(filename, uploadPath, data, rootPath);</div>
-<div class="line"><span class="lineno">  214</span>    <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  215</span>}</div>
-<div class="ttc" id="aclassUploadHandler_html_a0424d4becb0ad12b775f83822f69595c"><div class="ttname"><a href="classUploadHandler.html#a0424d4becb0ad12b775f83822f69595c">UploadHandler::saveFile</a></div><div class="ttdeci">static void saveFile(const std::string &amp;filename, const std::string &amp;uploadPath, const std::string &amp;data, const std::string &amp;rootPath)</div><div class="ttdoc">Saves a parsed file part to disk.</div><div class="ttdef"><b>Definition</b> <a href="UploadHandler_8cpp_source.html#l00223">UploadHandler.cpp:223</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_a034aba7372669350a9287f13fe020dbd_cgraph.svg" width="812" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_a034aba7372669350a9287f13fe020dbd_icgraph.svg" width="1454" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a0424d4becb0ad12b775f83822f69595c" name="a0424d4becb0ad12b775f83822f69595c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0424d4becb0ad12b775f83822f69595c">&#9670;&#160;</a></span>saveFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UploadHandler::saveFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>uploadPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>rootPath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Saves a parsed file part to disk. </p>
-<p>Ensures correct base path resolution and writes data in binary mode. Logs errors for permission issues or missing directories. </p>
-
-<p class="definition">Definition at line <a class="el" href="UploadHandler_8cpp_source.html#l00223">223</a> of file <a class="el" href="UploadHandler_8cpp_source.html">UploadHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  225</span>{</div>
-<div class="line"><span class="lineno">  226</span>    std::string base = uploadPath;</div>
-<div class="line"><span class="lineno">  227</span> </div>
-<div class="line"><span class="lineno">  228</span>    <span class="comment">// Handle relative upload paths (joined to server root)</span></div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">if</span> (base.size() &gt; 0 &amp;&amp; base[0] != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  230</span>        base = rootPath + <span class="stringliteral">&quot;/&quot;</span> + base;</div>
-<div class="line"><span class="lineno">  231</span> </div>
-<div class="line"><span class="lineno">  232</span>    std::string path = base + <span class="stringliteral">&quot;/&quot;</span> + filename;</div>
-<div class="line"><span class="lineno">  233</span> </div>
-<div class="line"><span class="lineno">  234</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;UploadHandler: resolved path -&gt; &quot;</span> + path);</div>
-<div class="line"><span class="lineno">  235</span> </div>
-<div class="line"><span class="lineno">  236</span>    std::ofstream out(path.c_str(), std::ios::binary);</div>
-<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">if</span> (!out.is_open())</div>
-<div class="line"><span class="lineno">  238</span>    {</div>
-<div class="line"><span class="lineno">  239</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;UploadHandler: cannot open file for writing: &quot;</span> + path);</div>
-<div class="line"><span class="lineno">  240</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  241</span>    }</div>
-<div class="line"><span class="lineno">  242</span> </div>
-<div class="line"><span class="lineno">  243</span>    out.write(data.c_str(), data.size());</div>
-<div class="line"><span class="lineno">  244</span>    out.close();</div>
-<div class="line"><span class="lineno">  245</span> </div>
-<div class="line"><span class="lineno">  246</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;UploadHandler: saved file -&gt; &quot;</span> + path);</div>
-<div class="line"><span class="lineno">  247</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_a0424d4becb0ad12b775f83822f69595c_cgraph.svg" width="576" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classUploadHandler_a0424d4becb0ad12b775f83822f69595c_icgraph.svg" width="1683" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00029">Dispatcher::dispatch()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="UploadHandler_8hpp_source.html">UploadHandler.hpp</a></li>
-<li><a class="el" href="UploadHandler_8cpp_source.html">UploadHandler.cpp</a></li>
+<li>includes/dispatcher/<a class="el" href="UploadHandler_8hpp_source.html">UploadHandler.hpp</a></li>
+<li>srcs/dispatcher/<a class="el" href="UploadHandler_8cpp_source.html">UploadHandler.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

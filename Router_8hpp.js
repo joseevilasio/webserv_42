@@ -1,4 +1,4 @@
 var Router_8hpp =
 [
-    [ "Router", "classRouter.html", "classRouter" ]
+    [ "Router", "classRouter.html", null ]
 ];

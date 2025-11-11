@@ -1,7 +1,0 @@
-<map id="ResponseBuilder::setMinimumHeaders" name="ResponseBuilder::setMinimumHeaders">
-<area shape="rect" id="Node000001" title="Adds mandatory HTTP headers to the response." alt="" coords="5,23,227,63"/>
-<area shape="rect" id="Node000002" href="$classHttpResponse.html#abb032c16ad3961d50a6582c50c330581" title="Adds a header field to the HTTP response." alt="" coords="297,5,489,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,31,283,25,283,31,227,36"/>
-<area shape="rect" id="Node000003" href="$classResponseBuilder.html#ae58c2cc5b2bc78a9a2feed205780871c" title="Generates a timestamp string in RFC 1123 format for HTTP headers." alt="" coords="275,55,511,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,50,261,53,261,59,227,56"/>
-</map>

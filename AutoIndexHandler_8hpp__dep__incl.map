@@ -1,7 +1,7 @@
-<map id="AutoIndexHandler.hpp" name="AutoIndexHandler.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="87,5,254,31"/>
-<area shape="rect" id="Node000002" href="$AutoIndexHandler_8cpp.html" title=" " alt="" coords="5,79,171,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,42,103,80,100,76,145,38"/>
-<area shape="rect" id="Node000003" href="$Dispatcher_8cpp.html" title=" " alt="" coords="195,79,314,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,38,243,76,239,80,193,42"/>
+<map id="includes/dispatcher/AutoIndexHandler.hpp" name="includes/dispatcher/AutoIndexHandler.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="130,5,301,45"/>
+<area shape="rect" id="Node000002" href="$AutoIndexHandler_8cpp.html" title=" " alt="" coords="5,93,196,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,56,128,95,124,91,177,52"/>
+<area shape="rect" id="Node000003" href="$Dispatcher_8cpp.html" title=" " alt="" coords="220,101,440,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,52,316,98,313,102,250,56"/>
 </map>

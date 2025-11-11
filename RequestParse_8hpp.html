@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: RequestParse.hpp File Reference</title>
+<title>Webservinho: includes/request/RequestParse.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -100,15 +100,19 @@ $(document).ready(function(){initNavTree('RequestParse_8hpp.html',''); initResiz
 <div class="textblock"><code>#include &lt;<a class="el" href="RequestMethod_8hpp_source.html">request/RequestMethod.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="HttpRequest_8hpp_source.html">request/HttpRequest.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ServerConfig_8hpp_source.html">config/ServerConfig.hpp</a>&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for RequestParse.hpp:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="RequestParse_8hpp__incl.svg" width="1558" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for RequestParse.hpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="RequestParse_8hpp__dep__incl.svg" width="334" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="RequestParse_8hpp__incl.svg" width="1558" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="RequestParse_8hpp__dep__incl.svg" width="470" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="RequestParse_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -120,12 +124,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ac89fef9677faa448507994a398ffe0ce" id="r_ac89fef9677faa448507994a398ffe0ce"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RequestParse_8hpp.html#ac89fef9677faa448507994a398ffe0ce">MAX_URI</a> = 2048</td></tr>
+<tr class="separator:ac89fef9677faa448507994a398ffe0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abddf539b17be1ab679943c757f0e5d67" id="r_abddf539b17be1ab679943c757f0e5d67"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RequestParse_8hpp.html#abddf539b17be1ab679943c757f0e5d67">MAX_HEADER_LINE</a> = 8192</td></tr>
 <tr class="separator:abddf539b17be1ab679943c757f0e5d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa331ee2869c19da3b2c662ddaa87f6" id="r_a3fa331ee2869c19da3b2c662ddaa87f6"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RequestParse_8hpp.html#a3fa331ee2869c19da3b2c662ddaa87f6">MAX_TOTAL_HEADER_SIZE</a> = 16384</td></tr>
 <tr class="separator:a3fa331ee2869c19da3b2c662ddaa87f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac89fef9677faa448507994a398ffe0ce" id="r_ac89fef9677faa448507994a398ffe0ce"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RequestParse_8hpp.html#ac89fef9677faa448507994a398ffe0ce">MAX_URI</a> = 2048</td></tr>
-<tr class="separator:ac89fef9677faa448507994a398ffe0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="abddf539b17be1ab679943c757f0e5d67" name="abddf539b17be1ab679943c757f0e5d67"></a>

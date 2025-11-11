@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: StaticPageHandler.hpp Source File</title>
+<title>Webservinho: includes/dispatcher/StaticPageHandler.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -112,12 +112,12 @@ $(document).ready(function(){initNavTree('StaticPageHandler_8hpp_source.html',''
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classStaticPageHandler.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classStaticPageHandler.html#aa239d4307deb57494244c1ec5bc457aa">   13</a></span>        <a class="code hl_function" href="classStaticPageHandler.html#aa239d4307deb57494244c1ec5bc457aa">StaticPageHandler</a>(); <span class="comment">//blocked</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classStaticPageHandler.html#a486a7f74f01194d40936eb8055ef359b">   14</a></span>        <a class="code hl_function" href="classStaticPageHandler.html#a486a7f74f01194d40936eb8055ef359b">~StaticPageHandler</a>(); <span class="comment">//blocked</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classStaticPageHandler.html#a22e07adfb500d4315cd6910aa7857edf">   15</a></span>        <a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a>&amp; <a class="code hl_function" href="classStaticPageHandler.html#a22e07adfb500d4315cd6910aa7857edf">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a>&amp; rhs); <span class="comment">//blocked</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classStaticPageHandler.html#a7d3a824bc3177686ef16c46604943f3a">   16</a></span>        <a class="code hl_function" href="classStaticPageHandler.html#a7d3a824bc3177686ef16c46604943f3a">StaticPageHandler</a>(<span class="keyword">const</span> <a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a>&amp; rhs); <span class="comment">//blocked</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a>(); <span class="comment">//blocked</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_class" href="classStaticPageHandler.html">~StaticPageHandler</a>(); <span class="comment">//blocked</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a>&amp; rhs); <span class="comment">//blocked</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a>(<span class="keyword">const</span> <a class="code hl_class" href="classStaticPageHandler.html">StaticPageHandler</a>&amp; rhs); <span class="comment">//blocked</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">static</span> <span class="keyword">const</span> std::string    <a class="code hl_function" href="classStaticPageHandler.html#a22995910cb4920dbb05d537a3991535e">detectMimeType</a>(<span class="keyword">const</span> std::string&amp; resolvedPath);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">static</span> <span class="keyword">const</span> std::string    detectMimeType(<span class="keyword">const</span> std::string&amp; resolvedPath);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classStaticPageHandler.html#a701db169c979ef5cfebc72f6c160fb32">handle</a>(<a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <a class="code hl_class" href="classHttpResponse.html">HttpResponse</a>&amp; res);</div>
@@ -130,12 +130,7 @@ $(document).ready(function(){initNavTree('StaticPageHandler_8hpp_source.html',''
 <div class="ttc" id="aclassHttpRequest_html"><div class="ttname"><a href="classHttpRequest.html">HttpRequest</a></div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8hpp_source.html#l00016">HttpRequest.hpp:17</a></div></div>
 <div class="ttc" id="aclassHttpResponse_html"><div class="ttname"><a href="classHttpResponse.html">HttpResponse</a></div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8hpp_source.html#l00011">HttpResponse.hpp:12</a></div></div>
 <div class="ttc" id="aclassStaticPageHandler_html"><div class="ttname"><a href="classStaticPageHandler.html">StaticPageHandler</a></div><div class="ttdef"><b>Definition</b> <a href="StaticPageHandler_8hpp_source.html#l00010">StaticPageHandler.hpp:11</a></div></div>
-<div class="ttc" id="aclassStaticPageHandler_html_a22995910cb4920dbb05d537a3991535e"><div class="ttname"><a href="classStaticPageHandler.html#a22995910cb4920dbb05d537a3991535e">StaticPageHandler::detectMimeType</a></div><div class="ttdeci">static const std::string detectMimeType(const std::string &amp;resolvedPath)</div><div class="ttdoc">Determines the MIME type based on the file extension.</div><div class="ttdef"><b>Definition</b> <a href="StaticPageHandler_8cpp_source.html#l00018">StaticPageHandler.cpp:18</a></div></div>
-<div class="ttc" id="aclassStaticPageHandler_html_a22e07adfb500d4315cd6910aa7857edf"><div class="ttname"><a href="classStaticPageHandler.html#a22e07adfb500d4315cd6910aa7857edf">StaticPageHandler::operator=</a></div><div class="ttdeci">StaticPageHandler &amp; operator=(const StaticPageHandler &amp;rhs)</div></div>
-<div class="ttc" id="aclassStaticPageHandler_html_a486a7f74f01194d40936eb8055ef359b"><div class="ttname"><a href="classStaticPageHandler.html#a486a7f74f01194d40936eb8055ef359b">StaticPageHandler::~StaticPageHandler</a></div><div class="ttdeci">~StaticPageHandler()</div></div>
 <div class="ttc" id="aclassStaticPageHandler_html_a701db169c979ef5cfebc72f6c160fb32"><div class="ttname"><a href="classStaticPageHandler.html#a701db169c979ef5cfebc72f6c160fb32">StaticPageHandler::handle</a></div><div class="ttdeci">static void handle(HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Handles serving static files from disk.</div><div class="ttdef"><b>Definition</b> <a href="StaticPageHandler_8cpp_source.html#l00068">StaticPageHandler.cpp:68</a></div></div>
-<div class="ttc" id="aclassStaticPageHandler_html_a7d3a824bc3177686ef16c46604943f3a"><div class="ttname"><a href="classStaticPageHandler.html#a7d3a824bc3177686ef16c46604943f3a">StaticPageHandler::StaticPageHandler</a></div><div class="ttdeci">StaticPageHandler(const StaticPageHandler &amp;rhs)</div></div>
-<div class="ttc" id="aclassStaticPageHandler_html_aa239d4307deb57494244c1ec5bc457aa"><div class="ttname"><a href="classStaticPageHandler.html#aa239d4307deb57494244c1ec5bc457aa">StaticPageHandler::StaticPageHandler</a></div><div class="ttdeci">StaticPageHandler()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,7 +1,0 @@
-<map id="Router::hasCgiExtension" name="Router::hasCgiExtension">
-<area shape="rect" id="Node000001" title="Checks whether a file extension matches a configured CGI mapping." alt="" coords="5,31,187,56"/>
-<area shape="rect" id="Node000002" href="$classLocationConfig.html#acdf2981a9b52e572d98e785aa4881f68" title=" " alt="" coords="235,5,467,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,32,221,28,221,34,187,37"/>
-<area shape="rect" id="Node000003" href="$string__utils_8hpp.html#afbeab407a81774ee771701ff3a07f113" title="Extracts the file extension from a path, including the dot." alt="" coords="285,55,416,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,49,272,57,271,63,187,55"/>
-</map>

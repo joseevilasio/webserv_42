@@ -21,7 +21,6 @@ var classClientConnection =
     [ "getServerConfig", "classClientConnection.html#ad157100f057508c3f4766a0b9c011d56", null ],
     [ "hasCgi", "classClientConnection.html#a71657fb192ff99b48ff7fd66a472eb16", null ],
     [ "isCgiActive", "classClientConnection.html#a8acfee6c82417c76f2952e2cd9cf6d4d", null ],
-    [ "operator=", "classClientConnection.html#ac15a41ec89a428ab1efa4a4de0754ac3", null ],
     [ "recvData", "classClientConnection.html#a835586ce27b3c3598394bde3fff14211", null ],
     [ "sendData", "classClientConnection.html#abbef9ce451a487c2961910457915824e", null ],
     [ "setCgiActive", "classClientConnection.html#a2012e8638ca7a46dc54238ab754d6726", null ],
@@ -30,18 +29,5 @@ var classClientConnection =
     [ "setCgiStart", "classClientConnection.html#a60f1835349768fb6a27037faf7eebef8", null ],
     [ "setKeepAlive", "classClientConnection.html#a25022d57d3163b477985b50db614df32", null ],
     [ "setResponseBuffer", "classClientConnection.html#aa11f1d93d9dcf41a5ab77a17d386403c", null ],
-    [ "setSentBytes", "classClientConnection.html#a590269f3f8005c64161c043c7bd58de5", null ],
-    [ "_cgiBuffer", "classClientConnection.html#a9b3bd2fa2254c93cbe419d1a648a97a3", null ],
-    [ "_cgiFd", "classClientConnection.html#a98d6f2d089c12e81570a5908000ba7de", null ],
-    [ "_cgiPid", "classClientConnection.html#adeb99fa45d3f81a277f8906dc80441a9", null ],
-    [ "_cgiStart", "classClientConnection.html#a94ca37d6ef1105a64632b3159ed950c5", null ],
-    [ "_fd", "classClientConnection.html#a636d29d132e94398d8d3dce8703f1026", null ],
-    [ "_hasCgi", "classClientConnection.html#a34c2a85d284b1ae4528c6ce9fdb3ae4f", null ],
-    [ "_httpRequest", "classClientConnection.html#a37543e2f875893df44cd1c8807eab504", null ],
-    [ "_httpResponse", "classClientConnection.html#a6be05d4cde75413265d860ce4d35ac93", null ],
-    [ "_keepAlive", "classClientConnection.html#a42aefcc023bf18fbc724f9354164164e", null ],
-    [ "_requestBuffer", "classClientConnection.html#a2f37d0ee6050678858376bd88f6f4c79", null ],
-    [ "_responseBuffer", "classClientConnection.html#a16ee49331d7e07f001d782aac0901f7e", null ],
-    [ "_sentBytes", "classClientConnection.html#ae65e4932f012007084d562d713040976", null ],
-    [ "_serverConfig", "classClientConnection.html#a087e22df2d01e276d0929db55b949173", null ]
+    [ "setSentBytes", "classClientConnection.html#a590269f3f8005c64161c043c7bd58de5", null ]
 ];

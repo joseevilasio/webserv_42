@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: RequestMeta.cpp Source File</title>
+<title>Webservinho: srcs/request/RequestMeta.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -108,68 +108,68 @@ $(document).ready(function(){initNavTree('RequestMeta_8cpp_source.html',''); ini
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a7384f594ae41f8f0151e8875a663f795">   18</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestMeta.html#a7384f594ae41f8f0151e8875a663f795">RequestMeta::setContentLength</a>(std::size_t content_length)</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">_contentLength</a> = content_length;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    this-&gt;_contentLength = content_length;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
 </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a360c94feb081bd7436c055c9f7ed1715">   26</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestMeta.html#a360c94feb081bd7436c055c9f7ed1715">RequestMeta::setChunked</a>(<span class="keywordtype">bool</span> chunked)</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">_chunked</a> = chunked;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    this-&gt;_chunked = chunked;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classRequestMeta.html#ad4f70f6ac25a37bd22eead55abc63a88">   34</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestMeta.html#ad4f70f6ac25a37bd22eead55abc63a88">RequestMeta::setConnectionClose</a>(<span class="keywordtype">bool</span> connection_close)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">_connectionClose</a> = connection_close;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    this-&gt;_connectionClose = connection_close;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
 </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a023589236b86199328fac468381d4686">   42</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestMeta.html#a023589236b86199328fac468381d4686">RequestMeta::setExpectContinue</a>(<span class="keywordtype">bool</span> expect_continue)</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">_expectContinue</a> = expect_continue;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    this-&gt;_expectContinue = expect_continue;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a340d195d3f4552366d501915c4a03714">   50</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestMeta.html#a340d195d3f4552366d501915c4a03714">RequestMeta::setRedirect</a>(<span class="keywordtype">bool</span> redirect)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">_isRedirect</a> = redirect;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    this-&gt;_isRedirect = redirect;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a3d73559654d623e960e0c68a6cb476f6">   58</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestMeta.html#a3d73559654d623e960e0c68a6cb476f6">RequestMeta::setHost</a>(<span class="keyword">const</span> std::string&amp; host)</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">_host</a> = host;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    this-&gt;_host = host;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classRequestMeta.html#ab47e11c87c366da6f1325842708f091f">   68</a></span><span class="keywordtype">void</span>    <a class="code hl_function" href="classRequestMeta.html#ab47e11c87c366da6f1325842708f091f">RequestMeta::resetMeta</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">_contentLength</a> = 0;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">_chunked</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">_connectionClose</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">_expectContinue</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">_isRedirect</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">_host</a>.clear();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    this-&gt;_contentLength = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    this-&gt;_chunked = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    this-&gt;_connectionClose = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    this-&gt;_expectContinue = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    this-&gt;_isRedirect = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    this-&gt;_host.clear();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a">   81</a></span>std::size_t <a class="code hl_function" href="classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a">RequestMeta::getContentLength</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">_contentLength</a>); }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a">   81</a></span>std::size_t <a class="code hl_function" href="classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a">RequestMeta::getContentLength</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;_contentLength); }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classRequestMeta.html#acded047391c25677409e4725a644b3da">   86</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestMeta.html#acded047391c25677409e4725a644b3da">RequestMeta::isChunked</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">_chunked</a>); }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classRequestMeta.html#acded047391c25677409e4725a644b3da">   86</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestMeta.html#acded047391c25677409e4725a644b3da">RequestMeta::isChunked</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;_chunked); }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e">   91</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e">RequestMeta::shouldClose</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">_connectionClose</a>); }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e">   91</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e">RequestMeta::shouldClose</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;_connectionClose); }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a18e74c9abe0c9d30acbadefa46f91d5d">   96</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestMeta.html#a18e74c9abe0c9d30acbadefa46f91d5d">RequestMeta::getExpectContinue</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">_expectContinue</a>); }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a18e74c9abe0c9d30acbadefa46f91d5d">   96</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestMeta.html#a18e74c9abe0c9d30acbadefa46f91d5d">RequestMeta::getExpectContinue</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;_expectContinue); }</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a2719541d1737df353fe82d9b16ee1fb0">  101</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestMeta.html#a2719541d1737df353fe82d9b16ee1fb0">RequestMeta::isRedirect</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">_isRedirect</a>); }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a2719541d1737df353fe82d9b16ee1fb0">  101</a></span><span class="keywordtype">bool</span>    <a class="code hl_function" href="classRequestMeta.html#a2719541d1737df353fe82d9b16ee1fb0">RequestMeta::isRedirect</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;_isRedirect); }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a328ad675ea6c0e9b91aad16382330549">  106</a></span>std::string <a class="code hl_function" href="classRequestMeta.html#a328ad675ea6c0e9b91aad16382330549">RequestMeta::getHost</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code hl_variable" href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">_host</a>); }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classRequestMeta.html#a328ad675ea6c0e9b91aad16382330549">  106</a></span>std::string <a class="code hl_function" href="classRequestMeta.html#a328ad675ea6c0e9b91aad16382330549">RequestMeta::getHost</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;_host); }</div>
 <div class="ttc" id="aRequestMeta_8hpp_html"><div class="ttname"><a href="RequestMeta_8hpp.html">RequestMeta.hpp</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_a023589236b86199328fac468381d4686"><div class="ttname"><a href="classRequestMeta.html#a023589236b86199328fac468381d4686">RequestMeta::setExpectContinue</a></div><div class="ttdeci">void setExpectContinue(bool expect_continue)</div><div class="ttdoc">Sets the Expect: 100-continue flag for the request.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00042">RequestMeta.cpp:42</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_a11bf6f7047306ce095c8ca2167894ef1"><div class="ttname"><a href="classRequestMeta.html#a11bf6f7047306ce095c8ca2167894ef1">RequestMeta::~RequestMeta</a></div><div class="ttdeci">~RequestMeta()</div><div class="ttdoc">Destructor for RequestMeta.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00013">RequestMeta.cpp:13</a></div></div>
@@ -179,19 +179,13 @@ $(document).ready(function(){initNavTree('RequestMeta_8cpp_source.html',''); ini
 <div class="ttc" id="aclassRequestMeta_html_a340d195d3f4552366d501915c4a03714"><div class="ttname"><a href="classRequestMeta.html#a340d195d3f4552366d501915c4a03714">RequestMeta::setRedirect</a></div><div class="ttdeci">void setRedirect(bool redirect)</div><div class="ttdoc">Sets whether this request is associated with a redirect.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00050">RequestMeta.cpp:50</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_a360c94feb081bd7436c055c9f7ed1715"><div class="ttname"><a href="classRequestMeta.html#a360c94feb081bd7436c055c9f7ed1715">RequestMeta::setChunked</a></div><div class="ttdeci">void setChunked(bool chunked)</div><div class="ttdoc">Defines whether the request uses chunked transfer encoding.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00026">RequestMeta.cpp:26</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_a3d73559654d623e960e0c68a6cb476f6"><div class="ttname"><a href="classRequestMeta.html#a3d73559654d623e960e0c68a6cb476f6">RequestMeta::setHost</a></div><div class="ttdeci">void setHost(const std::string &amp;host)</div><div class="ttdoc">Stores the value of the Host header for this request.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00058">RequestMeta.cpp:58</a></div></div>
-<div class="ttc" id="aclassRequestMeta_html_a59762a10cd3ab11b80125570bf6a7ccf"><div class="ttname"><a href="classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf">RequestMeta::_host</a></div><div class="ttdeci">std::string _host</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00014">RequestMeta.hpp:14</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_a6ff263a984148d6ca9b81c80978d8952"><div class="ttname"><a href="classRequestMeta.html#a6ff263a984148d6ca9b81c80978d8952">RequestMeta::RequestMeta</a></div><div class="ttdeci">RequestMeta()</div><div class="ttdoc">Default constructor for RequestMeta.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00008">RequestMeta.cpp:8</a></div></div>
-<div class="ttc" id="aclassRequestMeta_html_a7277c2e35ff1d7e08c8500ede481f655"><div class="ttname"><a href="classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655">RequestMeta::_contentLength</a></div><div class="ttdeci">std::size_t _contentLength</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00009">RequestMeta.hpp:9</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_a7384f594ae41f8f0151e8875a663f795"><div class="ttname"><a href="classRequestMeta.html#a7384f594ae41f8f0151e8875a663f795">RequestMeta::setContentLength</a></div><div class="ttdeci">void setContentLength(std::size_t content_length)</div><div class="ttdoc">Sets the Content-Length value for the request.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00018">RequestMeta.cpp:18</a></div></div>
-<div class="ttc" id="aclassRequestMeta_html_a7e9f988a5d4baa7e1d3e2ad05b8ab364"><div class="ttname"><a href="classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364">RequestMeta::_chunked</a></div><div class="ttdeci">bool _chunked</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00010">RequestMeta.hpp:10</a></div></div>
-<div class="ttc" id="aclassRequestMeta_html_a810af4411c598ac9d392f0d2e3f0240d"><div class="ttname"><a href="classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d">RequestMeta::_connectionClose</a></div><div class="ttdeci">bool _connectionClose</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00011">RequestMeta.hpp:11</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_ab47e11c87c366da6f1325842708f091f"><div class="ttname"><a href="classRequestMeta.html#ab47e11c87c366da6f1325842708f091f">RequestMeta::resetMeta</a></div><div class="ttdeci">void resetMeta(void)</div><div class="ttdoc">Resets all metadata fields to default values.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00068">RequestMeta.cpp:68</a></div></div>
-<div class="ttc" id="aclassRequestMeta_html_abe894b80d28542b22c6cf1c3c162afb8"><div class="ttname"><a href="classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8">RequestMeta::_expectContinue</a></div><div class="ttdeci">bool _expectContinue</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00012">RequestMeta.hpp:12</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_ac4273e56ac2833d678fcb296983b957e"><div class="ttname"><a href="classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e">RequestMeta::shouldClose</a></div><div class="ttdeci">bool shouldClose(void) const</div><div class="ttdoc">Returns true if the connection should be closed.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00091">RequestMeta.cpp:91</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_ac8dbee6450bf74ffd3ea1c9bb6213b7a"><div class="ttname"><a href="classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a">RequestMeta::getContentLength</a></div><div class="ttdeci">std::size_t getContentLength(void) const</div><div class="ttdoc">Returns the Content-Length value.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00081">RequestMeta.cpp:81</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_acded047391c25677409e4725a644b3da"><div class="ttname"><a href="classRequestMeta.html#acded047391c25677409e4725a644b3da">RequestMeta::isChunked</a></div><div class="ttdeci">bool isChunked(void) const</div><div class="ttdoc">Returns true if transfer encoding is chunked.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00086">RequestMeta.cpp:86</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_ad4f70f6ac25a37bd22eead55abc63a88"><div class="ttname"><a href="classRequestMeta.html#ad4f70f6ac25a37bd22eead55abc63a88">RequestMeta::setConnectionClose</a></div><div class="ttdeci">void setConnectionClose(bool connection_close)</div><div class="ttdoc">Defines whether the connection should be closed after the response.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00034">RequestMeta.cpp:34</a></div></div>
-<div class="ttc" id="aclassRequestMeta_html_ae5a67b8b57449c4c917c6b8284ef2d10"><div class="ttname"><a href="classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10">RequestMeta::_isRedirect</a></div><div class="ttdeci">bool _isRedirect</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8hpp_source.html#l00013">RequestMeta.hpp:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

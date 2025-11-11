@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: DeleteHandler Class Reference</title>
+<title>Webservinho: DeleteHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -98,7 +98,14 @@ $(document).ready(function(){initNavTree('classDeleteHandler.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="DeleteHandler_8hpp_source.html">DeleteHandler.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="DeleteHandler_8hpp_source.html">dispatcher/DeleteHandler.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for DeleteHandler:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDeleteHandler__coll__graph.svg" width="119" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -157,73 +164,16 @@ Static Public Member Functions</h2></td></tr>
 <p>On success, responds with 204 No Content. </p>
 
 <p class="definition">Definition at line <a class="el" href="DeleteHandler_8cpp_source.html#l00020">20</a> of file <a class="el" href="DeleteHandler_8cpp_source.html">DeleteHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>{</div>
-<div class="line"><span class="lineno">   22</span>    std::string path = req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>    <span class="comment">// Verify that the file exists</span></div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (access(path.c_str(), F_OK) != 0)</div>
-<div class="line"><span class="lineno">   26</span>    {</div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;DeleteHandler: File not found -&gt; &quot;</span> + path);</div>
-<div class="line"><span class="lineno">   28</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">ResponseStatus::NotFound</a>);</div>
-<div class="line"><span class="lineno">   29</span>        return ;</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    <span class="comment">// Prevent deletion of directories for safety</span></div>
-<div class="line"><span class="lineno">   33</span>    <span class="keyword">struct </span>stat s;</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) == 0 &amp;&amp; S_ISDIR(s.st_mode))</div>
-<div class="line"><span class="lineno">   35</span>    {</div>
-<div class="line"><span class="lineno">   36</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;DeleteHandler: Cannot delete directory -&gt; &quot;</span> + path);</div>
-<div class="line"><span class="lineno">   37</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a>);</div>
-<div class="line"><span class="lineno">   38</span>        return ;</div>
-<div class="line"><span class="lineno">   39</span>    }</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <span class="comment">// Attempt to unlink (delete) the file</span></div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (unlink(path.c_str()) == 0)</div>
-<div class="line"><span class="lineno">   43</span>    {</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;DeleteHandler: Successfully deleted -&gt; &quot;</span> + path);</div>
-<div class="line"><span class="lineno">   45</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac862945398f1d51801da2914de43175b">ResponseStatus::NoContent</a>);</div>
-<div class="line"><span class="lineno">   46</span>        return ;</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">// Handle deletion failure and map to HTTP status</span></div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordtype">int</span> err = errno;</div>
-<div class="line"><span class="lineno">   51</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>,</div>
-<div class="line"><span class="lineno">   52</span>        <span class="stringliteral">&quot;DeleteHandler: Failed to delete -&gt; &quot;</span> + path + <span class="stringliteral">&quot; (&quot;</span> + std::string(strerror(err)) + <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">   53</span> </div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (err == EACCES)</div>
-<div class="line"><span class="lineno">   55</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a>);</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (err == ENOENT)</div>
-<div class="line"><span class="lineno">   57</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">ResponseStatus::NotFound</a>);</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   59</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
-<div class="line"><span class="lineno">   60</span>}</div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00018">Logger.hpp:18</a></div></div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00016">Logger.hpp:16</a></div></div>
-<div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
-<div class="ttc" id="aclassHttpRequest_html_a9cd740d746bcd7fa6e4fcb8c537879ad"><div class="ttname"><a href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">HttpRequest::getResolvedPath</a></div><div class="ttdeci">const std::string getResolvedPath(void) const</div><div class="ttdoc">Returns the resolved filesystem path corresponding to the URI.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00328">HttpRequest.cpp:328</a></div></div>
-<div class="ttc" id="aclassHttpResponse_html_af02b3b82a638bfbf23226b9f3bf06843"><div class="ttname"><a href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">HttpResponse::setStatusCode</a></div><div class="ttdeci">void setStatusCode(const ResponseStatus::code &amp;code)</div><div class="ttdoc">Sets the HTTP status code and updates the corresponding reason phrase.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00024">HttpResponse.cpp:24</a></div></div>
-<div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Writes a log entry with timestamp, level, and message.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
-<div class="ttc" id="aclassLogger_html_a4aa4d7c3b98f6e12e7ea8253da5ea0cd"><div class="ttname"><a href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a></div><div class="ttdeci">static Logger &amp; instance()</div><div class="ttdoc">Returns the singleton instance of the Logger.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00037">Logger.cpp:37</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a></div><div class="ttdeci">@ InternalServerError</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus.hpp:55</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">ResponseStatus::NotFound</a></div><div class="ttdeci">@ NotFound</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00044">ResponseStatus.hpp:44</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a></div><div class="ttdeci">@ Forbidden</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus.hpp:43</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ac862945398f1d51801da2914de43175b"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac862945398f1d51801da2914de43175b">ResponseStatus::NoContent</a></div><div class="ttdeci">@ NoContent</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00030">ResponseStatus.hpp:30</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classDeleteHandler_a8817fc78dc56285c43b1047bddf39a1f_cgraph.svg" width="971" height="192"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classDeleteHandler_a8817fc78dc56285c43b1047bddf39a1f_icgraph.svg" width="944" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus::Forbidden</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus::InternalServerError</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00030">ResponseStatus::NoContent</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00044">ResponseStatus::NotFound</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00029">Dispatcher::dispatch()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="DeleteHandler_8hpp_source.html">DeleteHandler.hpp</a></li>
-<li><a class="el" href="DeleteHandler_8cpp_source.html">DeleteHandler.cpp</a></li>
+<li>includes/dispatcher/<a class="el" href="DeleteHandler_8hpp_source.html">DeleteHandler.hpp</a></li>
+<li>srcs/dispatcher/<a class="el" href="DeleteHandler_8cpp_source.html">DeleteHandler.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

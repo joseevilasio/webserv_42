@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: RouteType Struct Reference</title>
+<title>Webservinho: RouteType Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -101,7 +101,14 @@ $(document).ready(function(){initNavTree('structRouteType.html',''); initResizab
 <p>Defines the different types of routes handled by the Webservinho server.  
  <a href="structRouteType.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="RouteType_8hpp_source.html">RouteType.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="RouteType_8hpp_source.html">dispatcher/RouteType.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for RouteType:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structRouteType__coll__graph.svg" width="94" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -165,27 +172,11 @@ Public Types</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="RouteType_8hpp_source.html#l00024">24</a> of file <a class="el" href="RouteType_8hpp_source.html">RouteType.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>    {</div>
-<div class="line"><span class="lineno">   26</span>        <a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a37aea1eab81bc9cdd19d8b4a67215763">StaticPage</a> = 0, </div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6af89baf178c357f54da2f7b8a4e6028dd">CGI</a>,            </div>
-<div class="line"><span class="lineno">   28</span>        <a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a0cdab4b967c69c667463931213b49698">AutoIndex</a>,      </div>
-<div class="line"><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6ab0393c73c7a4a43c4c0520b27cd4e59b">Upload</a>,         </div>
-<div class="line"><span class="lineno">   30</span>        <a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6ad842895babdd09e86148be300f75f9e5">Redirect</a>,       </div>
-<div class="line"><span class="lineno">   31</span>        <a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a69e69670dbab073b39ca53368f1cac90">Delete</a>,         </div>
-<div class="line"><span class="lineno">   32</span>        <a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">Error</a>           </div>
-<div class="line"><span class="lineno">   33</span>    };</div>
-<div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6a0cdab4b967c69c667463931213b49698"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a0cdab4b967c69c667463931213b49698">RouteType::AutoIndex</a></div><div class="ttdeci">@ AutoIndex</div><div class="ttdoc">Generates a dynamic directory listing.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00028">RouteType.hpp:28</a></div></div>
-<div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6a37aea1eab81bc9cdd19d8b4a67215763"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a37aea1eab81bc9cdd19d8b4a67215763">RouteType::StaticPage</a></div><div class="ttdeci">@ StaticPage</div><div class="ttdoc">Serves a static file or HTML page.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00026">RouteType.hpp:26</a></div></div>
-<div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6a69e69670dbab073b39ca53368f1cac90"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a69e69670dbab073b39ca53368f1cac90">RouteType::Delete</a></div><div class="ttdeci">@ Delete</div><div class="ttdoc">Processes HTTP DELETE requests to remove resources.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00031">RouteType.hpp:31</a></div></div>
-<div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6ab0393c73c7a4a43c4c0520b27cd4e59b"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6ab0393c73c7a4a43c4c0520b27cd4e59b">RouteType::Upload</a></div><div class="ttdeci">@ Upload</div><div class="ttdoc">Handles file upload requests.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00029">RouteType.hpp:29</a></div></div>
-<div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a></div><div class="ttdeci">@ Error</div><div class="ttdoc">Represents an error or invalid route configuration.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00033">RouteType.hpp:32</a></div></div>
-<div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6ad842895babdd09e86148be300f75f9e5"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6ad842895babdd09e86148be300f75f9e5">RouteType::Redirect</a></div><div class="ttdeci">@ Redirect</div><div class="ttdoc">Issues an HTTP redirection response.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00030">RouteType.hpp:30</a></div></div>
-<div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6af89baf178c357f54da2f7b8a4e6028dd"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6af89baf178c357f54da2f7b8a4e6028dd">RouteType::CGI</a></div><div class="ttdeci">@ CGI</div><div class="ttdoc">Executes a CGI script and returns its output.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00027">RouteType.hpp:27</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="RouteType_8hpp_source.html">RouteType.hpp</a></li>
+<li>includes/dispatcher/<a class="el" href="RouteType_8hpp_source.html">RouteType.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

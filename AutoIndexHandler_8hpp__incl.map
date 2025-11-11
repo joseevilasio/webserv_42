@@ -1,27 +1,27 @@
-<map id="AutoIndexHandler.hpp" name="AutoIndexHandler.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="321,5,488,31"/>
-<area shape="rect" id="Node000002" href="$HttpRequest_8hpp.html" title=" " alt="" coords="579,79,763,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="448,28,615,72,614,78,447,33"/>
-<area shape="rect" id="Node000011" href="$HttpResponse_8hpp.html" title=" " alt="" coords="116,79,320,104"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="375,33,262,76,260,71,373,28"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="990,225,1048,251"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="763,96,830,104,898,115,956,130,979,139,995,150,1006,163,1014,179,1021,211,1016,212,1009,181,1002,166,992,154,976,144,954,135,897,120,829,109,763,102"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="271,152,322,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="591,107,474,126,336,155,335,149,473,121,590,101"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="1270,152,1333,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="763,95,984,113,1119,129,1257,150,1256,155,1118,134,984,118,763,100"/>
-<area shape="rect" id="Node000006" href="$RequestMethod_8hpp.html" title=" " alt="" coords="346,152,551,177"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="636,107,498,150,496,145,634,101"/>
-<area shape="rect" id="Node000007" href="$RequestMeta_8hpp.html" title=" " alt="" coords="1056,152,1246,177"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="749,101,1061,147,1060,153,748,107"/>
-<area shape="rect" id="Node000008" href="$RequestState_8hpp.html" title=" " alt="" coords="576,152,766,177"/>
-<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="674,104,674,138,668,138,668,104"/>
-<area shape="rect" id="Node000009" href="$ResponseStatus_8hpp.html" title=" " alt="" coords="29,152,246,177"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="586,107,238,153,237,147,585,101"/>
-<area shape="rect" id="Node000010" href="$RouteType_8hpp.html" title=" " alt="" coords="790,152,981,177"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="706,101,839,145,837,150,705,107"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="1131,180,1054,221,1051,216,1129,175"/>
-<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="116,107,67,117,28,132,15,141,9,151,10,162,18,175,31,181,60,187,154,198,439,216,752,227,976,233,976,238,752,232,438,221,154,203,59,192,30,186,15,179,4,164,4,150,11,138,25,128,66,112,115,101"/>
-<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="232,102,275,141,272,145,229,106"/>
-<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="207,106,163,145,159,141,203,102"/>
+<map id="includes/dispatcher/AutoIndexHandler.hpp" name="includes/dispatcher/AutoIndexHandler.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="319,5,490,45"/>
+<area shape="rect" id="Node000002" href="$HttpRequest_8hpp.html" title=" " alt="" coords="579,93,763,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="469,43,619,87,618,92,467,48"/>
+<area shape="rect" id="Node000011" href="$HttpResponse_8hpp.html" title=" " alt="" coords="116,93,320,119"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="361,48,259,90,257,85,359,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="990,240,1048,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="763,111,830,118,898,129,956,144,979,154,995,165,1006,178,1014,194,1021,225,1016,226,1009,196,1002,181,992,169,976,158,954,149,897,134,829,124,763,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="271,167,322,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="591,121,474,141,336,169,335,164,473,135,590,116"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="1270,167,1333,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="763,110,984,128,1119,143,1257,164,1256,169,1118,149,984,133,763,115"/>
+<area shape="rect" id="Node000006" href="$RequestMethod_8hpp.html" title=" " alt="" coords="346,167,551,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="636,121,498,165,496,160,634,116"/>
+<area shape="rect" id="Node000007" href="$RequestMeta_8hpp.html" title=" " alt="" coords="1056,167,1246,192"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="749,116,1061,162,1060,167,748,121"/>
+<area shape="rect" id="Node000008" href="$RequestState_8hpp.html" title=" " alt="" coords="576,167,766,192"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="674,119,674,153,668,153,668,119"/>
+<area shape="rect" id="Node000009" href="$ResponseStatus_8hpp.html" title=" " alt="" coords="29,167,246,192"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="586,121,238,167,237,162,585,116"/>
+<area shape="rect" id="Node000010" href="$RouteType_8hpp.html" title=" " alt="" coords="790,167,981,192"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="706,116,839,160,837,165,705,121"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="1131,194,1054,236,1051,231,1129,190"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="116,121,67,132,28,147,15,156,9,166,10,177,18,190,31,196,60,202,154,213,439,230,752,242,976,248,976,253,752,247,438,236,154,218,59,207,30,201,15,194,4,179,4,165,11,152,25,142,66,127,115,116"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="232,117,275,156,272,159,229,121"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="207,121,163,160,159,156,203,117"/>
 </map>

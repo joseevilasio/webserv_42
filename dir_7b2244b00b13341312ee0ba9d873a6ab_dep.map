@@ -1,4 +1,4 @@
-<map id="dispatcher" name="dispatcher">
+<map id="includes/dispatcher" name="includes/dispatcher">
 <area shape="rect" id="node1" href="dir_0836ea539757d2a7ff8088b06fd0dd74.html" title="init" alt="" coords="27,125,69,151"/>
 <area shape="rect" id="node2" href="dir_3f8feeb2fa3bd0d1b751b257ed9f12a2.html" title="utils" alt="" coords="93,125,144,151"/>
 <area shape="rect" id="node3" href="dir_58f405cbeb8be40860eddc1ca79da41d.html" title="response" alt="" coords="169,125,250,151"/>

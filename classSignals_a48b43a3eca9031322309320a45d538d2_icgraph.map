@@ -1,7 +1,0 @@
-<map id="Signals::signalHandle" name="Signals::signalHandle">
-<area shape="rect" id="Node000001" title="Handles SIGINT and SIGTERM for graceful shutdown." alt="" coords="224,31,387,56"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry point of the Webservinho web server." alt="" coords="63,5,118,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,35,118,24,119,19,211,30"/>
-<area shape="rect" id="Node000003" href="$classSignals.html#a28da56be24b82dcb4dfd2472973b15f0" title="Registers signal handlers for SIGINT, SIGTERM, and SIGCHLD." alt="" coords="5,55,176,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,57,176,60,176,55,210,51"/>
-</map>

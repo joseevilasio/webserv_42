@@ -1,5 +1,5 @@
 var CgiHandler_8hpp =
 [
-    [ "CgiHandler", "classCgiHandler.html", "classCgiHandler" ],
-    [ "CgiProcess", "structCgiProcess.html", "structCgiProcess" ]
+    [ "CgiProcess", "structCgiProcess.html", "structCgiProcess" ],
+    [ "CgiHandler", "classCgiHandler.html", "classCgiHandler" ]
 ];

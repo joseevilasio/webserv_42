@@ -11,18 +11,10 @@ var classServerConfig =
     [ "getLocationConfig", "classServerConfig.html#abd79cb958d91ab6c694450e4b67a8554", null ],
     [ "getRoot", "classServerConfig.html#a1d6c7f794b3c144162edd0f6a29df94a", null ],
     [ "matchLocation", "classServerConfig.html#a708ec8a352980380e36dc6090322ea41", null ],
-    [ "operator=", "classServerConfig.html#a96234e08ba8fb04e0cd454a98bdca91f", null ],
     [ "setAutoindex", "classServerConfig.html#a8f784c384fec1f0573a319c1da6bf6db", null ],
     [ "setClientMaxBodySize", "classServerConfig.html#a8ff368bdd1c0a9bc6d5ff80a1caefa26", null ],
     [ "setErrorPage", "classServerConfig.html#af898de48e307e096dbac0808f7353878", null ],
     [ "setIndexFile", "classServerConfig.html#a0ded1329bab47f9ae44187c2b98f93d0", null ],
     [ "setListenInterface", "classServerConfig.html#a59a6b8c51bca5e4d6da765a8a9bd6388", null ],
-    [ "setRoot", "classServerConfig.html#aedf2857c76797e9f3938cf357b4d6b67", null ],
-    [ "_autoindex", "classServerConfig.html#af9287715d7fbec30a04bc4df67868f9c", null ],
-    [ "_clientMaxBodysize", "classServerConfig.html#a603890c3288445c9301e276cfe71a94f", null ],
-    [ "_errorPage", "classServerConfig.html#affc954887eebbf7607f4e44306e22996", null ],
-    [ "_indexFile", "classServerConfig.html#a0f74816e717a2b5cb504581e7373680e", null ],
-    [ "_listenInterface", "classServerConfig.html#aca8117c0bee49885c542060329e2131f", null ],
-    [ "_locations", "classServerConfig.html#a79331c1f55e4a6209a46d0652ff43644", null ],
-    [ "_root", "classServerConfig.html#adf3e4d8a7431d24ac6b3f8470a7273ef", null ]
+    [ "setRoot", "classServerConfig.html#aedf2857c76797e9f3938cf357b4d6b67", null ]
 ];

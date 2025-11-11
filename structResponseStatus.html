@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: ResponseStatus Struct Reference</title>
+<title>Webservinho: ResponseStatus Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -101,7 +101,14 @@ $(document).ready(function(){initNavTree('structResponseStatus.html',''); initRe
 <p>Contains standard HTTP status codes grouped by category.  
  <a href="structResponseStatus.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="ResponseStatus_8hpp_source.html">ResponseStatus.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ResponseStatus_8hpp_source.html">response/ResponseStatus.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for ResponseStatus:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structResponseStatus__coll__graph.svg" width="130" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -205,82 +212,11 @@ Public Types</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="ResponseStatus_8hpp_source.html#l00020">20</a> of file <a class="el" href="ResponseStatus_8hpp_source.html">ResponseStatus.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>    {</div>
-<div class="line"><span class="lineno">   22</span>        <span class="comment">/* Informational - 1xx */</span></div>
-<div class="line"><span class="lineno">   23</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a143c858db023b1782c1cae221b14c93b">Continue</a> = 100,</div>
-<div class="line"><span class="lineno">   24</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3577c3be44f6c8d6a9633d1aff6160ce">SwitchingProtocols</a> = 101,</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>        <span class="comment">/* Successful - 2xx */</span></div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">OK</a> = 200,</div>
-<div class="line"><span class="lineno">   28</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3c94648707a3d7b7f35669b2e710c529">Created</a> = 201,</div>
-<div class="line"><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a50f63a590dac211c06fcf390e57dc8c7">Accepted</a> = 202,</div>
-<div class="line"><span class="lineno">   30</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac862945398f1d51801da2914de43175b">NoContent</a> = 204,</div>
-<div class="line"><span class="lineno">   31</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae21d840dedfa875f4bc35a5408e0480b">PartialContent</a> = 206,</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>        <span class="comment">/* Redirection - 3xx */</span></div>
-<div class="line"><span class="lineno">   34</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac7aa644249cc0031fe7303844e7cbee2">MovedPermanently</a> = 301,</div>
-<div class="line"><span class="lineno">   35</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac358db4cf9bd6c46e3ae1e2f6087d8d3">Found</a> = 302,</div>
-<div class="line"><span class="lineno">   36</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae7dbfde20767d39bdc71194ef49fa48d">SeeOther</a> = 303,</div>
-<div class="line"><span class="lineno">   37</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076acf31cdf5a1f0d15e258b4e84735d33e1">NotModified</a> = 304,</div>
-<div class="line"><span class="lineno">   38</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a80c4b5870f811de667b4cdf65981820a">TemporaryRedirect</a> = 307,</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>        <span class="comment">/* Client Error - 4xx */</span></div>
-<div class="line"><span class="lineno">   41</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a361f141fef7bd3cfab9107a363245647">BadRequest</a> = 400,</div>
-<div class="line"><span class="lineno">   42</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a03b5be26be2e542b86b25cc4cb3940f2">Unauthorized</a> = 401,</div>
-<div class="line"><span class="lineno">   43</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">Forbidden</a> = 403,</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">NotFound</a> = 404,</div>
-<div class="line"><span class="lineno">   45</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a5b393d65c3ee3ada19d5fcd6a96f9915">MethodNotAllowed</a> = 405,</div>
-<div class="line"><span class="lineno">   46</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076abfae2f874b016109a5d38712149e8981">RequestTimeout</a> = 408,</div>
-<div class="line"><span class="lineno">   47</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a29f9b1001e52c0f1b4a2ecfe0dbeda85">Conflict</a> = 409,</div>
-<div class="line"><span class="lineno">   48</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ade8c3c66a19c3147d159d71ce19e544e">Gone</a> = 410,</div>
-<div class="line"><span class="lineno">   49</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a1c70b0c1f91d78e0f835e6f7f97e4417">PayloadTooLarge</a> = 413,</div>
-<div class="line"><span class="lineno">   50</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ab718b151271054b2c2372f71bc9251b0">UriTooLong</a> = 414,</div>
-<div class="line"><span class="lineno">   51</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a22e33730f235eabbc6d2b7417e22a54c">UnsupportedMediaType</a> = 415,</div>
-<div class="line"><span class="lineno">   52</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9dc2380b91e2785927ad001b2a5fe622">ExpectationFailed</a> = 417,</div>
-<div class="line"><span class="lineno">   53</span> </div>
-<div class="line"><span class="lineno">   54</span>        <span class="comment">/* Server Error - 5xx */</span></div>
-<div class="line"><span class="lineno">   55</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">InternalServerError</a> = 500,</div>
-<div class="line"><span class="lineno">   56</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae66e4a8d56d0773ced982175010e18ba">NotImplemented</a> = 501,</div>
-<div class="line"><span class="lineno">   57</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a581d05f9036e1f8c1eb02534450bad7c">BadGateway</a> = 502,</div>
-<div class="line"><span class="lineno">   58</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0c6d7fe2dd7d7816ab7d3b451ff3af29">ServiceUnavailable</a> = 503,</div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a209f6846ecbedcd0dde706bf05c88d11">GatewayTimeout</a> = 504,</div>
-<div class="line"><span class="lineno">   60</span>        <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3c20972af7bbd06cf61aab5e0f73c221">HttpVersionNotSupported</a> = 505</div>
-<div class="line"><span class="lineno">   61</span>    };</div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a03b5be26be2e542b86b25cc4cb3940f2"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a03b5be26be2e542b86b25cc4cb3940f2">ResponseStatus::Unauthorized</a></div><div class="ttdeci">@ Unauthorized</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00042">ResponseStatus.hpp:42</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a0c6d7fe2dd7d7816ab7d3b451ff3af29"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0c6d7fe2dd7d7816ab7d3b451ff3af29">ResponseStatus::ServiceUnavailable</a></div><div class="ttdeci">@ ServiceUnavailable</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00058">ResponseStatus.hpp:58</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">ResponseStatus::OK</a></div><div class="ttdeci">@ OK</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00027">ResponseStatus.hpp:27</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a143c858db023b1782c1cae221b14c93b"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a143c858db023b1782c1cae221b14c93b">ResponseStatus::Continue</a></div><div class="ttdeci">@ Continue</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00023">ResponseStatus.hpp:23</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a1c70b0c1f91d78e0f835e6f7f97e4417"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a1c70b0c1f91d78e0f835e6f7f97e4417">ResponseStatus::PayloadTooLarge</a></div><div class="ttdeci">@ PayloadTooLarge</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00049">ResponseStatus.hpp:49</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a209f6846ecbedcd0dde706bf05c88d11"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a209f6846ecbedcd0dde706bf05c88d11">ResponseStatus::GatewayTimeout</a></div><div class="ttdeci">@ GatewayTimeout</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00059">ResponseStatus.hpp:59</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a22e33730f235eabbc6d2b7417e22a54c"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a22e33730f235eabbc6d2b7417e22a54c">ResponseStatus::UnsupportedMediaType</a></div><div class="ttdeci">@ UnsupportedMediaType</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00051">ResponseStatus.hpp:51</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a29f9b1001e52c0f1b4a2ecfe0dbeda85"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a29f9b1001e52c0f1b4a2ecfe0dbeda85">ResponseStatus::Conflict</a></div><div class="ttdeci">@ Conflict</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00047">ResponseStatus.hpp:47</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a></div><div class="ttdeci">@ InternalServerError</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus.hpp:55</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a3577c3be44f6c8d6a9633d1aff6160ce"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3577c3be44f6c8d6a9633d1aff6160ce">ResponseStatus::SwitchingProtocols</a></div><div class="ttdeci">@ SwitchingProtocols</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00024">ResponseStatus.hpp:24</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a361f141fef7bd3cfab9107a363245647"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a361f141fef7bd3cfab9107a363245647">ResponseStatus::BadRequest</a></div><div class="ttdeci">@ BadRequest</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00041">ResponseStatus.hpp:41</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a3c20972af7bbd06cf61aab5e0f73c221"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3c20972af7bbd06cf61aab5e0f73c221">ResponseStatus::HttpVersionNotSupported</a></div><div class="ttdeci">@ HttpVersionNotSupported</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00061">ResponseStatus.hpp:60</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a3c94648707a3d7b7f35669b2e710c529"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a3c94648707a3d7b7f35669b2e710c529">ResponseStatus::Created</a></div><div class="ttdeci">@ Created</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00028">ResponseStatus.hpp:28</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a50f63a590dac211c06fcf390e57dc8c7"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a50f63a590dac211c06fcf390e57dc8c7">ResponseStatus::Accepted</a></div><div class="ttdeci">@ Accepted</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00029">ResponseStatus.hpp:29</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a581d05f9036e1f8c1eb02534450bad7c"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a581d05f9036e1f8c1eb02534450bad7c">ResponseStatus::BadGateway</a></div><div class="ttdeci">@ BadGateway</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00057">ResponseStatus.hpp:57</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a5b393d65c3ee3ada19d5fcd6a96f9915"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a5b393d65c3ee3ada19d5fcd6a96f9915">ResponseStatus::MethodNotAllowed</a></div><div class="ttdeci">@ MethodNotAllowed</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00045">ResponseStatus.hpp:45</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a80c4b5870f811de667b4cdf65981820a"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a80c4b5870f811de667b4cdf65981820a">ResponseStatus::TemporaryRedirect</a></div><div class="ttdeci">@ TemporaryRedirect</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00038">ResponseStatus.hpp:38</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">ResponseStatus::NotFound</a></div><div class="ttdeci">@ NotFound</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00044">ResponseStatus.hpp:44</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a9dc2380b91e2785927ad001b2a5fe622"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9dc2380b91e2785927ad001b2a5fe622">ResponseStatus::ExpectationFailed</a></div><div class="ttdeci">@ ExpectationFailed</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00052">ResponseStatus.hpp:52</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a></div><div class="ttdeci">@ Forbidden</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus.hpp:43</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ab718b151271054b2c2372f71bc9251b0"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ab718b151271054b2c2372f71bc9251b0">ResponseStatus::UriTooLong</a></div><div class="ttdeci">@ UriTooLong</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00050">ResponseStatus.hpp:50</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076abfae2f874b016109a5d38712149e8981"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076abfae2f874b016109a5d38712149e8981">ResponseStatus::RequestTimeout</a></div><div class="ttdeci">@ RequestTimeout</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00046">ResponseStatus.hpp:46</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ac358db4cf9bd6c46e3ae1e2f6087d8d3"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac358db4cf9bd6c46e3ae1e2f6087d8d3">ResponseStatus::Found</a></div><div class="ttdeci">@ Found</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00035">ResponseStatus.hpp:35</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ac7aa644249cc0031fe7303844e7cbee2"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac7aa644249cc0031fe7303844e7cbee2">ResponseStatus::MovedPermanently</a></div><div class="ttdeci">@ MovedPermanently</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00034">ResponseStatus.hpp:34</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ac862945398f1d51801da2914de43175b"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ac862945398f1d51801da2914de43175b">ResponseStatus::NoContent</a></div><div class="ttdeci">@ NoContent</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00030">ResponseStatus.hpp:30</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076acf31cdf5a1f0d15e258b4e84735d33e1"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076acf31cdf5a1f0d15e258b4e84735d33e1">ResponseStatus::NotModified</a></div><div class="ttdeci">@ NotModified</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00037">ResponseStatus.hpp:37</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ade8c3c66a19c3147d159d71ce19e544e"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ade8c3c66a19c3147d159d71ce19e544e">ResponseStatus::Gone</a></div><div class="ttdeci">@ Gone</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00048">ResponseStatus.hpp:48</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ae21d840dedfa875f4bc35a5408e0480b"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae21d840dedfa875f4bc35a5408e0480b">ResponseStatus::PartialContent</a></div><div class="ttdeci">@ PartialContent</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00031">ResponseStatus.hpp:31</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ae66e4a8d56d0773ced982175010e18ba"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae66e4a8d56d0773ced982175010e18ba">ResponseStatus::NotImplemented</a></div><div class="ttdeci">@ NotImplemented</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00056">ResponseStatus.hpp:56</a></div></div>
-<div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076ae7dbfde20767d39bdc71194ef49fa48d"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076ae7dbfde20767d39bdc71194ef49fa48d">ResponseStatus::SeeOther</a></div><div class="ttdeci">@ SeeOther</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00036">ResponseStatus.hpp:36</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="ResponseStatus_8hpp_source.html">ResponseStatus.hpp</a></li>
+<li>includes/response/<a class="el" href="ResponseStatus_8hpp_source.html">ResponseStatus.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

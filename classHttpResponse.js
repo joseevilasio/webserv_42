@@ -1,6 +1,5 @@
 var classHttpResponse =
 [
-    [ "HttpResponse", "classHttpResponse.html#abb025a07834914540f132395347d466d", null ],
     [ "HttpResponse", "classHttpResponse.html#ab2e6cd363b5ea437643017766f882066", null ],
     [ "~HttpResponse", "classHttpResponse.html#a7dc8102dcf63b07b9bf3c3dfed468857", null ],
     [ "addHeader", "classHttpResponse.html#abb032c16ad3961d50a6582c50c330581", null ],
@@ -13,17 +12,9 @@ var classHttpResponse =
     [ "getReasonPhrase", "classHttpResponse.html#aa8e6d774dd6b3268566de8a53f06580a", null ],
     [ "getStatusCode", "classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08", null ],
     [ "isChunked", "classHttpResponse.html#a0932034fd9acccab28a5151435fd0032", null ],
-    [ "operator=", "classHttpResponse.html#a8963372bd4a1d2421cb717f7793e56ff", null ],
     [ "reset", "classHttpResponse.html#ae45ec11dc2c79099a2e3da9361d07e84", null ],
     [ "setChunked", "classHttpResponse.html#ab929ceba6ce5236a670f33f9a6eeeb35", null ],
     [ "setReasonPhrase", "classHttpResponse.html#a98bb39b2757912eae4f667db80e3e6a4", null ],
     [ "setStatusCode", "classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843", null ],
-    [ "setVersion", "classHttpResponse.html#a407dc1ea3f01365d8105fadc0418bc79", null ],
-    [ "statusCodeToString", "classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19", null ],
-    [ "_body", "classHttpResponse.html#a5e6e61b43567dd0b4c1e6ba6b3150a12", null ],
-    [ "_chunked", "classHttpResponse.html#a5e7810920083518b21b8705fc17ef6cf", null ],
-    [ "_headers", "classHttpResponse.html#a864ba8da1e01defbbabb13bc69ee78f8", null ],
-    [ "_reasonPhrase", "classHttpResponse.html#a43927eeb2f9b448540866cff6f83a4a5", null ],
-    [ "_statusCode", "classHttpResponse.html#a7de44a9e3724209169143a24e27e75e3", null ],
-    [ "_version", "classHttpResponse.html#afb9f635f45cb29d73a62a1297ec20e1a", null ]
+    [ "setVersion", "classHttpResponse.html#a407dc1ea3f01365d8105fadc0418bc79", null ]
 ];

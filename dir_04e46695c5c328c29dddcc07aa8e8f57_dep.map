@@ -1,4 +1,4 @@
-<map id="init" name="init">
+<map id="srcs/init" name="srcs/init">
 <area shape="rect" id="node1" href="dir_04e46695c5c328c29dddcc07aa8e8f57.html" title="init" alt="" coords="27,52,69,77"/>
 <area shape="rect" id="node2" href="dir_09e761304027c904456130627fd4dcf5.html" title="includes" alt="" coords="10,125,86,151"/>
 <area shape="poly" id="edge1" href="dir_000006_000004.html" alt="" coords="51,78,51,112,45,112,45,78"/>

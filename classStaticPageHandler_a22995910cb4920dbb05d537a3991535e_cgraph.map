@@ -1,5 +1,0 @@
-<map id="StaticPageHandler::detectMimeType" name="StaticPageHandler::detectMimeType">
-<area shape="rect" id="Node000001" title="Determines the MIME type based on the file extension." alt="" coords="5,5,155,45"/>
-<area shape="rect" id="Node000002" href="$string__utils_8hpp.html#a96432d89bc886bc9cdd1d73f86b2bbca" title="Converts a string to lowercase." alt="" coords="203,13,277,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,23,189,23,189,28,155,28"/>
-</map>

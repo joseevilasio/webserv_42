@@ -1,4 +1,4 @@
-<map id="dispatcher" name="dispatcher">
+<map id="srcs/dispatcher" name="srcs/dispatcher">
 <area shape="rect" id="node1" href="dir_b51e9ffa637a334d6710d1827ea04a79.html" title="dispatcher" alt="" coords="27,52,117,77"/>
 <area shape="rect" id="node2" href="dir_09e761304027c904456130627fd4dcf5.html" title="includes" alt="" coords="34,125,110,151"/>
 <area shape="poly" id="edge1" href="dir_000003_000004.html" alt="" coords="75,78,75,112,69,112,69,78"/>

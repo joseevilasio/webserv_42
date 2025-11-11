@@ -1,4 +1,4 @@
-<map id="config" name="config">
+<map id="includes/config" name="includes/config">
 <area shape="rect" id="node1" href="dir_7eaa3bc4b08a6eab2f3ef69918bb2923.html" title="request" alt="" coords="27,125,98,151"/>
 <area shape="rect" id="node2" href="dir_73874bc7c4514872b370a71d1c538bc0.html" title="config" alt="" coords="32,52,93,77"/>
 <area shape="poly" id="edge1" href="dir_000000_000007.html" alt="" coords="65,78,65,112,60,112,60,78"/>

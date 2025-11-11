@@ -1,5 +1,5 @@
-<map id="ServerConfig.cpp" name="ServerConfig.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="350,5,482,31"/>
+<map id="srcs/config/ServerConfig.cpp" name="srcs/config/ServerConfig.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="313,5,519,31"/>
 <area shape="rect" id="Node000002" href="$ServerConfig_8hpp.html" title=" " alt="" coords="328,79,504,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="419,31,419,65,413,65,413,31"/>
 <area shape="rect" id="Node000006" href="$LocationConfig_8hpp.html" title=" " alt="" coords="196,152,385,177"/>
@@ -7,7 +7,7 @@
 <area shape="rect" id="Node000007" href="$RequestMethod_8hpp.html" title=" " alt="" coords="5,225,211,251"/>
 <area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="369,33,317,50,257,75,196,109,168,130,143,154,125,182,115,213,110,211,121,180,139,150,165,126,193,105,254,70,315,45,367,28"/>
 <area shape="rect" id="Node000008" href="$string__utils_8hpp.html" title="Collection of inline string utility functions used across Webservinho." alt="" coords="957,79,1112,104"/>
-<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="483,24,944,77,943,82,482,30"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="516,28,944,77,943,82,515,33"/>
 <area shape="rect" id="Node000014" href="$Logger_8hpp.html" title=" " alt="" coords="581,79,707,104"/>
 <area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="453,28,595,72,593,77,452,33"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="461,225,520,251"/>

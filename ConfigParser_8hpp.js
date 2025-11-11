@@ -1,4 +1,4 @@
 var ConfigParser_8hpp =
 [
-    [ "ConfigParser", "classConfigParser.html", "classConfigParser" ]
+    [ "ConfigParser", "classConfigParser.html", null ]
 ];

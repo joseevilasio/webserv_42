@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: AutoIndexHandler.hpp Source File</title>
+<title>Webservinho: includes/dispatcher/AutoIndexHandler.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -110,11 +110,11 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8hpp_source.html','')
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classAutoIndexHandler.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classAutoIndexHandler.html">AutoIndexHandler</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classAutoIndexHandler.html#a9d5ae4d482229f019d5c804f166bff0d">   11</a></span>        <span class="keyword">static</span> std::string  <a class="code hl_function" href="classAutoIndexHandler.html#a9d5ae4d482229f019d5c804f166bff0d">getTemplate</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">static</span> std::string  <a class="code hl_function" href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">formatSize</a>(<span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">static</span> <span class="keywordtype">void</span>         <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(std::string&amp; html, <span class="keyword">const</span> std::string&amp; tag, <span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">static</span> std::string  <a class="code hl_function" href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">loadTemplate</a>(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">static</span> std::string  <a class="code hl_function" href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">getTemplatePath</a>();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">static</span> std::string  getTemplate();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">static</span> std::string  formatSize(<span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">static</span> <span class="keywordtype">void</span>         replacePlaceholder(std::string&amp; html, <span class="keyword">const</span> std::string&amp; tag, <span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">static</span> std::string  loadTemplate(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">static</span> std::string  getTemplatePath();</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">static</span> <span class="keywordtype">void</span>         <a class="code hl_function" href="classAutoIndexHandler.html#a19f63277112e5a0d50bb8d570527ce0a">handle</a>(<a class="code hl_class" href="classHttpRequest.html">HttpRequest</a>&amp; req, <a class="code hl_class" href="classHttpResponse.html">HttpResponse</a>&amp; res);</div>
@@ -125,12 +125,7 @@ $(document).ready(function(){initNavTree('AutoIndexHandler_8hpp_source.html','')
 <div class="ttc" id="aHttpRequest_8hpp_html"><div class="ttname"><a href="HttpRequest_8hpp.html">HttpRequest.hpp</a></div></div>
 <div class="ttc" id="aHttpResponse_8hpp_html"><div class="ttname"><a href="HttpResponse_8hpp.html">HttpResponse.hpp</a></div></div>
 <div class="ttc" id="aclassAutoIndexHandler_html"><div class="ttname"><a href="classAutoIndexHandler.html">AutoIndexHandler</a></div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8hpp_source.html#l00008">AutoIndexHandler.hpp:9</a></div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_a06fa3762ffa8ebcc361e39f69e72b696"><div class="ttname"><a href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">AutoIndexHandler::loadTemplate</a></div><div class="ttdeci">static std::string loadTemplate(const std::string &amp;path)</div><div class="ttdoc">Loads the HTML template for autoindex listing from disk.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00142">AutoIndexHandler.cpp:142</a></div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_a0dcbd0504c1e39bbe584d45821e7856d"><div class="ttname"><a href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">AutoIndexHandler::replacePlaceholder</a></div><div class="ttdeci">static void replacePlaceholder(std::string &amp;html, const std::string &amp;tag, const std::string &amp;value)</div><div class="ttdoc">Replaces a single placeholder tag in the HTML template.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00130">AutoIndexHandler.cpp:130</a></div></div>
 <div class="ttc" id="aclassAutoIndexHandler_html_a19f63277112e5a0d50bb8d570527ce0a"><div class="ttname"><a href="classAutoIndexHandler.html#a19f63277112e5a0d50bb8d570527ce0a">AutoIndexHandler::handle</a></div><div class="ttdeci">static void handle(HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Generates and serves an HTML directory listing when autoindex is enabled.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00022">AutoIndexHandler.cpp:22</a></div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_a9d5ae4d482229f019d5c804f166bff0d"><div class="ttname"><a href="classAutoIndexHandler.html#a9d5ae4d482229f019d5c804f166bff0d">AutoIndexHandler::getTemplate</a></div><div class="ttdeci">static std::string getTemplate()</div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_ac79e264370e9c6576275fb315d67c5c3"><div class="ttname"><a href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">AutoIndexHandler::formatSize</a></div><div class="ttdeci">static std::string formatSize(size_t size)</div><div class="ttdoc">Converts a byte size into a human-readable format (B, KB, MB).</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00111">AutoIndexHandler.cpp:111</a></div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_af0c1d1a4f469e4f4a7739cbb12af2b1d"><div class="ttname"><a href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">AutoIndexHandler::getTemplatePath</a></div><div class="ttdeci">static std::string getTemplatePath()</div><div class="ttdoc">Resolves the template path dynamically based on the executable's location.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00166">AutoIndexHandler.cpp:166</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html"><div class="ttname"><a href="classHttpRequest.html">HttpRequest</a></div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8hpp_source.html#l00016">HttpRequest.hpp:17</a></div></div>
 <div class="ttc" id="aclassHttpResponse_html"><div class="ttname"><a href="classHttpResponse.html">HttpResponse</a></div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8hpp_source.html#l00011">HttpResponse.hpp:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -1,7 +1,0 @@
-<map id="HttpResponse::setStatusCode" name="HttpResponse::setStatusCode">
-<area shape="rect" id="Node000001" title="Sets the HTTP status code and updates the corresponding reason phrase." alt="" coords="5,13,220,38"/>
-<area shape="rect" id="Node000002" href="$classHttpResponse.html#a98bb39b2757912eae4f667db80e3e6a4" title="Sets the textual reason phrase for a given status code." alt="" coords="268,13,501,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,23,254,23,254,28,220,28"/>
-<area shape="rect" id="Node000003" href="$classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19" title="Converts an HTTP status code to its standard reason phrase string." alt="" coords="549,5,744,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="502,23,536,23,536,28,502,28"/>
-</map>

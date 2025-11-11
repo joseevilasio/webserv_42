@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Webservinho API Reference", "index.html", [
+  [ "Webservinho", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -53,8 +53,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AutoIndexHandler_8cpp.html",
-"classHttpRequest.html#adfc7ae561e6ba03d21890ee1855df72b",
-"dir_7eaa3bc4b08a6eab2f3ef69918bb2923.html"
+"classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

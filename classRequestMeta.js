@@ -1,6 +1,5 @@
 var classRequestMeta =
 [
-    [ "RequestMeta", "classRequestMeta.html#a419e9ba228f821418d4ffbd13ed854a8", null ],
     [ "RequestMeta", "classRequestMeta.html#a6ff263a984148d6ca9b81c80978d8952", null ],
     [ "~RequestMeta", "classRequestMeta.html#a11bf6f7047306ce095c8ca2167894ef1", null ],
     [ "getContentLength", "classRequestMeta.html#ac8dbee6450bf74ffd3ea1c9bb6213b7a", null ],
@@ -8,7 +7,6 @@ var classRequestMeta =
     [ "getHost", "classRequestMeta.html#a328ad675ea6c0e9b91aad16382330549", null ],
     [ "isChunked", "classRequestMeta.html#acded047391c25677409e4725a644b3da", null ],
     [ "isRedirect", "classRequestMeta.html#a2719541d1737df353fe82d9b16ee1fb0", null ],
-    [ "operator=", "classRequestMeta.html#af89517c64d07dbc15b2fb27f1f5971d5", null ],
     [ "resetMeta", "classRequestMeta.html#ab47e11c87c366da6f1325842708f091f", null ],
     [ "setChunked", "classRequestMeta.html#a360c94feb081bd7436c055c9f7ed1715", null ],
     [ "setConnectionClose", "classRequestMeta.html#ad4f70f6ac25a37bd22eead55abc63a88", null ],
@@ -16,11 +14,5 @@ var classRequestMeta =
     [ "setExpectContinue", "classRequestMeta.html#a023589236b86199328fac468381d4686", null ],
     [ "setHost", "classRequestMeta.html#a3d73559654d623e960e0c68a6cb476f6", null ],
     [ "setRedirect", "classRequestMeta.html#a340d195d3f4552366d501915c4a03714", null ],
-    [ "shouldClose", "classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e", null ],
-    [ "_chunked", "classRequestMeta.html#a7e9f988a5d4baa7e1d3e2ad05b8ab364", null ],
-    [ "_connectionClose", "classRequestMeta.html#a810af4411c598ac9d392f0d2e3f0240d", null ],
-    [ "_contentLength", "classRequestMeta.html#a7277c2e35ff1d7e08c8500ede481f655", null ],
-    [ "_expectContinue", "classRequestMeta.html#abe894b80d28542b22c6cf1c3c162afb8", null ],
-    [ "_host", "classRequestMeta.html#a59762a10cd3ab11b80125570bf6a7ccf", null ],
-    [ "_isRedirect", "classRequestMeta.html#ae5a67b8b57449c4c917c6b8284ef2d10", null ]
+    [ "shouldClose", "classRequestMeta.html#ac4273e56ac2833d678fcb296983b957e", null ]
 ];

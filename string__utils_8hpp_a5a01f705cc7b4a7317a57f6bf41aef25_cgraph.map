@@ -1,7 +1,0 @@
-<map id="trim" name="trim">
-<area shape="rect" id="Node000001" title="Removes leading and trailing whitespace characters from a string." alt="" coords="5,31,55,56"/>
-<area shape="rect" id="Node000002" href="$string__utils_8hpp.html#aaead76ef6abc119bc66f6ecdedfcb295" title="Removes leading whitespace characters from a string." alt="" coords="103,5,157,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,35,89,26,90,31,56,40"/>
-<area shape="rect" id="Node000003" href="$string__utils_8hpp.html#adde35d1801d4d11cacb9a39124e8e96b" title="Removes trailing whitespace characters from a string." alt="" coords="103,55,157,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,47,90,55,89,60,54,52"/>
-</map>

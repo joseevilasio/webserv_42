@@ -1,9 +1,9 @@
-<map id="HttpResponse.hpp" name="HttpResponse.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="43,5,184,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,64,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,33,59,71,56,68,99,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="88,79,139,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,31,116,65,111,65,111,31"/>
-<area shape="rect" id="Node000004" href="$ResponseStatus_8hpp.html" title=" " alt="" coords="163,79,381,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,28,235,71,233,75,138,33"/>
+<map id="includes/response/HttpResponse.hpp" name="includes/response/HttpResponse.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,268,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,79,87,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,33,83,71,79,68,122,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,79,162,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,31,139,65,134,65,134,31"/>
+<area shape="rect" id="Node000004" href="$ResponseStatus_8hpp.html" title=" " alt="" coords="187,79,404,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,28,258,71,256,75,161,33"/>
 </map>

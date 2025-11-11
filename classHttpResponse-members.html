@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Webservinho API Reference: Member List</title>
+<title>Webservinho: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="webservinho_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Webservinho API Reference
+   <div id="projectname">Webservinho
    </div>
-   <div id="projectbrief">A C++98 HTTP/1.1 Web Server built from scratch</div>
+   <div id="projectbrief">A lightweight C++ HTTP server built from scratch</div>
   </td>
  </tr>
  </tbody>
@@ -97,12 +97,6 @@ $(document).ready(function(){initNavTree('classHttpResponse.html',''); initResiz
 
 <p>This is the complete list of members for <a class="el" href="classHttpResponse.html">HttpResponse</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#a5e6e61b43567dd0b4c1e6ba6b3150a12">_body</a></td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#a5e7810920083518b21b8705fc17ef6cf">_chunked</a></td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#a864ba8da1e01defbbabb13bc69ee78f8">_headers</a></td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#a43927eeb2f9b448540866cff6f83a4a5">_reasonPhrase</a></td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#a7de44a9e3724209169143a24e27e75e3">_statusCode</a></td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#afb9f635f45cb29d73a62a1297ec20e1a">_version</a></td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(const std::string &amp;name, const std::string &amp;value)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8">appendBody</a>(const std::string &amp;body)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#a1e441ba724602a5e609c5f04e1a30266">appendBody</a>(char c)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
@@ -112,17 +106,14 @@ $(document).ready(function(){initNavTree('classHttpResponse.html',''); initResiz
   <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#a5083285cec69d77baa805353feeb4bf5">getHttpVersion</a>(void) const</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#aa8e6d774dd6b3268566de8a53f06580a">getReasonPhrase</a>(void) const</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08">getStatusCode</a>(void) const</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#abb025a07834914540f132395347d466d">HttpResponse</a>(const HttpResponse &amp;rhs)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#ab2e6cd363b5ea437643017766f882066">HttpResponse</a>()</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#a0932034fd9acccab28a5151435fd0032">isChunked</a>(void) const</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#a8963372bd4a1d2421cb717f7793e56ff">operator=</a>(const HttpResponse &amp;rhs)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#ab2e6cd363b5ea437643017766f882066">HttpResponse</a>()</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#a0932034fd9acccab28a5151435fd0032">isChunked</a>(void) const</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#ae45ec11dc2c79099a2e3da9361d07e84">reset</a>(void)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#ab929ceba6ce5236a670f33f9a6eeeb35">setChunked</a>(bool chunked)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#a98bb39b2757912eae4f667db80e3e6a4">setReasonPhrase</a>(const ResponseStatus::code &amp;code)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(const ResponseStatus::code &amp;code)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#a407dc1ea3f01365d8105fadc0418bc79">setVersion</a>(const std::string &amp;version)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19">statusCodeToString</a>(const ResponseStatus::code &amp;code)</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classHttpResponse.html#a7dc8102dcf63b07b9bf3c3dfed468857">~HttpResponse</a>()</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHttpResponse.html#a7dc8102dcf63b07b9bf3c3dfed468857">~HttpResponse</a>()</td><td class="entry"><a class="el" href="classHttpResponse.html">HttpResponse</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
