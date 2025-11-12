@@ -326,18 +326,18 @@ Private Attributes</h2></td></tr>
 
 <p>Adds a CGI pipe descriptor to the poll list for monitoring output. </p>
 
-<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00440">440</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  441</span>{</div>
-<div class="line"><span class="lineno">  442</span>    <span class="keywordtype">int</span> flags = ::fcntl(cgiFd, F_GETFL, 0);</div>
-<div class="line"><span class="lineno">  443</span>    <span class="keywordflow">if</span> (flags != -1)</div>
-<div class="line"><span class="lineno">  444</span>        ::fcntl(cgiFd, F_SETFL, flags | O_NONBLOCK);</div>
-<div class="line"><span class="lineno">  445</span> </div>
-<div class="line"><span class="lineno">  446</span>    <span class="keyword">struct </span>pollfd pfd;</div>
-<div class="line"><span class="lineno">  447</span>    pfd.fd = cgiFd;</div>
-<div class="line"><span class="lineno">  448</span>    pfd.events = POLLIN | POLLHUP | POLLERR | POLLRDHUP | POLLNVAL;</div>
-<div class="line"><span class="lineno">  449</span>    pfd.revents = 0;</div>
-<div class="line"><span class="lineno">  450</span>    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.push_back(pfd);</div>
-<div class="line"><span class="lineno">  451</span>}</div>
+<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00436">436</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  437</span>{</div>
+<div class="line"><span class="lineno">  438</span>    <span class="keywordtype">int</span> flags = ::fcntl(cgiFd, F_GETFL, 0);</div>
+<div class="line"><span class="lineno">  439</span>    <span class="keywordflow">if</span> (flags != -1)</div>
+<div class="line"><span class="lineno">  440</span>        ::fcntl(cgiFd, F_SETFL, flags | O_NONBLOCK);</div>
+<div class="line"><span class="lineno">  441</span> </div>
+<div class="line"><span class="lineno">  442</span>    <span class="keyword">struct </span>pollfd pfd;</div>
+<div class="line"><span class="lineno">  443</span>    pfd.fd = cgiFd;</div>
+<div class="line"><span class="lineno">  444</span>    pfd.events = POLLIN | POLLHUP | POLLERR | POLLRDHUP | POLLNVAL;</div>
+<div class="line"><span class="lineno">  445</span>    pfd.revents = 0;</div>
+<div class="line"><span class="lineno">  446</span>    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.push_back(pfd);</div>
+<div class="line"><span class="lineno">  447</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>.</p>
 
@@ -373,14 +373,14 @@ Private Attributes</h2></td></tr>
 
 <p>Adds a file descriptor to the monitored poll vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00276">276</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  277</span>{</div>
-<div class="line"><span class="lineno">  278</span>    <span class="keyword">struct </span>pollfd pfd;</div>
-<div class="line"><span class="lineno">  279</span>    pfd.fd = fd;</div>
-<div class="line"><span class="lineno">  280</span>    pfd.events = events;</div>
-<div class="line"><span class="lineno">  281</span>    pfd.revents = 0;</div>
-<div class="line"><span class="lineno">  282</span>    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.push_back(pfd);</div>
-<div class="line"><span class="lineno">  283</span>}</div>
+<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00278">278</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  279</span>{</div>
+<div class="line"><span class="lineno">  280</span>    <span class="keyword">struct </span>pollfd pfd;</div>
+<div class="line"><span class="lineno">  281</span>    pfd.fd = fd;</div>
+<div class="line"><span class="lineno">  282</span>    pfd.events = events;</div>
+<div class="line"><span class="lineno">  283</span>    pfd.revents = 0;</div>
+<div class="line"><span class="lineno">  284</span>    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.push_back(pfd);</div>
+<div class="line"><span class="lineno">  285</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>.</p>
 
@@ -406,17 +406,17 @@ Private Attributes</h2></td></tr>
 
 <p>Returns poll() timeout value depending on CGI activity. </p>
 
-<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00288">288</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  289</span>{</div>
-<div class="line"><span class="lineno">  290</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.empty())</div>
-<div class="line"><span class="lineno">  291</span>        <span class="keywordflow">return</span> 100; <span class="comment">//100ms</span></div>
-<div class="line"><span class="lineno">  292</span>    <span class="keywordflow">return</span> 1000; <span class="comment">//1s</span></div>
-<div class="line"><span class="lineno">  293</span>}</div>
+<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00290">290</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  291</span>{</div>
+<div class="line"><span class="lineno">  292</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.empty())</div>
+<div class="line"><span class="lineno">  293</span>        <span class="keywordflow">return</span> 100; <span class="comment">//100ms</span></div>
+<div class="line"><span class="lineno">  294</span>    <span class="keywordflow">return</span> 1000; <span class="comment">//1s</span></div>
+<div class="line"><span class="lineno">  295</span>}</div>
 <div class="ttc" id="aclassWebServer_html_ae59fe1744032f8c57f3bba8a614a3e44"><div class="ttname"><a href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">WebServer::_cgiFdToClientFd</a></div><div class="ttdeci">std::map&lt; int, int &gt; _cgiFdToClientFd</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8hpp_source.html#l00027">WebServer.hpp:27</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>.</p>
 
 </div>
 </div>
@@ -439,39 +439,29 @@ Private Attributes</h2></td></tr>
 <p>Sends shutdown notice to clients and closes all sockets. </p>
 <p>Called on graceful termination (SIGINT). Sends HTTP 503 responses before closing all connections. </p>
 
-<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00303">303</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  304</span>{</div>
-<div class="line"><span class="lineno">  305</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;[Graceful shutdown initiated]&quot;</span>);</div>
-<div class="line"><span class="lineno">  306</span> </div>
-<div class="line"><span class="lineno">  307</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classWebServer.html#a860da8d4f2984bc20abb1931f051a33a">_serverSocket</a>.size(); ++i)</div>
-<div class="line"><span class="lineno">  308</span>        ::close(<a class="code hl_variable" href="classWebServer.html#a860da8d4f2984bc20abb1931f051a33a">_serverSocket</a>[i]-&gt;getFD());</div>
-<div class="line"><span class="lineno">  309</span> </div>
-<div class="line"><span class="lineno">  310</span>    <span class="keyword">const</span> std::string body =</div>
-<div class="line"><span class="lineno">  311</span>        <span class="stringliteral">&quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Server shutting down...&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">  312</span>    std::ostringstream oss;</div>
-<div class="line"><span class="lineno">  313</span>    oss &lt;&lt; <span class="stringliteral">&quot;HTTP/1.1 503 Service Unavailable\r\n&quot;</span></div>
-<div class="line"><span class="lineno">  314</span>        &lt;&lt; <span class="stringliteral">&quot;Connection: close\r\n&quot;</span></div>
-<div class="line"><span class="lineno">  315</span>        &lt;&lt; <span class="stringliteral">&quot;Content-Type: text/html; charset=utf-8\r\n&quot;</span></div>
-<div class="line"><span class="lineno">  316</span>        &lt;&lt; <span class="stringliteral">&quot;Content-Length: &quot;</span> &lt;&lt; body.size() &lt;&lt; <span class="stringliteral">&quot;\r\n\r\n&quot;</span></div>
-<div class="line"><span class="lineno">  317</span>        &lt;&lt; body;</div>
-<div class="line"><span class="lineno">  318</span>    <span class="keyword">const</span> std::string msg = oss.str();</div>
-<div class="line"><span class="lineno">  319</span> </div>
-<div class="line"><span class="lineno">  320</span>    <span class="keywordflow">for</span> (std::map&lt;int, ClientConnection&gt;::iterator it = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.begin(); it != <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end(); ++it)</div>
-<div class="line"><span class="lineno">  321</span>    {</div>
-<div class="line"><span class="lineno">  322</span>        <span class="keywordtype">int</span> fd = it-&gt;first;</div>
-<div class="line"><span class="lineno">  323</span>        ::shutdown(fd, SHUT_RDWR);</div>
-<div class="line"><span class="lineno">  324</span>        ::close(fd);</div>
-<div class="line"><span class="lineno">  325</span>    }</div>
-<div class="line"><span class="lineno">  326</span> </div>
-<div class="line"><span class="lineno">  327</span>    <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.clear();</div>
-<div class="line"><span class="lineno">  328</span>    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.clear();</div>
-<div class="line"><span class="lineno">  329</span>    <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.clear();</div>
-<div class="line"><span class="lineno">  330</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;WebServer: graceful shutdown complete&quot;</span>);</div>
-<div class="line"><span class="lineno">  331</span>}</div>
+<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00304">304</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  305</span>{</div>
+<div class="line"><span class="lineno">  306</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;[Graceful shutdown initiated]&quot;</span>);</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classWebServer.html#a860da8d4f2984bc20abb1931f051a33a">_serverSocket</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  309</span>        ::close(<a class="code hl_variable" href="classWebServer.html#a860da8d4f2984bc20abb1931f051a33a">_serverSocket</a>[i]-&gt;getFD());</div>
+<div class="line"><span class="lineno">  310</span> </div>
+<div class="line"><span class="lineno">  311</span>    <span class="keywordflow">for</span> (std::map&lt;int, ClientConnection&gt;::iterator it = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.begin(); it != <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end(); ++it)</div>
+<div class="line"><span class="lineno">  312</span>    {</div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordtype">int</span> fd = it-&gt;first;</div>
+<div class="line"><span class="lineno">  314</span>        ::shutdown(fd, SHUT_RDWR);</div>
+<div class="line"><span class="lineno">  315</span>        ::close(fd);</div>
+<div class="line"><span class="lineno">  316</span>    }</div>
+<div class="line"><span class="lineno">  317</span> </div>
+<div class="line"><span class="lineno">  318</span>    <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.clear();</div>
+<div class="line"><span class="lineno">  319</span>    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.clear();</div>
+<div class="line"><span class="lineno">  320</span>    <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.clear();</div>
+<div class="line"><span class="lineno">  321</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;WebServer: graceful shutdown complete&quot;</span>);</div>
+<div class="line"><span class="lineno">  322</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="WebServer_8hpp_source.html#l00020">_serverSocket</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, and <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -509,64 +499,64 @@ Private Attributes</h2></td></tr>
 <p>Reads CGI process output and assembles it into the client buffer. </p>
 <p>When the CGI completes, the response is finalized and queued for sending. </p>
 
-<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00476">476</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  477</span>{</div>
-<div class="line"><span class="lineno">  478</span>    <span class="keywordtype">int</span> cgiFd = <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[pollIndex].fd;</div>
-<div class="line"><span class="lineno">  479</span>    std::map&lt;int,int&gt;::iterator mapIt = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.find(cgiFd);</div>
-<div class="line"><span class="lineno">  480</span>    <span class="keywordflow">if</span> (mapIt == <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.end())</div>
-<div class="line"><span class="lineno">  481</span>    {</div>
-<div class="line"><span class="lineno">  482</span>        <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(cgiFd);</div>
-<div class="line"><span class="lineno">  483</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  484</span>    }</div>
-<div class="line"><span class="lineno">  485</span>    <span class="keywordtype">int</span> clientFd = mapIt-&gt;second;</div>
-<div class="line"><span class="lineno">  486</span> </div>
-<div class="line"><span class="lineno">  487</span>    std::map&lt;int, ClientConnection&gt;::iterator it = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(clientFd);</div>
-<div class="line"><span class="lineno">  488</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
-<div class="line"><span class="lineno">  489</span>    {</div>
-<div class="line"><span class="lineno">  490</span>        <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(cgiFd);</div>
-<div class="line"><span class="lineno">  491</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  492</span>    }</div>
-<div class="line"><span class="lineno">  493</span>    <a class="code hl_class" href="classClientConnection.html">ClientConnection</a>&amp; client = it-&gt;second;</div>
-<div class="line"><span class="lineno">  494</span> </div>
-<div class="line"><span class="lineno">  495</span>    <span class="keywordtype">char</span> buf[4096];</div>
-<div class="line"><span class="lineno">  496</span>    <span class="keywordflow">for</span> (;;)</div>
-<div class="line"><span class="lineno">  497</span>    {</div>
-<div class="line"><span class="lineno">  498</span>        ssize_t n = ::read(cgiFd, buf, <span class="keyword">sizeof</span>(buf));</div>
-<div class="line"><span class="lineno">  499</span>        <span class="keywordflow">if</span> (n &gt; 0)</div>
-<div class="line"><span class="lineno">  500</span>        {</div>
-<div class="line"><span class="lineno">  501</span>            client.<a class="code hl_function" href="classClientConnection.html#a7e0eed5dff73777b494a126c95055b14">cgiBuffer</a>().append(buf, n);</div>
-<div class="line"><span class="lineno">  502</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  503</span>        }</div>
-<div class="line"><span class="lineno">  504</span>        <span class="keywordflow">if</span> (n == 0)</div>
-<div class="line"><span class="lineno">  505</span>        {</div>
-<div class="line"><span class="lineno">  506</span>            <span class="keywordtype">int</span> st = 0;</div>
-<div class="line"><span class="lineno">  507</span>            pid_t res = waitpid(client.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>(), &amp;st, WNOHANG);</div>
-<div class="line"><span class="lineno">  508</span>            <span class="keywordflow">if</span> (res == 0)</div>
-<div class="line"><span class="lineno">  509</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  510</span>            <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(cgiFd);</div>
-<div class="line"><span class="lineno">  511</span>            <a class="code hl_function" href="classSignals.html#aa783f74c1937b7e3a797914950378870">Signals::unregisterCgiProcess</a>(client.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>());</div>
+<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00472">472</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  473</span>{</div>
+<div class="line"><span class="lineno">  474</span>    <span class="keywordtype">int</span> cgiFd = <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[pollIndex].fd;</div>
+<div class="line"><span class="lineno">  475</span>    std::map&lt;int,int&gt;::iterator mapIt = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.find(cgiFd);</div>
+<div class="line"><span class="lineno">  476</span>    <span class="keywordflow">if</span> (mapIt == <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.end())</div>
+<div class="line"><span class="lineno">  477</span>    {</div>
+<div class="line"><span class="lineno">  478</span>        <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(cgiFd);</div>
+<div class="line"><span class="lineno">  479</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  480</span>    }</div>
+<div class="line"><span class="lineno">  481</span>    <span class="keywordtype">int</span> clientFd = mapIt-&gt;second;</div>
+<div class="line"><span class="lineno">  482</span> </div>
+<div class="line"><span class="lineno">  483</span>    std::map&lt;int, ClientConnection&gt;::iterator it = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(clientFd);</div>
+<div class="line"><span class="lineno">  484</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
+<div class="line"><span class="lineno">  485</span>    {</div>
+<div class="line"><span class="lineno">  486</span>        <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(cgiFd);</div>
+<div class="line"><span class="lineno">  487</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  488</span>    }</div>
+<div class="line"><span class="lineno">  489</span>    <a class="code hl_class" href="classClientConnection.html">ClientConnection</a>&amp; client = it-&gt;second;</div>
+<div class="line"><span class="lineno">  490</span> </div>
+<div class="line"><span class="lineno">  491</span>    <span class="keywordtype">char</span> buf[4096];</div>
+<div class="line"><span class="lineno">  492</span>    <span class="keywordflow">for</span> (;;)</div>
+<div class="line"><span class="lineno">  493</span>    {</div>
+<div class="line"><span class="lineno">  494</span>        ssize_t n = ::read(cgiFd, buf, <span class="keyword">sizeof</span>(buf));</div>
+<div class="line"><span class="lineno">  495</span>        <span class="keywordflow">if</span> (n &gt; 0)</div>
+<div class="line"><span class="lineno">  496</span>        {</div>
+<div class="line"><span class="lineno">  497</span>            client.<a class="code hl_function" href="classClientConnection.html#a7e0eed5dff73777b494a126c95055b14">cgiBuffer</a>().append(buf, n);</div>
+<div class="line"><span class="lineno">  498</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  499</span>        }</div>
+<div class="line"><span class="lineno">  500</span>        <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><span class="lineno">  501</span>        {</div>
+<div class="line"><span class="lineno">  502</span>            <span class="keywordtype">int</span> st = 0;</div>
+<div class="line"><span class="lineno">  503</span>            pid_t res = waitpid(client.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>(), &amp;st, WNOHANG);</div>
+<div class="line"><span class="lineno">  504</span>            <span class="keywordflow">if</span> (res == 0)</div>
+<div class="line"><span class="lineno">  505</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  506</span>            <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(cgiFd);</div>
+<div class="line"><span class="lineno">  507</span>            <a class="code hl_function" href="classSignals.html#aa783f74c1937b7e3a797914950378870">Signals::unregisterCgiProcess</a>(client.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>());</div>
+<div class="line"><span class="lineno">  508</span> </div>
+<div class="line"><span class="lineno">  509</span>            <a class="code hl_function" href="classResponseBuilder.html#a0f3257a6db27bcd3befa5005cc7cdfa0">ResponseBuilder::handleCgiOutput</a>(client.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>(), client.<a class="code hl_function" href="classClientConnection.html#a7e0eed5dff73777b494a126c95055b14">cgiBuffer</a>());</div>
+<div class="line"><span class="lineno">  510</span>            <a class="code hl_function" href="classResponseBuilder.html#afd79929bb501be85bdc85d86fdce93e9">ResponseBuilder::build</a>(client, client.<a class="code hl_function" href="classClientConnection.html#a9b3f87772610502966568929b71fecf4">getRequest</a>(), client.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>());</div>
+<div class="line"><span class="lineno">  511</span>            client.<a class="code hl_function" href="classClientConnection.html#aa11f1d93d9dcf41a5ab77a17d386403c">setResponseBuffer</a>(<a class="code hl_function" href="classResponseBuilder.html#ab1eeac4dc441885dfd3330fe69bc1b58">ResponseBuilder::responseWriter</a>(client.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>()));</div>
 <div class="line"><span class="lineno">  512</span> </div>
-<div class="line"><span class="lineno">  513</span>            <a class="code hl_function" href="classResponseBuilder.html#a0f3257a6db27bcd3befa5005cc7cdfa0">ResponseBuilder::handleCgiOutput</a>(client.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>(), client.<a class="code hl_function" href="classClientConnection.html#a7e0eed5dff73777b494a126c95055b14">cgiBuffer</a>());</div>
-<div class="line"><span class="lineno">  514</span>            <a class="code hl_function" href="classResponseBuilder.html#afd79929bb501be85bdc85d86fdce93e9">ResponseBuilder::build</a>(client, client.<a class="code hl_function" href="classClientConnection.html#a9b3f87772610502966568929b71fecf4">getRequest</a>(), client.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>());</div>
-<div class="line"><span class="lineno">  515</span>            client.<a class="code hl_function" href="classClientConnection.html#aa11f1d93d9dcf41a5ab77a17d386403c">setResponseBuffer</a>(<a class="code hl_function" href="classResponseBuilder.html#ab1eeac4dc441885dfd3330fe69bc1b58">ResponseBuilder::responseWriter</a>(client.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>()));</div>
-<div class="line"><span class="lineno">  516</span> </div>
-<div class="line"><span class="lineno">  517</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(); ++i)</div>
-<div class="line"><span class="lineno">  518</span>            {</div>
-<div class="line"><span class="lineno">  519</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].fd == clientFd)</div>
-<div class="line"><span class="lineno">  520</span>                {</div>
-<div class="line"><span class="lineno">  521</span>                    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].events = POLLOUT;</div>
-<div class="line"><span class="lineno">  522</span>                    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].revents = 0;</div>
-<div class="line"><span class="lineno">  523</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  524</span>                }</div>
-<div class="line"><span class="lineno">  525</span>            }</div>
-<div class="line"><span class="lineno">  526</span> </div>
-<div class="line"><span class="lineno">  527</span>            client.<a class="code hl_function" href="classClientConnection.html#a97a43b53eee31d7e8bb42f80845a7813">clearCgi</a>();</div>
-<div class="line"><span class="lineno">  528</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  529</span>        }</div>
-<div class="line"><span class="lineno">  530</span>        <span class="keywordflow">if</span> (n &lt;= 0)</div>
-<div class="line"><span class="lineno">  531</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  532</span>    }</div>
-<div class="line"><span class="lineno">  533</span>}</div>
+<div class="line"><span class="lineno">  513</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  514</span>            {</div>
+<div class="line"><span class="lineno">  515</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].fd == clientFd)</div>
+<div class="line"><span class="lineno">  516</span>                {</div>
+<div class="line"><span class="lineno">  517</span>                    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].events = POLLOUT;</div>
+<div class="line"><span class="lineno">  518</span>                    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].revents = 0;</div>
+<div class="line"><span class="lineno">  519</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  520</span>                }</div>
+<div class="line"><span class="lineno">  521</span>            }</div>
+<div class="line"><span class="lineno">  522</span> </div>
+<div class="line"><span class="lineno">  523</span>            client.<a class="code hl_function" href="classClientConnection.html#a97a43b53eee31d7e8bb42f80845a7813">clearCgi</a>();</div>
+<div class="line"><span class="lineno">  524</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  525</span>        }</div>
+<div class="line"><span class="lineno">  526</span>        <span class="keywordflow">if</span> (n &lt;= 0)</div>
+<div class="line"><span class="lineno">  527</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  528</span>    }</div>
+<div class="line"><span class="lineno">  529</span>}</div>
 <div class="ttc" id="aclassClientConnection_html"><div class="ttname"><a href="classClientConnection.html">ClientConnection</a></div><div class="ttdef"><b>Definition</b> <a href="ClientConnection_8hpp_source.html#l00014">ClientConnection.hpp:15</a></div></div>
 <div class="ttc" id="aclassClientConnection_html_a7e0eed5dff73777b494a126c95055b14"><div class="ttname"><a href="classClientConnection.html#a7e0eed5dff73777b494a126c95055b14">ClientConnection::cgiBuffer</a></div><div class="ttdeci">std::string &amp; cgiBuffer()</div><div class="ttdef"><b>Definition</b> <a href="ClientConnection_8cpp_source.html#l00197">ClientConnection.cpp:197</a></div></div>
 <div class="ttc" id="aclassClientConnection_html_a97a43b53eee31d7e8bb42f80845a7813"><div class="ttname"><a href="classClientConnection.html#a97a43b53eee31d7e8bb42f80845a7813">ClientConnection::clearCgi</a></div><div class="ttdeci">void clearCgi()</div><div class="ttdoc">Resets all CGI-related state (after process termination).</div><div class="ttdef"><b>Definition</b> <a href="ClientConnection_8cpp_source.html#l00210">ClientConnection.cpp:210</a></div></div>
@@ -578,11 +568,11 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassResponseBuilder_html_ab1eeac4dc441885dfd3330fe69bc1b58"><div class="ttname"><a href="classResponseBuilder.html#ab1eeac4dc441885dfd3330fe69bc1b58">ResponseBuilder::responseWriter</a></div><div class="ttdeci">static const std::string responseWriter(HttpResponse &amp;response)</div><div class="ttdoc">Constructs the complete HTTP response string.</div><div class="ttdef"><b>Definition</b> <a href="ResponseBuilder_8cpp_source.html#l00060">ResponseBuilder.cpp:60</a></div></div>
 <div class="ttc" id="aclassResponseBuilder_html_afd79929bb501be85bdc85d86fdce93e9"><div class="ttname"><a href="classResponseBuilder.html#afd79929bb501be85bdc85d86fdce93e9">ResponseBuilder::build</a></div><div class="ttdeci">static void build(ClientConnection &amp;client, HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Assembles the complete HTTP response, including error handling.</div><div class="ttdef"><b>Definition</b> <a href="ResponseBuilder_8cpp_source.html#l00158">ResponseBuilder.cpp:158</a></div></div>
 <div class="ttc" id="aclassSignals_html_aa783f74c1937b7e3a797914950378870"><div class="ttname"><a href="classSignals.html#aa783f74c1937b7e3a797914950378870">Signals::unregisterCgiProcess</a></div><div class="ttdeci">static void unregisterCgiProcess(pid_t pid)</div><div class="ttdoc">Unregisters a finished CGI process.</div><div class="ttdef"><b>Definition</b> <a href="Signals_8cpp_source.html#l00070">Signals.cpp:70</a></div></div>
-<div class="ttc" id="aclassWebServer_html_ab3ae1ee99bdea0520245ed9bc2d5d597"><div class="ttname"><a href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">WebServer::removeCgiPollFd</a></div><div class="ttdeci">void removeCgiPollFd(int cgiFd)</div><div class="ttdoc">Removes a CGI FD from poll() monitoring.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00456">WebServer.cpp:456</a></div></div>
+<div class="ttc" id="aclassWebServer_html_ab3ae1ee99bdea0520245ed9bc2d5d597"><div class="ttname"><a href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">WebServer::removeCgiPollFd</a></div><div class="ttdeci">void removeCgiPollFd(int cgiFd)</div><div class="ttdoc">Removes a CGI FD from poll() monitoring.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00452">WebServer.cpp:452</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00158">ResponseBuilder::build()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00197">ClientConnection::cgiBuffer()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00210">ClientConnection::clearCgi()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00193">ClientConnection::getCgiPid()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00175">ClientConnection::getRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00177">ClientConnection::getResponse()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00108">ResponseBuilder::handleCgiOutput()</a>, <a class="el" href="WebServer_8cpp_source.html#l00456">removeCgiPollFd()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00060">ResponseBuilder::responseWriter()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00169">ClientConnection::setResponseBuffer()</a>, and <a class="el" href="Signals_8cpp_source.html#l00070">Signals::unregisterCgiProcess()</a>.</p>
+<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00158">ResponseBuilder::build()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00197">ClientConnection::cgiBuffer()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00210">ClientConnection::clearCgi()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00193">ClientConnection::getCgiPid()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00175">ClientConnection::getRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00177">ClientConnection::getResponse()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00108">ResponseBuilder::handleCgiOutput()</a>, <a class="el" href="WebServer_8cpp_source.html#l00452">removeCgiPollFd()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00060">ResponseBuilder::responseWriter()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00169">ClientConnection::setResponseBuffer()</a>, and <a class="el" href="Signals_8cpp_source.html#l00070">Signals::unregisterCgiProcess()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>.</p>
 
 </div>
 </div>
@@ -663,12 +653,12 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassServerSocket_html_a4240c5afdaf781181eb097b0d77edf1e"><div class="ttname"><a href="classServerSocket.html#a4240c5afdaf781181eb097b0d77edf1e">ServerSocket::acceptConnections</a></div><div class="ttdeci">std::vector&lt; int &gt; acceptConnections(void)</div><div class="ttdoc">Accepts all pending incoming client connections (non-blocking).</div><div class="ttdef"><b>Definition</b> <a href="ServerSocket_8cpp_source.html#l00139">ServerSocket.cpp:139</a></div></div>
 <div class="ttc" id="aclassServerSocket_html_a43152f52de5e7f2ec6d64148f65cd8df"><div class="ttname"><a href="classServerSocket.html#a43152f52de5e7f2ec6d64148f65cd8df">ServerSocket::getFD</a></div><div class="ttdeci">int getFD(void)</div><div class="ttdoc">Returns the socket file descriptor.</div><div class="ttdef"><b>Definition</b> <a href="ServerSocket_8cpp_source.html#l00185">ServerSocket.cpp:185</a></div></div>
 <div class="ttc" id="aclassWebServer_html_a49dd7b5d8ca2f50985abfeeef0391b9b"><div class="ttname"><a href="classWebServer.html#a49dd7b5d8ca2f50985abfeeef0391b9b">WebServer::_socketToServerIndex</a></div><div class="ttdeci">std::map&lt; int, size_t &gt; _socketToServerIndex</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8hpp_source.html#l00019">WebServer.hpp:19</a></div></div>
-<div class="ttc" id="aclassWebServer_html_aa387a01e97d57072be5c5be3955136f8"><div class="ttname"><a href="classWebServer.html#aa387a01e97d57072be5c5be3955136f8">WebServer::addToPollFD</a></div><div class="ttdeci">void addToPollFD(int fd, short events)</div><div class="ttdoc">Adds a file descriptor to the monitored poll vector.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00276">WebServer.cpp:276</a></div></div>
+<div class="ttc" id="aclassWebServer_html_aa387a01e97d57072be5c5be3955136f8"><div class="ttname"><a href="classWebServer.html#aa387a01e97d57072be5c5be3955136f8">WebServer::addToPollFD</a></div><div class="ttdeci">void addToPollFD(int fd, short events)</div><div class="ttdoc">Adds a file descriptor to the monitored poll vector.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00278">WebServer.cpp:278</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_ad735976365693b45c427000fe042e173"><div class="ttname"><a href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a></div><div class="ttdeci">std::string toString(T value)</div><div class="ttdoc">Converts any printable type to a string representation.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00112">string_utils.hpp:112</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00018">_config</a>, <a class="el" href="WebServer_8hpp_source.html#l00019">_socketToServerIndex</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00139">ServerSocket::acceptConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00276">addToPollFD()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00051">ClientConnection::adoptFD()</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00185">ServerSocket::getFD()</a>, <a class="el" href="Config_8cpp_source.html#l00027">Config::getServerConfig()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
+<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00018">_config</a>, <a class="el" href="WebServer_8hpp_source.html#l00019">_socketToServerIndex</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00139">ServerSocket::acceptConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00278">addToPollFD()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00051">ClientConnection::adoptFD()</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00185">ServerSocket::getFD()</a>, <a class="el" href="Config_8cpp_source.html#l00027">Config::getServerConfig()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -764,11 +754,11 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassRequestMeta_html_a023589236b86199328fac468381d4686"><div class="ttname"><a href="classRequestMeta.html#a023589236b86199328fac468381d4686">RequestMeta::setExpectContinue</a></div><div class="ttdeci">void setExpectContinue(bool expect_continue)</div><div class="ttdoc">Sets the Expect: 100-continue flag for the request.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00042">RequestMeta.cpp:42</a></div></div>
 <div class="ttc" id="aclassRequestMeta_html_a18e74c9abe0c9d30acbadefa46f91d5d"><div class="ttname"><a href="classRequestMeta.html#a18e74c9abe0c9d30acbadefa46f91d5d">RequestMeta::getExpectContinue</a></div><div class="ttdeci">bool getExpectContinue(void) const</div><div class="ttdoc">Returns true if the client expects a 100-Continue response.</div><div class="ttdef"><b>Definition</b> <a href="RequestMeta_8cpp_source.html#l00096">RequestMeta.cpp:96</a></div></div>
 <div class="ttc" id="aclassWebServer_html_a4229c99fb202be210f93cbde92a560b0"><div class="ttname"><a href="classWebServer.html#a4229c99fb202be210f93cbde92a560b0">WebServer::removeClientConnection</a></div><div class="ttdeci">void removeClientConnection(int clientFD, size_t pollFDIndex)</div><div class="ttdoc">Removes a client connection and cleans up associated poll entry.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00245">WebServer.cpp:245</a></div></div>
-<div class="ttc" id="aclassWebServer_html_ae39c5049391489b342b24b09fc2191fe"><div class="ttname"><a href="classWebServer.html#ae39c5049391489b342b24b09fc2191fe">WebServer::addCgiPollFd</a></div><div class="ttdeci">void addCgiPollFd(int cgiFd)</div><div class="ttdoc">Adds a CGI pipe descriptor to the poll list for monitoring output.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00440">WebServer.cpp:440</a></div></div>
+<div class="ttc" id="aclassWebServer_html_ae39c5049391489b342b24b09fc2191fe"><div class="ttname"><a href="classWebServer.html#ae39c5049391489b342b24b09fc2191fe">WebServer::addCgiPollFd</a></div><div class="ttdeci">void addCgiPollFd(int cgiFd)</div><div class="ttdoc">Adds a CGI pipe descriptor to the poll list for monitoring output.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00436">WebServer.cpp:436</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="WebServer_8cpp_source.html#l00440">addCgiPollFd()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00135">ClientConnection::completedRequest()</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Dispatcher_8cpp_source.html#l00030">Dispatcher::dispatch()</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00191">ClientConnection::getCgiFd()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00096">RequestMeta::getExpectContinue()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00157">ClientConnection::getFD()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00256">HttpRequest::getMeta()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00175">ClientConnection::getRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00184">ClientConnection::hasCgi()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00070">ClientConnection::recvData()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00042">RequestMeta::setExpectContinue()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00169">ClientConnection::setResponseBuffer()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00167">ClientConnection::setSentBytes()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
+<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="WebServer_8cpp_source.html#l00436">addCgiPollFd()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00135">ClientConnection::completedRequest()</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Dispatcher_8cpp_source.html#l00030">Dispatcher::dispatch()</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00191">ClientConnection::getCgiFd()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00096">RequestMeta::getExpectContinue()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00157">ClientConnection::getFD()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00256">HttpRequest::getMeta()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00175">ClientConnection::getRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00184">ClientConnection::hasCgi()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00070">ClientConnection::recvData()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="RequestMeta_8cpp_source.html#l00042">RequestMeta::setExpectContinue()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00169">ClientConnection::setResponseBuffer()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00167">ClientConnection::setSentBytes()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -805,24 +795,24 @@ Private Attributes</h2></td></tr>
 
 <p>Removes a CGI FD from poll() monitoring. </p>
 
-<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00456">456</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  457</span>{</div>
-<div class="line"><span class="lineno">  458</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(); ++i)</div>
-<div class="line"><span class="lineno">  459</span>    {</div>
-<div class="line"><span class="lineno">  460</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].fd == cgiFd)</div>
-<div class="line"><span class="lineno">  461</span>        {</div>
-<div class="line"><span class="lineno">  462</span>            <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.erase(<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.begin() + i);</div>
-<div class="line"><span class="lineno">  463</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  464</span>        }</div>
-<div class="line"><span class="lineno">  465</span>    }</div>
-<div class="line"><span class="lineno">  466</span>    <span class="keywordflow">if</span> (cgiFd &gt;= 0)</div>
-<div class="line"><span class="lineno">  467</span>        ::close(cgiFd);</div>
-<div class="line"><span class="lineno">  468</span>    <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.erase(cgiFd);</div>
-<div class="line"><span class="lineno">  469</span>}</div>
+<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00452">452</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  453</span>{</div>
+<div class="line"><span class="lineno">  454</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  455</span>    {</div>
+<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].fd == cgiFd)</div>
+<div class="line"><span class="lineno">  457</span>        {</div>
+<div class="line"><span class="lineno">  458</span>            <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.erase(<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.begin() + i);</div>
+<div class="line"><span class="lineno">  459</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  460</span>        }</div>
+<div class="line"><span class="lineno">  461</span>    }</div>
+<div class="line"><span class="lineno">  462</span>    <span class="keywordflow">if</span> (cgiFd &gt;= 0)</div>
+<div class="line"><span class="lineno">  463</span>        ::close(cgiFd);</div>
+<div class="line"><span class="lineno">  464</span>    <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.erase(cgiFd);</div>
+<div class="line"><span class="lineno">  465</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, and <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00476">handleCgiReadable()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00538">sweepCgiTimeouts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00472">handleCgiReadable()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00534">sweepCgiTimeouts()</a>.</p>
 
 </div>
 </div>
@@ -862,29 +852,31 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  250</span>        <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.erase(<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.begin() + pollFDIndex);</div>
 <div class="line"><span class="lineno">  251</span> </div>
 <div class="line"><span class="lineno">  252</span>    <span class="comment">// closes clients socket</span></div>
-<div class="line"><span class="lineno">  253</span>    <span class="keywordflow">if</span> (clientFD &gt;= 0) {</div>
-<div class="line"><span class="lineno">  254</span>        ::shutdown(clientFD, SHUT_RDWR);</div>
-<div class="line"><span class="lineno">  255</span>        ::close(clientFD);</div>
-<div class="line"><span class="lineno">  256</span>    }</div>
-<div class="line"><span class="lineno">  257</span> </div>
-<div class="line"><span class="lineno">  258</span>    <span class="comment">// Remove any cgi fd</span></div>
-<div class="line"><span class="lineno">  259</span>    <span class="keywordflow">for</span> (std::map&lt;int,int&gt;::iterator it = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.begin();</div>
-<div class="line"><span class="lineno">  260</span>         it != <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.end(); )</div>
-<div class="line"><span class="lineno">  261</span>    {</div>
-<div class="line"><span class="lineno">  262</span>        <span class="keywordflow">if</span> (it-&gt;second == clientFD) {</div>
-<div class="line"><span class="lineno">  263</span>            <span class="keywordtype">int</span> cgiFd = it-&gt;first;</div>
-<div class="line"><span class="lineno">  264</span>            <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(cgiFd);</div>
-<div class="line"><span class="lineno">  265</span>            it = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.begin();</div>
-<div class="line"><span class="lineno">  266</span>        } <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  267</span>            ++it;</div>
-<div class="line"><span class="lineno">  268</span>    }</div>
-<div class="line"><span class="lineno">  269</span> </div>
-<div class="line"><span class="lineno">  270</span>    <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.erase(clientFD);</div>
-<div class="line"><span class="lineno">  271</span>}</div>
+<div class="line"><span class="lineno">  253</span>    <span class="keywordflow">if</span> (clientFD &gt;= 0)</div>
+<div class="line"><span class="lineno">  254</span>    {</div>
+<div class="line"><span class="lineno">  255</span>        ::shutdown(clientFD, SHUT_RDWR);</div>
+<div class="line"><span class="lineno">  256</span>        ::close(clientFD);</div>
+<div class="line"><span class="lineno">  257</span>    }</div>
+<div class="line"><span class="lineno">  258</span> </div>
+<div class="line"><span class="lineno">  259</span>    <span class="comment">// Remove any cgi fd</span></div>
+<div class="line"><span class="lineno">  260</span>    <span class="keywordflow">for</span> (std::map&lt;int,int&gt;::iterator it = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.begin();</div>
+<div class="line"><span class="lineno">  261</span>         it != <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.end(); )</div>
+<div class="line"><span class="lineno">  262</span>    {</div>
+<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">if</span> (it-&gt;second == clientFD)</div>
+<div class="line"><span class="lineno">  264</span>        {</div>
+<div class="line"><span class="lineno">  265</span>            <span class="keywordtype">int</span> cgiFd = it-&gt;first;</div>
+<div class="line"><span class="lineno">  266</span>            <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(cgiFd);</div>
+<div class="line"><span class="lineno">  267</span>            it = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.begin();</div>
+<div class="line"><span class="lineno">  268</span>        } <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  269</span>            ++it;</div>
+<div class="line"><span class="lineno">  270</span>    }</div>
+<div class="line"><span class="lineno">  271</span> </div>
+<div class="line"><span class="lineno">  272</span>    <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.erase(clientFD);</div>
+<div class="line"><span class="lineno">  273</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="WebServer_8cpp_source.html#l00456">removeCgiPollFd()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
+<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="WebServer_8cpp_source.html#l00452">removeCgiPollFd()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00187">sendResponse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00187">sendResponse()</a>.</p>
 
 </div>
 </div>
@@ -907,113 +899,118 @@ Private Attributes</h2></td></tr>
 <p>Main event loop — monitors sockets, dispatches requests, and handles responses. </p>
 <p>Uses <code>poll()</code> for multiplexing sockets, manages CGI subprocesses, and performs cleanup on signals or timeouts. </p>
 
-<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00340">340</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  341</span>{</div>
-<div class="line"><span class="lineno">  342</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;[Started] WebServer::runServer&quot;</span>);</div>
+<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00331">331</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  332</span>{</div>
+<div class="line"><span class="lineno">  333</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;[Started] WebServer::runServer&quot;</span>);</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>    <span class="keywordflow">while</span> (!<a class="code hl_function" href="classSignals.html#a94fa9657c373fb7dc3d037bf8f677821">Signals::shouldStop</a>())</div>
+<div class="line"><span class="lineno">  336</span>    {</div>
+<div class="line"><span class="lineno">  337</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.empty())</div>
+<div class="line"><span class="lineno">  338</span>        {</div>
+<div class="line"><span class="lineno">  339</span>            usleep(100 * 1000); <span class="comment">// 100ms</span></div>
+<div class="line"><span class="lineno">  340</span>            <a class="code hl_function" href="classWebServer.html#a32042bb7e426cf5c53c2c2860d622342">sweepCgiTimeouts</a>();</div>
+<div class="line"><span class="lineno">  341</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  342</span>        }</div>
 <div class="line"><span class="lineno">  343</span> </div>
-<div class="line"><span class="lineno">  344</span>    <span class="keywordflow">while</span> (!<a class="code hl_function" href="classSignals.html#a94fa9657c373fb7dc3d037bf8f677821">Signals::shouldStop</a>())</div>
-<div class="line"><span class="lineno">  345</span>    {</div>
-<div class="line"><span class="lineno">  346</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.empty()) {</div>
-<div class="line"><span class="lineno">  347</span>            usleep(100 * 1000); <span class="comment">// 100ms</span></div>
-<div class="line"><span class="lineno">  348</span>            <a class="code hl_function" href="classWebServer.html#a32042bb7e426cf5c53c2c2860d622342">sweepCgiTimeouts</a>();</div>
-<div class="line"><span class="lineno">  349</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  350</span>        }</div>
-<div class="line"><span class="lineno">  351</span> </div>
-<div class="line"><span class="lineno">  352</span>        <span class="keywordtype">int</span> timeout = <a class="code hl_function" href="classWebServer.html#aae795b87cd382736087ddf71303df127">getPollTimeout</a>();</div>
-<div class="line"><span class="lineno">  353</span>        <span class="keywordtype">int</span> ready = ::poll(&amp;<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[0], <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(), timeout);</div>
-<div class="line"><span class="lineno">  354</span>        <a class="code hl_function" href="classWebServer.html#a32042bb7e426cf5c53c2c2860d622342">sweepCgiTimeouts</a>();</div>
-<div class="line"><span class="lineno">  355</span> </div>
-<div class="line"><span class="lineno">  356</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classSignals.html#a94fa9657c373fb7dc3d037bf8f677821">Signals::shouldStop</a>())</div>
-<div class="line"><span class="lineno">  357</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  344</span>        <span class="keywordtype">int</span> timeout = <a class="code hl_function" href="classWebServer.html#aae795b87cd382736087ddf71303df127">getPollTimeout</a>();</div>
+<div class="line"><span class="lineno">  345</span>        <span class="keywordtype">int</span> ready = ::poll(&amp;<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[0], <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(), timeout);</div>
+<div class="line"><span class="lineno">  346</span>        <a class="code hl_function" href="classWebServer.html#a32042bb7e426cf5c53c2c2860d622342">sweepCgiTimeouts</a>();</div>
+<div class="line"><span class="lineno">  347</span> </div>
+<div class="line"><span class="lineno">  348</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classSignals.html#a94fa9657c373fb7dc3d037bf8f677821">Signals::shouldStop</a>())</div>
+<div class="line"><span class="lineno">  349</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>        <span class="keywordflow">if</span> (ready == -1)</div>
+<div class="line"><span class="lineno">  352</span>        {</div>
+<div class="line"><span class="lineno">  353</span>            <span class="keywordflow">if</span> (errno == EINTR)</div>
+<div class="line"><span class="lineno">  354</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  355</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;poll() failed, continuing main loop&quot;</span>);</div>
+<div class="line"><span class="lineno">  356</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  357</span>        }</div>
 <div class="line"><span class="lineno">  358</span> </div>
-<div class="line"><span class="lineno">  359</span>        <span class="keywordflow">if</span> (ready == -1) {</div>
-<div class="line"><span class="lineno">  360</span>            <span class="keywordflow">if</span> (errno == EINTR)</div>
-<div class="line"><span class="lineno">  361</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  362</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;poll() failed, continuing main loop&quot;</span>);</div>
-<div class="line"><span class="lineno">  363</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  364</span>        }</div>
+<div class="line"><span class="lineno">  359</span>        <span class="keywordflow">for</span> (ssize_t i = <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size() - 1; i &gt;= 0; --i)</div>
+<div class="line"><span class="lineno">  360</span>        {</div>
+<div class="line"><span class="lineno">  361</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> fd = <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].fd;</div>
+<div class="line"><span class="lineno">  362</span>            <span class="keyword">const</span> <span class="keywordtype">short</span> re = <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].revents;</div>
+<div class="line"><span class="lineno">  363</span>            <span class="keywordflow">if</span> (!re)</div>
+<div class="line"><span class="lineno">  364</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><span class="lineno">  365</span> </div>
-<div class="line"><span class="lineno">  366</span>        <span class="keywordflow">for</span> (ssize_t i = <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size() - 1; i &gt;= 0; --i)</div>
-<div class="line"><span class="lineno">  367</span>        {</div>
-<div class="line"><span class="lineno">  368</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> fd = <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].fd;</div>
-<div class="line"><span class="lineno">  369</span>            <span class="keyword">const</span> <span class="keywordtype">short</span> re = <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].revents;</div>
-<div class="line"><span class="lineno">  370</span>            <span class="keywordflow">if</span> (!re)</div>
-<div class="line"><span class="lineno">  371</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  372</span> </div>
-<div class="line"><span class="lineno">  373</span>            <span class="comment">// --- CGI PIPE HANDLING ---</span></div>
-<div class="line"><span class="lineno">  374</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.count(fd))</div>
-<div class="line"><span class="lineno">  375</span>            {</div>
-<div class="line"><span class="lineno">  376</span>                <span class="keywordflow">if</span> (re &amp; (POLLIN | POLLHUP | POLLRDHUP))</div>
-<div class="line"><span class="lineno">  377</span>                    <a class="code hl_function" href="classWebServer.html#a7667bc8a87db8f9987a5e80da9c4cd37">handleCgiReadable</a>(i);</div>
-<div class="line"><span class="lineno">  378</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (re &amp; (POLLERR | POLLNVAL))</div>
-<div class="line"><span class="lineno">  379</span>                {</div>
-<div class="line"><span class="lineno">  380</span>                    <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(fd);</div>
-<div class="line"><span class="lineno">  381</span>                    <span class="keywordtype">int</span> clientFd = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>[fd];</div>
-<div class="line"><span class="lineno">  382</span>                    std::map&lt;int, ClientConnection&gt;::iterator itc = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(clientFd);</div>
-<div class="line"><span class="lineno">  383</span>                    <span class="keywordflow">if</span> (itc != <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
-<div class="line"><span class="lineno">  384</span>                    {</div>
-<div class="line"><span class="lineno">  385</span>                        <a class="code hl_class" href="classClientConnection.html">ClientConnection</a>&amp; c = itc-&gt;second;</div>
-<div class="line"><span class="lineno">  386</span>                        c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>().<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a581d05f9036e1f8c1eb02534450bad7c">ResponseStatus::BadGateway</a>);</div>
-<div class="line"><span class="lineno">  387</span>                        <a class="code hl_function" href="classResponseBuilder.html#afd79929bb501be85bdc85d86fdce93e9">ResponseBuilder::build</a>(c, c.<a class="code hl_function" href="classClientConnection.html#a9b3f87772610502966568929b71fecf4">getRequest</a>(), c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>());</div>
-<div class="line"><span class="lineno">  388</span>                        c.<a class="code hl_function" href="classClientConnection.html#aa11f1d93d9dcf41a5ab77a17d386403c">setResponseBuffer</a>(<a class="code hl_function" href="classResponseBuilder.html#ab1eeac4dc441885dfd3330fe69bc1b58">ResponseBuilder::responseWriter</a>(c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>()));</div>
-<div class="line"><span class="lineno">  389</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> k = 0; k &lt; <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(); ++k)</div>
-<div class="line"><span class="lineno">  390</span>                        {</div>
-<div class="line"><span class="lineno">  391</span>                            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[k].fd == clientFd)</div>
-<div class="line"><span class="lineno">  392</span>                            {</div>
-<div class="line"><span class="lineno">  393</span>                                <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[k].events = POLLOUT;</div>
-<div class="line"><span class="lineno">  394</span>                                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  395</span>                            }</div>
-<div class="line"><span class="lineno">  396</span>                        }</div>
-<div class="line"><span class="lineno">  397</span>                        c.<a class="code hl_function" href="classClientConnection.html#a97a43b53eee31d7e8bb42f80845a7813">clearCgi</a>();</div>
-<div class="line"><span class="lineno">  398</span>                    }</div>
-<div class="line"><span class="lineno">  399</span>                }</div>
-<div class="line"><span class="lineno">  400</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  401</span>            }</div>
-<div class="line"><span class="lineno">  402</span> </div>
-<div class="line"><span class="lineno">  403</span>            <span class="comment">// --- LISTEN SOCKET ---</span></div>
-<div class="line"><span class="lineno">  404</span>            <span class="keywordflow">if</span> (re &amp; POLLIN) {</div>
-<div class="line"><span class="lineno">  405</span>                std::map&lt;int, size_t&gt;::iterator itSrv = <a class="code hl_variable" href="classWebServer.html#a49dd7b5d8ca2f50985abfeeef0391b9b">_socketToServerIndex</a>.find(fd);</div>
-<div class="line"><span class="lineno">  406</span>                <span class="keywordflow">if</span> (itSrv != <a class="code hl_variable" href="classWebServer.html#a49dd7b5d8ca2f50985abfeeef0391b9b">_socketToServerIndex</a>.end()) {</div>
-<div class="line"><span class="lineno">  407</span>                    <a class="code hl_function" href="classWebServer.html#aacdbe29d455db5ca3387cd06a67b890b">queueClientConnections</a>(*<a class="code hl_variable" href="classWebServer.html#a860da8d4f2984bc20abb1931f051a33a">_serverSocket</a>[itSrv-&gt;second]);</div>
-<div class="line"><span class="lineno">  408</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  409</span>                }</div>
-<div class="line"><span class="lineno">  410</span>            }</div>
-<div class="line"><span class="lineno">  411</span> </div>
-<div class="line"><span class="lineno">  412</span>            <span class="comment">// --- CLIENT SOCKET ---</span></div>
-<div class="line"><span class="lineno">  413</span>            <span class="keywordflow">if</span> (re &amp; POLLIN) {</div>
-<div class="line"><span class="lineno">  414</span>                std::map&lt;int, ClientConnection&gt;::iterator cit = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(fd);</div>
-<div class="line"><span class="lineno">  415</span>                <span class="keywordflow">if</span> (cit != <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
-<div class="line"><span class="lineno">  416</span>                    <a class="code hl_function" href="classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4">receiveRequest</a>(i);</div>
-<div class="line"><span class="lineno">  417</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  418</span>            }</div>
-<div class="line"><span class="lineno">  419</span> </div>
-<div class="line"><span class="lineno">  420</span>            <span class="keywordflow">if</span> (re &amp; (POLLERR | POLLHUP | POLLRDHUP | POLLNVAL)) {</div>
-<div class="line"><span class="lineno">  421</span>                std::map&lt;int, ClientConnection&gt;::iterator itc = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(fd);</div>
-<div class="line"><span class="lineno">  422</span>                <span class="keywordflow">if</span> (itc != <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
-<div class="line"><span class="lineno">  423</span>                    <a class="code hl_function" href="classWebServer.html#a4229c99fb202be210f93cbde92a560b0">removeClientConnection</a>(itc-&gt;second.getFD(), i);</div>
-<div class="line"><span class="lineno">  424</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  425</span>            }</div>
-<div class="line"><span class="lineno">  426</span> </div>
-<div class="line"><span class="lineno">  427</span>            <span class="keywordflow">if</span> (re &amp; POLLOUT)</div>
-<div class="line"><span class="lineno">  428</span>                <a class="code hl_function" href="classWebServer.html#acbda203d0faed2cb204ee17908e1c2c3">sendResponse</a>(i);</div>
-<div class="line"><span class="lineno">  429</span>        }</div>
-<div class="line"><span class="lineno">  430</span>    }</div>
-<div class="line"><span class="lineno">  431</span> </div>
-<div class="line"><span class="lineno">  432</span>    <a class="code hl_function" href="classWebServer.html#adf1cdbbf77e68a3eceff4d79a251b9fa">gracefulShutdown</a>();</div>
-<div class="line"><span class="lineno">  433</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;[Finished] WebServer::runServer&quot;</span>);</div>
-<div class="line"><span class="lineno">  434</span>}</div>
+<div class="line"><span class="lineno">  366</span>            <span class="comment">// --- CGI PIPE HANDLING ---</span></div>
+<div class="line"><span class="lineno">  367</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.count(fd))</div>
+<div class="line"><span class="lineno">  368</span>            {</div>
+<div class="line"><span class="lineno">  369</span>                <span class="keywordflow">if</span> (re &amp; (POLLIN | POLLHUP | POLLRDHUP))</div>
+<div class="line"><span class="lineno">  370</span>                    <a class="code hl_function" href="classWebServer.html#a7667bc8a87db8f9987a5e80da9c4cd37">handleCgiReadable</a>(i);</div>
+<div class="line"><span class="lineno">  371</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (re &amp; (POLLERR | POLLNVAL))</div>
+<div class="line"><span class="lineno">  372</span>                {</div>
+<div class="line"><span class="lineno">  373</span>                    <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(fd);</div>
+<div class="line"><span class="lineno">  374</span>                    <span class="keywordtype">int</span> clientFd = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>[fd];</div>
+<div class="line"><span class="lineno">  375</span>                    std::map&lt;int, ClientConnection&gt;::iterator itc = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(clientFd);</div>
+<div class="line"><span class="lineno">  376</span>                    <span class="keywordflow">if</span> (itc != <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
+<div class="line"><span class="lineno">  377</span>                    {</div>
+<div class="line"><span class="lineno">  378</span>                        <a class="code hl_class" href="classClientConnection.html">ClientConnection</a>&amp; c = itc-&gt;second;</div>
+<div class="line"><span class="lineno">  379</span>                        c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>().<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a581d05f9036e1f8c1eb02534450bad7c">ResponseStatus::BadGateway</a>);</div>
+<div class="line"><span class="lineno">  380</span>                        <a class="code hl_function" href="classResponseBuilder.html#afd79929bb501be85bdc85d86fdce93e9">ResponseBuilder::build</a>(c, c.<a class="code hl_function" href="classClientConnection.html#a9b3f87772610502966568929b71fecf4">getRequest</a>(), c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>());</div>
+<div class="line"><span class="lineno">  381</span>                        c.<a class="code hl_function" href="classClientConnection.html#aa11f1d93d9dcf41a5ab77a17d386403c">setResponseBuffer</a>(<a class="code hl_function" href="classResponseBuilder.html#ab1eeac4dc441885dfd3330fe69bc1b58">ResponseBuilder::responseWriter</a>(c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>()));</div>
+<div class="line"><span class="lineno">  382</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> k = 0; k &lt; <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(); ++k)</div>
+<div class="line"><span class="lineno">  383</span>                        {</div>
+<div class="line"><span class="lineno">  384</span>                            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[k].fd == clientFd)</div>
+<div class="line"><span class="lineno">  385</span>                            {</div>
+<div class="line"><span class="lineno">  386</span>                                <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[k].events = POLLOUT;</div>
+<div class="line"><span class="lineno">  387</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  388</span>                            }</div>
+<div class="line"><span class="lineno">  389</span>                        }</div>
+<div class="line"><span class="lineno">  390</span>                        c.<a class="code hl_function" href="classClientConnection.html#a97a43b53eee31d7e8bb42f80845a7813">clearCgi</a>();</div>
+<div class="line"><span class="lineno">  391</span>                    }</div>
+<div class="line"><span class="lineno">  392</span>                }</div>
+<div class="line"><span class="lineno">  393</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  394</span>            }</div>
+<div class="line"><span class="lineno">  395</span> </div>
+<div class="line"><span class="lineno">  396</span>            <span class="comment">// --- LISTEN SOCKET ---</span></div>
+<div class="line"><span class="lineno">  397</span>            <span class="keywordflow">if</span> (re &amp; POLLIN)</div>
+<div class="line"><span class="lineno">  398</span>            {</div>
+<div class="line"><span class="lineno">  399</span>                std::map&lt;int, size_t&gt;::iterator itSrv = <a class="code hl_variable" href="classWebServer.html#a49dd7b5d8ca2f50985abfeeef0391b9b">_socketToServerIndex</a>.find(fd);</div>
+<div class="line"><span class="lineno">  400</span>                <span class="keywordflow">if</span> (itSrv != <a class="code hl_variable" href="classWebServer.html#a49dd7b5d8ca2f50985abfeeef0391b9b">_socketToServerIndex</a>.end()) {</div>
+<div class="line"><span class="lineno">  401</span>                    <a class="code hl_function" href="classWebServer.html#aacdbe29d455db5ca3387cd06a67b890b">queueClientConnections</a>(*<a class="code hl_variable" href="classWebServer.html#a860da8d4f2984bc20abb1931f051a33a">_serverSocket</a>[itSrv-&gt;second]);</div>
+<div class="line"><span class="lineno">  402</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  403</span>                }</div>
+<div class="line"><span class="lineno">  404</span>            }</div>
+<div class="line"><span class="lineno">  405</span> </div>
+<div class="line"><span class="lineno">  406</span>            <span class="comment">// --- CLIENT SOCKET ---</span></div>
+<div class="line"><span class="lineno">  407</span>            <span class="keywordflow">if</span> (re &amp; POLLIN)</div>
+<div class="line"><span class="lineno">  408</span>            {</div>
+<div class="line"><span class="lineno">  409</span>                std::map&lt;int, ClientConnection&gt;::iterator cit = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(fd);</div>
+<div class="line"><span class="lineno">  410</span>                <span class="keywordflow">if</span> (cit != <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
+<div class="line"><span class="lineno">  411</span>                    <a class="code hl_function" href="classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4">receiveRequest</a>(i);</div>
+<div class="line"><span class="lineno">  412</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  413</span>            }</div>
+<div class="line"><span class="lineno">  414</span> </div>
+<div class="line"><span class="lineno">  415</span>            <span class="keywordflow">if</span> (re &amp; (POLLERR | POLLHUP | POLLRDHUP | POLLNVAL))</div>
+<div class="line"><span class="lineno">  416</span>            {</div>
+<div class="line"><span class="lineno">  417</span>                std::map&lt;int, ClientConnection&gt;::iterator itc = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(fd);</div>
+<div class="line"><span class="lineno">  418</span>                <span class="keywordflow">if</span> (itc != <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
+<div class="line"><span class="lineno">  419</span>                    <a class="code hl_function" href="classWebServer.html#a4229c99fb202be210f93cbde92a560b0">removeClientConnection</a>(itc-&gt;second.getFD(), i);</div>
+<div class="line"><span class="lineno">  420</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  421</span>            }</div>
+<div class="line"><span class="lineno">  422</span> </div>
+<div class="line"><span class="lineno">  423</span>            <span class="keywordflow">if</span> (re &amp; POLLOUT)</div>
+<div class="line"><span class="lineno">  424</span>                <a class="code hl_function" href="classWebServer.html#acbda203d0faed2cb204ee17908e1c2c3">sendResponse</a>(i);</div>
+<div class="line"><span class="lineno">  425</span>        }</div>
+<div class="line"><span class="lineno">  426</span>    }</div>
+<div class="line"><span class="lineno">  427</span> </div>
+<div class="line"><span class="lineno">  428</span>    <a class="code hl_function" href="classWebServer.html#adf1cdbbf77e68a3eceff4d79a251b9fa">gracefulShutdown</a>();</div>
+<div class="line"><span class="lineno">  429</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;[Finished] WebServer::runServer&quot;</span>);</div>
+<div class="line"><span class="lineno">  430</span>}</div>
 <div class="ttc" id="aclassHttpResponse_html_af02b3b82a638bfbf23226b9f3bf06843"><div class="ttname"><a href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">HttpResponse::setStatusCode</a></div><div class="ttdeci">void setStatusCode(const ResponseStatus::code &amp;code)</div><div class="ttdoc">Sets the HTTP status code and updates the corresponding reason phrase.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00024">HttpResponse.cpp:24</a></div></div>
 <div class="ttc" id="aclassSignals_html_a94fa9657c373fb7dc3d037bf8f677821"><div class="ttname"><a href="classSignals.html#a94fa9657c373fb7dc3d037bf8f677821">Signals::shouldStop</a></div><div class="ttdeci">static bool shouldStop(void)</div><div class="ttdoc">Checks whether a stop signal was received.</div><div class="ttdef"><b>Definition</b> <a href="Signals_8cpp_source.html#l00124">Signals.cpp:124</a></div></div>
-<div class="ttc" id="aclassWebServer_html_a32042bb7e426cf5c53c2c2860d622342"><div class="ttname"><a href="classWebServer.html#a32042bb7e426cf5c53c2c2860d622342">WebServer::sweepCgiTimeouts</a></div><div class="ttdeci">void sweepCgiTimeouts()</div><div class="ttdoc">Scans active CGI processes and terminates those exceeding timeout.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00538">WebServer.cpp:538</a></div></div>
-<div class="ttc" id="aclassWebServer_html_a7667bc8a87db8f9987a5e80da9c4cd37"><div class="ttname"><a href="classWebServer.html#a7667bc8a87db8f9987a5e80da9c4cd37">WebServer::handleCgiReadable</a></div><div class="ttdeci">void handleCgiReadable(int pollIndex)</div><div class="ttdoc">Reads CGI process output and assembles it into the client buffer.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00476">WebServer.cpp:476</a></div></div>
+<div class="ttc" id="aclassWebServer_html_a32042bb7e426cf5c53c2c2860d622342"><div class="ttname"><a href="classWebServer.html#a32042bb7e426cf5c53c2c2860d622342">WebServer::sweepCgiTimeouts</a></div><div class="ttdeci">void sweepCgiTimeouts()</div><div class="ttdoc">Scans active CGI processes and terminates those exceeding timeout.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00534">WebServer.cpp:534</a></div></div>
+<div class="ttc" id="aclassWebServer_html_a7667bc8a87db8f9987a5e80da9c4cd37"><div class="ttname"><a href="classWebServer.html#a7667bc8a87db8f9987a5e80da9c4cd37">WebServer::handleCgiReadable</a></div><div class="ttdeci">void handleCgiReadable(int pollIndex)</div><div class="ttdoc">Reads CGI process output and assembles it into the client buffer.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00472">WebServer.cpp:472</a></div></div>
 <div class="ttc" id="aclassWebServer_html_a8cbf37c0a840305ce15e8648566c9ce4"><div class="ttname"><a href="classWebServer.html#a8cbf37c0a840305ce15e8648566c9ce4">WebServer::receiveRequest</a></div><div class="ttdeci">void receiveRequest(std::size_t i)</div><div class="ttdoc">Handles incoming data from a connected client.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00128">WebServer.cpp:128</a></div></div>
 <div class="ttc" id="aclassWebServer_html_aacdbe29d455db5ca3387cd06a67b890b"><div class="ttname"><a href="classWebServer.html#aacdbe29d455db5ca3387cd06a67b890b">WebServer::queueClientConnections</a></div><div class="ttdeci">void queueClientConnections(ServerSocket &amp;socket)</div><div class="ttdoc">Accepts new client connections on a given listening socket.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00094">WebServer.cpp:94</a></div></div>
-<div class="ttc" id="aclassWebServer_html_aae795b87cd382736087ddf71303df127"><div class="ttname"><a href="classWebServer.html#aae795b87cd382736087ddf71303df127">WebServer::getPollTimeout</a></div><div class="ttdeci">int getPollTimeout(void)</div><div class="ttdoc">Returns poll() timeout value depending on CGI activity.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00288">WebServer.cpp:288</a></div></div>
+<div class="ttc" id="aclassWebServer_html_aae795b87cd382736087ddf71303df127"><div class="ttname"><a href="classWebServer.html#aae795b87cd382736087ddf71303df127">WebServer::getPollTimeout</a></div><div class="ttdeci">int getPollTimeout(void)</div><div class="ttdoc">Returns poll() timeout value depending on CGI activity.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00290">WebServer.cpp:290</a></div></div>
 <div class="ttc" id="aclassWebServer_html_acbda203d0faed2cb204ee17908e1c2c3"><div class="ttname"><a href="classWebServer.html#acbda203d0faed2cb204ee17908e1c2c3">WebServer::sendResponse</a></div><div class="ttdeci">void sendResponse(std::size_t i)</div><div class="ttdoc">Sends buffered response data to a connected client.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00187">WebServer.cpp:187</a></div></div>
-<div class="ttc" id="aclassWebServer_html_adf1cdbbf77e68a3eceff4d79a251b9fa"><div class="ttname"><a href="classWebServer.html#adf1cdbbf77e68a3eceff4d79a251b9fa">WebServer::gracefulShutdown</a></div><div class="ttdeci">void gracefulShutdown(void)</div><div class="ttdoc">Sends shutdown notice to clients and closes all sockets.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00303">WebServer.cpp:303</a></div></div>
+<div class="ttc" id="aclassWebServer_html_adf1cdbbf77e68a3eceff4d79a251b9fa"><div class="ttname"><a href="classWebServer.html#adf1cdbbf77e68a3eceff4d79a251b9fa">WebServer::gracefulShutdown</a></div><div class="ttdeci">void gracefulShutdown(void)</div><div class="ttdoc">Sends shutdown notice to clients and closes all sockets.</div><div class="ttdef"><b>Definition</b> <a href="WebServer_8cpp_source.html#l00304">WebServer.cpp:304</a></div></div>
 <div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a581d05f9036e1f8c1eb02534450bad7c"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a581d05f9036e1f8c1eb02534450bad7c">ResponseStatus::BadGateway</a></div><div class="ttdeci">@ BadGateway</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00057">ResponseStatus.hpp:57</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="WebServer_8hpp_source.html#l00020">_serverSocket</a>, <a class="el" href="WebServer_8hpp_source.html#l00019">_socketToServerIndex</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00057">ResponseStatus::BadGateway</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00158">ResponseBuilder::build()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00210">ClientConnection::clearCgi()</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="WebServer_8cpp_source.html#l00288">getPollTimeout()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00175">ClientConnection::getRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00177">ClientConnection::getResponse()</a>, <a class="el" href="WebServer_8cpp_source.html#l00303">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00476">handleCgiReadable()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="WebServer_8cpp_source.html#l00094">queueClientConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00456">removeCgiPollFd()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00060">ResponseBuilder::responseWriter()</a>, <a class="el" href="WebServer_8cpp_source.html#l00187">sendResponse()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00169">ClientConnection::setResponseBuffer()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, <a class="el" href="Signals_8cpp_source.html#l00124">Signals::shouldStop()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00538">sweepCgiTimeouts()</a>.</p>
+<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="WebServer_8hpp_source.html#l00020">_serverSocket</a>, <a class="el" href="WebServer_8hpp_source.html#l00019">_socketToServerIndex</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00057">ResponseStatus::BadGateway</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00158">ResponseBuilder::build()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00210">ClientConnection::clearCgi()</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="WebServer_8cpp_source.html#l00290">getPollTimeout()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00175">ClientConnection::getRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00177">ClientConnection::getResponse()</a>, <a class="el" href="WebServer_8cpp_source.html#l00304">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00472">handleCgiReadable()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="WebServer_8cpp_source.html#l00094">queueClientConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00452">removeCgiPollFd()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00060">ResponseBuilder::responseWriter()</a>, <a class="el" href="WebServer_8cpp_source.html#l00187">sendResponse()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00169">ClientConnection::setResponseBuffer()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, <a class="el" href="Signals_8cpp_source.html#l00124">Signals::shouldStop()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00534">sweepCgiTimeouts()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="main_8cpp_source.html#l00027">main()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1107,7 +1104,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00151">ClientConnection::clearBuffer()</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00157">ClientConnection::getFD()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00171">ClientConnection::getKeepAlive()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00163">ClientConnection::getResponseBuffer()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00159">ClientConnection::getSentBytes()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00110">ClientConnection::sendData()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00167">ClientConnection::setSentBytes()</a>, <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -1162,7 +1159,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassServerSocket_html_a26897d739a95f0968b7b6085f99cca01"><div class="ttname"><a href="classServerSocket.html#a26897d739a95f0968b7b6085f99cca01">ServerSocket::listenConnections</a></div><div class="ttdeci">void listenConnections(int backlog)</div><div class="ttdoc">Starts listening for incoming client connections.</div><div class="ttdef"><b>Definition</b> <a href="ServerSocket_8cpp_source.html#l00122">ServerSocket.cpp:122</a></div></div>
 <div class="ttc" id="aclassServerSocket_html_aecddb79578f1dc829bf97572291a1b2b"><div class="ttname"><a href="classServerSocket.html#aecddb79578f1dc829bf97572291a1b2b">ServerSocket::startSocket</a></div><div class="ttdeci">void startSocket(std::string const &amp;port)</div><div class="ttdoc">Creates, binds, and configures a non-blocking server socket.</div><div class="ttdef"><b>Definition</b> <a href="ServerSocket_8cpp_source.html#l00053">ServerSocket.cpp:53</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00018">_config</a>, <a class="el" href="WebServer_8hpp_source.html#l00020">_serverSocket</a>, <a class="el" href="WebServer_8hpp_source.html#l00019">_socketToServerIndex</a>, <a class="el" href="WebServer_8cpp_source.html#l00276">addToPollFD()</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00185">ServerSocket::getFD()</a>, <a class="el" href="Config_8cpp_source.html#l00027">Config::getServerConfig()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00122">ServerSocket::listenConnections()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00053">ServerSocket::startSocket()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
+<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00018">_config</a>, <a class="el" href="WebServer_8hpp_source.html#l00020">_serverSocket</a>, <a class="el" href="WebServer_8hpp_source.html#l00019">_socketToServerIndex</a>, <a class="el" href="WebServer_8cpp_source.html#l00278">addToPollFD()</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00185">ServerSocket::getFD()</a>, <a class="el" href="Config_8cpp_source.html#l00027">Config::getServerConfig()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00122">ServerSocket::listenConnections()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ServerSocket_8cpp_source.html#l00053">ServerSocket::startSocket()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="main_8cpp_source.html#l00027">main()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1200,62 +1197,63 @@ Private Attributes</h2></td></tr>
 
 <p>Scans active CGI processes and terminates those exceeding timeout. </p>
 
-<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00538">538</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  539</span>{</div>
-<div class="line"><span class="lineno">  540</span>    std::time_t now = std::time(NULL);</div>
-<div class="line"><span class="lineno">  541</span>    std::vector&lt;int&gt; toKill;</div>
-<div class="line"><span class="lineno">  542</span> </div>
-<div class="line"><span class="lineno">  543</span>    <span class="keywordflow">for</span> (std::map&lt;int,int&gt;::iterator it = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.begin();</div>
-<div class="line"><span class="lineno">  544</span>            it != <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.end(); ++it)</div>
-<div class="line"><span class="lineno">  545</span>    {</div>
-<div class="line"><span class="lineno">  546</span>        <span class="keywordtype">int</span> cgiFd = it-&gt;first;</div>
-<div class="line"><span class="lineno">  547</span>        <span class="keywordtype">int</span> clientFd = it-&gt;second;</div>
-<div class="line"><span class="lineno">  548</span> </div>
-<div class="line"><span class="lineno">  549</span>        std::map&lt;int, ClientConnection&gt;::iterator cit = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(clientFd);</div>
-<div class="line"><span class="lineno">  550</span>        <span class="keywordflow">if</span> (cit == <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
-<div class="line"><span class="lineno">  551</span>        {</div>
-<div class="line"><span class="lineno">  552</span>            toKill.push_back(cgiFd);</div>
-<div class="line"><span class="lineno">  553</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  554</span>        }</div>
-<div class="line"><span class="lineno">  555</span>        <a class="code hl_class" href="classClientConnection.html">ClientConnection</a>&amp; c = cit-&gt;second;</div>
-<div class="line"><span class="lineno">  556</span>        <span class="keywordtype">double</span> elapsed = difftime(now, c.<a class="code hl_function" href="classClientConnection.html#a55345f20e2eb13d50f5cb259e6483d78">getCgiStart</a>());</div>
-<div class="line"><span class="lineno">  557</span>        <span class="keywordflow">if</span> (elapsed &gt;= <a class="code hl_variable" href="classSignals.html#a5b77644c6b3046b88362238e89be6301">Signals::CGI_TIMEOUT_SEC</a>)</div>
-<div class="line"><span class="lineno">  558</span>        {</div>
-<div class="line"><span class="lineno">  559</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;CGI timeout, killing pid=&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(c.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>()));</div>
-<div class="line"><span class="lineno">  560</span>            kill(c.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>(), SIGKILL);</div>
-<div class="line"><span class="lineno">  561</span>            <span class="keywordtype">int</span> st; waitpid(c.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>(), &amp;st, 0);</div>
-<div class="line"><span class="lineno">  562</span>            <a class="code hl_function" href="classSignals.html#aa783f74c1937b7e3a797914950378870">Signals::unregisterCgiProcess</a>(c.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>());</div>
-<div class="line"><span class="lineno">  563</span> </div>
-<div class="line"><span class="lineno">  564</span>            c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>().<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a209f6846ecbedcd0dde706bf05c88d11">ResponseStatus::GatewayTimeout</a>);</div>
-<div class="line"><span class="lineno">  565</span>            <a class="code hl_function" href="classResponseBuilder.html#afd79929bb501be85bdc85d86fdce93e9">ResponseBuilder::build</a>(c, c.<a class="code hl_function" href="classClientConnection.html#a9b3f87772610502966568929b71fecf4">getRequest</a>(), c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>());</div>
-<div class="line"><span class="lineno">  566</span>            c.<a class="code hl_function" href="classClientConnection.html#aa11f1d93d9dcf41a5ab77a17d386403c">setResponseBuffer</a>(<a class="code hl_function" href="classResponseBuilder.html#ab1eeac4dc441885dfd3330fe69bc1b58">ResponseBuilder::responseWriter</a>(c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>()));</div>
-<div class="line"><span class="lineno">  567</span> </div>
-<div class="line"><span class="lineno">  568</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(); ++i)</div>
-<div class="line"><span class="lineno">  569</span>            {</div>
-<div class="line"><span class="lineno">  570</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].fd == clientFd)</div>
-<div class="line"><span class="lineno">  571</span>                {</div>
-<div class="line"><span class="lineno">  572</span>                    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].events = POLLOUT;</div>
-<div class="line"><span class="lineno">  573</span>                    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].revents = 0;</div>
-<div class="line"><span class="lineno">  574</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  575</span>                }</div>
-<div class="line"><span class="lineno">  576</span>            }</div>
-<div class="line"><span class="lineno">  577</span> </div>
-<div class="line"><span class="lineno">  578</span>            ::close(cgiFd);</div>
-<div class="line"><span class="lineno">  579</span>            toKill.push_back(cgiFd);</div>
-<div class="line"><span class="lineno">  580</span>            c.<a class="code hl_function" href="classClientConnection.html#a97a43b53eee31d7e8bb42f80845a7813">clearCgi</a>();</div>
-<div class="line"><span class="lineno">  581</span>        }</div>
-<div class="line"><span class="lineno">  582</span>    }</div>
-<div class="line"><span class="lineno">  583</span> </div>
-<div class="line"><span class="lineno">  584</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; toKill.size(); ++i)</div>
-<div class="line"><span class="lineno">  585</span>        <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(toKill[i]);</div>
-<div class="line"><span class="lineno">  586</span>}</div>
+<p class="definition">Definition at line <a class="el" href="WebServer_8cpp_source.html#l00534">534</a> of file <a class="el" href="WebServer_8cpp_source.html">WebServer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  535</span>{</div>
+<div class="line"><span class="lineno">  536</span>    std::time_t now = std::time(NULL);</div>
+<div class="line"><span class="lineno">  537</span>    std::vector&lt;int&gt; toKill;</div>
+<div class="line"><span class="lineno">  538</span> </div>
+<div class="line"><span class="lineno">  539</span>    <span class="keywordflow">for</span> (std::map&lt;int,int&gt;::iterator it = <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.begin();</div>
+<div class="line"><span class="lineno">  540</span>            it != <a class="code hl_variable" href="classWebServer.html#ae59fe1744032f8c57f3bba8a614a3e44">_cgiFdToClientFd</a>.end(); ++it)</div>
+<div class="line"><span class="lineno">  541</span>    {</div>
+<div class="line"><span class="lineno">  542</span>        <span class="keywordtype">int</span> cgiFd = it-&gt;first;</div>
+<div class="line"><span class="lineno">  543</span>        <span class="keywordtype">int</span> clientFd = it-&gt;second;</div>
+<div class="line"><span class="lineno">  544</span> </div>
+<div class="line"><span class="lineno">  545</span>        std::map&lt;int, ClientConnection&gt;::iterator cit = <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.find(clientFd);</div>
+<div class="line"><span class="lineno">  546</span>        <span class="keywordflow">if</span> (cit == <a class="code hl_variable" href="classWebServer.html#a5c46f045569ac2d7fb859c0b7dfcf816">_clients</a>.end())</div>
+<div class="line"><span class="lineno">  547</span>        {</div>
+<div class="line"><span class="lineno">  548</span>            toKill.push_back(cgiFd);</div>
+<div class="line"><span class="lineno">  549</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  550</span>        }</div>
+<div class="line"><span class="lineno">  551</span>        <a class="code hl_class" href="classClientConnection.html">ClientConnection</a>&amp; c = cit-&gt;second;</div>
+<div class="line"><span class="lineno">  552</span>        <span class="keywordtype">double</span> elapsed = difftime(now, c.<a class="code hl_function" href="classClientConnection.html#a55345f20e2eb13d50f5cb259e6483d78">getCgiStart</a>());</div>
+<div class="line"><span class="lineno">  553</span>        <span class="keywordflow">if</span> (elapsed &gt;= <a class="code hl_variable" href="classSignals.html#a5b77644c6b3046b88362238e89be6301">Signals::CGI_TIMEOUT_SEC</a>)</div>
+<div class="line"><span class="lineno">  554</span>        {</div>
+<div class="line"><span class="lineno">  555</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;CGI timeout, killing pid=&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(c.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>()));</div>
+<div class="line"><span class="lineno">  556</span>            kill(c.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>(), SIGKILL);</div>
+<div class="line"><span class="lineno">  557</span>            <span class="keywordtype">int</span> st;</div>
+<div class="line"><span class="lineno">  558</span>            waitpid(c.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>(), &amp;st, 0);</div>
+<div class="line"><span class="lineno">  559</span>            <a class="code hl_function" href="classSignals.html#aa783f74c1937b7e3a797914950378870">Signals::unregisterCgiProcess</a>(c.<a class="code hl_function" href="classClientConnection.html#af11c5f6a2ca8803c42d4091b55c8917f">getCgiPid</a>());</div>
+<div class="line"><span class="lineno">  560</span> </div>
+<div class="line"><span class="lineno">  561</span>            c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>().<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a209f6846ecbedcd0dde706bf05c88d11">ResponseStatus::GatewayTimeout</a>);</div>
+<div class="line"><span class="lineno">  562</span>            <a class="code hl_function" href="classResponseBuilder.html#afd79929bb501be85bdc85d86fdce93e9">ResponseBuilder::build</a>(c, c.<a class="code hl_function" href="classClientConnection.html#a9b3f87772610502966568929b71fecf4">getRequest</a>(), c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>());</div>
+<div class="line"><span class="lineno">  563</span>            c.<a class="code hl_function" href="classClientConnection.html#aa11f1d93d9dcf41a5ab77a17d386403c">setResponseBuffer</a>(<a class="code hl_function" href="classResponseBuilder.html#ab1eeac4dc441885dfd3330fe69bc1b58">ResponseBuilder::responseWriter</a>(c.<a class="code hl_function" href="classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8">getResponse</a>()));</div>
+<div class="line"><span class="lineno">  564</span> </div>
+<div class="line"><span class="lineno">  565</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  566</span>            {</div>
+<div class="line"><span class="lineno">  567</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].fd == clientFd)</div>
+<div class="line"><span class="lineno">  568</span>                {</div>
+<div class="line"><span class="lineno">  569</span>                    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].events = POLLOUT;</div>
+<div class="line"><span class="lineno">  570</span>                    <a class="code hl_variable" href="classWebServer.html#af62392f4470b3b063b956cdca77d25fc">_pollFDs</a>[i].revents = 0;</div>
+<div class="line"><span class="lineno">  571</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  572</span>                }</div>
+<div class="line"><span class="lineno">  573</span>            }</div>
+<div class="line"><span class="lineno">  574</span> </div>
+<div class="line"><span class="lineno">  575</span>            ::close(cgiFd);</div>
+<div class="line"><span class="lineno">  576</span>            toKill.push_back(cgiFd);</div>
+<div class="line"><span class="lineno">  577</span>            c.<a class="code hl_function" href="classClientConnection.html#a97a43b53eee31d7e8bb42f80845a7813">clearCgi</a>();</div>
+<div class="line"><span class="lineno">  578</span>        }</div>
+<div class="line"><span class="lineno">  579</span>    }</div>
+<div class="line"><span class="lineno">  580</span> </div>
+<div class="line"><span class="lineno">  581</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; toKill.size(); ++i)</div>
+<div class="line"><span class="lineno">  582</span>        <a class="code hl_function" href="classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597">removeCgiPollFd</a>(toKill[i]);</div>
+<div class="line"><span class="lineno">  583</span>}</div>
 <div class="ttc" id="aclassClientConnection_html_a55345f20e2eb13d50f5cb259e6483d78"><div class="ttname"><a href="classClientConnection.html#a55345f20e2eb13d50f5cb259e6483d78">ClientConnection::getCgiStart</a></div><div class="ttdeci">std::time_t getCgiStart() const</div><div class="ttdef"><b>Definition</b> <a href="ClientConnection_8cpp_source.html#l00195">ClientConnection.cpp:195</a></div></div>
 <div class="ttc" id="aclassSignals_html_a5b77644c6b3046b88362238e89be6301"><div class="ttname"><a href="classSignals.html#a5b77644c6b3046b88362238e89be6301">Signals::CGI_TIMEOUT_SEC</a></div><div class="ttdeci">static const int CGI_TIMEOUT_SEC</div><div class="ttdef"><b>Definition</b> <a href="Signals_8hpp_source.html#l00017">Signals.hpp:17</a></div></div>
 <div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a209f6846ecbedcd0dde706bf05c88d11"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a209f6846ecbedcd0dde706bf05c88d11">ResponseStatus::GatewayTimeout</a></div><div class="ttdeci">@ GatewayTimeout</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00059">ResponseStatus.hpp:59</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00158">ResponseBuilder::build()</a>, <a class="el" href="Signals_8hpp_source.html#l00017">Signals::CGI_TIMEOUT_SEC</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00210">ClientConnection::clearCgi()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00059">ResponseStatus::GatewayTimeout</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00193">ClientConnection::getCgiPid()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00195">ClientConnection::getCgiStart()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00175">ClientConnection::getRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00177">ClientConnection::getResponse()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="WebServer_8cpp_source.html#l00456">removeCgiPollFd()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00060">ResponseBuilder::responseWriter()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00169">ClientConnection::setResponseBuffer()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>, <a class="el" href="Signals_8cpp_source.html#l00070">Signals::unregisterCgiProcess()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
+<p class="reference">References <a class="el" href="WebServer_8hpp_source.html#l00027">_cgiFdToClientFd</a>, <a class="el" href="WebServer_8hpp_source.html#l00021">_clients</a>, <a class="el" href="WebServer_8hpp_source.html#l00022">_pollFDs</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00158">ResponseBuilder::build()</a>, <a class="el" href="Signals_8hpp_source.html#l00017">Signals::CGI_TIMEOUT_SEC</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00210">ClientConnection::clearCgi()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00059">ResponseStatus::GatewayTimeout</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00193">ClientConnection::getCgiPid()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00195">ClientConnection::getCgiStart()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00175">ClientConnection::getRequest()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00177">ClientConnection::getResponse()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="WebServer_8cpp_source.html#l00452">removeCgiPollFd()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00060">ResponseBuilder::responseWriter()</a>, <a class="el" href="ClientConnection_8cpp_source.html#l00169">ClientConnection::setResponseBuffer()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>, <a class="el" href="Signals_8cpp_source.html#l00070">Signals::unregisterCgiProcess()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1280,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="WebServer_8hpp_source.html#l00027">27</a> of file <a class="el" href="WebServer_8hpp_source.html">WebServer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00288">getPollTimeout()</a>, <a class="el" href="WebServer_8cpp_source.html#l00303">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00476">handleCgiReadable()</a>, <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00456">removeCgiPollFd()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00538">sweepCgiTimeouts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00290">getPollTimeout()</a>, <a class="el" href="WebServer_8cpp_source.html#l00304">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00472">handleCgiReadable()</a>, <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00452">removeCgiPollFd()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00534">sweepCgiTimeouts()</a>.</p>
 
 </div>
 </div>
@@ -1332,7 +1330,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="WebServer_8hpp_source.html#l00021">21</a> of file <a class="el" href="WebServer_8hpp_source.html">WebServer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00303">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00476">handleCgiReadable()</a>, <a class="el" href="WebServer_8cpp_source.html#l00094">queueClientConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>, <a class="el" href="WebServer_8cpp_source.html#l00187">sendResponse()</a>, <a class="el" href="WebServer_8cpp_source.html#l00538">sweepCgiTimeouts()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00035">~WebServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00304">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00472">handleCgiReadable()</a>, <a class="el" href="WebServer_8cpp_source.html#l00094">queueClientConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>, <a class="el" href="WebServer_8cpp_source.html#l00187">sendResponse()</a>, <a class="el" href="WebServer_8cpp_source.html#l00534">sweepCgiTimeouts()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00035">~WebServer()</a>.</p>
 
 </div>
 </div>
@@ -1384,7 +1382,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="WebServer_8hpp_source.html#l00022">22</a> of file <a class="el" href="WebServer_8hpp_source.html">WebServer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00440">addCgiPollFd()</a>, <a class="el" href="WebServer_8cpp_source.html#l00276">addToPollFD()</a>, <a class="el" href="WebServer_8cpp_source.html#l00303">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00476">handleCgiReadable()</a>, <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00456">removeCgiPollFd()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>, <a class="el" href="WebServer_8cpp_source.html#l00187">sendResponse()</a>, <a class="el" href="WebServer_8cpp_source.html#l00538">sweepCgiTimeouts()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00035">~WebServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00436">addCgiPollFd()</a>, <a class="el" href="WebServer_8cpp_source.html#l00278">addToPollFD()</a>, <a class="el" href="WebServer_8cpp_source.html#l00304">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00472">handleCgiReadable()</a>, <a class="el" href="WebServer_8cpp_source.html#l00128">receiveRequest()</a>, <a class="el" href="WebServer_8cpp_source.html#l00452">removeCgiPollFd()</a>, <a class="el" href="WebServer_8cpp_source.html#l00245">removeClientConnection()</a>, <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>, <a class="el" href="WebServer_8cpp_source.html#l00187">sendResponse()</a>, <a class="el" href="WebServer_8cpp_source.html#l00534">sweepCgiTimeouts()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00035">~WebServer()</a>.</p>
 
 </div>
 </div>
@@ -1410,7 +1408,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="WebServer_8hpp_source.html#l00020">20</a> of file <a class="el" href="WebServer_8hpp_source.html">WebServer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00303">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>, <a class="el" href="WebServer_8cpp_source.html#l00065">startServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00035">~WebServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00304">gracefulShutdown()</a>, <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>, <a class="el" href="WebServer_8cpp_source.html#l00065">startServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00035">~WebServer()</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1434,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="WebServer_8hpp_source.html#l00019">19</a> of file <a class="el" href="WebServer_8hpp_source.html">WebServer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00094">queueClientConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00340">runServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00065">startServer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WebServer_8cpp_source.html#l00094">queueClientConnections()</a>, <a class="el" href="WebServer_8cpp_source.html#l00331">runServer()</a>, and <a class="el" href="WebServer_8cpp_source.html#l00065">startServer()</a>.</p>
 
 </div>
 </div>
