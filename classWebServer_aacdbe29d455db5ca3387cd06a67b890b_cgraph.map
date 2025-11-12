@@ -1,0 +1,27 @@
+<map id="WebServer::queueClientConnections" name="WebServer::queueClientConnections">
+<area shape="rect" id="Node000001" title="Accepts new client connections on a given listening socket." alt="" coords="5,163,264,188"/>
+<area shape="rect" id="Node000002" href="$classServerSocket.html#a4240c5afdaf781181eb097b0d77edf1e" title="Accepts all pending incoming client connections (non&#45;blocking)." alt="" coords="312,38,551,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,161,220,117,264,93,311,72,336,64,337,69,313,77,267,97,222,122,155,165"/>
+<area shape="rect" id="Node000003" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="599,87,728,112"/>
+<area shape="poly" id="edge13_Node000001_Node000003" title=" " alt="" coords="260,160,400,143,550,121,594,113,595,118,551,126,400,149,261,166"/>
+<area shape="rect" id="Node000004" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="616,136,711,162"/>
+<area shape="poly" id="edge14_Node000001_Node000004" title=" " alt="" coords="264,176,402,175,550,166,602,159,603,164,551,172,402,180,264,182"/>
+<area shape="rect" id="Node000006" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="627,38,700,63"/>
+<area shape="poly" id="edge15_Node000001_Node000006" title=" " alt="" coords="144,161,169,130,207,91,256,52,283,35,311,23,351,11,392,5,475,5,552,17,614,32,613,37,551,22,475,11,393,10,352,16,313,28,285,40,259,56,211,95,173,134,148,164"/>
+<area shape="rect" id="Node000007" href="$classWebServer.html#aa387a01e97d57072be5c5be3955136f8" title="Adds a file descriptor to the monitored poll vector." alt="" coords="341,239,521,264"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="186,186,368,233,367,238,185,191"/>
+<area shape="rect" id="Node000008" href="$classClientConnection.html#af4d06d73c6a99655c59e6cb1633b1cb2" title="Associates a socket FD with this client, closing any previous one." alt="" coords="333,87,529,112"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="185,160,367,113,368,118,186,166"/>
+<area shape="rect" id="Node000009" href="$classServerSocket.html#a43152f52de5e7f2ec6d64148f65cd8df" title="Returns the socket file descriptor." alt="" coords="354,288,509,314"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="155,186,222,230,267,254,313,275,341,283,339,288,311,280,264,259,220,234,152,191"/>
+<area shape="rect" id="Node000010" href="$classConfig.html#a24ebc439c8d121c496563c6571b03747" title="Returns the list of all parsed server configurations." alt="" coords="344,338,519,363"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="149,187,214,253,261,292,313,324,332,332,330,337,311,329,258,296,210,257,145,190"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="497,60,551,72,594,81,593,86,550,77,496,66"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="525,61,552,72,568,84,577,97,586,109,600,122,612,128,609,133,597,126,582,113,573,100,564,88,549,77,523,66"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="551,48,613,48,613,53,551,53"/>
+<area shape="rect" id="Node000005" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="776,136,935,162"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="711,146,762,146,762,152,711,152"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="530,97,585,97,585,102,530,102"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="492,110,603,134,602,139,491,115"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="492,84,550,72,612,58,613,64,551,77,493,90"/>
+</map>

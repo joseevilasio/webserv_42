@@ -162,21 +162,21 @@ Static Private Member Functions</h2></td></tr>
 
 <p>Converts a byte size into a human-readable format (B, KB, MB). </p>
 
-<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00111">111</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  112</span>{</div>
-<div class="line"><span class="lineno">  113</span>    std::stringstream ss;</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">if</span> (size &lt; 1024)</div>
-<div class="line"><span class="lineno">  116</span>        ss &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; B&quot;</span>;</div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (size &lt; 1024 * 1024)</div>
-<div class="line"><span class="lineno">  118</span>        ss &lt;&lt; (size / 1024) &lt;&lt; <span class="stringliteral">&quot; KB&quot;</span>;</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  120</span>        ss &lt;&lt; (size / (1024 * 1024)) &lt;&lt; <span class="stringliteral">&quot; MB&quot;</span>;</div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> (ss.str());</div>
-<div class="line"><span class="lineno">  123</span>}</div>
+<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00112">112</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
+<div class="line"><span class="lineno">  114</span>    std::stringstream ss;</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (size &lt; 1024)</div>
+<div class="line"><span class="lineno">  117</span>        ss &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; B&quot;</span>;</div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (size &lt; 1024 * 1024)</div>
+<div class="line"><span class="lineno">  119</span>        ss &lt;&lt; (size / 1024) &lt;&lt; <span class="stringliteral">&quot; KB&quot;</span>;</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  121</span>        ss &lt;&lt; (size / (1024 * 1024)) &lt;&lt; <span class="stringliteral">&quot; MB&quot;</span>;</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">return</span> (ss.str());</div>
+<div class="line"><span class="lineno">  124</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="AutoIndexHandler_8cpp_source.html#l00022">handle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AutoIndexHandler_8cpp_source.html#l00023">handle()</a>.</p>
 
 </div>
 </div>
@@ -231,29 +231,29 @@ Static Private Member Functions</h2></td></tr>
 <p>Resolves the template path dynamically based on the executable's location. </p>
 <p>Falls back totemplates/autoindex.html if resolution fails. </p>
 
-<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00166">166</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  167</span>{</div>
-<div class="line"><span class="lineno">  168</span>    <span class="keywordtype">char</span> exePath[PATH_MAX];</div>
-<div class="line"><span class="lineno">  169</span>    ssize_t len = readlink(<span class="stringliteral">&quot;/proc/self/exe&quot;</span>, exePath, <span class="keyword">sizeof</span>(exePath) - 1);</div>
-<div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>    <span class="keywordflow">if</span> (len == -1)</div>
-<div class="line"><span class="lineno">  172</span>    {</div>
-<div class="line"><span class="lineno">  173</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;AutoIndexHandler: Failed to resolve /proc/self/exe, using default path&quot;</span>);</div>
-<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">return</span> (<span class="stringliteral">&quot;/var/www/templates/autoindex.html&quot;</span>);</div>
-<div class="line"><span class="lineno">  175</span>    }</div>
-<div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>    exePath[len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><span class="lineno">  178</span>    std::string path(exePath);</div>
-<div class="line"><span class="lineno">  179</span> </div>
-<div class="line"><span class="lineno">  180</span>    <span class="keywordtype">size_t</span> lastSlash = path.find_last_of(<span class="charliteral">&#39;/&#39;</span>);</div>
-<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">if</span> (lastSlash != std::string::npos)</div>
-<div class="line"><span class="lineno">  182</span>        path = path.substr(0, lastSlash);</div>
-<div class="line"><span class="lineno">  183</span> </div>
-<div class="line"><span class="lineno">  184</span>    path += <span class="stringliteral">&quot;/assets/autoindex.html&quot;</span>;</div>
-<div class="line"><span class="lineno">  185</span> </div>
-<div class="line"><span class="lineno">  186</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Resolved template path -&gt; &quot;</span> + path);</div>
-<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">return</span> (path);</div>
-<div class="line"><span class="lineno">  188</span>}</div>
+<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00167">167</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  168</span>{</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordtype">char</span> exePath[PATH_MAX];</div>
+<div class="line"><span class="lineno">  170</span>    ssize_t len = readlink(<span class="stringliteral">&quot;/proc/self/exe&quot;</span>, exePath, <span class="keyword">sizeof</span>(exePath) - 1);</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">if</span> (len == -1)</div>
+<div class="line"><span class="lineno">  173</span>    {</div>
+<div class="line"><span class="lineno">  174</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;AutoIndexHandler: Failed to resolve /proc/self/exe, using default path&quot;</span>);</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span> (<span class="stringliteral">&quot;/var/www/templates/autoindex.html&quot;</span>);</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>    exePath[len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">  179</span>    std::string path(exePath);</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>    <span class="keywordtype">size_t</span> lastSlash = path.find_last_of(<span class="charliteral">&#39;/&#39;</span>);</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">if</span> (lastSlash != std::string::npos)</div>
+<div class="line"><span class="lineno">  183</span>        path = path.substr(0, lastSlash);</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>    path += <span class="stringliteral">&quot;/assets/autoindex.html&quot;</span>;</div>
+<div class="line"><span class="lineno">  186</span> </div>
+<div class="line"><span class="lineno">  187</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Resolved template path -&gt; &quot;</span> + path);</div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">return</span> (path);</div>
+<div class="line"><span class="lineno">  189</span>}</div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
 <div class="ttc" id="aclassLogger_html_a3d3f0801eeaf39b33a906ea8569c19b2"><div class="ttname"><a href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">Logger::log</a></div><div class="ttdeci">void log(LogLevel level, const std::string &amp;message)</div><div class="ttdoc">Writes a log entry with timestamp, level, and message.</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00051">Logger.cpp:51</a></div></div>
@@ -261,7 +261,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AutoIndexHandler_8cpp_source.html#l00022">handle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AutoIndexHandler_8cpp_source.html#l00023">handle()</a>.</p>
 
 </div>
 </div>
@@ -302,96 +302,96 @@ Static Private Member Functions</h2></td></tr>
 <p>Generates and serves an HTML directory listing when autoindex is enabled. </p>
 <p>Reads the contents of the resolved directory, formats each entry into a table row, and injects the result into the HTML template. Adds delete buttons for files and ensures template placeholders are replaced before sending the response. </p>
 
-<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00022">22</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
-<div class="line"><span class="lineno">   24</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Started] AutoIndexHandler::handle&quot;</span>);</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>    std::string resolvedPath = req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
-<div class="line"><span class="lineno">   27</span>    std::string uri = req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>();</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (uri.empty() || uri[uri.size() - 1] != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">   30</span>        uri += <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    DIR* dir = opendir(resolvedPath.c_str());</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (dir == NULL)</div>
-<div class="line"><span class="lineno">   34</span>    {</div>
-<div class="line"><span class="lineno">   35</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;AutoIndexHandler: Failed to open directory: &quot;</span> + resolvedPath);</div>
-<div class="line"><span class="lineno">   36</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
-<div class="line"><span class="lineno">   37</span>        return ;</div>
-<div class="line"><span class="lineno">   38</span>    }</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    std::string content;</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keyword">struct </span>dirent* entry;</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">while</span> ((entry = readdir(dir)) != NULL)</div>
-<div class="line"><span class="lineno">   44</span>    {</div>
-<div class="line"><span class="lineno">   45</span>        std::string name = entry-&gt;d_name;</div>
-<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;.&quot;</span> || name == <span class="stringliteral">&quot;..&quot;</span>)</div>
-<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>        std::string fullPath = resolvedPath + <span class="stringliteral">&quot;/&quot;</span> + name;</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keyword">struct </span>stat fileStat;</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">if</span> (stat(fullPath.c_str(), &amp;fileStat) != 0)</div>
-<div class="line"><span class="lineno">   53</span>        {</div>
-<div class="line"><span class="lineno">   54</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;AutoIndexHandler: Unable to stat file: &quot;</span> + fullPath);</div>
-<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   56</span>        }</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordtype">bool</span> isDir = S_ISDIR(fileStat.st_mode);</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordtype">char</span> dateBuf[100];</div>
-<div class="line"><span class="lineno">   61</span>        time_t modTime = fileStat.st_mtime;</div>
-<div class="line"><span class="lineno">   62</span>        <span class="keyword">struct </span>tm* timeInfo = localtime(&amp;modTime);</div>
-<div class="line"><span class="lineno">   63</span>        strftime(dateBuf, <span class="keyword">sizeof</span>(dateBuf), <span class="stringliteral">&quot;%d-%b-%Y %H:%M&quot;</span>, timeInfo);</div>
-<div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>        std::string sizeStr = isDir ? <span class="stringliteral">&quot;-&quot;</span> : <a class="code hl_function" href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">formatSize</a>(fileStat.st_size);</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>        <span class="comment">// Builds each table row dynamically</span></div>
-<div class="line"><span class="lineno">   68</span>        content += <span class="stringliteral">&quot;&lt;tr&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">   69</span>        content += <span class="stringliteral">&quot;&lt;td&gt;&lt;a href=\&quot;&quot;</span> + uri + name + (isDir ? <span class="stringliteral">&quot;/&quot;</span> : <span class="stringliteral">&quot;&quot;</span>) + <span class="stringliteral">&quot;\&quot;&gt;&quot;</span> + name + (isDir ? <span class="stringliteral">&quot;/&quot;</span> : <span class="stringliteral">&quot;&quot;</span>) + <span class="stringliteral">&quot;&lt;/a&gt;&lt;/td&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">   70</span>        content += <span class="stringliteral">&quot;&lt;td&gt;&quot;</span> + std::string(dateBuf) + <span class="stringliteral">&quot;&lt;/td&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">   71</span>        content += <span class="stringliteral">&quot;&lt;td class=\&quot;size\&quot;&gt;&quot;</span> + sizeStr + <span class="stringliteral">&quot;&lt;/td&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>        <span class="comment">// Adds Delete button only for regular files</span></div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">if</span> (!isDir) {</div>
-<div class="line"><span class="lineno">   75</span>            std::string encoded = <a class="code hl_function" href="string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775">uriEncode</a>(name);</div>
-<div class="line"><span class="lineno">   76</span>            content += <span class="stringliteral">&quot;&lt;td&gt;&lt;button onclick=\&quot;deleteFile(&#39;&quot;</span> + uri + encoded + <span class="stringliteral">&quot;&#39;)\&quot;&gt;Delete&lt;/button&gt;&lt;/td&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">   77</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   78</span>            content += <span class="stringliteral">&quot;&lt;td&gt;-&lt;/td&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">   79</span>        }</div>
-<div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>        content += <span class="stringliteral">&quot;&lt;/tr&gt;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   82</span>    }</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    closedir(dir);</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    std::string html = <a class="code hl_function" href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">loadTemplate</a>(<a class="code hl_function" href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">getTemplatePath</a>());</div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (html.empty())</div>
-<div class="line"><span class="lineno">   88</span>    {</div>
-<div class="line"><span class="lineno">   89</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;AutoIndexHandler: Template not found or empty&quot;</span>);</div>
-<div class="line"><span class="lineno">   90</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
-<div class="line"><span class="lineno">   91</span>        return ;</div>
-<div class="line"><span class="lineno">   92</span>    }</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    <span class="comment">// Replace placeholders in template</span></div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{PATH}&quot;</span>, uri);</div>
+<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00023">23</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Started] AutoIndexHandler::handle&quot;</span>);</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    std::string resolvedPath = req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
+<div class="line"><span class="lineno">   28</span>    std::string uri = req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>();</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (uri.empty() || uri[uri.size() - 1] != <span class="charliteral">&#39;/&#39;</span>)</div>
+<div class="line"><span class="lineno">   31</span>        uri += <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    DIR* dir = opendir(resolvedPath.c_str());</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (dir == NULL)</div>
+<div class="line"><span class="lineno">   35</span>    {</div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;AutoIndexHandler: Failed to open directory: &quot;</span> + resolvedPath);</div>
+<div class="line"><span class="lineno">   37</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
+<div class="line"><span class="lineno">   38</span>        return ;</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    std::string content;</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keyword">struct </span>dirent* entry;</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">while</span> ((entry = readdir(dir)) != NULL)</div>
+<div class="line"><span class="lineno">   45</span>    {</div>
+<div class="line"><span class="lineno">   46</span>        std::string name = entry-&gt;d_name;</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;.&quot;</span> || name == <span class="stringliteral">&quot;..&quot;</span>)</div>
+<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>        std::string fullPath = resolvedPath + <span class="stringliteral">&quot;/&quot;</span> + name;</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keyword">struct </span>stat fileStat;</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (stat(fullPath.c_str(), &amp;fileStat) != 0)</div>
+<div class="line"><span class="lineno">   54</span>        {</div>
+<div class="line"><span class="lineno">   55</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;AutoIndexHandler: Unable to stat file: &quot;</span> + fullPath);</div>
+<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   57</span>        }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordtype">bool</span> isDir = S_ISDIR(fileStat.st_mode);</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordtype">char</span> dateBuf[100];</div>
+<div class="line"><span class="lineno">   62</span>        time_t modTime = fileStat.st_mtime;</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keyword">struct </span>tm* timeInfo = localtime(&amp;modTime);</div>
+<div class="line"><span class="lineno">   64</span>        strftime(dateBuf, <span class="keyword">sizeof</span>(dateBuf), <span class="stringliteral">&quot;%d-%b-%Y %H:%M&quot;</span>, timeInfo);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        std::string sizeStr = isDir ? <span class="stringliteral">&quot;-&quot;</span> : <a class="code hl_function" href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">formatSize</a>(fileStat.st_size);</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>        <span class="comment">// Builds each table row dynamically</span></div>
+<div class="line"><span class="lineno">   69</span>        content += <span class="stringliteral">&quot;&lt;tr&gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">   70</span>        content += <span class="stringliteral">&quot;&lt;td&gt;&lt;a href=\&quot;&quot;</span> + uri + name + (isDir ? <span class="stringliteral">&quot;/&quot;</span> : <span class="stringliteral">&quot;&quot;</span>) + <span class="stringliteral">&quot;\&quot;&gt;&quot;</span> + name + (isDir ? <span class="stringliteral">&quot;/&quot;</span> : <span class="stringliteral">&quot;&quot;</span>) + <span class="stringliteral">&quot;&lt;/a&gt;&lt;/td&gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span>        content += <span class="stringliteral">&quot;&lt;td&gt;&quot;</span> + std::string(dateBuf) + <span class="stringliteral">&quot;&lt;/td&gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">   72</span>        content += <span class="stringliteral">&quot;&lt;td class=\&quot;size\&quot;&gt;&quot;</span> + sizeStr + <span class="stringliteral">&quot;&lt;/td&gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>        <span class="comment">// Adds Delete button only for regular files</span></div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">if</span> (!isDir) {</div>
+<div class="line"><span class="lineno">   76</span>            std::string encoded = <a class="code hl_function" href="string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775">uriEncode</a>(name);</div>
+<div class="line"><span class="lineno">   77</span>            content += <span class="stringliteral">&quot;&lt;td&gt;&lt;button onclick=\&quot;deleteFile(&#39;&quot;</span> + uri + encoded + <span class="stringliteral">&quot;&#39;)\&quot;&gt;Delete&lt;/button&gt;&lt;/td&gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">   78</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   79</span>            content += <span class="stringliteral">&quot;&lt;td&gt;-&lt;/td&gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">   80</span>        }</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>        content += <span class="stringliteral">&quot;&lt;/tr&gt;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   83</span>    }</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    closedir(dir);</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    std::string html = <a class="code hl_function" href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">loadTemplate</a>(<a class="code hl_function" href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">getTemplatePath</a>());</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (html.empty())</div>
+<div class="line"><span class="lineno">   89</span>    {</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;AutoIndexHandler: Template not found or empty&quot;</span>);</div>
+<div class="line"><span class="lineno">   91</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
+<div class="line"><span class="lineno">   92</span>        return ;</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="comment">// Replace placeholders in template</span></div>
 <div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{PATH}&quot;</span>, uri);</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{CONTENT}&quot;</span>, content);</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{SERVER_INFO}&quot;</span>, <span class="stringliteral">&quot;WebServinho/1.0&quot;</span>);</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>    res.<a class="code hl_function" href="classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8">appendBody</a>(html);</div>
-<div class="line"><span class="lineno">  101</span>    res.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Content-Type&quot;</span>, <span class="stringliteral">&quot;text/html&quot;</span>);</div>
-<div class="line"><span class="lineno">  102</span>    res.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Content-Length&quot;</span>, <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(html.size()));</div>
-<div class="line"><span class="lineno">  103</span>    res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">ResponseStatus::OK</a>);</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Finished] AutoIndexHandler::handle&quot;</span>);</div>
-<div class="line"><span class="lineno">  106</span>}</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{PATH}&quot;</span>, uri);</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{CONTENT}&quot;</span>, content);</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">replacePlaceholder</a>(html, <span class="stringliteral">&quot;{SERVER_INFO}&quot;</span>, <span class="stringliteral">&quot;WebServinho/1.0&quot;</span>);</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    res.<a class="code hl_function" href="classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8">appendBody</a>(html);</div>
+<div class="line"><span class="lineno">  102</span>    res.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Content-Type&quot;</span>, <span class="stringliteral">&quot;text/html&quot;</span>);</div>
+<div class="line"><span class="lineno">  103</span>    res.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Content-Length&quot;</span>, <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(html.size()));</div>
+<div class="line"><span class="lineno">  104</span>    res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">ResponseStatus::OK</a>);</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Finished] AutoIndexHandler::handle&quot;</span>);</div>
+<div class="line"><span class="lineno">  107</span>}</div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00018">Logger.hpp:18</a></div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_a06fa3762ffa8ebcc361e39f69e72b696"><div class="ttname"><a href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">AutoIndexHandler::loadTemplate</a></div><div class="ttdeci">static std::string loadTemplate(const std::string &amp;path)</div><div class="ttdoc">Loads the HTML template for autoindex listing from disk.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00142">AutoIndexHandler.cpp:142</a></div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_a0dcbd0504c1e39bbe584d45821e7856d"><div class="ttname"><a href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">AutoIndexHandler::replacePlaceholder</a></div><div class="ttdeci">static void replacePlaceholder(std::string &amp;html, const std::string &amp;tag, const std::string &amp;value)</div><div class="ttdoc">Replaces a single placeholder tag in the HTML template.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00130">AutoIndexHandler.cpp:130</a></div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_ac79e264370e9c6576275fb315d67c5c3"><div class="ttname"><a href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">AutoIndexHandler::formatSize</a></div><div class="ttdeci">static std::string formatSize(size_t size)</div><div class="ttdoc">Converts a byte size into a human-readable format (B, KB, MB).</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00111">AutoIndexHandler.cpp:111</a></div></div>
-<div class="ttc" id="aclassAutoIndexHandler_html_af0c1d1a4f469e4f4a7739cbb12af2b1d"><div class="ttname"><a href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">AutoIndexHandler::getTemplatePath</a></div><div class="ttdeci">static std::string getTemplatePath()</div><div class="ttdoc">Resolves the template path dynamically based on the executable's location.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00166">AutoIndexHandler.cpp:166</a></div></div>
+<div class="ttc" id="aclassAutoIndexHandler_html_a06fa3762ffa8ebcc361e39f69e72b696"><div class="ttname"><a href="classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696">AutoIndexHandler::loadTemplate</a></div><div class="ttdeci">static std::string loadTemplate(const std::string &amp;path)</div><div class="ttdoc">Loads the HTML template for autoindex listing from disk.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00143">AutoIndexHandler.cpp:143</a></div></div>
+<div class="ttc" id="aclassAutoIndexHandler_html_a0dcbd0504c1e39bbe584d45821e7856d"><div class="ttname"><a href="classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d">AutoIndexHandler::replacePlaceholder</a></div><div class="ttdeci">static void replacePlaceholder(std::string &amp;html, const std::string &amp;tag, const std::string &amp;value)</div><div class="ttdoc">Replaces a single placeholder tag in the HTML template.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00131">AutoIndexHandler.cpp:131</a></div></div>
+<div class="ttc" id="aclassAutoIndexHandler_html_ac79e264370e9c6576275fb315d67c5c3"><div class="ttname"><a href="classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3">AutoIndexHandler::formatSize</a></div><div class="ttdeci">static std::string formatSize(size_t size)</div><div class="ttdoc">Converts a byte size into a human-readable format (B, KB, MB).</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00112">AutoIndexHandler.cpp:112</a></div></div>
+<div class="ttc" id="aclassAutoIndexHandler_html_af0c1d1a4f469e4f4a7739cbb12af2b1d"><div class="ttname"><a href="classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d">AutoIndexHandler::getTemplatePath</a></div><div class="ttdeci">static std::string getTemplatePath()</div><div class="ttdoc">Resolves the template path dynamically based on the executable's location.</div><div class="ttdef"><b>Definition</b> <a href="AutoIndexHandler_8cpp_source.html#l00167">AutoIndexHandler.cpp:167</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html_a658d90f4dd4080c30c99c463c082abc8"><div class="ttname"><a href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">HttpRequest::getUri</a></div><div class="ttdeci">const std::string &amp; getUri(void) const</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00218">HttpRequest.cpp:218</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html_a9cd740d746bcd7fa6e4fcb8c537879ad"><div class="ttname"><a href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">HttpRequest::getResolvedPath</a></div><div class="ttdeci">const std::string getResolvedPath(void) const</div><div class="ttdoc">Returns the resolved filesystem path corresponding to the URI.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00328">HttpRequest.cpp:328</a></div></div>
 <div class="ttc" id="aclassHttpResponse_html_a22352917aff72615ead5686b7e7b09b8"><div class="ttname"><a href="classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8">HttpResponse::appendBody</a></div><div class="ttdeci">void appendBody(const std::string &amp;body)</div><div class="ttdoc">Appends text data to the response body.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00049">HttpResponse.cpp:49</a></div></div>
@@ -402,9 +402,16 @@ Static Private Member Functions</h2></td></tr>
 <div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">ResponseStatus::OK</a></div><div class="ttdeci">@ OK</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00027">ResponseStatus.hpp:27</a></div></div>
 <div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a></div><div class="ttdeci">@ InternalServerError</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus.hpp:55</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="HttpResponse_8cpp_source.html#l00067">HttpResponse::addHeader()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00049">HttpResponse::appendBody()</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00111">formatSize()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00166">getTemplatePath()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00218">HttpRequest::getUri()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus::InternalServerError</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00142">loadTemplate()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00027">ResponseStatus::OK</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00130">replacePlaceholder()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>, <a class="el" href="string__utils_8hpp_source.html#l00195">uriEncode()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
+<p class="reference">References <a class="el" href="HttpResponse_8cpp_source.html#l00067">HttpResponse::addHeader()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00049">HttpResponse::appendBody()</a>, <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00112">formatSize()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00167">getTemplatePath()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00218">HttpRequest::getUri()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus::InternalServerError</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00143">loadTemplate()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00027">ResponseStatus::OK</a>, <a class="el" href="AutoIndexHandler_8cpp_source.html#l00131">replacePlaceholder()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>, <a class="el" href="string__utils_8hpp_source.html#l00195">uriEncode()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00029">Dispatcher::dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00030">Dispatcher::dispatch()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classAutoIndexHandler_a19f63277112e5a0d50bb8d570527ce0a_cgraph.svg" width="1030" height="652"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -435,28 +442,28 @@ Static Private Member Functions</h2></td></tr>
 <p>Loads the HTML template for autoindex listing from disk. </p>
 <p>Logs errors and returns an empty string if the file cannot be opened. </p>
 
-<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00142">142</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  143</span>{</div>
-<div class="line"><span class="lineno">  144</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Loading template file -&gt; &quot;</span> + path);</div>
-<div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>    std::ifstream file(path.c_str());</div>
-<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">if</span> (!file.is_open())</div>
-<div class="line"><span class="lineno">  148</span>    {</div>
-<div class="line"><span class="lineno">  149</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;AutoIndexHandler: Failed to open template file: &quot;</span> + path);</div>
-<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">return</span> (<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  151</span>    }</div>
-<div class="line"><span class="lineno">  152</span> </div>
-<div class="line"><span class="lineno">  153</span>    std::ostringstream buffer;</div>
-<div class="line"><span class="lineno">  154</span>    buffer &lt;&lt; file.rdbuf();</div>
-<div class="line"><span class="lineno">  155</span>    file.close();</div>
-<div class="line"><span class="lineno">  156</span> </div>
-<div class="line"><span class="lineno">  157</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Template successfully loaded (&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(buffer.str().size()) + <span class="stringliteral">&quot; bytes)&quot;</span>);</div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> (buffer.str());</div>
-<div class="line"><span class="lineno">  159</span>}</div>
+<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00143">143</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Loading template file -&gt; &quot;</span> + path);</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>    std::ifstream file(path.c_str());</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">if</span> (!file.is_open())</div>
+<div class="line"><span class="lineno">  149</span>    {</div>
+<div class="line"><span class="lineno">  150</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;AutoIndexHandler: Failed to open template file: &quot;</span> + path);</div>
+<div class="line"><span class="lineno">  151</span>        <span class="keywordflow">return</span> (<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  152</span>    }</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>    std::ostringstream buffer;</div>
+<div class="line"><span class="lineno">  155</span>    buffer &lt;&lt; file.rdbuf();</div>
+<div class="line"><span class="lineno">  156</span>    file.close();</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;AutoIndexHandler: Template successfully loaded (&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(buffer.str().size()) + <span class="stringliteral">&quot; bytes)&quot;</span>);</div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">return</span> (buffer.str());</div>
+<div class="line"><span class="lineno">  160</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00112">toString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AutoIndexHandler_8cpp_source.html#l00022">handle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AutoIndexHandler_8cpp_source.html#l00023">handle()</a>.</p>
 
 </div>
 </div>
@@ -503,14 +510,14 @@ Static Private Member Functions</h2></td></tr>
 <p>Replaces a single placeholder tag in the HTML template. </p>
 <p>Only replaces the first occurrence found. </p>
 
-<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00130">130</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  131</span>{</div>
-<div class="line"><span class="lineno">  132</span>    <span class="keywordtype">size_t</span> pos = html.find(tag);</div>
-<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">if</span> (pos != std::string::npos)</div>
-<div class="line"><span class="lineno">  134</span>        html.replace(pos, tag.size(), value);</div>
-<div class="line"><span class="lineno">  135</span>}</div>
+<p class="definition">Definition at line <a class="el" href="AutoIndexHandler_8cpp_source.html#l00131">131</a> of file <a class="el" href="AutoIndexHandler_8cpp_source.html">AutoIndexHandler.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keywordtype">size_t</span> pos = html.find(tag);</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">if</span> (pos != std::string::npos)</div>
+<div class="line"><span class="lineno">  135</span>        html.replace(pos, tag.size(), value);</div>
+<div class="line"><span class="lineno">  136</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="AutoIndexHandler_8cpp_source.html#l00022">handle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AutoIndexHandler_8cpp_source.html#l00023">handle()</a>.</p>
 
 </div>
 </div>

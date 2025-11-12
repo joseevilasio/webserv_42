@@ -1,0 +1,39 @@
+<map id="WebServer::sendResponse" name="WebServer::sendResponse">
+<area shape="rect" id="Node000001" title="Sends buffered response data to a connected client." alt="" coords="5,255,200,280"/>
+<area shape="rect" id="Node000002" href="$classClientConnection.html#a20bd376cb881d6257fdd83f1cd709b70" title="Clears the pending request buffer." alt="" coords="273,52,485,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,253,128,221,159,178,199,133,247,95,279,79,281,84,249,99,203,137,163,181,133,224,113,256"/>
+<area shape="rect" id="Node000003" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="605,54,735,79"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="105,254,119,210,147,149,166,117,189,86,216,59,247,37,295,17,347,6,400,3,452,6,550,23,625,46,624,51,548,28,452,11,400,8,347,11,297,22,249,42,219,63,193,90,170,119,152,151,124,211,110,255"/>
+<area shape="rect" id="Node000004" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="623,104,717,130"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="111,253,164,195,203,163,247,139,294,122,343,111,442,100,534,100,609,106,609,111,534,105,442,105,344,116,295,128,249,143,206,168,167,199,115,257"/>
+<area shape="rect" id="Node000006" href="$classClientConnection.html#a5b90a3b273d782b56307fd371779e57c" title=" " alt="" coords="580,276,760,302"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="167,278,248,289,416,295,566,292,567,297,416,301,248,294,166,283"/>
+<area shape="rect" id="Node000007" href="$classClientConnection.html#a4b8b0b92dcf541f45fb60eaa04d07f98" title=" " alt="" coords="281,406,476,446"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="118,279,172,330,209,360,249,385,281,399,278,404,247,390,206,364,168,334,114,282"/>
+<area shape="rect" id="Node000008" href="$classClientConnection.html#a2f8a4311d678e06bcd23abd3b7f605a9" title=" " alt="" coords="557,337,783,377"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="150,278,249,301,401,325,544,342,543,348,401,331,247,306,148,283"/>
+<area shape="rect" id="Node000009" href="$classClientConnection.html#a5f3adea4749660acc050e64f5a57e2dc" title=" " alt="" coords="283,470,474,510"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="112,279,131,315,160,363,200,414,224,437,249,456,272,468,269,473,247,461,220,441,197,417,156,366,126,318,108,282"/>
+<area shape="rect" id="Node000010" href="$classWebServer.html#a4229c99fb202be210f93cbde92a560b0" title="Removes a client connection and cleans up associated poll entry." alt="" coords="248,154,509,179"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="126,252,180,224,247,196,301,180,302,185,249,201,182,229,128,257"/>
+<area shape="rect" id="Node000012" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="633,204,707,230"/>
+<area shape="poly" id="edge23_Node000001_Node000012" title=" " alt="" coords="167,252,248,240,454,222,619,215,619,221,454,228,248,245,168,258"/>
+<area shape="rect" id="Node000013" href="$classClientConnection.html#abbef9ce451a487c2961910457915824e" title="Sends response data to the client." alt="" coords="277,255,480,280"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="200,265,264,265,264,270,200,270"/>
+<area shape="rect" id="Node000014" href="$classClientConnection.html#a590269f3f8005c64161c043c7bd58de5" title=" " alt="" coords="283,534,474,574"/>
+<area shape="poly" id="edge22_Node000001_Node000014" title=" " alt="" coords="110,280,125,326,152,391,193,461,220,493,250,520,272,533,269,538,246,524,216,497,189,464,147,394,120,328,105,281"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,63,592,63,592,69,485,68"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="451,75,609,104,608,109,450,80"/>
+<area shape="rect" id="Node000005" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="831,104,989,130"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="718,114,816,114,816,120,718,120"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="405,151,473,121,557,89,591,79,593,84,558,94,475,126,408,156"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="454,151,609,124,610,130,455,156"/>
+<area shape="rect" id="Node000011" href="$classWebServer.html#ab3ae1ee99bdea0520245ed9bc2d5d597" title="Removes a CGI FD from poll() monitoring." alt="" coords="565,154,775,179"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="510,164,551,164,551,169,510,169"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="453,176,620,206,619,211,452,182"/>
+<area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="411,252,460,227,485,209,507,189,523,163,529,138,536,114,556,90,591,72,593,77,559,94,541,116,534,140,528,165,511,192,488,213,463,231,414,257"/>
+<area shape="poly" id="edge20_Node000013_Node000004" title=" " alt="" coords="404,253,454,225,508,188,521,175,530,162,540,150,556,139,582,128,609,121,610,126,584,133,559,143,544,154,534,166,525,178,511,192,456,230,407,257"/>
+<area shape="poly" id="edge17_Node000013_Node000006" title=" " alt="" coords="480,272,566,279,566,284,480,278"/>
+<area shape="poly" id="edge18_Node000013_Node000008" title=" " alt="" coords="422,278,592,330,590,336,421,283"/>
+<area shape="poly" id="edge21_Node000013_Node000012" title=" " alt="" coords="452,252,619,223,620,228,453,258"/>
+</map>

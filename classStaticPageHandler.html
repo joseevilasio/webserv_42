@@ -288,7 +288,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="string__utils_8hpp_source.html#l00052">toLower()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="StaticPageHandler_8cpp_source.html#l00068">handle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="StaticPageHandler_8cpp_source.html#l00069">handle()</a>.</p>
 
 </div>
 </div>
@@ -334,45 +334,45 @@ Static Private Member Functions</h2></td></tr>
 </ul>
 <p>On success, delegates response generation to <a class="el" href="classResponseBuilder.html">ResponseBuilder</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="StaticPageHandler_8cpp_source.html#l00068">68</a> of file <a class="el" href="StaticPageHandler_8cpp_source.html">StaticPageHandler.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Started] StaticPageHandler::handle&quot;</span>);</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>,</div>
-<div class="line"><span class="lineno">   72</span>        <span class="stringliteral">&quot;StaticPageHandler: Requested path -&gt; &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    <span class="keyword">struct </span>stat st;</div>
-<div class="line"><span class="lineno">   75</span> </div>
-<div class="line"><span class="lineno">   76</span>    <span class="comment">// Step 1: Verify file existence on disk</span></div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (stat(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().c_str(), &amp;st) != 0)</div>
-<div class="line"><span class="lineno">   78</span>    {</div>
-<div class="line"><span class="lineno">   79</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;StaticPageHandler: File not found -&gt; &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
-<div class="line"><span class="lineno">   80</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">ResponseStatus::NotFound</a>);</div>
-<div class="line"><span class="lineno">   81</span>        return ;</div>
-<div class="line"><span class="lineno">   82</span>    }</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    <span class="comment">// Step 2: Attempt to open the file in binary mode</span></div>
-<div class="line"><span class="lineno">   85</span>    std::ifstream file(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().c_str(), std::ios::binary);</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (!file.is_open())</div>
-<div class="line"><span class="lineno">   87</span>    {</div>
-<div class="line"><span class="lineno">   88</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;StaticPageHandler: Failed to open file -&gt; &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
-<div class="line"><span class="lineno">   89</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
-<div class="line"><span class="lineno">   90</span>        return ;</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    <span class="comment">// Step 3: Read entire file into memory buffer</span></div>
-<div class="line"><span class="lineno">   94</span>    std::ostringstream buffer;</div>
-<div class="line"><span class="lineno">   95</span>    buffer &lt;&lt; file.rdbuf();</div>
-<div class="line"><span class="lineno">   96</span>    file.close();</div>
-<div class="line"><span class="lineno">   97</span> </div>
-<div class="line"><span class="lineno">   98</span>    <span class="comment">// Step 4: Determine MIME type</span></div>
-<div class="line"><span class="lineno">   99</span>    <span class="keyword">const</span> std::string&amp; mime = <a class="code hl_function" href="classStaticPageHandler.html#a22995910cb4920dbb05d537a3991535e">detectMimeType</a>(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;StaticPageHandler: MIME type detected -&gt; &quot;</span> + mime);</div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>    <span class="comment">// Step 5: Build final HTTP response</span></div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_function" href="classResponseBuilder.html#a0a1b2929111eec67e4ebe1acb7796915">ResponseBuilder::handleStaticPageOutput</a>(res, buffer.str(), mime);</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Finished] StaticPageHandler::handle&quot;</span>);</div>
-<div class="line"><span class="lineno">  106</span>}</div>
+<p class="definition">Definition at line <a class="el" href="StaticPageHandler_8cpp_source.html#l00069">69</a> of file <a class="el" href="StaticPageHandler_8cpp_source.html">StaticPageHandler.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Started] StaticPageHandler::handle&quot;</span>);</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>,</div>
+<div class="line"><span class="lineno">   73</span>        <span class="stringliteral">&quot;StaticPageHandler: Requested path -&gt; &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="keyword">struct </span>stat st;</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>    <span class="comment">// Step 1: Verify file existence on disk</span></div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">if</span> (stat(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().c_str(), &amp;st) != 0)</div>
+<div class="line"><span class="lineno">   79</span>    {</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;StaticPageHandler: File not found -&gt; &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
+<div class="line"><span class="lineno">   81</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">ResponseStatus::NotFound</a>);</div>
+<div class="line"><span class="lineno">   82</span>        return ;</div>
+<div class="line"><span class="lineno">   83</span>    }</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">// Step 2: Attempt to open the file in binary mode</span></div>
+<div class="line"><span class="lineno">   86</span>    std::ifstream file(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().c_str(), std::ios::binary);</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (!file.is_open())</div>
+<div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, <span class="stringliteral">&quot;StaticPageHandler: Failed to open file -&gt; &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
+<div class="line"><span class="lineno">   90</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
+<div class="line"><span class="lineno">   91</span>        return ;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// Step 3: Read entire file into memory buffer</span></div>
+<div class="line"><span class="lineno">   95</span>    std::ostringstream buffer;</div>
+<div class="line"><span class="lineno">   96</span>    buffer &lt;&lt; file.rdbuf();</div>
+<div class="line"><span class="lineno">   97</span>    file.close();</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>    <span class="comment">// Step 4: Determine MIME type</span></div>
+<div class="line"><span class="lineno">  100</span>    <span class="keyword">const</span> std::string&amp; mime = <a class="code hl_function" href="classStaticPageHandler.html#a22995910cb4920dbb05d537a3991535e">detectMimeType</a>(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;StaticPageHandler: MIME type detected -&gt; &quot;</span> + mime);</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// Step 5: Build final HTTP response</span></div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="classResponseBuilder.html#a0a1b2929111eec67e4ebe1acb7796915">ResponseBuilder::handleStaticPageOutput</a>(res, buffer.str(), mime);</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;[Finished] StaticPageHandler::handle&quot;</span>);</div>
+<div class="line"><span class="lineno">  107</span>}</div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00018">Logger.hpp:18</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
@@ -387,7 +387,14 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="StaticPageHandler_8cpp_source.html#l00018">detectMimeType()</a>, <a class="el" href="Logger_8hpp_source.html#l00018">ERROR</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="ResponseBuilder_8cpp_source.html#l00093">ResponseBuilder::handleStaticPageOutput()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00055">ResponseStatus::InternalServerError</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00044">ResponseStatus::NotFound</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00029">Dispatcher::dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00030">Dispatcher::dispatch()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classStaticPageHandler_a701db169c979ef5cfebc72f6c160fb32_cgraph.svg" width="952" height="340"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
