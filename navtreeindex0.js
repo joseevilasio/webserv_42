@@ -105,12 +105,9 @@ var NAVTREEINDEX0 =
 "WebServer_8hpp_source.html":[1,0,4,2],
 "annotated.html":[0,0],
 "classAutoIndexHandler.html":[0,0,0],
-"classAutoIndexHandler.html#a06fa3762ffa8ebcc361e39f69e72b696":[0,0,0,4],
-"classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d":[0,0,0,5],
-"classAutoIndexHandler.html#a19f63277112e5a0d50bb8d570527ce0a":[0,0,0,3],
-"classAutoIndexHandler.html#a9d5ae4d482229f019d5c804f166bff0d":[0,0,0,1],
+"classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d":[0,0,0,2],
+"classAutoIndexHandler.html#a19f63277112e5a0d50bb8d570527ce0a":[0,0,0,1],
 "classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3":[0,0,0,0],
-"classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d":[0,0,0,2],
 "classCgiHandler.html":[0,0,1],
 "classCgiHandler.html#a04894013802e9443196d4538b5e3dea5":[0,0,1,2],
 "classCgiHandler.html#a1362c3cab42ae2109c7a3f0d48dcd2ee":[0,0,1,6],
@@ -249,5 +246,8 @@ var NAVTREEINDEX0 =
 "classHttpRequest.html#ad5e0825724197777dcee9672c6f6991d":[0,0,8,0],
 "classHttpRequest.html#ad875e49b03abccaf092ecb49d5bdad31":[0,0,8,34],
 "classHttpRequest.html#adbe33d409b9994d854cb3fb8149b14c4":[0,0,8,54],
-"classHttpRequest.html#addccef31bf7388bf03bac19652743098":[0,0,8,21]
+"classHttpRequest.html#addccef31bf7388bf03bac19652743098":[0,0,8,21],
+"classHttpRequest.html#adfc7ae561e6ba03d21890ee1855df72b":[0,0,8,2],
+"classHttpRequest.html#adfeba15e2752ba4ad7a39a1a18a709e5":[0,0,8,12],
+"classHttpRequest.html#aea8112da8cc0f4e056bcb57d18a54988":[0,0,8,33]
 };

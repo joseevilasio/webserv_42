@@ -12,7 +12,7 @@ var searchData=
   ['hasparenttraversal_9',['hasParentTraversal',['../string__utils_8hpp.html#a3435acf8aa5d1b7819803b35e546522a',1,'string_utils.hpp']]],
   ['hdrbuf_10',['hdrBuf',['../structCgiProcess.html#ab9b69ddbe02d09ab363c01a10025236b',1,'CgiProcess']]],
   ['head_11',['HEAD',['../structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa09fa7008f5743d6df1ae60704c094e2e',1,'RequestMethod']]],
-  ['headers_12',['headers',['../structRequestState.html#aadbd0c6a8cffff0a2baaa238900fc397a9acb360cb48ad2ae6a5f7f1281756909',1,'RequestState::Headers'],['../classRequestParse.html#ac3dc2d89d0e245ac752b5327f64bb70d',1,'RequestParse::headers()']]],
+  ['headers_12',['headers',['../classRequestParse.html#ac3dc2d89d0e245ac752b5327f64bb70d',1,'RequestParse::headers()'],['../structRequestState.html#aadbd0c6a8cffff0a2baaa238900fc397a9acb360cb48ad2ae6a5f7f1281756909',1,'RequestState::Headers']]],
   ['headersparsed_13',['headersParsed',['../structCgiProcess.html#ae95dbfc568c9ba4e9c9d707b91f0146b',1,'CgiProcess']]],
   ['httprequest_14',['httprequest',['../classHttpRequest.html#ad5e0825724197777dcee9672c6f6991d',1,'HttpRequest::HttpRequest(const HttpRequest &amp;rhs)'],['../classHttpRequest.html#a42b01e8d23e15e65ad9c712922a6a812',1,'HttpRequest::HttpRequest()'],['../classHttpRequest.html',1,'HttpRequest']]],
   ['httprequest_2ecpp_15',['HttpRequest.cpp',['../HttpRequest_8cpp.html',1,'']]],

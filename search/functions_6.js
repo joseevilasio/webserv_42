@@ -43,16 +43,14 @@ var searchData=
   ['getresponse_40',['getResponse',['../classClientConnection.html#a9831615e09faee64781ea0e1c74eb3b8',1,'ClientConnection']]],
   ['getresponsebuffer_41',['getResponseBuffer',['../classClientConnection.html#a2f8a4311d678e06bcd23abd3b7f605a9',1,'ClientConnection']]],
   ['getreturn_42',['getReturn',['../classLocationConfig.html#a0cc1ebbf3b6dc5466e87bd54525dd32e',1,'LocationConfig']]],
-  ['getroot_43',['getroot',['../classServerConfig.html#a1d6c7f794b3c144162edd0f6a29df94a',1,'ServerConfig::getRoot()'],['../classLocationConfig.html#a6b42578abcf4dc90a68989afdcd8dc1e',1,'LocationConfig::getRoot()']]],
+  ['getroot_43',['getroot',['../classLocationConfig.html#a6b42578abcf4dc90a68989afdcd8dc1e',1,'LocationConfig::getRoot()'],['../classServerConfig.html#a1d6c7f794b3c144162edd0f6a29df94a',1,'ServerConfig::getRoot()']]],
   ['getroutetype_44',['getRouteType',['../classHttpRequest.html#a9decd1aaa44f4490bef39e8ec92b30f2',1,'HttpRequest']]],
   ['getsentbytes_45',['getSentBytes',['../classClientConnection.html#a5f3adea4749660acc050e64f5a57e2dc',1,'ClientConnection']]],
-  ['getserverconfig_46',['getserverconfig',['../classClientConnection.html#ad157100f057508c3f4766a0b9c011d56',1,'ClientConnection::getServerConfig()'],['../classConfig.html#a24ebc439c8d121c496563c6571b03747',1,'Config::getServerConfig()']]],
+  ['getserverconfig_46',['getserverconfig',['../classConfig.html#a24ebc439c8d121c496563c6571b03747',1,'Config::getServerConfig()'],['../classClientConnection.html#ad157100f057508c3f4766a0b9c011d56',1,'ClientConnection::getServerConfig()']]],
   ['getstate_47',['getState',['../classHttpRequest.html#a1ae6c9a93ad8803db93de2eb605f74e3',1,'HttpRequest']]],
   ['getstatuscode_48',['getStatusCode',['../classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08',1,'HttpResponse']]],
-  ['gettemplate_49',['getTemplate',['../classAutoIndexHandler.html#a9d5ae4d482229f019d5c804f166bff0d',1,'AutoIndexHandler']]],
-  ['gettemplatepath_50',['getTemplatePath',['../classAutoIndexHandler.html#af0c1d1a4f469e4f4a7739cbb12af2b1d',1,'AutoIndexHandler']]],
-  ['getuploadenabled_51',['getUploadEnabled',['../classLocationConfig.html#a8f1bbc69016138d6488c674b15d62531',1,'LocationConfig']]],
-  ['getuploadpath_52',['getUploadPath',['../classLocationConfig.html#a58552fba744893cb3510234fbb71ae66',1,'LocationConfig']]],
-  ['geturi_53',['getUri',['../classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8',1,'HttpRequest']]],
-  ['gracefulshutdown_54',['gracefulShutdown',['../classWebServer.html#adf1cdbbf77e68a3eceff4d79a251b9fa',1,'WebServer']]]
+  ['getuploadenabled_49',['getUploadEnabled',['../classLocationConfig.html#a8f1bbc69016138d6488c674b15d62531',1,'LocationConfig']]],
+  ['getuploadpath_50',['getUploadPath',['../classLocationConfig.html#a58552fba744893cb3510234fbb71ae66',1,'LocationConfig']]],
+  ['geturi_51',['getUri',['../classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8',1,'HttpRequest']]],
+  ['gracefulshutdown_52',['gracefulShutdown',['../classWebServer.html#adf1cdbbf77e68a3eceff4d79a251b9fa',1,'WebServer']]]
 ];
