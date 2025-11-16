@@ -1,31 +1,33 @@
 <map id="AutoIndexHandler::handle" name="AutoIndexHandler::handle">
-<area shape="rect" id="Node000001" title="Generates and serves a fully hardcoded HTML directory listing." alt="" coords="5,252,196,277"/>
+<area shape="rect" id="Node000001" title="Generates and serves a fully hardcoded HTML directory listing." alt="" coords="5,277,196,303"/>
 <area shape="rect" id="Node000002" href="$classHttpResponse.html#abb032c16ad3961d50a6582c50c330581" title="Adds a header field to the HTTP response." alt="" coords="258,5,450,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,251,120,209,148,152,189,91,214,63,242,40,251,34,254,39,246,44,218,67,193,94,153,154,125,211,109,253"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,276,117,231,144,167,186,98,212,67,242,40,250,35,253,39,246,44,216,70,190,101,149,169,122,233,108,278"/>
 <area shape="rect" id="Node000003" href="$classHttpResponse.html#a22352917aff72615ead5686b7e7b09b8" title="Appends text data to the response body." alt="" coords="253,55,455,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,250,125,217,155,173,195,128,243,89,254,83,257,87,245,94,198,131,159,177,130,220,111,253"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,276,122,239,151,188,192,134,216,110,243,89,253,83,256,88,245,94,219,114,196,138,156,191,127,241,110,278"/>
 <area shape="rect" id="Node000004" href="$classAutoIndexHandler.html#ac79e264370e9c6576275fb315d67c5c3" title="Converts a byte size into a human&#45;readable format (B, KB, MB)." alt="" coords="245,104,463,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,250,163,196,201,164,243,138,259,131,261,136,245,143,204,169,167,199,115,254"/>
-<area shape="rect" id="Node000005" href="$classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad" title="Returns the resolved filesystem path corresponding to the URI." alt="" coords="244,153,464,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="121,249,175,219,243,188,268,180,269,185,245,192,177,223,124,254"/>
-<area shape="rect" id="Node000006" href="$classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8" title=" " alt="" coords="279,203,429,228"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="166,249,274,228,275,233,167,255"/>
-<area shape="rect" id="Node000007" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="289,252,419,277"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="196,262,276,262,276,267,196,267"/>
-<area shape="rect" id="Node000008" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="307,301,401,327"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="167,275,294,300,293,305,166,280"/>
-<area shape="rect" id="Node000010" href="$classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d" title="Replaces a single placeholder tag in the HTML template." alt="" coords="257,351,451,391"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="125,275,179,304,245,336,269,344,267,349,243,340,176,309,122,280"/>
-<area shape="rect" id="Node000011" href="$classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843" title="Sets the HTTP status code and updates the corresponding reason phrase." alt="" coords="247,416,461,441"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="113,276,165,337,203,372,245,401,263,409,261,414,243,406,199,376,161,341,109,279"/>
-<area shape="rect" id="Node000014" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="317,465,391,491"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="110,277,128,312,157,360,197,410,220,433,245,452,274,465,304,472,303,477,272,470,243,456,217,437,193,414,153,363,123,315,105,279"/>
-<area shape="rect" id="Node000015" href="$string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775" title="Encodes a string for safe inclusion in a URI (percent&#45;encoding)." alt="" coords="311,515,397,540"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="108,277,123,320,150,382,191,447,217,476,245,501,270,514,297,521,296,526,268,519,243,506,213,480,187,450,146,384,118,322,103,278"/>
-<area shape="rect" id="Node000009" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="549,301,708,327"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="401,311,535,311,535,317,401,317"/>
-<area shape="rect" id="Node000012" href="$classHttpResponse.html#a98bb39b2757912eae4f667db80e3e6a4" title="Sets the textual reason phrase for a given status code." alt="" coords="512,416,745,441"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="462,426,498,426,498,431,462,431"/>
-<area shape="rect" id="Node000013" href="$classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19" title="Converts an HTTP status code to its standard reason phrase string." alt="" coords="793,409,988,449"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="746,426,780,426,780,431,746,431"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,276,159,209,198,171,243,138,256,132,259,137,245,143,201,175,163,213,112,279"/>
+<area shape="rect" id="Node000005" href="$classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171" title="Returns the current HTTP method." alt="" coords="263,153,445,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="114,275,168,232,204,208,243,188,263,180,265,185,245,192,207,212,171,236,118,279"/>
+<area shape="rect" id="Node000006" href="$classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad" title="Returns the resolved filesystem path corresponding to the URI." alt="" coords="244,203,464,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="133,275,243,237,275,229,276,234,245,242,135,280"/>
+<area shape="rect" id="Node000007" href="$classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8" title=" " alt="" coords="279,252,429,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="196,278,265,271,265,276,196,283"/>
+<area shape="rect" id="Node000008" href="$classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd" title="Returns the singleton instance of the Logger." alt="" coords="289,301,419,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="196,296,276,304,276,309,196,302"/>
+<area shape="rect" id="Node000009" href="$classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2" title="Writes a log entry with timestamp, level, and message." alt="" coords="307,351,401,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="138,300,245,335,294,348,293,353,243,341,136,305"/>
+<area shape="rect" id="Node000011" href="$classAutoIndexHandler.html#a0dcbd0504c1e39bbe584d45821e7856d" title="Replaces a single placeholder tag in the HTML template." alt="" coords="257,401,451,441"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="119,301,173,341,245,385,265,394,263,398,243,390,170,346,116,305"/>
+<area shape="rect" id="Node000012" href="$classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843" title="Sets the HTTP status code and updates the corresponding reason phrase." alt="" coords="247,465,461,491"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="112,302,131,333,161,373,200,415,245,450,261,458,258,463,243,455,196,419,157,377,127,336,107,304"/>
+<area shape="rect" id="Node000015" href="$string__utils_8hpp.html#ad735976365693b45c427000fe042e173" title="Converts any printable type to a string representation." alt="" coords="317,515,391,540"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="109,302,126,342,154,396,194,453,218,479,245,501,274,515,304,522,303,527,272,520,243,506,215,483,190,457,149,399,121,344,104,304"/>
+<area shape="rect" id="Node000016" href="$string__utils_8hpp.html#a4408f0c67e5adf4b8c58c34229e68775" title="Encodes a string for safe inclusion in a URI (percent&#45;encoding)." alt="" coords="311,564,397,589"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="107,302,121,350,147,418,166,454,188,490,215,523,246,550,270,564,298,571,296,576,268,569,242,555,211,526,184,493,161,457,143,420,116,351,102,304"/>
+<area shape="rect" id="Node000010" href="$classLogger.html#a19f9ef22095a67c9fe420c9d6e761fc2" title="Converts a LogLevel enum value to its string label." alt="" coords="549,351,708,376"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="401,361,535,361,535,366,401,366"/>
+<area shape="rect" id="Node000013" href="$classHttpResponse.html#a98bb39b2757912eae4f667db80e3e6a4" title="Sets the textual reason phrase for a given status code." alt="" coords="512,465,745,491"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="462,475,498,475,498,481,462,481"/>
+<area shape="rect" id="Node000014" href="$classHttpResponse.html#ae09f25f31d917b068fae8bbf07b29c19" title="Converts an HTTP status code to its standard reason phrase string." alt="" coords="793,458,988,498"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="746,475,780,475,780,481,746,481"/>
 </map>

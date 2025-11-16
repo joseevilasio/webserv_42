@@ -272,16 +272,16 @@ Static Private Member Functions</h2></td></tr>
 <p>Checks if the response already contains an error status. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if an error code is set, otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00182">182</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  183</span>{</div>
-<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (res.<a class="code hl_function" href="classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08">getStatusCode</a>() != <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">ResponseStatus::OK</a>)</div>
-<div class="line"><span class="lineno">  185</span>    {</div>
-<div class="line"><span class="lineno">  186</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router: Error status detected (&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(res.<a class="code hl_function" href="classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08">getStatusCode</a>()) + <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">  187</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
-<div class="line"><span class="lineno">  188</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  189</span>    }</div>
-<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  191</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00247">247</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  248</span>{</div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">if</span> (res.<a class="code hl_function" href="classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08">getStatusCode</a>() != <a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a0d72fdb68264021efa70cc978c438cae">ResponseStatus::OK</a>)</div>
+<div class="line"><span class="lineno">  250</span>    {</div>
+<div class="line"><span class="lineno">  251</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router: Error status detected (&quot;</span> + <a class="code hl_function" href="string__utils_8hpp.html#ad735976365693b45c427000fe042e173">toString</a>(res.<a class="code hl_function" href="classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08">getStatusCode</a>()) + <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><span class="lineno">  252</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
+<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  254</span>    }</div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  256</span>}</div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00015">Logger.hpp:15</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html_a4b150de7245da2eebd2412d1c88dce99"><div class="ttname"><a href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">HttpRequest::setRouteType</a></div><div class="ttdeci">void setRouteType(RouteType::route route)</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00098">HttpRequest.cpp:98</a></div></div>
 <div class="ttc" id="aclassHttpResponse_html_aefca7483c5921d939a7c8dccc705ba08"><div class="ttname"><a href="classHttpResponse.html#aefca7483c5921d939a7c8dccc705ba08">HttpResponse::getStatusCode</a></div><div class="ttdeci">ResponseStatus::code getStatusCode(void) const</div><div class="ttdoc">Returns the current HTTP status code.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00109">HttpResponse.cpp:109</a></div></div>
@@ -338,51 +338,101 @@ Static Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Computes the absolute filesystem path of the requested resource. </p>
-<p>Combines the URI with the root or CGI path, removes location prefixes, and appends index files when appropriate. </p>
+<p>Rules: 1) If the location defines its own root (or a CGI root), we strip the location path from the URI and join the remainder with that root. 2) If the location inherits the server root (no own root/cgi), we DO NOT strip the location path; we join the server root with the full URI. 3) If the resolved path points to a directory and the location defines an index, we append that index file.</p>
+<p>This ensures that a location like "/uploads" without its own root maps to: &lt;serverRoot&gt;/uploads instead of falling back to: &lt;serverRoot&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00131">131</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  134</span>{</div>
-<div class="line"><span class="lineno">  135</span>    std::string uri = req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>();</div>
-<div class="line"><span class="lineno">  136</span>    std::string root;</div>
-<div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>    <span class="comment">// Determine which root path to use (CGI, location, or server)</span></div>
-<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">if</span> (!location.<a class="code hl_function" href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">getCgiPath</a>().empty())</div>
-<div class="line"><span class="lineno">  140</span>        root = location.<a class="code hl_function" href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">getCgiPath</a>();</div>
-<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (location.<a class="code hl_function" href="classLocationConfig.html#af10d1ad36f0f3a7a3119e054efd88b8b">getHasRoot</a>())</div>
-<div class="line"><span class="lineno">  142</span>        root = location.<a class="code hl_function" href="classLocationConfig.html#a6b42578abcf4dc90a68989afdcd8dc1e">getRoot</a>();</div>
-<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  144</span>        root = config.<a class="code hl_function" href="classServerConfig.html#a1d6c7f794b3c144162edd0f6a29df94a">getRoot</a>();</div>
-<div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>    <span class="comment">// Remove trailing slash from location path</span></div>
-<div class="line"><span class="lineno">  147</span>    std::string locPath = location.<a class="code hl_function" href="classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82">getPath</a>();</div>
-<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">if</span> (locPath.size() &gt; 1 &amp;&amp; locPath[locPath.size() - 1] == <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  149</span>        locPath.erase(locPath.size() - 1);</div>
-<div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>    <span class="comment">// Compute relative path</span></div>
-<div class="line"><span class="lineno">  152</span>    std::string relativePath = uri;</div>
-<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">if</span> (uri.find(locPath) == 0)</div>
-<div class="line"><span class="lineno">  154</span>        relativePath = uri.substr(locPath.length());</div>
-<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">if</span> (!relativePath.empty() &amp;&amp; relativePath[0] == <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  156</span>        relativePath.erase(0, 1);</div>
+<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00146">146</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>{</div>
+<div class="line"><span class="lineno">  150</span>    <span class="comment">// Original request URI (e.g., &quot;/uploads/file.txt&quot;)</span></div>
+<div class="line"><span class="lineno">  151</span>    <span class="keyword">const</span> std::string uri = req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>();</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    <span class="comment">// Determine which root will be used: CGI root, location root, or server root.</span></div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordtype">bool</span> hasCgiRoot = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordtype">bool</span> hasLocRoot = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  156</span>    std::string root;</div>
 <div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>    std::string resolved = <a class="code hl_function" href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">joinPaths</a>(root, relativePath);</div>
-<div class="line"><span class="lineno">  159</span> </div>
-<div class="line"><span class="lineno">  160</span>    <span class="comment">// If path is a directory and has index files, append them</span></div>
-<div class="line"><span class="lineno">  161</span>    <span class="keyword">struct </span>stat s;</div>
-<div class="line"><span class="lineno">  162</span>    <span class="keywordflow">if</span> (stat(resolved.c_str(), &amp;s) == 0 &amp;&amp; S_ISDIR(s.st_mode))</div>
-<div class="line"><span class="lineno">  163</span>    {</div>
-<div class="line"><span class="lineno">  164</span>        <span class="keywordflow">if</span> (location.<a class="code hl_function" href="classLocationConfig.html#a7e9d4ee69ce1e4da6e16b24053335540">getHasIndexFiles</a>())</div>
-<div class="line"><span class="lineno">  165</span>            resolved = <a class="code hl_function" href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">joinPaths</a>(resolved, location.<a class="code hl_function" href="classLocationConfig.html#a6575d885f89f38865f7628e146f767d0">getIndex</a>());</div>
-<div class="line"><span class="lineno">  166</span>    }</div>
-<div class="line"><span class="lineno">  167</span> </div>
-<div class="line"><span class="lineno">  168</span>    req.<a class="code hl_function" href="classHttpRequest.html#a084808f1cf57195c1a76ce68a2cbb4e8">setResolvedPath</a>(resolved);</div>
-<div class="line"><span class="lineno">  169</span> </div>
-<div class="line"><span class="lineno">  170</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>,</div>
-<div class="line"><span class="lineno">  171</span>        <span class="stringliteral">&quot;Router::computeResolvedPath: uri=&quot;</span> + uri +</div>
-<div class="line"><span class="lineno">  172</span>        <span class="stringliteral">&quot; locPath=&quot;</span> + locPath +</div>
-<div class="line"><span class="lineno">  173</span>        <span class="stringliteral">&quot; root=&quot;</span> + root +</div>
-<div class="line"><span class="lineno">  174</span>        <span class="stringliteral">&quot; -&gt; resolved=&quot;</span> + resolved);</div>
-<div class="line"><span class="lineno">  175</span>}</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">if</span> (!location.<a class="code hl_function" href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">getCgiPath</a>().empty())</div>
+<div class="line"><span class="lineno">  159</span>    {</div>
+<div class="line"><span class="lineno">  160</span>        hasCgiRoot = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  161</span>        root = location.<a class="code hl_function" href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">getCgiPath</a>();</div>
+<div class="line"><span class="lineno">  162</span>    }</div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (location.<a class="code hl_function" href="classLocationConfig.html#af10d1ad36f0f3a7a3119e054efd88b8b">getHasRoot</a>())</div>
+<div class="line"><span class="lineno">  164</span>    {</div>
+<div class="line"><span class="lineno">  165</span>        hasLocRoot = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  166</span>        root = location.<a class="code hl_function" href="classLocationConfig.html#a6b42578abcf4dc90a68989afdcd8dc1e">getRoot</a>();</div>
+<div class="line"><span class="lineno">  167</span>    }</div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  169</span>    {</div>
+<div class="line"><span class="lineno">  170</span>        root = config.<a class="code hl_function" href="classServerConfig.html#a1d6c7f794b3c144162edd0f6a29df94a">getRoot</a>();</div>
+<div class="line"><span class="lineno">  171</span>    }</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    <span class="comment">// Normalize location path (remove trailing slash but keep &quot;/&quot; itself).</span></div>
+<div class="line"><span class="lineno">  174</span>    std::string locPath = location.<a class="code hl_function" href="classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82">getPath</a>();</div>
+<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">if</span> (locPath.size() &gt; 1 &amp;&amp; locPath[locPath.size() - 1] == <span class="charliteral">&#39;/&#39;</span>)</div>
+<div class="line"><span class="lineno">  176</span>    {</div>
+<div class="line"><span class="lineno">  177</span>        locPath.erase(locPath.size() - 1);</div>
+<div class="line"><span class="lineno">  178</span>    }</div>
+<div class="line"><span class="lineno">  179</span> </div>
+<div class="line"><span class="lineno">  180</span>    <span class="comment">// Compute the &quot;tail&quot; portion to append to root.</span></div>
+<div class="line"><span class="lineno">  181</span>    <span class="comment">// - If location has its own root/CGI root: strip the location prefix from the URI.</span></div>
+<div class="line"><span class="lineno">  182</span>    <span class="comment">// - Otherwise: keep the full URI.</span></div>
+<div class="line"><span class="lineno">  183</span>    std::string tail;</div>
+<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (hasCgiRoot || hasLocRoot)</div>
+<div class="line"><span class="lineno">  185</span>    {</div>
+<div class="line"><span class="lineno">  186</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d">startsWith</a>(uri, locPath))</div>
+<div class="line"><span class="lineno">  187</span>        {</div>
+<div class="line"><span class="lineno">  188</span>            <span class="comment">// Example: uri=&quot;/cgi-bin/hello.py&quot;, locPath=&quot;/cgi-bin&quot; -&gt; tail=&quot;/hello.py&quot;</span></div>
+<div class="line"><span class="lineno">  189</span>            tail = uri.substr(locPath.size());</div>
+<div class="line"><span class="lineno">  190</span>        }</div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  192</span>        {</div>
+<div class="line"><span class="lineno">  193</span>            <span class="comment">// Defensive fallback: config mismatch or a prior rewrite changed the URI.</span></div>
+<div class="line"><span class="lineno">  194</span>            tail = uri;</div>
+<div class="line"><span class="lineno">  195</span>        }</div>
+<div class="line"><span class="lineno">  196</span>    }</div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  198</span>    {</div>
+<div class="line"><span class="lineno">  199</span>        <span class="comment">// Inherit server root: keep the entire URI (e.g., &quot;/uploads/file.txt&quot;)</span></div>
+<div class="line"><span class="lineno">  200</span>        tail = uri;</div>
+<div class="line"><span class="lineno">  201</span>    }</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    <span class="comment">// Remove leading slash from tail so joinPaths(root, tail) works consistently.</span></div>
+<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">if</span> (!tail.empty() &amp;&amp; tail[0] == <span class="charliteral">&#39;/&#39;</span>)</div>
+<div class="line"><span class="lineno">  205</span>    {</div>
+<div class="line"><span class="lineno">  206</span>        tail.erase(0, 1);</div>
+<div class="line"><span class="lineno">  207</span>    }</div>
+<div class="line"><span class="lineno">  208</span> </div>
+<div class="line"><span class="lineno">  209</span>    <span class="comment">// Join root and tail. Expected behavior of joinPaths:</span></div>
+<div class="line"><span class="lineno">  210</span>    <span class="comment">// - If &#39;tail&#39; is empty, it should return &#39;root&#39; unchanged.</span></div>
+<div class="line"><span class="lineno">  211</span>    <span class="comment">// - It should avoid duplicating slashes.</span></div>
+<div class="line"><span class="lineno">  212</span>    std::string resolved = <a class="code hl_function" href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">joinPaths</a>(root, tail);</div>
+<div class="line"><span class="lineno">  213</span> </div>
+<div class="line"><span class="lineno">  214</span>    <span class="comment">// If the resolved path is a directory and the location defines an index,</span></div>
+<div class="line"><span class="lineno">  215</span>    <span class="comment">// append that index file.</span></div>
+<div class="line"><span class="lineno">  216</span>    <span class="keyword">struct </span>stat st;</div>
+<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">if</span> (stat(resolved.c_str(), &amp;st) == 0)</div>
+<div class="line"><span class="lineno">  218</span>    {</div>
+<div class="line"><span class="lineno">  219</span>        <span class="keywordflow">if</span> (S_ISDIR(st.st_mode))</div>
+<div class="line"><span class="lineno">  220</span>        {</div>
+<div class="line"><span class="lineno">  221</span>            <span class="keywordflow">if</span> (location.<a class="code hl_function" href="classLocationConfig.html#a7e9d4ee69ce1e4da6e16b24053335540">getHasIndexFiles</a>())</div>
+<div class="line"><span class="lineno">  222</span>            {</div>
+<div class="line"><span class="lineno">  223</span>                resolved = <a class="code hl_function" href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">joinPaths</a>(resolved, location.<a class="code hl_function" href="classLocationConfig.html#a6575d885f89f38865f7628e146f767d0">getIndex</a>());</div>
+<div class="line"><span class="lineno">  224</span>            }</div>
+<div class="line"><span class="lineno">  225</span>        }</div>
+<div class="line"><span class="lineno">  226</span>    }</div>
+<div class="line"><span class="lineno">  227</span> </div>
+<div class="line"><span class="lineno">  228</span>    <span class="comment">// Store the final path in the request object.</span></div>
+<div class="line"><span class="lineno">  229</span>    req.<a class="code hl_function" href="classHttpRequest.html#a084808f1cf57195c1a76ce68a2cbb4e8">setResolvedPath</a>(resolved);</div>
+<div class="line"><span class="lineno">  230</span> </div>
+<div class="line"><span class="lineno">  231</span>    <span class="comment">// Diagnostic log (useful to confirm mapping behavior).</span></div>
+<div class="line"><span class="lineno">  232</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(</div>
+<div class="line"><span class="lineno">  233</span>        <a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>,</div>
+<div class="line"><span class="lineno">  234</span>        <span class="stringliteral">&quot;Router::computeResolvedPath: uri=&quot;</span> + uri +</div>
+<div class="line"><span class="lineno">  235</span>        <span class="stringliteral">&quot; locPath=&quot;</span> + locPath +</div>
+<div class="line"><span class="lineno">  236</span>        <span class="stringliteral">&quot; root=&quot;</span> + root +</div>
+<div class="line"><span class="lineno">  237</span>        <span class="stringliteral">&quot; -&gt; resolved=&quot;</span> + resolved</div>
+<div class="line"><span class="lineno">  238</span>    );</div>
+<div class="line"><span class="lineno">  239</span>}</div>
 <div class="ttc" id="aclassHttpRequest_html_a084808f1cf57195c1a76ce68a2cbb4e8"><div class="ttname"><a href="classHttpRequest.html#a084808f1cf57195c1a76ce68a2cbb4e8">HttpRequest::setResolvedPath</a></div><div class="ttdeci">void setResolvedPath(const std::string path)</div><div class="ttdoc">Sets the absolute filesystem path resolved from the URI.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00148">HttpRequest.cpp:148</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html_a658d90f4dd4080c30c99c463c082abc8"><div class="ttname"><a href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">HttpRequest::getUri</a></div><div class="ttdeci">const std::string &amp; getUri(void) const</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00218">HttpRequest.cpp:218</a></div></div>
 <div class="ttc" id="aclassLocationConfig_html_a06c65ab0130599edbd485a2db4e50b82"><div class="ttname"><a href="classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82">LocationConfig::getPath</a></div><div class="ttdeci">std::string const &amp; getPath(void) const</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8cpp_source.html#l00050">LocationConfig.cpp:50</a></div></div>
@@ -392,9 +442,10 @@ Static Private Member Functions</h2></td></tr>
 <div class="ttc" id="aclassLocationConfig_html_abd29007a675ad2835d85354d8a9778c4"><div class="ttname"><a href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">LocationConfig::getCgiPath</a></div><div class="ttdeci">std::string const &amp; getCgiPath(void) const</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8cpp_source.html#l00090">LocationConfig.cpp:90</a></div></div>
 <div class="ttc" id="aclassLocationConfig_html_af10d1ad36f0f3a7a3119e054efd88b8b"><div class="ttname"><a href="classLocationConfig.html#af10d1ad36f0f3a7a3119e054efd88b8b">LocationConfig::getHasRoot</a></div><div class="ttdeci">bool getHasRoot(void) const</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8cpp_source.html#l00100">LocationConfig.cpp:100</a></div></div>
 <div class="ttc" id="aclassServerConfig_html_a1d6c7f794b3c144162edd0f6a29df94a"><div class="ttname"><a href="classServerConfig.html#a1d6c7f794b3c144162edd0f6a29df94a">ServerConfig::getRoot</a></div><div class="ttdeci">std::string const &amp; getRoot(void) const</div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cpp_source.html#l00051">ServerConfig.cpp:51</a></div></div>
+<div class="ttc" id="astring__utils_8hpp_html_a54a8d2d3492cbc9eecedf25fda818a4d"><div class="ttname"><a href="string__utils_8hpp.html#a54a8d2d3492cbc9eecedf25fda818a4d">startsWith</a></div><div class="ttdeci">bool startsWith(const std::string &amp;s, const std::string &amp;prefix)</div><div class="ttdoc">Checks whether a string starts with a given prefix.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00120">string_utils.hpp:120</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_a9f1586d17c9a5c7d77ee394f29867ca5"><div class="ttname"><a href="string__utils_8hpp.html#a9f1586d17c9a5c7d77ee394f29867ca5">joinPaths</a></div><div class="ttdeci">static std::string joinPaths(const std::string &amp;base, const std::string &amp;sub)</div><div class="ttdoc">Joins two path segments, ensuring correct slash placement.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00131">string_utils.hpp:131</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00090">LocationConfig::getCgiPath()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00105">LocationConfig::getHasIndexFiles()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00100">LocationConfig::getHasRoot()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00060">LocationConfig::getIndex()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00050">LocationConfig::getPath()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00055">LocationConfig::getRoot()</a>, <a class="el" href="ServerConfig_8cpp_source.html#l00051">ServerConfig::getRoot()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00218">HttpRequest::getUri()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="string__utils_8hpp_source.html#l00131">joinPaths()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, and <a class="el" href="HttpRequest_8cpp_source.html#l00148">HttpRequest::setResolvedPath()</a>.</p>
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00090">LocationConfig::getCgiPath()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00105">LocationConfig::getHasIndexFiles()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00100">LocationConfig::getHasRoot()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00060">LocationConfig::getIndex()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00050">LocationConfig::getPath()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00055">LocationConfig::getRoot()</a>, <a class="el" href="ServerConfig_8cpp_source.html#l00051">ServerConfig::getRoot()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00218">HttpRequest::getUri()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="string__utils_8hpp_source.html#l00131">joinPaths()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00148">HttpRequest::setResolvedPath()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00120">startsWith()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00027">resolve()</a>.</p>
 
@@ -436,20 +487,20 @@ Static Private Member Functions</h2></td></tr>
 
 <p>Checks whether a file extension matches a configured CGI mapping. </p>
 
-<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00386">386</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  387</span>{</div>
-<div class="line"><span class="lineno">  388</span>    std::string ext = <a class="code hl_function" href="string__utils_8hpp.html#afbeab407a81774ee771701ff3a07f113">getFileExtension</a>(path);</div>
-<div class="line"><span class="lineno">  389</span>    <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; cgiMap = loc.<a class="code hl_function" href="classLocationConfig.html#acdf2981a9b52e572d98e785aa4881f68">getCgiExtension</a>();</div>
-<div class="line"><span class="lineno">  390</span> </div>
-<div class="line"><span class="lineno">  391</span>    std::map&lt;std::string, std::string&gt;::const_iterator it = cgiMap.find(ext);</div>
-<div class="line"><span class="lineno">  392</span>    <span class="keywordflow">return</span> (it != cgiMap.end());</div>
-<div class="line"><span class="lineno">  393</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00451">451</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  452</span>{</div>
+<div class="line"><span class="lineno">  453</span>    std::string ext = <a class="code hl_function" href="string__utils_8hpp.html#afbeab407a81774ee771701ff3a07f113">getFileExtension</a>(path);</div>
+<div class="line"><span class="lineno">  454</span>    <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; cgiMap = loc.<a class="code hl_function" href="classLocationConfig.html#acdf2981a9b52e572d98e785aa4881f68">getCgiExtension</a>();</div>
+<div class="line"><span class="lineno">  455</span> </div>
+<div class="line"><span class="lineno">  456</span>    std::map&lt;std::string, std::string&gt;::const_iterator it = cgiMap.find(ext);</div>
+<div class="line"><span class="lineno">  457</span>    <span class="keywordflow">return</span> (it != cgiMap.end());</div>
+<div class="line"><span class="lineno">  458</span>}</div>
 <div class="ttc" id="aclassLocationConfig_html_acdf2981a9b52e572d98e785aa4881f68"><div class="ttname"><a href="classLocationConfig.html#acdf2981a9b52e572d98e785aa4881f68">LocationConfig::getCgiExtension</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; const &amp; getCgiExtension(void) const</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8cpp_source.html#l00095">LocationConfig.cpp:95</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_afbeab407a81774ee771701ff3a07f113"><div class="ttname"><a href="string__utils_8hpp.html#afbeab407a81774ee771701ff3a07f113">getFileExtension</a></div><div class="ttdeci">static std::string getFileExtension(const std::string &amp;path)</div><div class="ttdoc">Extracts the file extension from a path, including the dot.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00178">string_utils.hpp:178</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="LocationConfig_8cpp_source.html#l00095">LocationConfig::getCgiExtension()</a>, and <a class="el" href="string__utils_8hpp_source.html#l00178">getFileExtension()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00357">isCgi()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00422">isCgi()</a>.</p>
 
 </div>
 </div>
@@ -495,40 +546,40 @@ Static Private Member Functions</h2></td></tr>
 
 <p>Determines whether to enable AutoIndex for a directory listing. </p>
 
-<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00277">277</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  278</span>{</div>
-<div class="line"><span class="lineno">  279</span>    <span class="keyword">const</span> <a class="code hl_class" href="classLocationConfig.html">LocationConfig</a>&amp; location = config.matchLocation(req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>());</div>
-<div class="line"><span class="lineno">  280</span> </div>
-<div class="line"><span class="lineno">  281</span>    <span class="keywordtype">bool</span> autoIndexEnabled = config.<a class="code hl_function" href="classLocationConfig.html#a73e266d92da9c483a9498d9cb270dd03">getAutoindex</a>();</div>
-<div class="line"><span class="lineno">  282</span> </div>
-<div class="line"><span class="lineno">  283</span>    <span class="comment">// Location-specific directive overrides global setting</span></div>
-<div class="line"><span class="lineno">  284</span>    <span class="keywordflow">if</span> (location.<a class="code hl_function" href="classLocationConfig.html#a4eeda49130a29cbb64e48b845976821e">getHasAutoIndex</a>())</div>
-<div class="line"><span class="lineno">  285</span>        autoIndexEnabled = location.<a class="code hl_function" href="classLocationConfig.html#a73e266d92da9c483a9498d9cb270dd03">getAutoindex</a>();</div>
-<div class="line"><span class="lineno">  286</span> </div>
-<div class="line"><span class="lineno">  287</span>    <span class="keywordflow">if</span> (!autoIndexEnabled)</div>
-<div class="line"><span class="lineno">  288</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  289</span> </div>
-<div class="line"><span class="lineno">  290</span>    std::string path = req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
-<div class="line"><span class="lineno">  291</span>    <span class="keyword">struct </span>stat s;</div>
-<div class="line"><span class="lineno">  292</span> </div>
-<div class="line"><span class="lineno">  293</span>    <span class="comment">// AutoIndex only applies to directories without index files</span></div>
-<div class="line"><span class="lineno">  294</span>    <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) == 0 &amp;&amp; S_ISDIR(s.st_mode))</div>
-<div class="line"><span class="lineno">  295</span>    {</div>
-<div class="line"><span class="lineno">  296</span>        <span class="keywordflow">if</span> (path[path.length() - 1] != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  297</span>            path += <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><span class="lineno">  298</span> </div>
-<div class="line"><span class="lineno">  299</span>        path += index;</div>
-<div class="line"><span class="lineno">  300</span> </div>
-<div class="line"><span class="lineno">  301</span>        <span class="keyword">struct </span>stat sIndex;</div>
-<div class="line"><span class="lineno">  302</span>        <span class="keywordflow">if</span> (stat(path.c_str(), &amp;sIndex) != 0 || !S_ISREG(sIndex.st_mode))</div>
-<div class="line"><span class="lineno">  303</span>        {</div>
-<div class="line"><span class="lineno">  304</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isAutoIndex enabled for directory: &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
-<div class="line"><span class="lineno">  305</span>            <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  306</span>        }</div>
-<div class="line"><span class="lineno">  307</span>    }</div>
-<div class="line"><span class="lineno">  308</span> </div>
-<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  310</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00342">342</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  343</span>{</div>
+<div class="line"><span class="lineno">  344</span>    <span class="keyword">const</span> <a class="code hl_class" href="classLocationConfig.html">LocationConfig</a>&amp; location = config.matchLocation(req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>());</div>
+<div class="line"><span class="lineno">  345</span> </div>
+<div class="line"><span class="lineno">  346</span>    <span class="keywordtype">bool</span> autoIndexEnabled = config.<a class="code hl_function" href="classLocationConfig.html#a73e266d92da9c483a9498d9cb270dd03">getAutoindex</a>();</div>
+<div class="line"><span class="lineno">  347</span> </div>
+<div class="line"><span class="lineno">  348</span>    <span class="comment">// Location-specific directive overrides global setting</span></div>
+<div class="line"><span class="lineno">  349</span>    <span class="keywordflow">if</span> (location.<a class="code hl_function" href="classLocationConfig.html#a4eeda49130a29cbb64e48b845976821e">getHasAutoIndex</a>())</div>
+<div class="line"><span class="lineno">  350</span>        autoIndexEnabled = location.<a class="code hl_function" href="classLocationConfig.html#a73e266d92da9c483a9498d9cb270dd03">getAutoindex</a>();</div>
+<div class="line"><span class="lineno">  351</span> </div>
+<div class="line"><span class="lineno">  352</span>    <span class="keywordflow">if</span> (!autoIndexEnabled)</div>
+<div class="line"><span class="lineno">  353</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  354</span> </div>
+<div class="line"><span class="lineno">  355</span>    std::string path = req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
+<div class="line"><span class="lineno">  356</span>    <span class="keyword">struct </span>stat s;</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>    <span class="comment">// AutoIndex only applies to directories without index files</span></div>
+<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) == 0 &amp;&amp; S_ISDIR(s.st_mode))</div>
+<div class="line"><span class="lineno">  360</span>    {</div>
+<div class="line"><span class="lineno">  361</span>        <span class="keywordflow">if</span> (path[path.length() - 1] != <span class="charliteral">&#39;/&#39;</span>)</div>
+<div class="line"><span class="lineno">  362</span>            path += <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>        path += index;</div>
+<div class="line"><span class="lineno">  365</span> </div>
+<div class="line"><span class="lineno">  366</span>        <span class="keyword">struct </span>stat sIndex;</div>
+<div class="line"><span class="lineno">  367</span>        <span class="keywordflow">if</span> (stat(path.c_str(), &amp;sIndex) != 0 || !S_ISREG(sIndex.st_mode))</div>
+<div class="line"><span class="lineno">  368</span>        {</div>
+<div class="line"><span class="lineno">  369</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isAutoIndex enabled for directory: &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
+<div class="line"><span class="lineno">  370</span>            <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  371</span>        }</div>
+<div class="line"><span class="lineno">  372</span>    }</div>
+<div class="line"><span class="lineno">  373</span> </div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  375</span>}</div>
 <div class="ttc" id="aclassHttpRequest_html_a9cd740d746bcd7fa6e4fcb8c537879ad"><div class="ttname"><a href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">HttpRequest::getResolvedPath</a></div><div class="ttdeci">const std::string getResolvedPath(void) const</div><div class="ttdoc">Returns the resolved filesystem path corresponding to the URI.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00328">HttpRequest.cpp:328</a></div></div>
 <div class="ttc" id="aclassLocationConfig_html"><div class="ttname"><a href="classLocationConfig.html">LocationConfig</a></div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8hpp_source.html#l00011">LocationConfig.hpp:12</a></div></div>
 <div class="ttc" id="aclassLocationConfig_html_a4eeda49130a29cbb64e48b845976821e"><div class="ttname"><a href="classLocationConfig.html#a4eeda49130a29cbb64e48b845976821e">LocationConfig::getHasAutoIndex</a></div><div class="ttdeci">bool getHasAutoIndex(void) const</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8cpp_source.html#l00110">LocationConfig.cpp:110</a></div></div>
@@ -583,37 +634,37 @@ Static Private Member Functions</h2></td></tr>
 <p>Determines if the request targets a valid CGI script. </p>
 <p>Checks configured CGI path, file extension, and execution permissions. </p>
 
-<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00357">357</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  358</span>{</div>
-<div class="line"><span class="lineno">  359</span>    std::string cgiPath = loc.<a class="code hl_function" href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">getCgiPath</a>();</div>
-<div class="line"><span class="lineno">  360</span> </div>
-<div class="line"><span class="lineno">  361</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classRouter.html#ab22a05b1459f0c92a77aab7d70fadfaa">hasCgiExtension</a>(loc, req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>()))</div>
-<div class="line"><span class="lineno">  362</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  363</span> </div>
-<div class="line"><span class="lineno">  364</span>    <span class="keyword">struct </span>stat s;</div>
-<div class="line"><span class="lineno">  365</span> </div>
-<div class="line"><span class="lineno">  366</span>    <span class="keywordflow">if</span> (stat(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().c_str(), &amp;s) != 0 || !S_ISREG(s.st_mode))</div>
-<div class="line"><span class="lineno">  367</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  368</span> </div>
-<div class="line"><span class="lineno">  369</span>    <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().find(cgiPath) == std::string::npos)</div>
-<div class="line"><span class="lineno">  370</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  371</span> </div>
-<div class="line"><span class="lineno">  372</span>    <span class="keywordflow">if</span> (access(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().c_str(), X_OK) != 0)</div>
-<div class="line"><span class="lineno">  373</span>    {</div>
-<div class="line"><span class="lineno">  374</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isCgi file not executable: &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
-<div class="line"><span class="lineno">  375</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a>);</div>
-<div class="line"><span class="lineno">  376</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  377</span>    }</div>
-<div class="line"><span class="lineno">  378</span> </div>
-<div class="line"><span class="lineno">  379</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isCgi detected&quot;</span>);</div>
-<div class="line"><span class="lineno">  380</span>    <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  381</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00422">422</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  423</span>{</div>
+<div class="line"><span class="lineno">  424</span>    std::string cgiPath = loc.<a class="code hl_function" href="classLocationConfig.html#abd29007a675ad2835d85354d8a9778c4">getCgiPath</a>();</div>
+<div class="line"><span class="lineno">  425</span> </div>
+<div class="line"><span class="lineno">  426</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classRouter.html#ab22a05b1459f0c92a77aab7d70fadfaa">hasCgiExtension</a>(loc, req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>()))</div>
+<div class="line"><span class="lineno">  427</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  428</span> </div>
+<div class="line"><span class="lineno">  429</span>    <span class="keyword">struct </span>stat s;</div>
+<div class="line"><span class="lineno">  430</span> </div>
+<div class="line"><span class="lineno">  431</span>    <span class="keywordflow">if</span> (stat(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().c_str(), &amp;s) != 0 || !S_ISREG(s.st_mode))</div>
+<div class="line"><span class="lineno">  432</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  433</span> </div>
+<div class="line"><span class="lineno">  434</span>    <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().find(cgiPath) == std::string::npos)</div>
+<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  436</span> </div>
+<div class="line"><span class="lineno">  437</span>    <span class="keywordflow">if</span> (access(req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>().c_str(), X_OK) != 0)</div>
+<div class="line"><span class="lineno">  438</span>    {</div>
+<div class="line"><span class="lineno">  439</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isCgi file not executable: &quot;</span> + req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>());</div>
+<div class="line"><span class="lineno">  440</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a>);</div>
+<div class="line"><span class="lineno">  441</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  442</span>    }</div>
+<div class="line"><span class="lineno">  443</span> </div>
+<div class="line"><span class="lineno">  444</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isCgi detected&quot;</span>);</div>
+<div class="line"><span class="lineno">  445</span>    <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  446</span>}</div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00017">Logger.hpp:17</a></div></div>
 <div class="ttc" id="aclassHttpResponse_html_af02b3b82a638bfbf23226b9f3bf06843"><div class="ttname"><a href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">HttpResponse::setStatusCode</a></div><div class="ttdeci">void setStatusCode(const ResponseStatus::code &amp;code)</div><div class="ttdoc">Sets the HTTP status code and updates the corresponding reason phrase.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00024">HttpResponse.cpp:24</a></div></div>
-<div class="ttc" id="aclassRouter_html_ab22a05b1459f0c92a77aab7d70fadfaa"><div class="ttname"><a href="classRouter.html#ab22a05b1459f0c92a77aab7d70fadfaa">Router::hasCgiExtension</a></div><div class="ttdeci">static bool hasCgiExtension(const LocationConfig &amp;loc, const std::string &amp;path)</div><div class="ttdoc">Checks whether a file extension matches a configured CGI mapping.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00386">Router.cpp:386</a></div></div>
+<div class="ttc" id="aclassRouter_html_ab22a05b1459f0c92a77aab7d70fadfaa"><div class="ttname"><a href="classRouter.html#ab22a05b1459f0c92a77aab7d70fadfaa">Router::hasCgiExtension</a></div><div class="ttdeci">static bool hasCgiExtension(const LocationConfig &amp;loc, const std::string &amp;path)</div><div class="ttdoc">Checks whether a file extension matches a configured CGI mapping.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00451">Router.cpp:451</a></div></div>
 <div class="ttc" id="astructResponseStatus_html_ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500"><div class="ttname"><a href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a></div><div class="ttdeci">@ Forbidden</div><div class="ttdef"><b>Definition</b> <a href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus.hpp:43</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus::Forbidden</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00090">LocationConfig::getCgiPath()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="Router_8cpp_source.html#l00386">hasCgiExtension()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
+<p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus::Forbidden</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00090">LocationConfig::getCgiPath()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="Router_8cpp_source.html#l00451">hasCgiExtension()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Router_8cpp_source.html#l00027">resolve()</a>.</p>
 
@@ -662,22 +713,22 @@ Static Private Member Functions</h2></td></tr>
 <p>Checks if the request triggers an HTTP redirect. </p>
 <p>Reads <code>return</code> directive from location config and updates response headers. </p>
 
-<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00198">198</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  199</span>{</div>
-<div class="line"><span class="lineno">  200</span>    <span class="keyword">const</span> <a class="code hl_class" href="classLocationConfig.html">LocationConfig</a>&amp; location = config.matchLocation(req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>());</div>
-<div class="line"><span class="lineno">  201</span>    <span class="keyword">const</span> std::pair&lt;int, std::string&gt; redirect = location.<a class="code hl_function" href="classLocationConfig.html#a0cc1ebbf3b6dc5466e87bd54525dd32e">getReturn</a>();</div>
-<div class="line"><span class="lineno">  202</span> </div>
-<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">if</span> (redirect.first)</div>
-<div class="line"><span class="lineno">  204</span>    {</div>
-<div class="line"><span class="lineno">  205</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isRedirect -&gt; &quot;</span> + redirect.second);</div>
-<div class="line"><span class="lineno">  206</span>        req.<a class="code hl_function" href="classHttpRequest.html#afee0e84f22f6d1226023d40f4a75c17a">getMeta</a>().<a class="code hl_function" href="classRequestMeta.html#a340d195d3f4552366d501915c4a03714">setRedirect</a>(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  207</span>        res.<a class="code hl_function" href="classHttpResponse.html#ab929ceba6ce5236a670f33f9a6eeeb35">setChunked</a>(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  208</span>        res.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Location&quot;</span>, redirect.second);</div>
-<div class="line"><span class="lineno">  209</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076">ResponseStatus::code</a><span class="keyword">&gt;</span>(redirect.first));</div>
-<div class="line"><span class="lineno">  210</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  211</span>    }</div>
-<div class="line"><span class="lineno">  212</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  213</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00263">263</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  264</span>{</div>
+<div class="line"><span class="lineno">  265</span>    <span class="keyword">const</span> <a class="code hl_class" href="classLocationConfig.html">LocationConfig</a>&amp; location = config.matchLocation(req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>());</div>
+<div class="line"><span class="lineno">  266</span>    <span class="keyword">const</span> std::pair&lt;int, std::string&gt; redirect = location.<a class="code hl_function" href="classLocationConfig.html#a0cc1ebbf3b6dc5466e87bd54525dd32e">getReturn</a>();</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordflow">if</span> (redirect.first)</div>
+<div class="line"><span class="lineno">  269</span>    {</div>
+<div class="line"><span class="lineno">  270</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isRedirect -&gt; &quot;</span> + redirect.second);</div>
+<div class="line"><span class="lineno">  271</span>        req.<a class="code hl_function" href="classHttpRequest.html#afee0e84f22f6d1226023d40f4a75c17a">getMeta</a>().<a class="code hl_function" href="classRequestMeta.html#a340d195d3f4552366d501915c4a03714">setRedirect</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  272</span>        res.<a class="code hl_function" href="classHttpResponse.html#ab929ceba6ce5236a670f33f9a6eeeb35">setChunked</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  273</span>        res.<a class="code hl_function" href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">addHeader</a>(<span class="stringliteral">&quot;Location&quot;</span>, redirect.second);</div>
+<div class="line"><span class="lineno">  274</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076">ResponseStatus::code</a><span class="keyword">&gt;</span>(redirect.first));</div>
+<div class="line"><span class="lineno">  275</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  276</span>    }</div>
+<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  278</span>}</div>
 <div class="ttc" id="aclassHttpRequest_html_afee0e84f22f6d1226023d40f4a75c17a"><div class="ttname"><a href="classHttpRequest.html#afee0e84f22f6d1226023d40f4a75c17a">HttpRequest::getMeta</a></div><div class="ttdeci">const RequestMeta &amp; getMeta(void) const</div><div class="ttdoc">Returns a const reference to the RequestMeta structure.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00256">HttpRequest.cpp:256</a></div></div>
 <div class="ttc" id="aclassHttpResponse_html_ab929ceba6ce5236a670f33f9a6eeeb35"><div class="ttname"><a href="classHttpResponse.html#ab929ceba6ce5236a670f33f9a6eeeb35">HttpResponse::setChunked</a></div><div class="ttdeci">void setChunked(bool chunked)</div><div class="ttdoc">Sets whether the response will use chunked transfer encoding.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00085">HttpResponse.cpp:85</a></div></div>
 <div class="ttc" id="aclassHttpResponse_html_abb032c16ad3961d50a6582c50c330581"><div class="ttname"><a href="classHttpResponse.html#abb032c16ad3961d50a6582c50c330581">HttpResponse::addHeader</a></div><div class="ttdeci">void addHeader(const std::string &amp;name, const std::string &amp;value)</div><div class="ttdoc">Adds a header field to the HTTP response.</div><div class="ttdef"><b>Definition</b> <a href="HttpResponse_8cpp_source.html#l00067">HttpResponse.cpp:67</a></div></div>
@@ -734,40 +785,40 @@ Static Private Member Functions</h2></td></tr>
 <p>Checks if the resolved path corresponds to a static file. </p>
 <p>Handles both direct file and directory-with-index cases. </p>
 
-<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00317">317</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  318</span>{</div>
-<div class="line"><span class="lineno">  319</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isStaticFile start&quot;</span>);</div>
-<div class="line"><span class="lineno">  320</span>    std::string path = req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
-<div class="line"><span class="lineno">  321</span> </div>
-<div class="line"><span class="lineno">  322</span>    <span class="keyword">struct </span>stat s;</div>
-<div class="line"><span class="lineno">  323</span>    <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) == 0 &amp;&amp; S_ISDIR(s.st_mode))</div>
-<div class="line"><span class="lineno">  324</span>    {</div>
-<div class="line"><span class="lineno">  325</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isStaticFile detected directory&quot;</span>);</div>
-<div class="line"><span class="lineno">  326</span> </div>
-<div class="line"><span class="lineno">  327</span>        <span class="keywordflow">if</span> (path[path.length() - 1] != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  328</span>            path += <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><span class="lineno">  329</span> </div>
-<div class="line"><span class="lineno">  330</span>        path += index;</div>
-<div class="line"><span class="lineno">  331</span> </div>
-<div class="line"><span class="lineno">  332</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isStaticFile probing index: &quot;</span> + path);</div>
-<div class="line"><span class="lineno">  333</span> </div>
-<div class="line"><span class="lineno">  334</span>        <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) != 0)</div>
-<div class="line"><span class="lineno">  335</span>            <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  336</span>    }</div>
-<div class="line"><span class="lineno">  337</span> </div>
-<div class="line"><span class="lineno">  338</span>    <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) == 0 &amp;&amp; S_ISREG(s.st_mode))</div>
-<div class="line"><span class="lineno">  339</span>    {</div>
-<div class="line"><span class="lineno">  340</span>        <span class="keywordflow">if</span> (access(path.c_str(), R_OK) == 0)</div>
-<div class="line"><span class="lineno">  341</span>        {</div>
-<div class="line"><span class="lineno">  342</span>            req.<a class="code hl_function" href="classHttpRequest.html#a084808f1cf57195c1a76ce68a2cbb4e8">setResolvedPath</a>(path);</div>
-<div class="line"><span class="lineno">  343</span>            <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  344</span>        }</div>
-<div class="line"><span class="lineno">  345</span> </div>
-<div class="line"><span class="lineno">  346</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isStaticFile forbidden access to &quot;</span> + path);</div>
-<div class="line"><span class="lineno">  347</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a>);</div>
-<div class="line"><span class="lineno">  348</span>    }</div>
-<div class="line"><span class="lineno">  349</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  350</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00382">382</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  383</span>{</div>
+<div class="line"><span class="lineno">  384</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isStaticFile start&quot;</span>);</div>
+<div class="line"><span class="lineno">  385</span>    std::string path = req.<a class="code hl_function" href="classHttpRequest.html#a9cd740d746bcd7fa6e4fcb8c537879ad">getResolvedPath</a>();</div>
+<div class="line"><span class="lineno">  386</span> </div>
+<div class="line"><span class="lineno">  387</span>    <span class="keyword">struct </span>stat s;</div>
+<div class="line"><span class="lineno">  388</span>    <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) == 0 &amp;&amp; S_ISDIR(s.st_mode))</div>
+<div class="line"><span class="lineno">  389</span>    {</div>
+<div class="line"><span class="lineno">  390</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isStaticFile detected directory&quot;</span>);</div>
+<div class="line"><span class="lineno">  391</span> </div>
+<div class="line"><span class="lineno">  392</span>        <span class="keywordflow">if</span> (path[path.length() - 1] != <span class="charliteral">&#39;/&#39;</span>)</div>
+<div class="line"><span class="lineno">  393</span>            path += <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><span class="lineno">  394</span> </div>
+<div class="line"><span class="lineno">  395</span>        path += index;</div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isStaticFile probing index: &quot;</span> + path);</div>
+<div class="line"><span class="lineno">  398</span> </div>
+<div class="line"><span class="lineno">  399</span>        <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) != 0)</div>
+<div class="line"><span class="lineno">  400</span>            <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  401</span>    }</div>
+<div class="line"><span class="lineno">  402</span> </div>
+<div class="line"><span class="lineno">  403</span>    <span class="keywordflow">if</span> (stat(path.c_str(), &amp;s) == 0 &amp;&amp; S_ISREG(s.st_mode))</div>
+<div class="line"><span class="lineno">  404</span>    {</div>
+<div class="line"><span class="lineno">  405</span>        <span class="keywordflow">if</span> (access(path.c_str(), R_OK) == 0)</div>
+<div class="line"><span class="lineno">  406</span>        {</div>
+<div class="line"><span class="lineno">  407</span>            req.<a class="code hl_function" href="classHttpRequest.html#a084808f1cf57195c1a76ce68a2cbb4e8">setResolvedPath</a>(path);</div>
+<div class="line"><span class="lineno">  408</span>            <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  409</span>        }</div>
+<div class="line"><span class="lineno">  410</span> </div>
+<div class="line"><span class="lineno">  411</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isStaticFile forbidden access to &quot;</span> + path);</div>
+<div class="line"><span class="lineno">  412</span>        res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a>);</div>
+<div class="line"><span class="lineno">  413</span>    }</div>
+<div class="line"><span class="lineno">  414</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  415</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Logger_8hpp_source.html#l00015">DEBUG</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus::Forbidden</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00328">HttpRequest::getResolvedPath()</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00148">HttpRequest::setResolvedPath()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
 
@@ -818,59 +869,59 @@ Static Private Member Functions</h2></td></tr>
 <p>Determines if the current request is a valid upload operation. </p>
 <p>Checks request method (POST/PUT), upload enablement, and directory write access. </p>
 
-<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00220">220</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  221</span>{</div>
-<div class="line"><span class="lineno">  222</span>    <span class="keyword">const</span> <a class="code hl_class" href="classLocationConfig.html">LocationConfig</a>&amp; location = config.matchLocation(req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>());</div>
-<div class="line"><span class="lineno">  223</span>    std::string uploadPath = location.<a class="code hl_function" href="classLocationConfig.html#a58552fba744893cb3510234fbb71ae66">getUploadPath</a>();</div>
-<div class="line"><span class="lineno">  224</span>    <span class="keyword">const</span> std::string&amp; uri = req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>();</div>
-<div class="line"><span class="lineno">  225</span> </div>
-<div class="line"><span class="lineno">  226</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isUpload comparing uri=&quot;</span> + uri + <span class="stringliteral">&quot; uploadPath=&quot;</span> + uploadPath);</div>
-<div class="line"><span class="lineno">  227</span> </div>
-<div class="line"><span class="lineno">  228</span>    <span class="comment">// Only POST or PUT methods are valid for upload</span></div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() != <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaabfd72fc37af3fbd28ef006bfc57f2dfc">RequestMethod::POST</a> &amp;&amp; req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() != <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa0d5ce683717d6dbb9a35c5f4cf272a5b">RequestMethod::PUT</a>)</div>
-<div class="line"><span class="lineno">  230</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  231</span> </div>
-<div class="line"><span class="lineno">  232</span>    <span class="comment">// Uploads disabled at location level</span></div>
-<div class="line"><span class="lineno">  233</span>    <span class="keywordflow">if</span> (!location.<a class="code hl_function" href="classLocationConfig.html#a8f1bbc69016138d6488c674b15d62531">getUploadEnabled</a>())</div>
-<div class="line"><span class="lineno">  234</span>    {</div>
-<div class="line"><span class="lineno">  235</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isUpload disabled for this location (403)&quot;</span>);</div>
-<div class="line"><span class="lineno">  236</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  237</span>    }</div>
-<div class="line"><span class="lineno">  238</span> </div>
-<div class="line"><span class="lineno">  239</span>    std::string basePath = uploadPath;</div>
-<div class="line"><span class="lineno">  240</span>    <span class="keywordflow">if</span> (basePath.empty())</div>
-<div class="line"><span class="lineno">  241</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  242</span> </div>
-<div class="line"><span class="lineno">  243</span>    <span class="comment">// Handle relative upload paths</span></div>
-<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">if</span> (basePath[0] != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  245</span>        basePath = config.getRoot() + <span class="stringliteral">&quot;/&quot;</span> + basePath;</div>
-<div class="line"><span class="lineno">  246</span> </div>
-<div class="line"><span class="lineno">  247</span>    <span class="comment">// Validate directory existence and write access</span></div>
-<div class="line"><span class="lineno">  248</span>    <span class="keywordflow">if</span> (uri.find(location.<a class="code hl_function" href="classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82">getPath</a>()) == 0)</div>
-<div class="line"><span class="lineno">  249</span>    {</div>
-<div class="line"><span class="lineno">  250</span>        <span class="keyword">struct </span>stat s;</div>
-<div class="line"><span class="lineno">  251</span>        <span class="keywordflow">if</span> (stat(basePath.c_str(), &amp;s) != 0 || !S_ISDIR(s.st_mode))</div>
-<div class="line"><span class="lineno">  252</span>        {</div>
-<div class="line"><span class="lineno">  253</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isUpload directory missing: &quot;</span> + basePath);</div>
-<div class="line"><span class="lineno">  254</span>            res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
-<div class="line"><span class="lineno">  255</span>            req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
-<div class="line"><span class="lineno">  256</span>            <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  257</span>        }</div>
-<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">if</span> (access(basePath.c_str(), W_OK) != 0)</div>
-<div class="line"><span class="lineno">  259</span>        {</div>
-<div class="line"><span class="lineno">  260</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isUpload path not writable: &quot;</span> + basePath);</div>
-<div class="line"><span class="lineno">  261</span>            res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a>);</div>
-<div class="line"><span class="lineno">  262</span>            req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
-<div class="line"><span class="lineno">  263</span>            <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  264</span>        }</div>
-<div class="line"><span class="lineno">  265</span> </div>
-<div class="line"><span class="lineno">  266</span>        <span class="comment">// Directory OK</span></div>
-<div class="line"><span class="lineno">  267</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6ab0393c73c7a4a43c4c0520b27cd4e59b">RouteType::Upload</a>);</div>
-<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  269</span>    }</div>
-<div class="line"><span class="lineno">  270</span> </div>
-<div class="line"><span class="lineno">  271</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  272</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Router_8cpp_source.html#l00285">285</a> of file <a class="el" href="Router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  286</span>{</div>
+<div class="line"><span class="lineno">  287</span>    <span class="keyword">const</span> <a class="code hl_class" href="classLocationConfig.html">LocationConfig</a>&amp; location = config.matchLocation(req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>());</div>
+<div class="line"><span class="lineno">  288</span>    std::string uploadPath = location.<a class="code hl_function" href="classLocationConfig.html#a58552fba744893cb3510234fbb71ae66">getUploadPath</a>();</div>
+<div class="line"><span class="lineno">  289</span>    <span class="keyword">const</span> std::string&amp; uri = req.<a class="code hl_function" href="classHttpRequest.html#a658d90f4dd4080c30c99c463c082abc8">getUri</a>();</div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, <span class="stringliteral">&quot;Router::isUpload comparing uri=&quot;</span> + uri + <span class="stringliteral">&quot; uploadPath=&quot;</span> + uploadPath);</div>
+<div class="line"><span class="lineno">  292</span> </div>
+<div class="line"><span class="lineno">  293</span>    <span class="comment">// Only POST or PUT methods are valid for upload</span></div>
+<div class="line"><span class="lineno">  294</span>    <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() != <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaabfd72fc37af3fbd28ef006bfc57f2dfc">RequestMethod::POST</a> &amp;&amp; req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() != <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa0d5ce683717d6dbb9a35c5f4cf272a5b">RequestMethod::PUT</a>)</div>
+<div class="line"><span class="lineno">  295</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  296</span> </div>
+<div class="line"><span class="lineno">  297</span>    <span class="comment">// Uploads disabled at location level</span></div>
+<div class="line"><span class="lineno">  298</span>    <span class="keywordflow">if</span> (!location.<a class="code hl_function" href="classLocationConfig.html#a8f1bbc69016138d6488c674b15d62531">getUploadEnabled</a>())</div>
+<div class="line"><span class="lineno">  299</span>    {</div>
+<div class="line"><span class="lineno">  300</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isUpload disabled for this location (403)&quot;</span>);</div>
+<div class="line"><span class="lineno">  301</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  302</span>    }</div>
+<div class="line"><span class="lineno">  303</span> </div>
+<div class="line"><span class="lineno">  304</span>    std::string basePath = uploadPath;</div>
+<div class="line"><span class="lineno">  305</span>    <span class="keywordflow">if</span> (basePath.empty())</div>
+<div class="line"><span class="lineno">  306</span>        <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>    <span class="comment">// Handle relative upload paths</span></div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">if</span> (basePath[0] != <span class="charliteral">&#39;/&#39;</span>)</div>
+<div class="line"><span class="lineno">  310</span>        basePath = config.getRoot() + <span class="stringliteral">&quot;/&quot;</span> + basePath;</div>
+<div class="line"><span class="lineno">  311</span> </div>
+<div class="line"><span class="lineno">  312</span>    <span class="comment">// Validate directory existence and write access</span></div>
+<div class="line"><span class="lineno">  313</span>    <span class="keywordflow">if</span> (uri.find(location.<a class="code hl_function" href="classLocationConfig.html#a06c65ab0130599edbd485a2db4e50b82">getPath</a>()) == 0)</div>
+<div class="line"><span class="lineno">  314</span>    {</div>
+<div class="line"><span class="lineno">  315</span>        <span class="keyword">struct </span>stat s;</div>
+<div class="line"><span class="lineno">  316</span>        <span class="keywordflow">if</span> (stat(basePath.c_str(), &amp;s) != 0 || !S_ISDIR(s.st_mode))</div>
+<div class="line"><span class="lineno">  317</span>        {</div>
+<div class="line"><span class="lineno">  318</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isUpload directory missing: &quot;</span> + basePath);</div>
+<div class="line"><span class="lineno">  319</span>            res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a2baef179f39ba9b5b8b86965b0684ae1">ResponseStatus::InternalServerError</a>);</div>
+<div class="line"><span class="lineno">  320</span>            req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
+<div class="line"><span class="lineno">  321</span>            <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  322</span>        }</div>
+<div class="line"><span class="lineno">  323</span>        <span class="keywordflow">if</span> (access(basePath.c_str(), W_OK) != 0)</div>
+<div class="line"><span class="lineno">  324</span>        {</div>
+<div class="line"><span class="lineno">  325</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router::isUpload path not writable: &quot;</span> + basePath);</div>
+<div class="line"><span class="lineno">  326</span>            res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076aad4b6375da646c8d41914f1d2f606500">ResponseStatus::Forbidden</a>);</div>
+<div class="line"><span class="lineno">  327</span>            req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
+<div class="line"><span class="lineno">  328</span>            <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  329</span>        }</div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>        <span class="comment">// Directory OK</span></div>
+<div class="line"><span class="lineno">  332</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6ab0393c73c7a4a43c4c0520b27cd4e59b">RouteType::Upload</a>);</div>
+<div class="line"><span class="lineno">  333</span>        <span class="keywordflow">return</span> (<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  334</span>    }</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  337</span>}</div>
 <div class="ttc" id="aclassHttpRequest_html_a5e8c184f323f39e36f2bb681554bc171"><div class="ttname"><a href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">HttpRequest::getMethod</a></div><div class="ttdeci">RequestMethod::Method getMethod(void) const</div><div class="ttdoc">Returns the current HTTP method.</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00183">HttpRequest.cpp:183</a></div></div>
 <div class="ttc" id="aclassLocationConfig_html_a58552fba744893cb3510234fbb71ae66"><div class="ttname"><a href="classLocationConfig.html#a58552fba744893cb3510234fbb71ae66">LocationConfig::getUploadPath</a></div><div class="ttdeci">std::string const &amp; getUploadPath(void) const</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8cpp_source.html#l00080">LocationConfig.cpp:80</a></div></div>
 <div class="ttc" id="aclassLocationConfig_html_a8f1bbc69016138d6488c674b15d62531"><div class="ttname"><a href="classLocationConfig.html#a8f1bbc69016138d6488c674b15d62531">LocationConfig::getUploadEnabled</a></div><div class="ttdeci">bool getUploadEnabled(void) const</div><div class="ttdef"><b>Definition</b> <a href="LocationConfig_8cpp_source.html#l00085">LocationConfig.cpp:85</a></div></div>
@@ -1019,57 +1070,62 @@ Static Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   79</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6ab0393c73c7a4a43c4c0520b27cd4e59b">RouteType::Upload</a>);</div>
 <div class="line"><span class="lineno">   80</span>        return ;</div>
 <div class="line"><span class="lineno">   81</span>    }</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3">checkErrorStatus</a>(req, res))</div>
-<div class="line"><span class="lineno">   83</span>        return ;</div>
-<div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>    <span class="comment">//Handle AutoIndex directory listings</span></div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (index.empty() &amp;&amp; <a class="code hl_function" href="classRouter.html#abc4267c8a267ca9baf524891e1443037">isAutoIndex</a>(index, req, config))</div>
-<div class="line"><span class="lineno">   87</span>    {</div>
-<div class="line"><span class="lineno">   88</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;Router: Route type = AutoIndex&quot;</span>);</div>
-<div class="line"><span class="lineno">   89</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a0cdab4b967c69c667463931213b49698">RouteType::AutoIndex</a>);</div>
-<div class="line"><span class="lineno">   90</span>        return ;</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    <span class="comment">//Handle DELETE requests explicitly</span></div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() == <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa7870e39b1f6fdcacc60d9ae5f581e0d3">RequestMethod::DELETE</a>)</div>
-<div class="line"><span class="lineno">   95</span>    {</div>
-<div class="line"><span class="lineno">   96</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a69e69670dbab073b39ca53368f1cac90">RouteType::Delete</a>);</div>
-<div class="line"><span class="lineno">   97</span>        return ;</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>    <span class="comment">// Handle static files (GET requests)</span></div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRouter.html#a8cd6b5ac09c54dff06c42498379d96b8">isStaticFile</a>(index, req, res))</div>
-<div class="line"><span class="lineno">  102</span>    {</div>
-<div class="line"><span class="lineno">  103</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;Router: Route type = StaticPage&quot;</span>);</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() != <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaae25257890235f999204793748f1752c9">RequestMethod::GET</a>)</div>
-<div class="line"><span class="lineno">  106</span>        {</div>
-<div class="line"><span class="lineno">  107</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router: Static file requested with invalid method&quot;</span>);</div>
-<div class="line"><span class="lineno">  108</span>            req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
-<div class="line"><span class="lineno">  109</span>            res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a5b393d65c3ee3ada19d5fcd6a96f9915">ResponseStatus::MethodNotAllowed</a>);</div>
-<div class="line"><span class="lineno">  110</span>            return ;</div>
-<div class="line"><span class="lineno">  111</span>        }</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a37aea1eab81bc9cdd19d8b4a67215763">RouteType::StaticPage</a>);</div>
-<div class="line"><span class="lineno">  114</span>        return ;</div>
-<div class="line"><span class="lineno">  115</span>    }</div>
-<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3">checkErrorStatus</a>(req, res))</div>
-<div class="line"><span class="lineno">  117</span>        return ;</div>
-<div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <span class="comment">//Default case: route not found (404)</span></div>
-<div class="line"><span class="lineno">  120</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router: No matching route found (404)&quot;</span>);</div>
-<div class="line"><span class="lineno">  121</span>    res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">ResponseStatus::NotFound</a>);</div>
-<div class="line"><span class="lineno">  122</span>    req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
-<div class="line"><span class="lineno">  123</span>}</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3">checkErrorStatus</a>(req, res))</div>
+<div class="line"><span class="lineno">   84</span>        return ;</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="comment">//Handle AutoIndex directory listings</span></div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (index.empty() &amp;&amp; <a class="code hl_function" href="classRouter.html#abc4267c8a267ca9baf524891e1443037">isAutoIndex</a>(index, req, config))</div>
+<div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;Router: Route type = AutoIndex&quot;</span>);</div>
+<div class="line"><span class="lineno">   90</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a0cdab4b967c69c667463931213b49698">RouteType::AutoIndex</a>);</div>
+<div class="line"><span class="lineno">   91</span>        return ;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3">checkErrorStatus</a>(req, res))</div>
+<div class="line"><span class="lineno">   95</span>        return ;</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="comment">//Handle DELETE requests explicitly</span></div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() == <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa7870e39b1f6fdcacc60d9ae5f581e0d3">RequestMethod::DELETE</a>)</div>
+<div class="line"><span class="lineno">   99</span>    {</div>
+<div class="line"><span class="lineno">  100</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a69e69670dbab073b39ca53368f1cac90">RouteType::Delete</a>);</div>
+<div class="line"><span class="lineno">  101</span>        return ;</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>    <span class="comment">// Handle static files (GET requests)</span></div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRouter.html#a8cd6b5ac09c54dff06c42498379d96b8">isStaticFile</a>(index, req, res))</div>
+<div class="line"><span class="lineno">  106</span>    {</div>
+<div class="line"><span class="lineno">  107</span>        <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a>, <span class="stringliteral">&quot;Router: Route type = StaticPage&quot;</span>);</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">if</span> (req.<a class="code hl_function" href="classHttpRequest.html#a5e8c184f323f39e36f2bb681554bc171">getMethod</a>() != <a class="code hl_enumvalue" href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaae25257890235f999204793748f1752c9">RequestMethod::GET</a>)</div>
+<div class="line"><span class="lineno">  110</span>        {</div>
+<div class="line"><span class="lineno">  111</span>            <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router: Static file requested with invalid method&quot;</span>);</div>
+<div class="line"><span class="lineno">  112</span>            req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
+<div class="line"><span class="lineno">  113</span>            res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a5b393d65c3ee3ada19d5fcd6a96f9915">ResponseStatus::MethodNotAllowed</a>);</div>
+<div class="line"><span class="lineno">  114</span>            return ;</div>
+<div class="line"><span class="lineno">  115</span>        }</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>        req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6a37aea1eab81bc9cdd19d8b4a67215763">RouteType::StaticPage</a>);</div>
+<div class="line"><span class="lineno">  118</span>        return ;</div>
+<div class="line"><span class="lineno">  119</span>    }</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3">checkErrorStatus</a>(req, res))</div>
+<div class="line"><span class="lineno">  122</span>        return ;</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="comment">//Default case: route not found (404)</span></div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_function" href="classLogger.html#a4aa4d7c3b98f6e12e7ea8253da5ea0cd">Logger::instance</a>().<a class="code hl_function" href="classLogger.html#a3d3f0801eeaf39b33a906ea8569c19b2">log</a>(<a class="code hl_enumvalue" href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a984de77c680eaff141ec910e25568a81">WARNING</a>, <span class="stringliteral">&quot;Router: No matching route found (404)&quot;</span>);</div>
+<div class="line"><span class="lineno">  126</span>    res.<a class="code hl_function" href="classHttpResponse.html#af02b3b82a638bfbf23226b9f3bf06843">setStatusCode</a>(<a class="code hl_enumvalue" href="structResponseStatus.html#ae7b198934cf232d13b16bfe0c216e076a9c620c656ee6972deee6a08813135558">ResponseStatus::NotFound</a>);</div>
+<div class="line"><span class="lineno">  127</span>    req.<a class="code hl_function" href="classHttpRequest.html#a4b150de7245da2eebd2412d1c88dce99">setRouteType</a>(<a class="code hl_enumvalue" href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6abb1fc0bf6eb2ba6cc8bfbcac7f774338">RouteType::Error</a>);</div>
+<div class="line"><span class="lineno">  128</span>}</div>
 <div class="ttc" id="aLogger_8hpp_html_aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="Logger_8hpp.html#aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00016">Logger.hpp:16</a></div></div>
 <div class="ttc" id="aclassHttpRequest_html_aab13f0c3b04e2290f26ca20aee08439f"><div class="ttname"><a href="classHttpRequest.html#aab13f0c3b04e2290f26ca20aee08439f">HttpRequest::getParseError</a></div><div class="ttdeci">ResponseStatus::code getParseError(void) const</div><div class="ttdoc">Returns the HTTP parse error code (if any).</div><div class="ttdef"><b>Definition</b> <a href="HttpRequest_8cpp_source.html#l00277">HttpRequest.cpp:277</a></div></div>
-<div class="ttc" id="aclassRouter_html_a4c44c26c85603949ccaed27088e3d07c"><div class="ttname"><a href="classRouter.html#a4c44c26c85603949ccaed27088e3d07c">Router::isCgi</a></div><div class="ttdeci">static bool isCgi(const LocationConfig &amp;loc, HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Determines if the request targets a valid CGI script.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00357">Router.cpp:357</a></div></div>
-<div class="ttc" id="aclassRouter_html_a6a677663d297f4d367cb1e503a1bf1b3"><div class="ttname"><a href="classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3">Router::checkErrorStatus</a></div><div class="ttdeci">static bool checkErrorStatus(HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Checks if the response already contains an error status.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00182">Router.cpp:182</a></div></div>
-<div class="ttc" id="aclassRouter_html_a8155613701b9739e2ae1e34c39894247"><div class="ttname"><a href="classRouter.html#a8155613701b9739e2ae1e34c39894247">Router::computeResolvedPath</a></div><div class="ttdeci">static void computeResolvedPath(HttpRequest &amp;req, const LocationConfig &amp;loc, const ServerConfig &amp;config)</div><div class="ttdoc">Computes the absolute filesystem path of the requested resource.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00131">Router.cpp:131</a></div></div>
-<div class="ttc" id="aclassRouter_html_a8cd6b5ac09c54dff06c42498379d96b8"><div class="ttname"><a href="classRouter.html#a8cd6b5ac09c54dff06c42498379d96b8">Router::isStaticFile</a></div><div class="ttdeci">static bool isStaticFile(const std::string &amp;index, HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Checks if the resolved path corresponds to a static file.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00317">Router.cpp:317</a></div></div>
-<div class="ttc" id="aclassRouter_html_a9cccffeb5ef1889ffc62987c437f6c59"><div class="ttname"><a href="classRouter.html#a9cccffeb5ef1889ffc62987c437f6c59">Router::isRedirect</a></div><div class="ttdeci">static bool isRedirect(HttpRequest &amp;req, HttpResponse &amp;res, ServerConfig const &amp;config)</div><div class="ttdoc">Checks if the request triggers an HTTP redirect.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00198">Router.cpp:198</a></div></div>
-<div class="ttc" id="aclassRouter_html_ab76bed10e7facdd1b6e4be3f2bbbff0f"><div class="ttname"><a href="classRouter.html#ab76bed10e7facdd1b6e4be3f2bbbff0f">Router::isUpload</a></div><div class="ttdeci">static bool isUpload(HttpRequest &amp;req, HttpResponse &amp;res, ServerConfig const &amp;config)</div><div class="ttdoc">Determines if the current request is a valid upload operation.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00220">Router.cpp:220</a></div></div>
-<div class="ttc" id="aclassRouter_html_abc4267c8a267ca9baf524891e1443037"><div class="ttname"><a href="classRouter.html#abc4267c8a267ca9baf524891e1443037">Router::isAutoIndex</a></div><div class="ttdeci">static bool isAutoIndex(const std::string &amp;index, HttpRequest &amp;req, ServerConfig const &amp;config)</div><div class="ttdoc">Determines whether to enable AutoIndex for a directory listing.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00277">Router.cpp:277</a></div></div>
+<div class="ttc" id="aclassRouter_html_a4c44c26c85603949ccaed27088e3d07c"><div class="ttname"><a href="classRouter.html#a4c44c26c85603949ccaed27088e3d07c">Router::isCgi</a></div><div class="ttdeci">static bool isCgi(const LocationConfig &amp;loc, HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Determines if the request targets a valid CGI script.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00422">Router.cpp:422</a></div></div>
+<div class="ttc" id="aclassRouter_html_a6a677663d297f4d367cb1e503a1bf1b3"><div class="ttname"><a href="classRouter.html#a6a677663d297f4d367cb1e503a1bf1b3">Router::checkErrorStatus</a></div><div class="ttdeci">static bool checkErrorStatus(HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Checks if the response already contains an error status.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00247">Router.cpp:247</a></div></div>
+<div class="ttc" id="aclassRouter_html_a8155613701b9739e2ae1e34c39894247"><div class="ttname"><a href="classRouter.html#a8155613701b9739e2ae1e34c39894247">Router::computeResolvedPath</a></div><div class="ttdeci">static void computeResolvedPath(HttpRequest &amp;req, const LocationConfig &amp;loc, const ServerConfig &amp;config)</div><div class="ttdoc">Computes the absolute filesystem path of the requested resource.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00146">Router.cpp:146</a></div></div>
+<div class="ttc" id="aclassRouter_html_a8cd6b5ac09c54dff06c42498379d96b8"><div class="ttname"><a href="classRouter.html#a8cd6b5ac09c54dff06c42498379d96b8">Router::isStaticFile</a></div><div class="ttdeci">static bool isStaticFile(const std::string &amp;index, HttpRequest &amp;req, HttpResponse &amp;res)</div><div class="ttdoc">Checks if the resolved path corresponds to a static file.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00382">Router.cpp:382</a></div></div>
+<div class="ttc" id="aclassRouter_html_a9cccffeb5ef1889ffc62987c437f6c59"><div class="ttname"><a href="classRouter.html#a9cccffeb5ef1889ffc62987c437f6c59">Router::isRedirect</a></div><div class="ttdeci">static bool isRedirect(HttpRequest &amp;req, HttpResponse &amp;res, ServerConfig const &amp;config)</div><div class="ttdoc">Checks if the request triggers an HTTP redirect.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00263">Router.cpp:263</a></div></div>
+<div class="ttc" id="aclassRouter_html_ab76bed10e7facdd1b6e4be3f2bbbff0f"><div class="ttname"><a href="classRouter.html#ab76bed10e7facdd1b6e4be3f2bbbff0f">Router::isUpload</a></div><div class="ttdeci">static bool isUpload(HttpRequest &amp;req, HttpResponse &amp;res, ServerConfig const &amp;config)</div><div class="ttdoc">Determines if the current request is a valid upload operation.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00285">Router.cpp:285</a></div></div>
+<div class="ttc" id="aclassRouter_html_abc4267c8a267ca9baf524891e1443037"><div class="ttname"><a href="classRouter.html#abc4267c8a267ca9baf524891e1443037">Router::isAutoIndex</a></div><div class="ttdeci">static bool isAutoIndex(const std::string &amp;index, HttpRequest &amp;req, ServerConfig const &amp;config)</div><div class="ttdoc">Determines whether to enable AutoIndex for a directory listing.</div><div class="ttdef"><b>Definition</b> <a href="Router_8cpp_source.html#l00342">Router.cpp:342</a></div></div>
 <div class="ttc" id="astring__utils_8hpp_html_a3435acf8aa5d1b7819803b35e546522a"><div class="ttname"><a href="string__utils_8hpp.html#a3435acf8aa5d1b7819803b35e546522a">hasParentTraversal</a></div><div class="ttdeci">static bool hasParentTraversal(const std::string &amp;s)</div><div class="ttdoc">Checks if a path string contains parent directory traversal (..) sequences.</div><div class="ttdef"><b>Definition</b> <a href="string__utils_8hpp_source.html#l00147">string_utils.hpp:147</a></div></div>
 <div class="ttc" id="astructRequestMethod_html_a63081603a32a15207a690e0ddd2bc0eaa7870e39b1f6fdcacc60d9ae5f581e0d3"><div class="ttname"><a href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaa7870e39b1f6fdcacc60d9ae5f581e0d3">RequestMethod::DELETE</a></div><div class="ttdeci">@ DELETE</div><div class="ttdef"><b>Definition</b> <a href="RequestMethod_8hpp_source.html#l00032">RequestMethod.hpp:32</a></div></div>
 <div class="ttc" id="astructRequestMethod_html_a63081603a32a15207a690e0ddd2bc0eaae25257890235f999204793748f1752c9"><div class="ttname"><a href="structRequestMethod.html#a63081603a32a15207a690e0ddd2bc0eaae25257890235f999204793748f1752c9">RequestMethod::GET</a></div><div class="ttdeci">@ GET</div><div class="ttdef"><b>Definition</b> <a href="RequestMethod_8hpp_source.html#l00028">RequestMethod.hpp:28</a></div></div>
@@ -1081,7 +1137,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6ad842895babdd09e86148be300f75f9e5"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6ad842895babdd09e86148be300f75f9e5">RouteType::Redirect</a></div><div class="ttdeci">@ Redirect</div><div class="ttdoc">Issues an HTTP redirection response.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00030">RouteType.hpp:30</a></div></div>
 <div class="ttc" id="astructRouteType_html_a733dfb67bebb80a99b6a0c41142292e6af89baf178c357f54da2f7b8a4e6028dd"><div class="ttname"><a href="structRouteType.html#a733dfb67bebb80a99b6a0c41142292e6af89baf178c357f54da2f7b8a4e6028dd">RouteType::CGI</a></div><div class="ttdeci">@ CGI</div><div class="ttdoc">Executes a CGI script and returns its output.</div><div class="ttdef"><b>Definition</b> <a href="RouteType_8hpp_source.html#l00027">RouteType.hpp:27</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="RouteType_8hpp_source.html#l00028">RouteType::AutoIndex</a>, <a class="el" href="RouteType_8hpp_source.html#l00027">RouteType::CGI</a>, <a class="el" href="Router_8cpp_source.html#l00182">checkErrorStatus()</a>, <a class="el" href="Router_8cpp_source.html#l00131">computeResolvedPath()</a>, <a class="el" href="RouteType_8hpp_source.html#l00031">RouteType::Delete</a>, <a class="el" href="RequestMethod_8hpp_source.html#l00032">RequestMethod::DELETE</a>, <a class="el" href="RouteType_8hpp_source.html#l00032">RouteType::Error</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus::Forbidden</a>, <a class="el" href="RequestMethod_8hpp_source.html#l00028">RequestMethod::GET</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00090">LocationConfig::getCgiPath()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00105">LocationConfig::getHasIndexFiles()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00100">LocationConfig::getHasRoot()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00060">LocationConfig::getIndex()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00183">HttpRequest::getMethod()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00277">HttpRequest::getParseError()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00055">LocationConfig::getRoot()</a>, <a class="el" href="ServerConfig_8cpp_source.html#l00051">ServerConfig::getRoot()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00218">HttpRequest::getUri()</a>, <a class="el" href="string__utils_8hpp_source.html#l00147">hasParentTraversal()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Router_8cpp_source.html#l00277">isAutoIndex()</a>, <a class="el" href="Router_8cpp_source.html#l00357">isCgi()</a>, <a class="el" href="Router_8cpp_source.html#l00198">isRedirect()</a>, <a class="el" href="Router_8cpp_source.html#l00317">isStaticFile()</a>, <a class="el" href="Router_8cpp_source.html#l00220">isUpload()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ServerConfig_8cpp_source.html#l00157">ServerConfig::matchLocation()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00045">ResponseStatus::MethodNotAllowed</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00044">ResponseStatus::NotFound</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00027">ResponseStatus::OK</a>, <a class="el" href="RouteType_8hpp_source.html#l00030">RouteType::Redirect</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00098">HttpRequest::setRouteType()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, <a class="el" href="RouteType_8hpp_source.html#l00026">RouteType::StaticPage</a>, <a class="el" href="RouteType_8hpp_source.html#l00029">RouteType::Upload</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
+<p class="reference">References <a class="el" href="RouteType_8hpp_source.html#l00028">RouteType::AutoIndex</a>, <a class="el" href="RouteType_8hpp_source.html#l00027">RouteType::CGI</a>, <a class="el" href="Router_8cpp_source.html#l00247">checkErrorStatus()</a>, <a class="el" href="Router_8cpp_source.html#l00146">computeResolvedPath()</a>, <a class="el" href="RouteType_8hpp_source.html#l00031">RouteType::Delete</a>, <a class="el" href="RequestMethod_8hpp_source.html#l00032">RequestMethod::DELETE</a>, <a class="el" href="RouteType_8hpp_source.html#l00032">RouteType::Error</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00043">ResponseStatus::Forbidden</a>, <a class="el" href="RequestMethod_8hpp_source.html#l00028">RequestMethod::GET</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00090">LocationConfig::getCgiPath()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00105">LocationConfig::getHasIndexFiles()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00100">LocationConfig::getHasRoot()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00060">LocationConfig::getIndex()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00183">HttpRequest::getMethod()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00277">HttpRequest::getParseError()</a>, <a class="el" href="LocationConfig_8cpp_source.html#l00055">LocationConfig::getRoot()</a>, <a class="el" href="ServerConfig_8cpp_source.html#l00051">ServerConfig::getRoot()</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00218">HttpRequest::getUri()</a>, <a class="el" href="string__utils_8hpp_source.html#l00147">hasParentTraversal()</a>, <a class="el" href="Logger_8hpp_source.html#l00016">INFO</a>, <a class="el" href="Logger_8cpp_source.html#l00037">Logger::instance()</a>, <a class="el" href="Router_8cpp_source.html#l00342">isAutoIndex()</a>, <a class="el" href="Router_8cpp_source.html#l00422">isCgi()</a>, <a class="el" href="Router_8cpp_source.html#l00263">isRedirect()</a>, <a class="el" href="Router_8cpp_source.html#l00382">isStaticFile()</a>, <a class="el" href="Router_8cpp_source.html#l00285">isUpload()</a>, <a class="el" href="Logger_8cpp_source.html#l00051">Logger::log()</a>, <a class="el" href="ServerConfig_8cpp_source.html#l00157">ServerConfig::matchLocation()</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00045">ResponseStatus::MethodNotAllowed</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00044">ResponseStatus::NotFound</a>, <a class="el" href="ResponseStatus_8hpp_source.html#l00027">ResponseStatus::OK</a>, <a class="el" href="RouteType_8hpp_source.html#l00030">RouteType::Redirect</a>, <a class="el" href="HttpRequest_8cpp_source.html#l00098">HttpRequest::setRouteType()</a>, <a class="el" href="HttpResponse_8cpp_source.html#l00024">HttpResponse::setStatusCode()</a>, <a class="el" href="RouteType_8hpp_source.html#l00026">RouteType::StaticPage</a>, <a class="el" href="RouteType_8hpp_source.html#l00029">RouteType::Upload</a>, and <a class="el" href="Logger_8hpp_source.html#l00017">WARNING</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Dispatcher_8cpp_source.html#l00030">Dispatcher::dispatch()</a>.</p>
 
